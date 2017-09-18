@@ -1,0 +1,260 @@
+///////////////////////////////////////////////
+
+
+
+// таблицы
+
+
+.table {
+	margin: 3rem 0;
+
+	.empty {
+		background-color: transparent !important;
+	}
+
+	th {
+		background-color: $c-gray-lightermore;
+		padding: 0.5rem 1rem;
+		font: normal $font-size-basemin $font-family-cond;
+		color: $c-gray-dark;
+		line-height: $line-height-min;
+		text-align: center;
+	}
+
+	td {
+		padding: 1rem 1rem !important;
+		line-height: $line-height-min;
+	}
+
+	@include respond-to(media-xs) {
+		th,
+		td {
+			font-size: $font-size-basemin;
+		}
+	}
+
+}
+
+
+.tb--info {
+	border-color: $c-white;
+	margin: 0.5rem 0 1rem 0;
+
+	th,
+	td {
+		border-color: $c-white !important;
+		padding: 0.4rem 0.5rem !important;
+	}
+
+	td {
+		font: normal $font-size-base $font-family-cond;
+	}
+
+}
+
+
+.tb--inview {
+	border-top: solid 1px $color-dlv;
+	width: 100%;
+
+	td {
+		vertical-align: top;
+		padding-top: 0.4rem;
+		padding-bottom: 0.5rem;
+		font: $font-size-basemin $font-family-cond;
+		border-bottom: solid 1px $color-dlv;
+	}
+
+	.value {
+		text-align: right;
+	}
+
+}
+
+
+.tb--inrates {
+	min-width: 15rem;
+
+	td {
+		padding: 0 0.5rem !important;
+		font: $font-size-basemin $font-family-cond;
+
+		&.prop {
+			color: $c-gray-dark;
+		}
+
+	}
+
+}
+
+
+.tb--worktime {
+	margin-top: 1rem;
+
+	td {
+		border: solid 2px $c-white;
+		font-family: $font-family-cond;
+		font-size: $font-size-12 !important;
+		text-align: center;
+		line-height: $line-height-text !important;
+
+		&.wd {
+			border-bottom: solid 2px $c-green;
+			border-top: solid 1px $c-gray-lighter;
+			padding: 0.2rem !important;
+
+			&.active {
+				border-bottom: solid 2px $c-black;
+				color: $c-black;
+			}
+
+		}
+
+		&.wt {
+			padding: 0.5rem 0.2rem !important;
+			border-bottom: solid 1px $c-gray-lighter;
+
+			&.active {
+				color: $c-black;
+			}
+
+		}
+
+		&.active {
+			background-color: $c-gray-lightermore;
+		}
+
+	}
+
+}
+
+
+
+.prop {
+	color: $c-gray-dark;
+
+	a {
+		color: $c-gray-dark;
+		text-decoration: underline;
+
+		&:hover {
+			color: $color-link-hover;
+			text-decoration: none !important;
+		}
+
+	}
+
+	.prop--name {
+		color: $c-gray-dark;
+
+		a {
+			color: $color-link;
+			text-decoration: none;
+
+			&:hover {
+				color: $color-link-hover;
+				text-decoration: underline !important;
+			}
+
+		}
+
+	}
+
+	.prop-desc {
+		line-height: $line-height-min;
+	}
+
+}
+
+.value {
+	color: $color-text;
+	padding-left: 1rem;
+	padding-right: 1rem;
+
+	a {
+		color: $color-link;
+		text-decoration: underline;
+
+		&:hover {
+			color: $color-link-hover;
+			text-decoration: none !important;
+		}
+
+	}
+
+}
+
+.td--note {
+	color: $c-gray;
+}
+
+.td--price {
+	color: $c-red;
+	white-space: nowrap;
+	width: 1%;
+
+	i {
+		font-size: 1.3rem;
+		margin-left: 0.5rem;
+	}
+
+}
+
+.td--centered {
+	text-align: center;
+}
+
+
+
+
+// таблица на слоях
+
+.divtable {
+	margin: 3rem 0;
+
+	.row {
+		display: -webkit-flex;
+		display: flex;
+		flex-flow: row wrap;
+		border-top: solid 1px $color-dlv;
+		border-bottom: solid 1px $color-dlv;
+		margin-top: -1px;
+		margin-left: 0;
+		margin-right: 0;
+
+		@include respond-to(media-xs) {
+			display: block;
+			padding-top: 0.6rem;
+			padding-bottom: 0.6rem;
+		}
+
+		&.row--th,
+		&.row--th:hover {
+			background-color: $c-gray-lightermore !important;
+			font: normal $font-size-basemin $font-family-cond;
+			color: $c-gray-dark;
+			line-height: $line-height-min;
+		}
+
+	}
+
+	.dt-td {
+		padding: 1rem 1rem;
+		line-height: $line-height-min;
+
+		@include respond-to(media-xs) {
+			padding-top: 0.1rem;
+			padding-bottom: 0.1rem;
+		}
+
+	}
+
+	&.divtable--hover {
+
+		.row:hover {
+			background: $table-bg-hover;
+		}
+
+	}
+
+}

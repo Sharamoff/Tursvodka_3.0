@@ -1,0 +1,431 @@
+///////////////////////////////////////////////
+
+
+
+// турфирма краткий
+
+
+.block-travelcompany {
+	@include clearfix;
+	padding-bottom: 2.5rem;
+	margin-bottom: 3rem;
+	border-bottom: solid 1px $color-dlv;
+
+	.travelcompany__img {
+		padding-top: 0.5rem;
+		text-align: center;
+
+		@include respond-to(media-xs) {
+			text-align: left;
+		}
+
+		img {
+			width: 100%;
+			max-width: 165px;
+			height: auto;
+			margin-bottom: 1.5rem;
+		}
+
+	}
+
+	.travelcompany__descript {
+
+		&-name {
+			font-family: $font-family-cond;
+			font-size: $font-size-basemax;
+			font-weight: bold;
+			color: $c-blue;
+			margin: 0 0 1rem 0;
+
+			a {
+				color: $c-blue;
+
+				&:hover {
+					color: $color-link-hover;
+				}
+
+			}
+
+		}
+
+		&-contact {
+			@include clearfix;
+
+			.address {
+				float: left;
+				display: inline-block;
+				font-family: $font-family-cond;
+				font-size: $font-size-base;
+				color: $c-gray-darker;
+				margin-right: 0.8rem;
+				line-height: $line-height-def;
+
+
+				a {
+					color: $c-gray-darker;
+					text-decoration: underline;
+
+					&:hover {
+						color: $color-link-hover;
+					}
+
+				}
+
+				&:after {
+					color: $c-gray;
+					content: '/';
+					margin-left: 0.8rem;
+				}
+
+			}
+
+			.phones {
+				float: left;
+				display: inline-block;
+				font-family: $font-family-cond;
+				font-size: $font-size-base;
+				color: $c-gray-dark;
+				margin: 0 0 0.5rem 0;
+				line-height: $line-height-def;
+				white-space: nowrap;
+
+				a,
+				a:hover {
+					color: $c-gray-darker;
+					text-decoration: none;
+				}
+
+			}
+
+		}
+
+		&-links {
+			margin-top: 0.6rem;
+
+			@include respond-to(media-xs) {
+				margin-bottom: 1rem;
+			}
+
+			.i--fill {
+				font-size: $font-size-basemin;
+			}
+
+		}
+
+	}
+
+	.travelcompany__rates {
+
+		&-consult {
+			font: $font-size-basemin $font-family-cond;
+			color: $c-gray-dark;
+			margin: 1rem 0 0 0.5rem;
+
+			a {
+				color: $color-link;
+				text-decoration: underline;
+
+				&:hover {
+					color: $color-link-hover;
+					text-decoration: none !important;
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+
+
+// турфирма расширенный
+
+
+.block-travelcompany_naming {
+
+	.travelcompany_naming__img {
+
+		img {
+			width: 100%;
+			max-width: 165px;
+			height: auto;
+			margin-bottom: 1.5rem;
+		}
+
+	}
+
+	.travelcompany_naming__descript {
+
+		.descript_address {
+			padding-left: 2rem;
+
+			&:before {
+				font-family: $fontawesome;
+				color: $c-blue-light;
+				content: "\f041";
+				margin-left: -2rem;
+			}
+
+			.address_link {
+				display: block;
+				margin-top: -2rem;
+				color: $c-gray-darker;
+				text-decoration: underline;
+				@include clearfix;
+
+				&:hover {
+					color: $color-link-hover;
+				}
+
+			}
+
+			span {
+				float: left;
+				display: inline-block;
+				font-family: $font-family-cond;
+				font-size: $font-size-basemax;
+				color: $c-gray-darker;
+				margin-right: 0.5rem;
+				line-height: $line-height-def;
+
+				&:after {
+					color: $c-gray;
+					content: '/';
+					margin-left: 0.5rem;
+				}
+
+				&:last-child {
+
+					&:after {
+						content: '';
+					}
+
+				}
+
+			}
+
+		}
+
+		.descript_phones {
+			display: block;
+			margin-top: 2rem;
+			font-family: $font-family-cond;
+			font-size: $font-size-base;
+			color: $c-gray-dark;
+			line-height: $line-height-def;
+			padding-left: 2rem;
+
+			@include respond-to(media-xs) {
+				margin-top: 1rem;
+				margin-bottom: 2rem;
+			}
+
+			&:before {
+				font-family: $fontawesome;
+				color: $c-blue-light;
+				content: "\f095";
+				margin-left: -2rem;
+				margin-right: 0.3rem;
+			}
+
+			a  {
+				margin-top: -2rem;
+				color: $c-gray-darker;
+				text-decoration: none;
+				font-weight: bold;
+				font-size: 2.5rem;
+				white-space: nowrap;
+
+				&:hover {
+					color: $c-gray-darker;
+					text-decoration: none;
+				}
+
+			}
+
+			span {
+				font-size: $font-size-base !important;
+			}
+
+		}
+
+	}
+
+	.travelcompany_naming__worktime {
+		font-family: $font-family-cond;
+
+		.worktime-label {
+			font-size: $font-size-basemax;
+			margin-top: -1px;
+
+			&:before {
+				font-family: $fontawesome;
+				color: $c-blue-light;
+				content: "\f017";
+				margin-right: 0.8rem;
+			}
+
+		}
+
+	}
+
+}
+
+
+.block-travelcompany_address {
+	margin-bottom: 5rem;
+
+	.address_topichdr {
+		display: inline-block;
+		font: $font-size-basemax $font-family-cond;
+		color: $c-gray-dark;
+		padding: 0.4rem 1rem 0.6rem 1rem;
+		background: $c-gray-lightermore;
+		border-radius: 3px;
+		margin-bottom: 2rem;
+	}
+
+	.address_prop {
+		font: $font-size-base $font-family-cond;
+		color: $c-gray-dark;
+		margin-bottom: 0.5rem;
+	}
+
+	.address_value {
+		font-weight: bold;
+		margin-bottom: 1.5rem;
+		line-height: $line-height-text;
+	}
+
+	.adrress_links {
+
+	}
+
+}
+
+
+.block-travelcompany_map {
+
+	.fm-travelcompany_map {
+		padding: 2rem 2rem 0.5rem 2rem;
+		background: $c-blue;
+		border-radius: 5px 5px 0 0;
+	}
+
+}
+
+
+.block-travelcompany_represent {
+	background: $c-gray-lighter;
+	border-radius: 5px;
+	padding: 1.5rem;
+	height: 100%;
+	@include clearfix;
+
+	@include respond-to(media-xs) {
+		margin-bottom: 1.5rem;
+	}
+
+	.represent__img {
+		float: left;
+		width: 6rem;
+		margin-right: 1rem;
+		margin-bottom: 0.5rem;
+
+		img {
+			width: 100%;
+			height: auto;
+			border: solid 1px $c-white;
+		}
+
+	}
+
+	.represent__descript {
+		float: left;
+		font-family: $font-family-cond;
+
+		.represent_name {
+			font-size: $font-size-base;
+			font-weight: bold;
+			margin: 0 0 0.5rem 0;
+		}
+
+		.represent_prof {
+			font-size: $font-size-basemin;
+			margin: 0 0 1rem 0;
+		}
+
+		.represent_lasttime {
+			font-size: $font-size-12;
+			color: $c-gray-dark;
+			margin: 0 0 1rem 0;
+		}
+
+		.represent_btn {
+			float: left;
+			display: inline-block;
+			font-size: $font-size-basemin;
+			margin-top: 0.5rem;
+			margin-right: 1rem;
+			padding-left: 1rem;
+			padding-right: 1rem;
+
+			.fa {
+				margin-right: 0.5rem;
+			}
+
+		}
+
+	}
+
+}
+
+
+.block-travelcompany_service {
+	border: solid 2px $c-yellow-light;
+	padding: 1.5rem 3rem;
+	height: 100%;
+
+	@include respond-to(media-xs) {
+		margin-bottom: 15px;
+	}
+
+	ul {
+		padding: 0;
+	}
+
+	li {
+		list-style: none;
+
+		&:before {
+			content: "•";
+			color: $c-yellow;
+			margin-right: 1rem;
+		}
+
+	}
+
+}
+
+
+.block-travelcompany_tours {
+
+}
+
+
+.block-travelcompany_countries {
+	background: $c-gray-lightermore;
+	padding: 2rem 3rem;
+
+	ul {
+		padding: 0;
+	}
+
+	li {
+		list-style: none;
+		margin: 1.2rem 0;
+	}
+
+}

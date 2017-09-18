@@ -1,0 +1,30 @@
+///////////////////////////////////////////////
+
+
+
+// ссылки раздела
+
+
+.ac_linksec {
+	margin-top: 10rem;
+}
+
+
+.block-linksec {
+	font-family: $font-family-cond;
+
+	ul {
+		margin-top: -1.5rem;
+		margin-bottom: 4rem;
+	}
+
+	a {
+		text-decoration: underline;
+
+		&:hover {
+			text-decoration: none;
+		}
+
+	}
+
+}

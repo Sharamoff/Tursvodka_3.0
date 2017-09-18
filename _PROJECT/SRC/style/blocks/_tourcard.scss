@@ -1,0 +1,184 @@
+///////////////////////////////////////////////
+
+
+
+// карточка тура
+
+
+.block-tourcard {
+	 height: 100%;
+	 background: $c-gray-lightermore;
+	 position: relative;
+	 max-width: 380px;
+	 padding-bottom: 18rem;
+
+	 @include respond-to(media-lg) {
+		 padding-bottom: 15rem;
+	 }
+
+	 @include respond-to(media-xs) {
+		 padding-bottom: 0;
+		 margin-bottom: 3rem;
+	 }
+
+	 .tourcard__img {
+
+		 img {
+			 width: 100%;
+			 height: auto;
+		 }
+
+	 }
+
+	 .tourcard__descript {
+		 position: relative;
+		 margin: 1.5rem 2rem;
+
+		 &-name {
+			 margin: 0 5rem 0 0;
+			 font-family: $font-family-cond;
+			 min-height: 6rem;
+
+			 @include respond-to(media-xs) {
+				 min-height: inherit;
+			 }
+
+			 .name {
+				 font-size: $font-size-basemax;
+				 font-weight: bold;
+				 color: $c-blue;
+				 margin: 0;
+
+				 a {
+					 color: $c-blue;
+
+					 &:hover {
+						 color: $color-link-hover;
+					 }
+
+				 }
+
+			 }
+
+			 .subname {
+				 font-size: $font-size-base;
+				 font-weight: bold;
+				 color: $c-gray-darker;
+				 margin: 0 0 0.5rem 0;
+				 line-height: $line-height-def;
+
+				 a {
+					 color: $c-gray-darker;
+					 text-decoration: underline;
+
+					 &:hover {
+						 color: $color-link-hover;
+					 }
+
+				 }
+
+			 }
+
+		 }
+
+		 &-weather {
+			 position: absolute;
+			 top: -0.5rem;
+			 right: -1rem;
+		 }
+
+		 &-note {
+			 color: $c-gray-dark;
+			 font-size: $font-size-note;
+
+			 strong {
+				 color: $color-text;
+			 }
+
+		 }
+
+	 }
+
+	 .tourcard__footer {
+		 position: absolute;
+		 z-index: 1;
+		 bottom: 2rem;
+		 left: 2rem;
+		 right: 2rem;
+		 border-top: solid 1px $color-dlv;
+
+		 @include respond-to(media-xs) {
+			 position: static;
+			 margin: 1rem 2rem;
+		 }
+
+		 &-itemprice {
+			 margin-top: 2rem;
+			 @include clearfix;
+
+			 .itemlink {
+				 float: left;
+				 width: 60%;
+				 margin: 0 1rem 1rem 0;
+
+				 @include respond-to(media-md) {
+					 width: 100%;
+				 }
+
+				 @include respond-to(media-sm) {
+					 width: 100%;
+				 }
+
+				 .itemlink_about {
+					 font-size: $font-size-basemin;
+				 }
+
+				 .itemlink_more {
+					 display: block;
+					 margin-top: 0.5rem;
+					 font-size: $font-size-basemin;
+				 }
+
+			 }
+
+			 .itemprice {
+				 float: left;
+				 width: 36%;
+				 font-size: 2.5rem;
+				 color: $c-green;
+				 text-align: right;
+				 font-weight: bold;
+				 font-family: $font-family-cond;
+				 white-space: nowrap;
+				 margin-top: -0.3rem;
+
+				 @include respond-to(media-md) {
+					 width: 100%;
+					 text-align: left;
+				 }
+
+				 @include respond-to(media-sm) {
+					 width: 100%;
+					 text-align: left;
+				 }
+
+				 i {
+					 font-size: 1.8rem;
+					 font-weight: normal;
+					 margin-left: 0.3rem;
+				 }
+
+			 }
+
+		 }
+
+		 &-warn {
+			 margin-top: 0.5rem;
+			 font-size: $font-size-note;
+			 color: $c-gray;
+			 line-height: $line-height-def;
+		 }
+
+	 }
+
+ }

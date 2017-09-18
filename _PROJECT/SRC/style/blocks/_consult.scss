@@ -1,0 +1,93 @@
+///////////////////////////////////////////////
+
+
+
+// консультант (менеджер по продажам туров)
+
+
+.block-consult {
+	border: solid 2px $c-gray-lighter;
+	border-radius: 5px;
+	padding: 1.5rem;
+	height: 100%;
+	@include clearfix;
+
+	@include respond-to(media-xs) {
+		margin-bottom: 3rem;
+	}
+	@include respond-to(media-sm) {
+		margin-bottom: 3rem;
+	}
+
+	.consult__img {
+		float: left;
+		width: 6rem;
+		margin-right: 1rem;
+		margin-bottom: 0.5rem;
+
+		img {
+			width: 100%;
+			height: auto;
+			border: solid 1px $c-white;
+		}
+
+	}
+
+	.consult__descript {
+		float: left;
+		font-family: $font-family-cond;
+
+		.consult_name {
+			font-size: $font-size-base;
+			font-weight: bold;
+			margin: 0 0 0.5rem 0;
+		}
+
+		.consult_prof {
+			font-size: $font-size-basemin;
+			color: $c-gray-dark;
+			margin: 0 0 0.5rem 0;
+		}
+
+		.consult_tel {
+			display: inline-block;
+			font-size: 1.5rem;
+			color: $color-text;
+			font-weight: bold;
+			text-decoration: none;
+			line-height: 0.8;
+			margin-top: 0.5rem;
+			margin-bottom: 0.5rem;
+
+			span {
+				font-size: 2.1rem;
+				white-space: nowrap;
+				margin-left: 0.6rem;
+			}
+
+		}
+
+	}
+
+	.consult__btns {
+		margin-right: -1rem;
+		@include clearfix;
+
+		.b-btn {
+			float: left;
+			display: inline-block;
+			font-size: $font-size-basemin;
+			margin-top: 0.5rem;
+			margin-right: 1rem;
+			padding-left: 1rem;
+			padding-right: 1rem;
+
+			.fa {
+				margin-right: 0.5rem;
+			}
+
+		}
+
+	}
+
+}

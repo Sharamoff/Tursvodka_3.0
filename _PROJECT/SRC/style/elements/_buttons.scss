@@ -1,0 +1,147 @@
+///////////////////////////////////////////////
+
+
+
+// кнопки
+
+
+.b-btn {
+	display: inline-block;
+	font: $font-size-base $font-family-cond;
+	background: $color-link;
+	color: $c-white;
+	text-decoration: none;
+	text-align: center;
+	line-height: $line-height-min;
+	border: none;
+	border-radius: 5px;
+	padding: 0.4rem 1.5rem 0.6rem 1.5rem;
+	min-width: 10rem;
+
+	&:hover {
+		background: $color-link-hover;
+	}
+
+	*:focus {
+		color: $c-white !important;
+	}
+
+	&:hover.bk--yellow {
+		background-color: $c-gray;
+	}
+
+}
+
+
+.b-formbtn {
+	display: inline-block;
+	font: bold $font-size-base $font-family-cond;
+	background: $color-link;
+	color: $c-white;
+	text-decoration: none;
+	text-align: center;
+	line-height: $line-height-min;
+	border: none;
+	border-radius: 5px;
+	padding: 1.5rem 3rem 1.6rem 3rem;
+	min-width: 10rem;
+	margin-top: 1rem;
+
+	&:hover {
+		background: $color-link-hover !important;
+	}
+
+}
+
+
+.b-searchbtn {
+	display: inline-block;
+	font: bold $font-size-base $font-family-cond;
+	background: $color-link;
+	color: $c-white;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: $line-height-min;
+	border: none;
+	border-radius: 5px;
+	padding: 2rem 5rem 2.1rem 5rem;
+	min-width: 10rem;
+	margin: 2rem auto 0 auto;
+
+	&:hover {
+		background: $c-gray !important;
+	}
+
+}
+
+
+.b-lonetool {
+	display: inline-block;
+	font: bold $font-size-basemin $font-family-cond;
+	background: $c-yellow;
+	color: $c-white;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	line-height: $line-height-min;
+	border: none;
+	border-radius: 5rem;
+	padding: 0.6rem 1.2rem 0.7rem 1.2rem;
+	min-width: 10rem;
+	margin-top: 1.5rem;
+
+	@include respond-to(media-xs) {
+		float: none !important;
+	}
+
+	&:hover {
+		background: $c-gray;
+	}
+
+	.fa {
+		margin-right: 0.6rem;
+	}
+
+}
+
+
+.b-link {
+	display: inline-block;
+	font: $font-size-base $font-family-cond;
+	background: $color-link;
+	color: $c-white;
+	text-decoration: none;
+	text-align: center;
+	line-height: $line-height-min;
+	border: none;
+	border-radius: 5px;
+	padding: 0.4rem 1.5rem 0.6rem 1.5rem;
+
+	&:hover {
+		background: $color-link-hover;
+		color: $c-white;
+		text-decoration: none;
+	}
+
+}
+
+
+.b-callorder {
+	display: inline-block;
+	font: bold $font-size-basemax $font-family-cond;
+	text-transform: uppercase;
+	color: $c-white;
+	text-decoration: none;
+	text-align: left;
+	line-height: 1.2;
+	border: none;
+	border-radius: 5px 50px 50px 5px;
+	padding: 1.5rem 4rem 1.5rem 1.5rem;
+	background: $c-yellow url("../img/icons/i-nextr-w.svg") right no-repeat;
+
+	&:hover {
+		background-color: $c-gray;
+	}
+
+}

@@ -1,0 +1,279 @@
+.header {
+	background-color: $color-bk-header;
+
+	.headerwrap {
+		position: relative;
+		max-width: $m-max;
+		min-width: $m-min;
+		width: 100%;
+		margin: 0 auto;
+		padding-left: 30px;
+		padding-right: 30px;
+		@include clearfix;
+
+		@include respond-to(media-xs) {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+
+	}
+
+}
+
+
+
+.header-top {
+	@include clearfix;
+	border-bottom: dotted 1px $color-border;
+	padding-top: 0.8rem;
+	padding-bottom: 0.6rem;
+	min-height: 4rem;
+
+	h1 {
+		display: inline-block;
+		float: left;
+		width: 60%;
+		margin: 0.5rem 0 0 0;
+		font: $font-size-basemin $font-family-base;
+		color: $c-gray;
+		text-transform: none;
+	}
+
+}
+
+
+
+.header-top__cabinet {
+	display: inline-block;
+	float: right;
+	position: relative;
+	width: 38%;
+	text-align: right;
+	@include clearfix;
+
+	.cabinet-username {
+		display: inline-block;
+		float: right;
+		font: $font-size-basemin $font-family-cond;
+		color: $c-gray;
+		margin-right: 1.5rem;
+		margin-top: 0.3rem;
+
+		a {
+			color: $color-link;
+
+			&:hover {
+				color: $color-link-hover;
+			}
+
+		}
+
+	}
+
+	.cabinet-mess,
+	.cabinet-checkhotel,
+	.cabinet-fav,
+	.cabinet-checkhistory {
+		display: inline-block;
+		float: right;
+		font-size: $font-size-base;
+		color: $c-gray-dark;
+		padding: 0.3rem 1.5rem;
+		border-left: dotted 1px $color-border;
+		cursor: pointer;
+
+		@include respond-to(media-sm) {
+			padding-left: 1rem;
+			padding-right: 1rem;
+		}
+
+		&:hover {
+			color: $color-link-hover;
+		}
+
+		.bulcount {
+			top: -2px;
+			left: -4px;
+		}
+
+		&.no--active,
+		&.no--active a {
+			cursor:default;
+			color: $c-gray-lighter;
+		}
+
+	}
+
+	.cabinet-mess {
+		padding-right: 1rem;
+
+		@include respond-to(media-sm) {
+			padding-right: 0.5rem;
+		}
+
+	}
+
+
+	.open {
+
+		.cabinet-mess,
+		.cabinet-checkhotel,
+		.cabinet-fav,
+		.cabinet-checkhistory {
+			background: $c-gray-lighter;
+			border-left: solid 1px $c-gray-lighter;
+			border-top: solid 1px $c-gray-lighter;
+			border-right: solid 1px $c-gray-lighter;
+			margin: -1px -1px 0 -1px;
+		}
+
+	}
+
+
+	.cabinet-dropdown {
+		background: $c-gray-lightermore;
+		border: solid 1px $c-gray-lighter;
+		padding: 1.5rem 2rem;
+		border-radius: 0;
+		max-width: 32rem;
+		font-size: $font-size-basemin;
+		color: $c-gray-darker;
+		line-height: $line-height-def !important;
+		top: 23px;
+
+		@include respond-to(media-sm) {
+			top: 21px;
+		}
+
+		.note {
+			font-size: $font-size-note;
+		}
+
+		.hdr {
+			font-family: $font-family-cond;
+			font-weight: bold;
+			font-size: $font-size-base;
+			color: $c-black;
+		}
+
+	}
+
+}
+
+
+
+.header-base {
+	@include clearfix;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+
+	@include respond-to(media-xs) {
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+
+	.header-base__logo {
+		float: left;
+		position: relative;
+		display: inline-block;
+		width: 25%;
+		min-width: 30rem;
+
+		@include respond-to(media-sm) {
+			min-width: 23rem;
+		}
+
+		@include respond-to(media-xs) {
+			min-width: 15rem;
+		}
+
+		img {
+			height: 70px;
+			width: auto;
+
+			@include respond-to(media-sm) {
+				height: 50px;
+			}
+
+			@include respond-to(media-xs) {
+				height: 30px;
+			}
+
+		}
+
+		.slogan {
+			font-size: $font-size-basemin;
+			color: $c-yellow-light;
+			position: absolute;
+			top: 8px;
+			left: 80px;
+
+			@include respond-to(media-sm) {
+				font-size: $font-size-12;
+				top: 4px;
+				left: 58px;
+			}
+
+		}
+
+	}
+
+	.header-base__nav {
+		float: left;
+		position: relative;
+		display: inline-block;
+		width: 75%;
+	}
+
+}
+
+
+
+.header-tourpicking {
+	padding: 2rem;
+	background: $c-yellow-light url("../img/bk-fm1.jpg") no-repeat fixed top center;
+	border-radius: 5px 5px 0 0;
+
+	@include respond-to(media-sm) {
+		background-size: 180%;
+	}
+
+	@include respond-to(media-xs) {
+		border-radius: 0;
+		margin-left: -15px;
+		margin-right: -15px;
+		background-size: 260%;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

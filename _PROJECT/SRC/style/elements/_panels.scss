@@ -1,0 +1,118 @@
+///////////////////////////////////////////////
+
+
+
+// панель
+
+
+.panel {
+	border: none;
+	border-radius: 0;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+	padding: 3rem;
+	background: $c-gray-lightermore;
+
+	@include respond-to(media-xs) {
+		padding: 3rem 1.5rem;
+	}
+
+	.panel-heading {
+		font-size: 2.1rem;
+		font-weight: bold;
+		color: $c-black;
+		margin: 0 0 2rem 0;
+		padding: 0;
+		line-height: $line-height-min;
+		border-radius: 0;
+	}
+
+	.panel-body {
+		margin: 0;
+		padding: 0;
+		border: none;
+	}
+
+}
+
+
+.panel-cite {
+	background: $c-white;
+	border-left: solid 3px $c-red;
+	line-height: $line-height-min;
+	padding: 0 2rem;
+	margin: 3rem 0;
+
+	@include respond-to(media-xs) {
+		padding: 1.5rem;
+	}
+
+	.panel-heading {
+		color: $c-red;
+		font-size: $font-size-h3;
+		font-weight: bold;
+		padding: 1rem 0 0 0;
+		margin-bottom: 1rem;
+	}
+
+	.panel-body {
+		font-size: $font-size-basemin;
+		color: $c-gray;
+		line-height: $line-height-min;
+		padding: 0;
+	}
+
+}
+
+
+.panel-quest {
+	position: relative;
+
+	&__btn {
+		@include clearfix;
+
+		button {
+			margin: 0;
+			padding: 0;
+			float: right;
+			width: 3rem;
+			height: 3rem;
+			line-height: 1;
+			font: 3rem $fontawesome;
+			opacity: 0.75;
+			cursor: help;
+			color: $c-white;
+			border: none;
+			background: none;
+
+			&:before {
+				content: "\f059";
+			}
+
+			&:hover {
+				opacity: 1;
+			}
+
+		}
+
+	}
+
+	&__pane {
+		display: none;
+		margin: -0.1rem 0 3rem 0;
+		background: $c-white;
+		padding: 1.5rem;
+		font-size: $font-size-basemin;
+		color: $c-gray-dark;
+		border-radius: 5px 0 5px 5px;
+
+		.hdr {
+			font: bold $font-size-basemax $font-family-cond;
+		}
+
+	}
+
+}
+
+
+

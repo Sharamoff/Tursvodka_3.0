@@ -1,0 +1,29 @@
+@font-face {
+  font-family:'Roboto Condensed';
+  src: url('../fonts/roboto-condensed.eot');
+  src: url('../fonts/roboto-condensed.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/roboto-condensed.woff') format('woff'),
+  url('../fonts/roboto-condensed.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family:'Roboto Condensed';
+  src: url('../fonts/roboto-boldcondensed.eot');
+  src: url('../fonts/roboto-boldcondensed.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/roboto-boldcondensed.woff') format('woff'),
+  url('../fonts/roboto-boldcondensed.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family:'Roboto Condensed Light';
+  src: url('../fonts/robotocondensed-light.eot');
+  src: url('../fonts/robotocondensed-light.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/robotocondensed-light.woff') format('woff'),
+  url('../fonts/robotocondensed-light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,52 @@
+///////////////////////////////////////////////
+
+
+
+// заявка на подбор тура
+
+
+.block-application {
+	background: $c-blue url("../img/bk-applic.jpg") bottom right no-repeat;
+	padding: 2rem 2rem 1.5rem 2rem;
+	color: $c-white;
+	border-radius: 5px;
+	min-height: 36rem;
+	margin: 2rem 0;
+
+	@include respond-to(media-xs) {
+		background-image: url("../img/bk-applic_.jpg");
+	}
+
+	.hdr-h2 {
+		text-transform: inherit;
+		color: $c-white;
+		font-weight: normal;
+		font-size: $font-size-h2;
+
+		&.hdr--lined {
+			border-color: $c-white;
+			padding-bottom: 1.2rem;
+		}
+
+	}
+
+	form {
+		margin: 2rem 0;
+		@include clearfix;
+	}
+
+	.b-formbtn {
+		text-transform: uppercase;
+		margin-top: 0;
+
+		&:hover {
+			background: $c-gray !important;
+		}
+
+	}
+
+	p.note {
+		font-size: $font-size-basemin;
+	}
+
+}

@@ -1,0 +1,59 @@
+.modal-dialog {
+	font-size: $font-size-base;
+
+	.modal-content {
+		padding: 0 !important;
+		color: $color-text !important;
+		line-height: $line-height-def !important;
+	}
+
+	.modal-header {
+		position: relative;
+		border-bottom: dotted 1px $c-gray;
+		padding: 0 !important;
+		margin: 0 3rem;
+		color: $c-white;
+
+
+		h1 {
+			font-size: $font-size-h1;
+			margin: 3rem 0 1.5rem 0;
+			color: $color-hdr;
+		}
+	}
+
+	.modal-body {
+		padding: 3rem !important;
+		@include clearfix;
+	}
+
+	button.close {
+		position: absolute;
+		top: 1rem;
+		right: -2rem;
+		color: $c-black;
+		font-size: 3rem;
+		font-weight: normal;
+	}
+
+	.modal-body__note {
+		color: $c-gray-dark;
+		font: $font-size-basemin $font-family-base;
+		margin-bottom: 3rem;
+	}
+
+	label {
+		color: $c-gray-dark;
+		text-transform: uppercase;
+		font-size: $font-size-basemin;
+	}
+
+
+
+}
+
+
+
+
+
+

@@ -1,0 +1,58 @@
+///////////////////////////////////////////////
+
+
+
+// инструментальная панель и кнопки
+
+
+.tool-box {
+	margin-top: 0.4rem;
+	margin-bottom: 0.4rem;
+	@include clearfix;
+
+	.b-tool {
+		text-decoration: none;
+		font: bold $font-size-basemin $font-family-cond;
+		text-transform: uppercase;
+		margin: 0 0.5rem;
+
+		i {
+			display: inline-block;
+			width: 3rem;
+			height: 3rem;
+			line-height: 3rem;
+			border-radius: 3rem;
+			background-color: $color-link;
+			text-align: center;
+			font-size: 1.5rem;
+			margin: 0 0.5rem;
+			color: $c-white;
+		}
+
+		@include respond-to(media-xs) {
+
+			span {
+				display: none;
+			}
+
+		}
+
+		&:hover {
+
+			i {
+				background-color: $color-link-hover;
+			}
+
+		}
+
+	}
+
+	&.box--with-pagination {
+		float: right;
+		margin-top: 2.5rem;
+	}
+
+}
+
+
+

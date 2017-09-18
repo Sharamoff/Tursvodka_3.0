@@ -1,0 +1,89 @@
+///////////////////////////////////////////////
+
+
+
+// отзыв краткий
+
+
+.block-response {
+	@include clearfix;
+	padding-bottom: 2.5rem;
+	margin-bottom: 3rem;
+	border-bottom: solid 1px $color-dlv;
+
+	.response__name {
+		margin-bottom: 1rem;
+	}
+
+	.response__address {
+		margin-bottom: 1.5rem;
+		font: normal $font-size-base $font-family-cond;
+		line-height: $line-height-def !important;
+		color: $c-gray;
+
+		a {
+			text-decoration: underline;
+			color: $c-gray-darker;
+
+			&:hover {
+				text-decoration: none;
+				color: $color-link-hover;
+			}
+
+		}
+
+	}
+
+	.response__rates {
+		font-size: $font-size-basemin;
+
+		p {
+			margin: 0.5rem 0;
+			line-height: $line-height-def;
+
+			span {
+				font-family: $font-family-cond;
+				display: inline-block;
+				width: 9rem;
+				padding: 0.1rem 0.6rem;
+				border-radius: 3px;
+			}
+
+			&.rate-plus span {
+				background: transparentize($c-blue, 0.85);
+			}
+
+			&.rate-minus span {
+				background: transparentize($c-red, 0.87);
+			}
+
+		}
+
+	}
+
+	.response__descript {
+		font-size: $font-size-basemin;
+		color: $c-gray-dark;
+
+		a {
+			color: $c-gray-dark;
+
+			&:hover {
+				color: $c-gray-darker;
+				text-decoration: none;
+			}
+
+		}
+
+		@include respond-to(media-xs) {
+			margin-top: 0;
+		}
+
+	}
+
+	.response__icons {
+		margin-top: 0;
+		@include clearfix;
+	}
+
+}

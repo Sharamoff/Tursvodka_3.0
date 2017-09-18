@@ -1,0 +1,97 @@
+///////////////////////////////////////////////
+
+
+
+// иконки
+
+.icon--map:after 					{content: "\f041";}
+.icon--more:after 				{content: "\f18e";}
+
+.icon--view:before 				{content: "\f06e";}
+.icon--resp:before 				{content: "\f086";}
+.icon--photo:before 			{content: "\f030";}
+.icon--like:before 				{content: "\f087";}
+.icon--dislike:before			{content: "\f088";}
+
+.icon--rate-plus:before		{content: "\f0fe";}
+.icon--rate-minus:before	{content: "\f146";}
+
+
+// иконки Отзыва
+
+.response-icon {
+	float: left;
+	display: inline-block;
+	margin: 0.5rem 1.5rem 0 0;
+	color: $c-gray;
+	position: relative;
+	font-style: normal;
+	font-family: $fontawesome;
+	font-weight: normal !important;
+	font-size: $font-size-basemin;
+	line-height: 1;
+
+	span	{
+		font: $font-size-12 $font-family-cond;
+		padding-left: 0.4rem;
+	}
+
+}
+
+
+// иконки Достоинства Недостатки
+
+.rate-plus,
+.rate-minus {
+	@include clearfix;
+
+	i {
+		float: left;
+		display: inline-block;
+		position: relative;
+		font-style: normal;
+		font-family: $fontawesome;
+		font-size: 1.6rem;
+		margin-right: 1rem;
+		text-align: center;
+
+		&.icon--rate-plus {
+			color: $c-blue;
+		}
+
+		&.icon--rate-minus {
+			color: $c-red;
+		}
+
+	}
+
+}
+
+
+// иконки Рекомендую Не рекомендую
+
+.recommend-yes {
+	display: inline-block;
+	font-family: $font-family-cond;
+	color: $c-green;
+
+	&:before {
+		font-family: $fontawesome;
+		content: "\f087";
+		margin-right: 0.5rem;
+	}
+
+}
+
+.recommend-no {
+	display: inline-block;
+	font-family: $font-family-cond;
+	color: $c-red;
+
+	&:before {
+		font-family: $fontawesome;
+		content: "\f088";
+		margin-right: 0.5rem;
+	}
+
+}

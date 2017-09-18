@@ -1,0 +1,45 @@
+///////////////////////////////////////////////
+
+
+
+// настройки для masonry
+
+
+
+@include respond-to(media-xs) {
+
+	.masonry_uicatalog[data-columns]::before {
+		content: '1 .col-xs-12'
+	}
+
+}
+
+
+
+@include respond-to(media-sm) {
+
+	.masonry_uicatalog[data-columns]::before {
+		content: '3 .col-xs-4'
+	}
+
+}
+
+
+
+@include respond-to(media-md) {
+
+	.masonry_uicatalog[data-columns]::before {
+		content: '4 .col-xs-3'
+	}
+
+}
+
+
+
+@include respond-to(media-lg) {
+
+	.masonry_uicatalog[data-columns]::before {
+		content: '4 .col-xs-3'
+	}
+
+}

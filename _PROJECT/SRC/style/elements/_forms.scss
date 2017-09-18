@@ -1,0 +1,202 @@
+///////////////////////////////////////////////
+
+
+
+// формы
+
+
+FORM {
+
+	&.form-inline {
+
+		.form-group {
+
+			@include respond-to(media-xs) {
+				width: 100% !important;
+			}
+
+		}
+
+		.form-control {
+			width: 100%;
+		}
+
+	}
+
+}
+
+
+FORM TD {
+	padding: 0.5rem 1rem 0.5rem 0;
+}
+
+label {
+	font-weight: normal !important;
+	color: $c-gray-dark;
+	cursor: pointer;
+	line-height: $line-height-min;
+
+	&.label--ch {
+		color: $color-fields;
+		margin-right: 1rem;
+		white-space: nowrap;
+	}
+
+}
+
+INPUT,
+SELECT,
+TEXTAREA {
+	font-size: $font-size-base !important;
+	font-family: $font-family-base !important;
+	color: $color-fields !important;
+	padding-left: 0.8rem !important;
+	padding-right: 0.8rem !important;
+
+	&:focus {
+		outline: none;
+	}
+
+}
+
+INPUT[type="checkbox"] {
+	width: 1.8rem;
+	height: 1.8rem;
+	margin-right: 0.5rem;
+	top: 0.2rem;
+	position: relative;
+}
+
+INPUT[type="radio"] {
+	width: 1.8rem;
+	height: 1.8rem;
+	//margin-right: 0.5rem;
+	top: -0.3rem;
+	position: relative;
+}
+
+.hastouchspin,
+.bootstrap-touchspin-up,
+.bootstrap-touchspin-down {
+	height: 34px;
+}
+
+
+
+.form-group-inline {
+	margin-left: -5px;
+	margin-right: -5px;
+	@include clearfix;
+
+	.form-group {
+		padding-left: 5px;
+		padding-right: 5px;
+		margin-bottom: 1.5rem;
+		display: inline-block;
+	}
+
+}
+
+.form-fld-inline {
+	margin-left: -5px;
+	margin-right: -5px;
+	margin-bottom: -0.5rem;
+	@include clearfix;
+
+	> div {
+		padding-left: 5px;
+		padding-right: 5px;
+		margin-bottom: 0.5rem;
+		display: inline-block;
+	}
+
+}
+
+
+
+
+
+.formtype-search {
+
+	.form-group {
+		margin-top: 1.5rem;
+		margin-bottom: 1.5rem;
+
+		@include respond-to(media-xs) {
+			margin-bottom: 0;
+		}
+
+	}
+
+	label {
+		color: $c-gray-darker;
+		font-family: $font-family-cond;
+		font-size: $font-size-basemin;
+		white-space: nowrap;
+		overflow: hidden;
+		padding: 1px 0.6rem 3px 0.6rem;
+		margin-bottom: 2px;
+		border-radius: 2px;
+		background-color: transparentize($c-white, 0.4);
+
+		@include respond-to(media-xs) {
+			padding: 1px 0.3rem 2px 0.3rem;
+		}
+
+		@include respond-to(media-sm) {
+			padding: 1px 0.3rem 2px 0.3rem;
+		}
+
+		@include respond-to(media-lg) {
+			font-size: $font-size-base;
+		}
+
+		&.label--ch {
+			background: transparent;
+			font-size: $font-size-base;
+			margin-top: -0.2rem;
+			white-space: normal;
+
+			@include respond-to(media-xs) {
+				margin-top: -0.8rem;
+			}
+
+		}
+
+	}
+
+	INPUT[type="checkbox"] {
+		width: 2rem;
+		height: 2rem;
+		top: 0.4rem;
+	}
+
+
+	.form-group--bold {
+
+		label {
+			color: $c-white;
+			font-size: $font-size-base;
+			font-weight: bold;
+			background-color: transparent;
+			margin-bottom: 0;
+
+			@include respond-to(media-lg) {
+				margin-bottom: 2px;
+			}
+
+		}
+
+		input,
+		select,
+		textarea {
+			font-weight: bold;
+		}
+
+	}
+
+
+}
+
+
+

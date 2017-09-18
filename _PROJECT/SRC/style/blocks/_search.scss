@@ -1,0 +1,90 @@
+///////////////////////////////////////////////
+
+
+
+// поиск туров
+
+
+.block-search {
+
+	
+	.nav-tabs {
+		border-bottom: none;
+		font: $font-size-basemax $font-family-cond;
+		text-transform: uppercase;
+
+		li {
+
+			> a {
+				padding: 1.2rem 5rem;
+				background-color: $c-gray-lightermore;
+				border-color: $c-gray-lighter;
+				border-bottom: solid 1px $c-yellow;
+				text-align: center;
+
+				@include respond-to(media-xs) {
+					padding: 1.2rem 2.9rem;
+					overflow: hidden;
+				}
+
+			}
+
+			&.active > a {
+				&,
+				&:hover,
+				&:focus {
+					color: $c-white;
+					background-color: $c-yellow;
+					border-color: $c-yellow;
+					font-weight: bold;
+				}
+			}
+
+		}
+
+	}
+
+
+	.block-search__short {
+		position: relative;
+		background: $c-yellow url("../img/bk-search.jpg") top no-repeat;
+		background-size: cover;
+		padding: 2rem 30px 3rem 30px;
+		border: solid 1px $c-yellow;
+		border-radius: 0 5px 5px 5px;
+
+		@include respond-to(media-xs) {
+			padding: 2rem 15px;
+		}
+
+	}
+
+
+	.block-search__full {
+		position: relative;
+		background: $c-yellow url("../img/bk-search.jpg") top no-repeat;
+		background-size: cover;
+		padding: 2rem 30px 3rem 30px;
+		min-height: 60rem;
+		border: solid 1px $c-yellow;
+		border-radius: 0 5px 5px 5px;
+
+		@include respond-to(media-xs) {
+			padding: 2rem 15px;
+		}
+
+	}
+
+
+}
+
+
+
+
+// поиск форма
+
+.block-search {
+
+
+}
+

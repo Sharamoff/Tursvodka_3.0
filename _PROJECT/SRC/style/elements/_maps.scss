@@ -1,0 +1,85 @@
+///////////////////////////////////////////////
+
+
+
+// карты
+
+
+.map-fullpage {
+	height: 50rem;
+	border: solid 3px $c-gray-lighter;
+
+	@include respond-to(media-xs) {
+		height: 42.6rem;
+	}
+
+}
+
+
+.country-minimap {
+	float: right;
+	padding: 0;
+	margin-left: 2rem;
+	margin-bottom: 2rem;
+
+
+
+	@include respond-to(media-xs) {
+		display: block;
+		float: none;
+		margin-left: 0;
+		width: 100% !important;
+	}
+
+}
+
+
+.country-map {
+
+}
+
+
+.country-map_filter {
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+	font: $font-size-base $font-family-cond;
+
+	ul {
+		float: left;
+		display: inline-block;
+		margin-right: 5rem;
+
+		@include respond-to(media-sm) {
+			margin-right: 3rem;
+		}
+		@include respond-to(media-md) {
+			margin-right: 3rem;
+		}
+
+	}
+
+	li {
+		margin-top: 1rem !important;
+		margin-bottom: 1rem !important;
+		line-height: $line-height-min !important;
+		min-height: 34px;
+
+		span {
+			display: inline-block;
+		}
+
+		strong {
+			display: inline-block;
+			margin-top: 0.3rem;
+			margin-bottom: 0.8rem;
+		}
+
+		img {
+			margin-right: 0.5rem;
+			width: 26px;
+			height: 32px;
+		}
+
+	}
+
+}

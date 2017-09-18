@@ -1,0 +1,174 @@
+///////////////////////////////////////////////
+
+
+
+// базовые блоки
+
+
+.v-base-block {
+	max-width: 380px;
+	height: 100%;
+	position: relative;
+
+	@include respond-to(media-xs) {
+		margin-bottom: 3rem;
+		padding-bottom: 0;
+	}
+
+	.block__img {
+		max-width: 260px;
+		margin-bottom: 2rem;
+
+		img {
+			width: 100%;
+			height: auto;
+		}
+
+	}
+
+	.block__address {
+		font-family: $font-family-cond;
+		font-size: $font-size-base;
+		color: $c-black;
+		line-height: 1.4;
+		margin-bottom: 1rem;
+
+		a {
+			color: $c-gray-darker;
+			text-decoration: underline;
+
+			&:hover {
+				color: $color-link-hover;
+			}
+
+		}
+
+		&-date {
+			display: inline-block;
+			font-size: $font-size-basemax;
+			color: $c-yellow;
+			margin-right: 1rem;
+			position: relative;
+		}
+
+	}
+
+	.block__descript {
+		color: $c-gray-dark;
+		font-size: $font-size-basemin;
+
+		&-hdr {
+			color: $color-link-hdr;
+			font: bold $font-size-basemax $font-family-cond;
+			line-height: $line-height-def;
+		}
+
+	}
+
+	a {
+		text-decoration: none;
+		color: $c-gray-dark;
+
+		&:hover {
+			color: $c-gray-darker;
+			text-decoration: none;
+
+			.block__descript-hdr {
+				color: $color-link-hover;
+				text-decoration: underline;
+			}
+
+		}
+
+	}
+
+	.block__footer {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+	}
+
+}
+
+
+.h-base-block {
+	margin-top: 3rem;
+
+	@include respond-to(media-xs) {
+		margin-bottom: 2rem;
+		padding-bottom: 0;
+	}
+
+
+	.block__img {
+
+		@include respond-to(media-xs) {
+			max-width: 260px;
+			margin-bottom: 1.5rem;
+		}
+
+		img {
+			width: 100%;
+			height: auto;
+		}
+
+	}
+
+	.block__address {
+		font-family: $font-family-cond;
+		font-size: $font-size-base;
+		color: $c-black;
+		line-height: 1.4;
+		margin-bottom: 1rem;
+
+		a {
+			color: $c-gray-darker;
+			text-decoration: underline;
+
+			&:hover {
+				color: $color-link-hover;
+			}
+
+		}
+
+		&-date {
+			display: inline-block;
+			font-size: $font-size-basemax;
+			color: $c-yellow;
+			margin-right: 1rem;
+			position: relative;
+		}
+
+	}
+
+	.block__descript {
+		color: $c-gray-dark;
+		font-size: $font-size-basemin;
+
+		&-hdr {
+			color: $color-link-hdr;
+			font: bold $font-size-basemax $font-family-cond;
+			line-height: $line-height-def;
+		}
+
+	}
+
+	a {
+		text-decoration: none;
+		color: $c-gray-dark;
+
+		&:hover {
+			color: $c-gray-darker;
+			text-decoration: none;
+
+			.block__descript-hdr {
+				color: $color-link-hover;
+				text-decoration: underline;
+			}
+
+		}
+
+	}
+
+}
+

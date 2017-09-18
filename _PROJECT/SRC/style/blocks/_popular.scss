@@ -1,0 +1,43 @@
+///////////////////////////////////////////////
+
+
+
+// популярное
+
+
+.block-popular {
+	height: 100%;
+	padding: 0;
+	background: $c-white url("../img/icons/pop-star.svg") top right no-repeat;
+	font: $font-size-basemin $font-family-cond;
+	position: relative;
+
+	@include respond-to(media-xs) {
+		margin-bottom: 20px;
+		max-width: 380px;
+	}
+
+	.hdr-h2 {
+		padding-top: 6px;
+		margin-bottom: 10px;
+	}
+
+	.i-link {
+		position: absolute;
+		z-index: 1;
+		height: 3.5rem;
+		bottom: 0;
+		text-decoration: underline;
+		font-size: $font-size-basemin;
+
+		&:hover {
+			text-decoration: none;
+		}
+
+	}
+
+	table {
+		background: $c-white;
+	}
+
+}

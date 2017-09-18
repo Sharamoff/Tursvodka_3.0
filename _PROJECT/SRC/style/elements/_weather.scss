@@ -1,0 +1,47 @@
+///////////////////////////////////////////////
+
+
+
+// погода
+
+
+.weather {
+	display: inline-block;
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	text-align: center;
+	color: $c-gray-dark;
+	font-family: $font-family-cond;
+	font-size: $font-size-11;
+	padding-top: 26px;
+	background-color: transparentize($c-white, 0.75);
+	background-position: center 5px;
+	background-repeat: no-repeat;
+}
+
+.i_weather {
+	display: inline-block;
+	position: relative;
+	top: 0.2rem;
+	height: 15px;
+	width: 30px;
+	background-position: right;
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin-right: 0.6rem;
+}
+
+.i--weather-g1 {background-image: url("../img/icons/i-weather1-g.svg");}
+.i--weather-g2 {background-image: url("../img/icons/i-weather2-g.svg");}
+.i--weather-g3 {background-image: url("../img/icons/i-weather3-g.svg");}
+.i--weather-g4 {background-image: url("../img/icons/i-weather4-g.svg");}
+.i--weather-g5 {background-image: url("../img/icons/i-weather5-g.svg");}
+.i--weather-g6 {background-image: url("../img/icons/i-weather6-g.svg");}
+
+.i--weather-w1 {background-image: url("../img/icons/i-weather1-w.svg");}
+.i--weather-w2 {background-image: url("../img/icons/i-weather2-w.svg");}
+.i--weather-w3 {background-image: url("../img/icons/i-weather3-w.svg");}
+.i--weather-w4 {background-image: url("../img/icons/i-weather4-w.svg");}
+.i--weather-w5 {background-image: url("../img/icons/i-weather5-w.svg");}
+.i--weather-w6 {background-image: url("../img/icons/i-weather6-w.svg");}

@@ -1,0 +1,92 @@
+@mixin placeholder {
+  ::-webkit-input-placeholder {@content}
+  :-moz-placeholder           {@content}
+  ::-moz-placeholder          {@content}
+  :-ms-input-placeholder      {@content}
+}
+
+
+
+@mixin grayscaled {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+
+  &:hover {
+    -webkit-filter: none;
+    -moz-filter: none;
+    -ms-filter: none;
+    -o-filter: none;
+    filter: none;
+    filter: none;
+  }
+
+}
+
+
+
+@mixin respond-to($media) {
+  @if $media == media-xs {
+    @media only screen and (max-width: $screen-sm - 1) {
+      @content;
+    }
+  } @else if $media == media-sm {
+    @media only screen and (min-width: $screen-sm) and (max-width: $screen-md - 1) {
+      @content;
+    }
+  } @else if $media == media-md {
+    @media only screen and (min-width: $screen-md) and (max-width: $screen-lg - 1) {
+      @content;
+    }
+  } @else if $media == media-lg {
+    @media only screen and (min-width: $screen-lg) {
+      @content;
+    }
+  }
+
+  @if $media == media-pr {
+    @media only screen and (min-width: $screen-md + 1) and (max-width: $screen-lg - 1) {
+      @content;
+    }
+  }
+
+}
+
+
+
+@mixin background-image-retina($file, $type, $width, $height) {
+  background-image: url($file + '.' + $type);
+  -webkit-background-size: $width $height;
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (min-resolution: 144dpi) {
+	& {
+	  background-image: url($file + '@2x.' + $type);
+	}
+  }
+}
+
+
+
+@mixin align-to {
+  .align-cr,
+  .align-cl {
+    right: 0;
+    float: left;
+  }
+  @include respond-to(media-xs) {
+    .align-cr {
+      right: 50%;
+      float: right;
+    }
+    .align-cl {
+      right: -50%;
+    }
+  }
+}

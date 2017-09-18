@@ -1,0 +1,188 @@
+///////////////////////////////////////////////
+
+
+
+// мелочи
+
+
+.flag-icon {
+	width: 1.6rem;
+	margin-right: 0.5rem;
+}
+
+
+.bulcount {
+	font: $font-size-10 $font-family-cond;
+	color: $c-white;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	line-height: 15px;
+	text-align: center;
+	position: relative;
+	display: inline-block;
+}
+
+
+.breadcrumb {
+	max-width: $m-max;
+	min-width: $m-min;
+	width: 100%;
+	background: $color-bk-body;
+	padding: 1rem 30px;
+	border-radius: 0;
+	font: $font-size-basemin $font-family-cond;
+	color: $c-black;
+	text-transform: uppercase;
+	margin: 1rem auto;
+
+	@include respond-to(media-xs) {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	a {
+		color: $c-gray-dark;
+		margin-right: 0.6rem;
+
+		&:hover {
+			color: $color-link-hover;
+			text-decoration: none;
+		}
+
+	}
+
+	span {
+		color: $c-gray;
+		margin-right: 0.6rem;
+	}
+
+	&__lined {
+		background: $c-gray-lightermore;
+		padding: 0.5rem 1rem;
+	}
+
+}
+
+
+.item--descript {
+	font: $font-size-12 $font-family-cond;
+	color: $c-gray;
+	display: block;
+	margin-bottom: 0.5rem;
+}
+
+
+.row-dlv {
+	height: 30px;
+	@include clearfix;
+
+	@include respond-to(media-xs) {
+		height: 15px;
+	}
+
+}
+
+
+
+.pagination {
+	font: $font-size-base $font-family-cond;
+}
+
+
+
+
+.soc--square {
+	display: inline-block;
+	float: left;
+	width: 2.5rem;
+	height: 2.5rem;
+	font-size: 1.6rem;
+	line-height: 2.5rem;
+	background: $color-link;
+	color: $c-white !important;
+	text-align: center;
+	margin-right: 1rem;
+	text-decoration: none;
+	border-radius: 4px;
+
+	&:hover {
+		background: $color-link-hover;
+		color: $c-white;
+	}
+
+}
+
+
+
+.stoolbar {
+	font: $font-size-basemin $font-family-cond;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	margin-bottom: 3rem;
+	@include clearfix;
+
+	&.stoolbar--top {
+		border-bottom: solid 1px $color-border;
+	}
+
+	.stb-filter_res {
+		float: right;
+		display: inline-block;
+		color: $c-gray;
+
+		strong {
+			font-size: $font-size-base;
+			color: $c-gray-dark;
+			white-space: nowrap;
+		}
+
+		@include respond-to(media-xs) {
+			float: none;
+			display: block;
+			margin-top: 3rem;
+		}
+
+	}
+
+	.pagination {
+		float: left;
+		margin: -1rem 3rem 0 0;
+
+		@include respond-to(media-xs) {
+			float: none;
+			display: block;
+			margin: 0;
+		}
+
+	}
+
+}
+
+
+
+.footnote {
+	color: $c-gray-dark;
+	font-size: $font-size-basemin;
+
+	&.footnote--signed {
+		padding-left: 2rem;
+
+		&:before {
+			font: bold 2.8rem $font-family-base;
+			color: $c-gray;
+			content: "*";
+			position: relative;
+			float: left;
+			margin-left: -2rem;
+			top: -0.2rem;
+
+			@include respond-to(media-xs) {
+				top: -0.3rem;
+			}
+
+		}
+
+	}
+
+}

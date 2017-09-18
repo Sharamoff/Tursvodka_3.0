@@ -1,0 +1,77 @@
+///////////////////////////////////////////////
+
+
+
+// подписка на рассылку
+
+
+.block-subscript {
+	background: $c-yellow-light url("../img/bk-subscript.png") bottom right no-repeat;
+	padding: 1.5rem 2rem;
+	border-radius: 5px;
+	margin: 2rem 0;
+
+	.hdr-h2 {
+		color: $c-red;
+		text-transform: inherit;
+		font-size: 2.5rem;
+		font-weight: normal;
+
+		span {
+			font-size: 2.0rem;
+			color: $c-black;
+		}
+
+		&.hdr--lined {
+			border-color: $c-black;
+			padding-bottom: 0.8rem;
+		}
+
+	}
+
+	form {
+		margin: 2rem 0 1.5rem 0;
+		@include clearfix;
+
+		.form-group {
+			width: 35%;
+		}
+
+		.b-btn {
+			height: 34px;
+			font-size: $font-size-basemin;
+			font-weight: bold;
+			text-transform: uppercase;
+			padding-left: 3rem;
+			padding-right: 3rem;
+
+			@include respond-to(media-xs) {
+				float: right;
+			}
+
+			&:hover {
+				background-color: $c-gray !important;
+			}
+
+		}
+
+	}
+
+	.note {
+		line-height: $line-height-def;
+		font-size: $font-size-basemin;
+
+		a {
+			color: $c-gray-darker;
+			text-decoration: underline;
+
+			&:hover {
+				text-decoration: none;
+				color: $c-red;
+			}
+
+		}
+
+	}
+
+}

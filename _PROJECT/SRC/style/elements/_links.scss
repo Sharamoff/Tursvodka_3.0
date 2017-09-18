@@ -1,0 +1,144 @@
+///////////////////////////////////////////////
+
+
+
+// внутренние ссылки
+
+
+.i-link {
+	display: inline-block;
+	font: $font-size-base $font-family-cond;
+	color: $color-link;
+	text-decoration: underline;
+	margin-top: 1.5rem;
+
+	@include respond-to(media-xs) {
+		margin-top: 0;
+	}
+
+	&:hover {
+		text-decoration: none;
+
+		i {
+			color: $color-link-hover !important;
+			border-color: transparent !important;
+		}
+
+	}
+
+	i {
+		display: inline-block;
+		position: relative;
+		font-style: normal;
+		font-family: $fontawesome;
+		font-weight: normal !important;
+		font-size: 1.6rem;
+		color: $color-link;
+		margin-left: 0.8rem;
+		top: 0.1rem;
+
+		&:after {
+			content: "\f105";
+		}
+
+	}
+
+	&.i--fill {
+		padding: 0.1rem 0.5rem 0.3rem 0.8rem;
+		background-color: $c-blue-lightermore;
+		border-radius: 3px;
+		margin: 0.5rem 1rem 0.5rem 0;
+		text-decoration: none;
+
+		i {
+			margin-left: 0.5rem;
+		}
+
+	}
+
+	&.i--map {
+
+		i:after {
+			content: "\f041";
+			font-size: 1.8rem;
+		}
+
+	}
+
+	&.i--more {
+
+		i {
+			margin-left: 0;
+			margin-right: 0.6rem;
+			margin-bottom: 1rem;
+		}
+
+		i:after {
+			content: "\f18e";
+			font-size: 1.8rem;
+		}
+
+	}
+
+	&.i--tooltiper {
+		text-decoration: none;
+		border-bottom: dashed 1px $color-link;
+
+		&:hover {
+			border-color: transparent;
+			cursor: help;
+		}
+
+		i {
+			margin-left: 0.5rem;
+			top: 0;
+			font-size: 1.4rem;
+		}
+
+		i:after {
+			content: "\f29c";
+		}
+
+	}
+
+}
+
+
+
+
+
+.i-sublink {
+	text-decoration: underline;
+	font-family: $font-family-cond;
+}
+
+
+
+.a--more {
+	display: inline-block;
+	padding: 0 5px;
+	background-color: $c-blue-lightermore;
+	border-radius: 3px;
+	font-style: normal;
+	font-family: $fontawesome;
+	font-weight: normal !important;
+	font-size: 13px;
+	color: $color-link;
+	line-height: 1;
+	white-space: nowrap;
+
+	&:after {
+		content: "\f105\f105\f105";
+	}
+
+}
+
+a .a--more {
+	text-decoration: none !important;
+}
+
+a:hover .a--more {
+	text-decoration: none !important;
+	color: $c-white;
+	background-color: $c-yellow;
+}

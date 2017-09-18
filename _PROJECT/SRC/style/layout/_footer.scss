@@ -1,0 +1,264 @@
+.footer {
+	background: $color-bk-footer url("../img/bk-footer1.jpg") bottom center no-repeat;
+	color: $c-white;
+	font-family: $font-family-cond;
+	font-size: $font-size-basemin;
+	padding-left: 30px;
+	padding-right: 30px;
+
+	@include respond-to(media-xs) {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	a {
+		color: $c-blue-lighter;
+
+		&:hover {
+			color: $c-yellow-light;
+		}
+
+	}
+
+
+
+	.footer-top {
+		border-bottom: dotted 1px $c-blue-light;
+		max-width: $m-max - 60;
+		min-width: $m-min;
+		width: 100%;
+		margin: 0 auto;
+		@include clearfix;
+
+		.footer-top__menu {
+			float: left;
+			display: inline-block;
+			padding: 0;
+			margin: 1.8rem 0 1.2rem 0;
+
+			@include respond-to(media-xs) {
+				float: none;
+				display: block;
+			}
+
+			> li {
+				display: inline-block;
+				list-style: none;
+				padding-right: 1rem;
+				margin: 0.5rem 1rem 0.5rem 0;
+				border-right: solid 1px $c-white;
+
+				&:last-child {
+					border-right: none;
+				}
+
+			}
+
+		}
+
+		.footer-top__soc {
+			float: right;
+			display: inline-block;
+			margin: 1.4rem 0 0.6rem 0;
+
+			@include respond-to(media-xs) {
+				float: none;
+				display: block;
+				margin: 1.4rem 0 1.4rem -0.5rem;
+			}
+
+			a {
+				display: inline-block;
+				width: 3rem;
+				height: 3rem;
+				border-radius: 50%;
+				line-height: 3rem;
+				text-align: center;
+				color: $c-blue;
+				background: $c-blue-lighter;
+				margin-left: 0.5rem;
+				margin-bottom: 0.5rem;
+				font-size: $font-size-basemax;
+
+				&:hover {
+					text-decoration: none;
+					color: $c-blue;
+					background: $c-yellow-light;
+				}
+
+			}
+
+		}
+
+	}
+
+
+
+	.footerwrap {
+		position: relative;
+		max-width: $m-max - 60;
+		min-width: $m-min;
+		width: 100%;
+		display: flex;
+		flex-flow: row nowrap;
+		margin: 2rem auto 0 auto;
+		@include clearfix;
+
+		@include respond-to(media-sm) {
+			display: block;
+		}
+
+		@include respond-to(media-xs) {
+			display: block;
+		}
+
+	}
+
+	.footerwrap__col-left {
+		max-width: $col-left-max;
+		min-width: $col-left-min;
+		width: 76%;
+		padding: 0;
+		@include clearfix;
+
+		@include respond-to(media-sm) {
+			display: block;
+			min-width: inherit;
+			max-width: inherit;
+			width: 100%;
+		}
+
+		@include respond-to(media-xs) {
+			display: block;
+			min-width: inherit;
+			max-width: inherit;
+			width: 100%;
+		}
+
+		.row {
+			padding: 0;
+		}
+
+	}
+
+	.footerwrap__col-right {
+		max-width: $col-right-max;
+		min-width: $col-right-min;
+		width: 24%;
+		margin: 0 0 3rem 30px;
+
+		@include respond-to(media-sm) {
+			display: block;
+			min-width: inherit;
+			max-width: inherit;
+			width: 100%;
+			margin: 0 0 2rem 0;
+			padding-top: 2rem;
+			border-top: dotted 1px $c-blue-light;
+		}
+
+		@include respond-to(media-xs) {
+			display: block;
+			min-width: inherit;
+			max-width: inherit;
+			width: 100%;
+			margin: 0 0 2rem 0;
+			padding-top: 2rem;
+			border-top: dotted 1px $c-blue-light;
+		}
+
+		.footer-copy {
+			margin-bottom: 2rem;
+		}
+
+		.footer-warn {
+			font: $font-size-12 $font-family-base;
+			color: $c-yellow-light;
+			margin-bottom: 2rem;
+
+			span {
+				display: inline-block;
+				height: 3rem;
+				width: 3rem;
+				border: solid 2px $c-yellow-light;
+				border-radius: 50%;
+				padding-top: 0.3rem;
+				text-align: center;
+				font: bold $font-size-basemin $font-family-cond;
+				margin-left: 0.5rem;
+			}
+
+		}
+
+		.footer-counter {
+			margin-top: 4rem;
+
+			img {
+				margin: 0 1rem 1rem 0;
+			}
+
+		}
+
+		.footer-exclam {
+			font: $font-size-12 $font-family-base;
+			margin-top: 2rem;
+		}
+
+	}
+
+
+
+	ul.footer-menu {
+		margin: 0 -1.5rem 3.5rem 0;
+		padding: 0;
+
+		> li {
+			margin: 1rem 0;
+			list-style: none;
+
+			@include respond-to(media-xs) {
+				list-style: inherit;
+				float: left;
+				margin: 0.3rem 1.3rem 0.3rem 1.5rem;
+				padding: 0;
+			}
+
+			&.hdr {
+				font-weight: bold;
+				text-transform: uppercase;
+				margin: 0 0 0.8rem 0;
+				display: block;
+				float: none;
+
+				@include respond-to(media-xs) {
+					margin: 1.5rem 0 0.5rem 0;
+				}
+
+			}
+
+		}
+
+		&.footer-menu--country-link {
+			display: none;
+			margin-top: 0;
+
+			@include respond-to(media-xs) {
+				display: block;
+			}
+
+		}
+
+	}
+
+
+
+}
+
+
+
+
+
+
+.promoting {
+	margin: 2rem 0;
+}

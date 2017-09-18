@@ -1,0 +1,134 @@
+///////////////////////////////////////////////
+
+
+
+// рейтинг страны/компании
+
+
+.block-mainrating {
+	background: $c-gray-lightermore;
+	padding: 1.8rem 2rem;
+	position: relative;
+	border-radius: 5px;
+	height: 100%;
+	@include clearfix;
+
+	@include respond-to(media-xs) {
+		margin-bottom: 3rem;
+	}
+
+	h2 {
+		margin-top: 0;
+	}
+
+	.mainrating__rate {
+		position: absolute;
+		z-index: 2;
+		top: -1.5rem;
+		right: 2rem;
+		width: 5rem;
+		height: 5rem;
+		line-height: 5rem !important;
+		font: bold 2.3rem $font-family-cond;
+		text-align: center;
+		color: $c-white;
+		background: $c-green;
+		border-radius: 5px;
+	}
+
+	table {
+		margin-bottom: 1rem;
+
+		td {
+			padding: 0.4rem 0 0.6rem 0;
+			font-size: $font-size-base;
+			line-height: $line-height-min;
+
+			&.value {
+				padding-left: 0.5rem;
+			}
+
+		}
+
+		@include respond-to(media-xs) {
+			margin-bottom: -1px;
+
+			.value {
+				width: 18%;
+			}
+
+		}
+
+	}
+
+	.mainrating__btns {
+		@include clearfix;
+	}
+
+}
+
+
+
+// рейтинг страны/компании в списке
+
+.block-listrating {
+	background: $c-gray-lightermore;
+	padding: 1rem;
+	margin-bottom: 1.5rem;
+	position: relative;
+	height: 100%;
+	border-radius: 5px;
+	font-size: $font-size-basemin;
+	@include clearfix;
+
+	.listrating__rate {
+		display: inline-block;
+		font: bold $font-size-basemax $font-family-cond;
+		text-align: center;
+		color: $c-white;
+		background: $c-green;
+		border-radius: 4px;
+		min-width: 4rem;
+		padding: 0.3rem 1rem;
+
+		@include respond-to(media-xs) {
+			margin-bottom: 1rem;
+		}
+
+	}
+
+	table {
+
+		td {
+			padding: 0.3rem 0 0.4rem 0;
+			font-size: $font-size-basemin;
+			line-height: $line-height-min;
+
+			&.value {
+				padding-left: 0.5rem;
+			}
+
+		}
+
+		@include respond-to(media-xs) {
+			margin-bottom: -1px;
+
+			.value {
+				width: 18%;
+				padding-left: 1rem;
+			}
+
+		}
+
+	}
+
+	.recommend-yes,
+	.recommend-no {
+
+		@include respond-to(media-xs) {
+			margin-top: 1rem;
+		}
+
+	}
+
+}

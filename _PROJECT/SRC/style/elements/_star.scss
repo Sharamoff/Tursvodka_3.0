@@ -1,0 +1,26 @@
+///////////////////////////////////////////////
+
+
+
+// звезды отелей
+
+
+.star {
+	display: inline-block;
+	position: relative;
+	font-style: normal;
+	font-family: $fontawesome;
+	font-weight: normal !important;
+	font-size: 1.2rem;
+	color: $c-yellow;
+	top: -0.1rem;
+	white-space: nowrap;
+	margin-left: 0.5rem;
+
+	&.star-1:after {content: "\f005";}
+	&.star-2:after {content: "\f005  \f005";}
+	&.star-3:after {content: "\f005  \f005  \f005";}
+	&.star-4:after {content: "\f005  \f005  \f005  \f005";}
+	&.star-5:after {content: "\f005  \f005  \f005  \f005  \f005";}
+
+}

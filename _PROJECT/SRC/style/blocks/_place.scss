@@ -1,0 +1,22 @@
+///////////////////////////////////////////////
+
+
+
+// карточка места с минирейтингом (на основе h-base-block)
+
+
+.block-place {
+	padding-bottom: 9rem;
+
+	.block__footer {
+		height: 9rem;
+
+		table {
+			max-width: 260px;
+		}
+
+	}
+
+}
+
+

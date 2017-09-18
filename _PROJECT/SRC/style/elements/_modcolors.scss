@@ -1,0 +1,190 @@
+///////////////////////////////////////////////
+
+
+
+// модификаторы цветов и бэкграундов
+
+
+.c--white {
+	color: $c-white !important;
+}
+
+.c--blue {
+	color: $c-blue !important;
+}
+
+.c--red {
+	color: $c-red !important;
+}
+
+.c--green {
+	color: $c-green !important;
+}
+
+.c--yellow {
+	color: $c-yellow !important;
+}
+
+.c--gray {
+	color: $c-gray !important;
+}
+
+.c--gray-dark {
+	color: $c-gray-dark !important;
+}
+
+.c--gray-darker {
+	color: $c-gray-dark !important;
+}
+
+
+.bk--white {
+	background-color: $c-white;
+}
+
+.bk--blue {
+	background-color: $c-blue;
+}
+
+.bk--bluelight {
+	background-color: $c-blue-light;
+}
+
+.bk--red {
+	background-color: $c-red;
+}
+
+.bk--green {
+	background-color: $c-green;
+}
+
+.bk--yellow {
+	background-color: $c-yellow !important;
+}
+
+
+
+// модификаторы цветов и бэкграундов рейтинга
+
+
+.c--rate-height {
+	color: $c-green !important;
+}
+
+.c--rate-middle {
+	color: $c-gray-dark !important;
+}
+
+.c--rate-low {
+	color: $c-red !important;
+}
+
+
+.bk--rate-height {
+	background-color: $c-green !important;
+}
+
+.bk--rate-middle {
+	background-color: $c-gray-dark !important;
+}
+
+.bk--rate-low {
+	background-color: $c-red !important;
+}
+
+
+
+// модификаторы бэкграундов информации (таблицы)
+
+
+.bk--info-y_100 {
+	background-color: lighten($c-yellow-light, 10%);
+}
+
+.bk--info-y_80 {
+	background-color: lighten($c-yellow-light, 20%);
+}
+
+.bk--info-y_60 {
+	background-color: lighten($c-yellow-light, 28%);
+}
+
+.bk--info-y_40 {
+	background-color: lighten($c-yellow-light, 35%);
+}
+
+.bk--info-y_20 {
+	background-color: lighten($c-yellow-light, 40%);
+}
+
+
+
+// цвета линии метро
+
+
+.bk--metroline-red {
+	background-color: #c81b25;
+}
+
+.bk--metroline-green {
+	background-color: #23802a;
+}
+
+.bk--metroline-blue {
+	background-color: #025e9e;
+}
+
+.bk--metroline-lightblue {
+	background-color: #01bff3;
+}
+
+.bk--metroline-brown {
+	background-color: #751f16;
+}
+
+.bk--metroline-orange {
+	background-color: #f77814;
+}
+
+.bk--metroline-purple {
+	background-color: #8c1d76;
+}
+
+.bk--metroline-yellow {
+	background-color: #ffdb27;
+}
+
+.bk--metroline-gray {
+	background-color: #babbbb;
+}
+
+.bk--metroline-lime {
+	background-color: #85c53a;
+}
+
+.bk--metroline-teal {
+	background-color: #78c8cf;
+}
+
+.bk--metroline-bluegray {
+	background-color: #adbce3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

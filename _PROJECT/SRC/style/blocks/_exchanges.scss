@@ -1,0 +1,357 @@
+///////////////////////////////////////////////
+
+
+
+// Курсы валют
+
+
+.block-exchanges_main {
+	background: $c-gray-lightermore;
+	height: 100%;
+	border-radius: 5px;
+	padding: 1rem 1.5rem 1.5rem 1.5rem;
+	font-family: $font-family-cond;
+
+	@include respond-to(media-xs) {
+		margin-bottom: 1.5rem;
+	}
+
+	.exchanges_main__name {
+		font-size: $font-size-basemax;
+		font-weight: bold;
+		color: $c-gray-darker;
+
+		.date {
+			font-size: $font-size-basemin;
+			font-weight: normal;
+			color: $c-gray-dark;
+		}
+
+	}
+
+	.exchanges_main__value {
+		font-size: $font-size-hdr;
+		font-weight: bold;
+		margin-top: 0.5rem;
+		color: $c-blue;
+		margin-left: 1.6rem;
+	}
+
+	.exchanges_main__delta {
+		font-size: $font-size-basemin;
+		margin-left: 1.6rem;
+	}
+
+
+	&.exchanges--up {
+
+		.exchanges_main__name:before {
+			font-family: $fontawesome;
+			font-size: $font-size-basemin;
+			font-weight: normal;
+			color: $c-green;
+			content:"\f062";
+			margin-right: 0.3rem;
+			position: relative;
+			top: -0.2rem;
+		}
+
+		.exchanges_main__delta {
+			color: $c-green;
+
+			i:before {
+				content: "+";
+				font-style: normal;
+			}
+
+		}
+
+	}
+
+
+	&.exchanges--down {
+
+		.exchanges_main__name:before {
+			font-family: $fontawesome;
+			font-size: $font-size-basemin;
+			font-weight: normal;
+			color: $c-red;
+			content:"\f063";
+			margin-right: 0.3rem;
+			position: relative;
+			top: -0.1rem;
+		}
+
+		.exchanges_main__delta {
+			color: $c-red;
+
+			i:before {
+				content: "-";
+				font-style: normal;
+			}
+
+		}
+
+	}
+
+
+}
+
+
+
+.block-exchanges {
+
+	.row--th {
+		@include respond-to(media-xs) {
+			display: none;
+		}
+	}
+
+	.dt-td {
+
+		@include respond-to(media-xs) {
+			padding-left: 0;
+			&:before {
+				font: normal $font-size-basemin $font-family-cond;
+				color: $c-gray;
+				display: inline-block;
+				min-width: 8rem;
+				overflow: hidden;
+				position: relative;
+				top: 3px;
+			}
+		}
+
+	}
+
+	.dt--exchanges_name {
+		font-weight: bold;
+		@include respond-to(media-xs) {
+			&:before { content: "Валюта:"; }
+		}
+	}
+
+	.dt--exchanges_code {
+		white-space: nowrap;
+		@include respond-to(media-xs) {
+			&:before { content: "Код:"; }
+		}
+	}
+
+	.dt--exchanges_unit {
+		white-space: nowrap;
+		@include respond-to(media-xs) {
+			&:before { content: "Ед.:"; }
+		}
+	}
+
+	.dt--exchanges_rate {
+		color: $c-blue;
+		font-weight: bold;
+		@include respond-to(media-xs) {
+			&:before { content: "Курс:"; }
+		}
+	}
+
+	.dt--exchanges_cross {
+		white-space: nowrap;
+		@include respond-to(media-xs) {
+			&:before { content: "Кросс-курс:"; }
+		}
+	}
+
+	.dt--exchanges_delta {
+		white-space: nowrap;
+
+		&.exchanges--up {
+			color: $c-green;
+
+			&:before {
+				font-family: $fontawesome;
+				font-size: $font-size-basemin;
+				font-weight: normal;
+				color: $c-green;
+				content: "\f176";
+				margin-right: 0.3rem;
+				position: relative;
+				top: -0.1rem;
+			}
+
+			@include respond-to(media-xs) {
+				&:before {
+					content: "Изм.:";
+					font: normal $font-size-basemin $font-family-cond;
+					color: $c-gray;
+					position: relative;
+					top: 4px;
+				}
+				&:after {
+					font-family: $fontawesome;
+					font-size: $font-size-basemin;
+					font-weight: normal;
+					color: $c-green;
+					content: "\f176";
+					margin-left: 0.3rem;
+				}
+			}
+
+		}
+
+		&.exchanges--down {
+			color: $c-red;
+
+			&:before {
+				font-family: $fontawesome;
+				font-size: $font-size-basemin;
+				font-weight: normal;
+				color: $c-red;
+				content: "\f175";
+				margin-right: 0.3rem;
+				position: relative;
+			}
+
+			@include respond-to(media-xs) {
+				&:before {
+					content: "Изм.:";
+					font: normal $font-size-basemin $font-family-cond;
+					color: $c-gray;
+				}
+				&:after {
+					font-family: $fontawesome;
+					font-size: $font-size-basemin;
+					font-weight: normal;
+					color: $c-red;
+					content: "\f175";
+					margin-left: 0.3rem;
+				}
+			}
+
+		}
+
+	}
+
+}
+
+
+
+.block-exchanges-convertor__form {
+	background: $c-blue;
+	padding: 2rem 30px 3rem 30px;
+	border-radius: 5px;
+
+	@include respond-to(media-xs) {
+		padding: 2rem 15px;
+	}
+
+}
+
+
+
+.block-exchanges-convertor__result {
+	background: $c-gray-lightermore;
+	padding: 2rem 30px 1rem 30px;
+	border-radius: 5px;
+
+	@include respond-to(media-xs) {
+		padding: 2rem 15px 1rem 15px;
+	}
+
+	.row {
+		margin-bottom: 1rem;
+	}
+
+	.prop {
+		font-family: $font-family-cond;
+		color: $c-gray-dark;
+		margin-bottom: 0.5rem;
+	}
+
+	.result-valin {
+
+		.val {
+			color: $c-green;
+			font-size: 2.1rem
+		}
+
+	}
+
+	.result-course {
+
+	}
+
+	.result-prc {
+
+	}
+
+	.result-valout {
+
+		.prop {
+			margin-top: 1.2rem;
+
+			@include respond-to(media-xs) {
+				margin-top: 0;
+			}
+
+		}
+
+		.val {
+			color: $c-red;
+			font-size: 3rem
+		}
+
+	}
+
+}
+
+
+
+
+.block-exchanges-cross__result {
+	background: $c-gray-lightermore;
+	padding: 2rem 30px;
+	border-radius: 5px;
+	@include clearfix;
+
+	@include respond-to(media-xs) {
+		padding: 2rem 15px;
+	}
+
+	.result-val {
+		float: left;
+		display: inline-block;
+		font-size: 3rem;
+		white-space: nowrap;
+	}
+
+	.b-lonetool {
+		float: right;
+		margin-top: 0.3rem;
+		margin-left: 3rem;
+
+		@include respond-to(media-xs) {
+			float: left;
+			margin-top: 1rem;
+			margin-left: 0;
+		}
+
+	}
+
+}
+
+
+
+.block-exchanges-cross__infoval {
+	margin-bottom: 3rem;
+	font-size: $font-size-basemin;
+
+	.row {
+		margin-bottom: 0.8rem;
+	}
+
+	.prop {
+		font-family: $font-family-cond;
+		color: $c-gray-dark;
+		margin-bottom: 0.5rem;
+	}
+
+}

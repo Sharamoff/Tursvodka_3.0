@@ -1,0 +1,46 @@
+///////////////////////////////////////////////
+
+
+
+// информер
+
+
+.block-informer {
+	height: 100%;
+	padding: 1.5rem 1.5rem 4.5rem 1.5rem;
+	font: $font-size-basemin $font-family-cond;
+	position: relative;
+	background: $c-gray-lightermore no-repeat top right;
+
+	@include respond-to(media-xs) {
+		margin-bottom: 15px;
+		max-width: 380px;
+	}
+
+	&.informer--times {
+		background-image: url("../img/icons/inf-clock.svg");
+	}
+
+	&.informer--weather {
+		background-image: url("../img/icons/inf-weather.svg");
+	}
+
+	&.informer--currency {
+		background-image: url("../img/icons/inf-currency.svg");
+	}
+
+	.i-link {
+		position: absolute;
+		z-index: 1;
+		height: 3.5rem;
+		bottom: 0;
+		text-decoration: underline;
+		font-size: $font-size-basemin;
+
+		&:hover {
+			text-decoration: none;
+		}
+
+	}
+
+}

@@ -1,0 +1,212 @@
+///////////////////////////////////////////////
+
+
+
+// таб ссылочный
+
+
+.tablink {
+	border-bottom: solid 2px $c-gray;
+	margin-bottom: 3rem;
+	@include clearfix;
+
+	> ul {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+
+		> li {
+			float: left;
+			display: inline-block;
+			font: $font-size-basemax $font-family-cond;
+			margin: 0 0 0 -1px;
+			background: url("../img/tab-dlv.gif") right no-repeat;
+
+			&:first-child {
+				margin-left: 0px;
+			}
+
+			.active {
+				display: block;
+				color: $c-white;
+				padding: 1.2rem 3.5rem;
+				border-radius: 5px 5px 0 0;
+				background: $c-gray;
+			}
+
+			a {
+				display: block;
+				padding: 1.2rem 3.5rem;
+				border-radius: 5px 5px 0 0;
+
+				&:hover {
+					text-decoration: none;
+				}
+
+			}
+
+		}
+
+	}
+
+	.tab-more {
+
+		.dropdown-toggle {
+			float: right;
+			display: inline-block;
+			font: $font-size-basemax $font-family-cond;
+			padding: 1.2rem 0 1.2rem 1.5rem;
+
+			&:before {
+				font-family: $fontawesome;
+				color: $c-gray-light;
+				content: "\f107";
+				margin-right: 0.3rem;
+			}
+
+			&:hover {
+				text-decoration: none;
+			}
+
+		}
+
+		.dropdown-menu {
+			background-color: $c-gray-lightermore;
+			font: $font-size-base $font-family-cond;
+			text-transform: inherit;
+			padding: 0;
+			box-shadow: none;
+			border-radius: 0;
+			border: solid 1px $color-dlv;
+			top: 4.6rem;
+			right: -1px;
+
+			& > li {
+				margin: 0;
+
+				a {
+					display: block;
+					padding: 0.5rem 1.5rem;
+					color: $color-link;
+
+					&:before {
+						position: relative;
+						font-family: $fontawesome;
+						font-size: 1.2rem;
+						content: "\f105";
+						top: -0.1rem;
+						margin-right:0.5rem;
+					}
+
+					&:hover {
+						background-color: $c-white !important;
+						color: $color-link-hover;
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+	@include respond-to(media-xs) {
+		border-bottom: none;
+		margin-top: -2rem;
+		margin-right: -5px;
+
+		> ul {
+
+			> li {
+				width: 50%;
+				margin: 0 0 5px 0;
+				padding-right: 5px;
+				background: none;
+
+				&:first-child {
+					margin-left: 0;
+				}
+
+				.active {
+					display: block;
+					padding: 0 1.5rem;
+					border-radius: 5px;
+					text-align: center;
+					height: 33px;
+					line-height: 32px;
+					margin: 0;
+				}
+
+				a {
+					padding: 0 1.5rem;
+					border-radius: 5px;
+					border: solid 1px $c-gray-lighter;
+					text-align: center;
+					height: 33px;
+					line-height: 32px;
+					margin: 0;
+					overflow: hidden;
+				}
+
+			}
+
+		}
+
+		.tab-more {
+			margin: 0 0 0 0;
+			padding: 0 10px 0 0;
+			width: 100%;
+
+			.dropdown-toggle {
+				float: left !important;
+				text-align: center;
+				width: 50%;
+				height: 33px;
+				border-radius: 5px;
+				border: solid 1px $c-gray-lighter;
+				padding: 0.3rem 1.5rem 0 1.5rem !important;
+				margin: 0 -5px 0 0 !important;
+			}
+
+			.dropdown-menu {
+				top: 12.2rem !important;
+				left: 0 !important;
+				right: 5px !important;
+				border: solid 1px $c-gray-lighter !important;
+				border-radius: 4px !important;
+				padding: 5px 0 !important;
+			}
+
+		}
+
+	}
+
+}
+
+
+
+// таб простой
+
+
+
+
+// варианты размеров табов
+
+.tab--exchanges {
+
+	> ul {
+
+		> li {
+
+			.active,
+			a {
+				padding-left: 1.4rem !important;
+				padding-right: 1.4rem !important;
+			}
+
+		}
+
+	}
+
+}

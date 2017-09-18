@@ -1,0 +1,47 @@
+///////////////////////////////////////////////
+
+
+
+// фильтры
+
+
+.block-filter {
+	margin-top: 1rem;
+	background: $c-blue-lightermore;
+	padding: 1.5rem 1.5rem 2rem 1.5rem;
+	font-family: $font-family-cond;
+	@include clearfix;
+
+	@include respond-to(media-xs) {
+		margin-bottom: 3rem;
+	}
+	@include respond-to(media-sm) {
+		margin-bottom: 3rem;
+	}
+
+	form {
+		margin-top: 2rem;
+	}
+
+	label {
+		font-size: $font-size-basemin;
+
+		&.label--ch {
+			font-size: $font-size-base;
+		}
+
+	}
+
+	.b-btn {
+		font-weight: bold;
+		text-transform: uppercase;
+		padding: 1.2rem 3rem;
+
+		&:hover {
+			background-color: $c-gray !important;
+		}
+
+	}
+
+}
+

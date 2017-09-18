@@ -1,0 +1,108 @@
+///////////////////////////////////////////////
+
+
+
+// отель краткий
+
+
+.block-hotel {
+	@include clearfix;
+	padding-bottom: 2.5rem;
+	margin-bottom: 3rem;
+	border-bottom: solid 1px $color-dlv;
+
+	.hotel__img {
+		padding-top: 0.5rem;
+		text-align: center;
+
+		@include respond-to(media-xs) {
+			text-align: left;
+		}
+
+		img {
+			width: 100%;
+			max-width: 280px;
+			height: auto;
+			margin-bottom: 1.5rem;
+		}
+
+	}
+
+	.hotel__descript {
+
+		&-name {
+			font-family: $font-family-cond;
+			font-size: $font-size-basemax;
+			font-weight: bold;
+			color: $c-blue;
+			margin: 0 0 0.8rem 0;
+
+			a {
+				color: $c-blue;
+
+				&:hover {
+					color: $color-link-hover;
+				}
+
+			}
+
+		}
+
+		&-contact {
+			font-family: $font-family-cond;
+			font-size: $font-size-base;
+			color: $c-gray-darker;
+			line-height: $line-height-def;
+
+			a {
+				color: $c-gray-darker;
+				text-decoration: underline;
+
+				&:hover {
+					color: $color-link-hover;
+				}
+
+			}
+
+		}
+
+		&-note {
+			font-size: $font-size-basemin;
+			color: $c-gray-darker;
+			margin-top: 1rem;
+			
+			a, 
+			a:hover {
+				color: $c-gray-darker;
+				text-decoration: none;
+			}
+
+			p {
+				line-height: $line-height-def !important;
+			}
+
+		}
+
+		&-links {
+			margin-top: 1rem;
+
+			@include respond-to(media-xs) {
+				margin-bottom: 1rem;
+			}
+
+			.i--fill {
+				font-size: $font-size-basemin;
+			}
+
+		}
+
+	}
+
+	.hotel__rates {
+
+	}
+
+}
+
+
+
