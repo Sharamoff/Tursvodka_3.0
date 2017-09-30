@@ -1737,6 +1737,9 @@ INPUT[type="radio"] {
       width: 26px;
       height: 32px; }
 
+.masonry_uicatalog[data-columns]::before {
+  color: white; }
+
 @media only screen and (max-width: 767px) {
   .masonry_uicatalog[data-columns]::before {
     content: '1 .col-xs-12'; } }
@@ -3550,7 +3553,8 @@ INPUT[type="radio"] {
     position: relative;
     display: inline-block;
     width: 25%;
-    min-width: 30rem; }
+    min-width: 30rem;
+    z-index: 99999; }
     @media only screen and (min-width: 768px) and (max-width: 991px) {
       .header-base .header-base__logo {
         min-width: 23rem; } }

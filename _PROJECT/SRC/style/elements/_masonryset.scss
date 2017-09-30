@@ -5,11 +5,15 @@
 // настройки для masonry
 
 
+.masonry_uicatalog[data-columns]::before {
+	color: $color-bk-body;
+}
+
 
 @include respond-to(media-xs) {
 
 	.masonry_uicatalog[data-columns]::before {
-		content: '1 .col-xs-12'
+		content: '1 .col-xs-12';
 	}
 
 }
