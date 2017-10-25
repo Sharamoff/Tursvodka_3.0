@@ -120,7 +120,7 @@ section {
 .row--flexed {
 	display: -webkit-flex;
 	display: flex;
-	flex-flow: row nowrap;
+	//flex-flow: row nowrap;
 
 	@include respond-to(media-xs) {
 		display: block;

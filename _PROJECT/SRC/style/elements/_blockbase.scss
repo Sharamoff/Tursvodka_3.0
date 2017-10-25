@@ -9,6 +9,7 @@
 	max-width: 380px;
 	height: 100%;
 	position: relative;
+	margin-bottom: 3rem;
 
 	@include respond-to(media-xs) {
 		margin-bottom: 3rem;
@@ -17,7 +18,7 @@
 
 	.block__img {
 		max-width: 260px;
-		margin-bottom: 2rem;
+		margin-bottom: 1.5rem;
 
 		img {
 			width: 100%;
@@ -26,12 +27,20 @@
 
 	}
 
+	.block__date {
+		font-family: $font-family-cond;
+		font-size: $font-size-base;
+		color: $c-yellow;
+		margin-bottom: 0.8rem;
+		position: relative;
+	}
+
 	.block__address {
 		font-family: $font-family-cond;
 		font-size: $font-size-base;
 		color: $c-black;
 		line-height: 1.4;
-		margin-bottom: 1rem;
+		margin-bottom: 0.8rem;
 
 		a {
 			color: $c-gray-darker;
@@ -45,7 +54,7 @@
 
 		&-date {
 			display: inline-block;
-			font-size: $font-size-basemax;
+			font-size: $font-size-base;
 			color: $c-yellow;
 			margin-right: 1rem;
 			position: relative;
@@ -114,12 +123,20 @@
 
 	}
 
+	.block__date {
+		font-family: $font-family-cond;
+		font-size: $font-size-base;
+		color: $c-yellow;
+		margin-bottom: 0.8rem;
+		position: relative;
+	}
+
 	.block__address {
 		font-family: $font-family-cond;
 		font-size: $font-size-base;
 		color: $c-black;
 		line-height: 1.4;
-		margin-bottom: 1rem;
+		margin-bottom: 0.8rem;
 
 		a {
 			color: $c-gray-darker;
@@ -133,7 +150,7 @@
 
 		&-date {
 			display: inline-block;
-			font-size: $font-size-basemax;
+			font-size: $font-size-base;
 			color: $c-yellow;
 			margin-right: 1rem;
 			position: relative;

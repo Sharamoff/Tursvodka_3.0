@@ -128,11 +128,7 @@ section {
 .row--flexed {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap; }
+  display: flex; }
   @media only screen and (max-width: 767px) {
     .row--flexed {
       display: block;
@@ -525,23 +521,30 @@ HR {
 .v-base-block {
   max-width: 380px;
   height: 100%;
-  position: relative; }
+  position: relative;
+  margin-bottom: 3rem; }
   @media only screen and (max-width: 767px) {
     .v-base-block {
       margin-bottom: 3rem;
       padding-bottom: 0; } }
   .v-base-block .block__img {
     max-width: 260px;
-    margin-bottom: 2rem; }
+    margin-bottom: 1.5rem; }
     .v-base-block .block__img img {
       width: 100%;
       height: auto; }
+  .v-base-block .block__date {
+    font-family: "Roboto Condensed", "Arial Narrow", Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    color: #ff8000;
+    margin-bottom: 0.8rem;
+    position: relative; }
   .v-base-block .block__address {
     font-family: "Roboto Condensed", "Arial Narrow", Arial, Helvetica, sans-serif;
     font-size: 1.6rem;
     color: black;
     line-height: 1.4;
-    margin-bottom: 1rem; }
+    margin-bottom: 0.8rem; }
     .v-base-block .block__address a {
       color: #333333;
       text-decoration: underline; }
@@ -549,7 +552,7 @@ HR {
         color: #ff8000; }
     .v-base-block .block__address-date {
       display: inline-block;
-      font-size: 1.8rem;
+      font-size: 1.6rem;
       color: #ff8000;
       margin-right: 1rem;
       position: relative; }
@@ -587,12 +590,18 @@ HR {
   .h-base-block .block__img img {
     width: 100%;
     height: auto; }
+  .h-base-block .block__date {
+    font-family: "Roboto Condensed", "Arial Narrow", Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    color: #ff8000;
+    margin-bottom: 0.8rem;
+    position: relative; }
   .h-base-block .block__address {
     font-family: "Roboto Condensed", "Arial Narrow", Arial, Helvetica, sans-serif;
     font-size: 1.6rem;
     color: black;
     line-height: 1.4;
-    margin-bottom: 1rem; }
+    margin-bottom: 0.8rem; }
     .h-base-block .block__address a {
       color: #333333;
       text-decoration: underline; }
@@ -600,7 +609,7 @@ HR {
         color: #ff8000; }
     .h-base-block .block__address-date {
       display: inline-block;
-      font-size: 1.8rem;
+      font-size: 1.6rem;
       color: #ff8000;
       margin-right: 1rem;
       position: relative; }
