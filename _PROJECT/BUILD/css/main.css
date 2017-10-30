@@ -1765,6 +1765,28 @@ INPUT[type="radio"] {
   .masonry_uicatalog[data-columns]::before {
     content: '4 .col-xs-3'; } }
 
+.slider {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+
+.slick-slide {
+  margin: 0 15px; }
+
+.slick-slide img {
+  width: 100%; }
+
+.slick-slide {
+  -webkit-transition: all ease-in-out .3s;
+  transition: all ease-in-out .3s;
+  opacity: 1; }
+
+.slick-active {
+  opacity: 1; }
+
+.slick-current {
+  opacity: 1; }
+
 .block-tourcard {
   height: 100%;
   background: #eeeeee;
@@ -3409,6 +3431,25 @@ INPUT[type="radio"] {
     font-family: "Roboto Condensed", "Arial Narrow", Arial, Helvetica, sans-serif;
     color: #666666;
     margin-bottom: 0.5rem; }
+
+.block-slider--photoalbum {
+  margin-top: 3rem;
+  margin-bottom: 3rem; }
+  .block-slider--photoalbum .slick-slide {
+    max-width: 290px; }
+
+.block-slider--plate .slick-slide {
+  max-width: 290px;
+  background: #eeeeee; }
+
+.block-slider--plate p {
+  line-height: 1.2; }
+
+.block-slider--plate .descript {
+  font-size: 1.4rem;
+  margin: 1rem 1.5rem 1.5rem 1.5rem; }
+  .block-slider--plate .descript__hdr {
+    font: bold 1.6rem "Roboto Condensed", "Arial Narrow", Arial, Helvetica, sans-serif; }
 
 .header {
   background-color: white; }

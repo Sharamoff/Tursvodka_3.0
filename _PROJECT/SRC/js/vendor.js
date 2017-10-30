@@ -8,5 +8,5 @@
 //= vendor/jquery.bootstrap-touchspin.js
 //= vendor/select2/select2.full.min.js
 //= vendor/salvattore.min.js
-
+//= vendor/slick.min.js
 

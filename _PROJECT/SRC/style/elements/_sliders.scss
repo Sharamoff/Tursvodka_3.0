@@ -1,0 +1,34 @@
+///////////////////////////////////////////////
+
+
+
+// слайдеры
+
+
+.slider {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.slick-slide {
+	margin: 0 15px;
+}
+
+.slick-slide img {
+	width: 100%;
+}
+
+.slick-slide {
+	transition: all ease-in-out .3s;
+	opacity: 1;
+}
+
+.slick-active {
+	opacity: 1;
+}
+
+.slick-current {
+	opacity: 1;
+}
+

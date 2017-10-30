@@ -1,0 +1,43 @@
+///////////////////////////////////////////////
+
+
+
+// слайдер простой
+
+
+.block-slider {
+
+}
+
+.block-slider--photoalbum {
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+
+	.slick-slide {
+		max-width: 290px;
+	}
+
+}
+
+.block-slider--plate {
+
+	.slick-slide {
+		max-width: 290px;
+		background: $c-gray-lightermore;
+	}
+
+	p {
+		line-height: $line-height-def;
+	}
+
+	.descript {
+		font-size: $font-size-basemin;
+		margin: 1rem 1.5rem 1.5rem 1.5rem;
+
+		&__hdr {
+			font: bold $font-size-base $font-family-cond;
+		}
+
+	}
+
+}

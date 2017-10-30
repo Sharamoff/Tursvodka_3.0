@@ -327,52 +327,23 @@ $('.hastouchspin').TouchSpin();
 
 
 
-// настройка полей формы fm-search
 
-/*
 
-$('#fld-search__short-dayfrom').TouchSpin({
-	min: 1,
-	max: 60
+// слайдеры
+
+$('.block-slider--photoalbum').slick({
+	dots: true,
+	infinite: true,
+	variableWidth: true,
+	centerMode: true
 });
 
-$('#fld-search__short-dayto').TouchSpin({
-	min: 1,
-	max: 60
+$('.block-slider--plate').slick({
+	dots: true,
+	infinite: true,
+	variableWidth: true,
+	centerMode: true
 });
-
-$('#fld-search__short-adult').TouchSpin({
-	min: 1,
-	max: 5
-});
-
-$('#fld-search__short-child').TouchSpin({
-	min: 0,
-	max: 3
-});
-
-
-$('#fld-search__full-dayfrom').TouchSpin({
-	min: 1,
-	max: 60
-});
-
-$('#fld-search__full-dayto').TouchSpin({
-	min: 1,
-	max: 60
-});
-
-$('#fld-search__full-adult').TouchSpin({
-	min: 1,
-	max: 5
-});
-
-$('#fld-search__full-child').TouchSpin({
-	min: 0,
-	max: 3
-});
-
-*/
 
 
 });
