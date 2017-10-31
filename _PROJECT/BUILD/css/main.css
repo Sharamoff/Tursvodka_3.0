@@ -1772,6 +1772,9 @@ INPUT[type="radio"] {
 
 .slick-slide {
   margin: 0 15px; }
+  @media only screen and (max-width: 767px) {
+    .slick-slide {
+      margin: 0; } }
 
 .slick-slide img {
   width: 100%; }
@@ -3440,7 +3443,9 @@ INPUT[type="radio"] {
 
 .block-slider--plate .slick-slide {
   max-width: 290px;
-  background: #eeeeee; }
+  background: #eeeeee;
+  border: solid 1px #dddddd;
+  min-height: 37rem; }
 
 .block-slider--plate p {
   line-height: 1.2; }

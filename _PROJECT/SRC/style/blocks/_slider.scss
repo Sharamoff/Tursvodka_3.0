@@ -24,6 +24,8 @@
 	.slick-slide {
 		max-width: 290px;
 		background: $c-gray-lightermore;
+		border: solid 1px $c-gray-lighter;
+		min-height: 37rem;
 	}
 
 	p {

@@ -341,3 +341,20 @@ $('.block-slider--plate').slick({
 	variableWidth: true,
 	centerMode: true
 });
+
+$('.block-slider--adaptive').slick({
+	dots: true,
+	infinite: true,
+	autoplay: true,
+	slidesToShow: 4,
+	responsive: [{
+		breakpoint: 1025,
+		settings: {	slidesToShow: 3	}
+	}, {
+		breakpoint: 769,
+		settings: {	slidesToShow: 2	}
+	}, {
+		breakpoint: 321,
+		settings: {	slidesToShow: 1 }
+	}]
+});

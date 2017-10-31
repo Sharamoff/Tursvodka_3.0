@@ -13,6 +13,11 @@
 
 .slick-slide {
 	margin: 0 15px;
+
+	@include respond-to(media-xs) {
+		margin: 0;
+	}
+
 }
 
 .slick-slide img {
