@@ -1561,6 +1561,14 @@ INPUT[type="radio"] {
     content: "\f088";
     margin-right: 0.5rem; }
 
+.icon-hdr {
+  display: inline-block;
+  float: right;
+  margin-left: 1rem;
+  margin-top: 0.4rem;
+  width: 46px;
+  height: 20px; }
+
 .weather {
   display: inline-block;
   height: 50px;
