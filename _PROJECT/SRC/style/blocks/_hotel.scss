@@ -106,3 +106,84 @@
 
 
 
+// отель удобства краткий
+
+.block-hotelfc_short {
+	margin-bottom: 3rem;
+
+	h2 {
+		margin-top: 0;
+		margin-bottom: 3rem;
+	}
+
+	.hotelfc_short__item {
+		font: $font-size-base $font-family-cond;
+		margin-bottom: 2.5rem;
+		white-space: nowrap;
+
+		&.item--negative {
+			color: $c-gray-light !important;
+		}
+
+		.fa {
+			margin-right: 1rem;
+		}
+
+		.item--free {
+			font-size: $font-size-basemin;
+			color: $c-green;
+		}
+
+		.item--pay {
+			font-size: $font-size-basemin;
+			color: $c-red;
+		}
+
+	}
+
+}
+
+
+// отель удобства полный
+
+.block-hotelfc {
+
+	ul {
+		padding: 0;
+		margin: 0 0 4rem 2rem;
+	}
+
+	li {
+		list-style-image: url("../img/icons/i-check-g.svg");
+		margin: 1rem 0;
+
+		&.fname {
+			font: bold $font-size-hdr $font-family-cond;
+			list-style: none;
+			margin-left: -2rem;
+			margin-bottom: 1.2rem;
+			line-height: $line-height-min;
+
+			.fa {
+				font-size: 1.4rem;
+				margin-right: 0.6rem;
+				position: relative;
+				top: -0.2rem;
+			}
+
+		}
+
+	}
+
+
+
+}
+
+
+
+
+
+
+
+
+

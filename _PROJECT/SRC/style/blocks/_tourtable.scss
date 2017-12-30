@@ -1,0 +1,98 @@
+///////////////////////////////////////////////
+
+
+
+// таблица списка туров
+
+
+.table-tours {
+
+	.row--th {
+		background: none !important;
+		@include respond-to(media-xs) {
+			display: none;
+		}
+		&:hover {
+			cursor: default !important;
+		}
+	}
+
+	.row,
+	.row:hover {
+		background: url("../img/icons/i-nextr-g.svg") right no-repeat;
+	}
+
+	&.divtable--hover {
+		cursor: pointer;
+	}
+
+	.dt-td {
+
+		@include respond-to(media-xs) {
+			padding-left: 0;
+			font-size: $font-size-basemin;
+			&:before {
+				font: normal $font-size-basemin $font-family-cond;
+				color: $c-gray;
+				display: inline-block;
+				min-width: 8rem;
+				overflow: hidden;
+				position: relative;
+				top: 3px;
+			}
+		}
+
+	}
+
+	.fa.fa-question-circle-o {
+		margin-left: 0.3rem;
+		color: $c-gray-dark;
+	}
+
+	.dt--tours_fly {
+		white-space: nowrap;
+		@include respond-to(media-xs) {
+			&:before { content: "Вылет:"; }
+		}
+	}
+
+	.dt--tours_flycity {
+		@include respond-to(media-xs) {
+			&:before { content: "Город влета:"; }
+		}
+	}
+
+	.dt--tours_night {
+		@include respond-to(media-xs) {
+			&:before { content: "Ночей:"; }
+		}
+	}
+
+	.dt--tours_typenum {
+		@include respond-to(media-xs) {
+			&:before { content: "Тип номера:"; }
+		}
+	}
+
+	.dt--tours_place {
+		@include respond-to(media-xs) {
+			&:before { content: "Размещение:"; }
+		}
+	}
+
+	.dt--tours_eat {
+		white-space: nowrap;
+		@include respond-to(media-xs) {
+			&:before { content: "Питание:"; }
+		}
+	}
+
+	.dt--tours_price {
+		white-space: nowrap;
+		color: $c-green;
+		@include respond-to(media-xs) {
+			&:before { content: "Стоимость:"; }
+		}
+	}
+
+}

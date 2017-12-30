@@ -254,6 +254,19 @@ ins.emphas {
   .superhdr__sub {
     font-size: 2.5rem;
     font-weight: normal; }
+  .superhdr__ex {
+    font-size: 2.5rem;
+    font-weight: normal;
+    text-transform: none !important;
+    color: #999999;
+    margin-top: 0.5rem; }
+  .superhdr__address {
+    font-size: 2.1rem;
+    font-weight: normal;
+    text-transform: none !important;
+    margin-top: 1.5rem; }
+    .superhdr__address .fa {
+      margin-right: 0.5rem; }
 
 H2 {
   font: normal 2.5rem "Roboto Condensed", "Arial Narrow", Arial, Helvetica, sans-serif;
@@ -406,6 +419,12 @@ HR {
     position: relative;
     z-index: 1;
     right: -50%; }
+
+.scrolled-x {
+  overflow-x: scroll; }
+  @media only screen and (max-width: 767px) {
+    .scrolled-x {
+      overflow-x: auto; } }
 
 .c--white {
   color: white !important; }
@@ -629,6 +648,29 @@ HR {
       .h-base-block a:hover .block__descript-hdr {
         color: #ff8000;
         text-decoration: underline; }
+
+.panel-block__prop {
+  font-family: "Roboto Condensed", "Arial Narrow", Arial, Helvetica, sans-serif;
+  color: #666666;
+  padding: 0.5rem 15px 0.6rem 15px; }
+  @media only screen and (max-width: 767px) {
+    .panel-block__prop {
+      padding-bottom: 0.2rem; } }
+
+.panel-block__val {
+  padding: 0.6rem 15px 0.6rem 15px; }
+  @media only screen and (max-width: 767px) {
+    .panel-block__val {
+      padding-top: 0.2rem; } }
+
+.panel-block__pic {
+  padding: 0 15px 0 15px; }
+  @media only screen and (max-width: 767px) {
+    .panel-block__pic {
+      padding-top: 0; } }
+  .panel-block__pic img {
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem; }
 
 .flag-icon {
   width: 1.6rem;
@@ -1220,6 +1262,10 @@ a:hover .a--more {
 .tb--inview {
   border-top: solid 1px #cccccc;
   width: 100%; }
+  .tb--inview th {
+    border-bottom: solid 1px #cccccc;
+    padding-top: 0.2rem;
+    padding-bottom: 0.3rem; }
   .tb--inview td {
     vertical-align: top;
     padding-top: 0.4rem;
@@ -1322,8 +1368,8 @@ a:hover .a--more {
     @media only screen and (max-width: 767px) {
       .divtable .row {
         display: block;
-        padding-top: 0.6rem;
-        padding-bottom: 0.6rem; } }
+        padding-top: 1rem;
+        padding-bottom: 1.5rem; } }
     .divtable .row.row--th, .divtable .row.row--th:hover {
       background-color: #eeeeee !important;
       font: normal 1.4rem "Roboto Condensed", "Arial Narrow", Arial, Helvetica, sans-serif;
@@ -1337,7 +1383,7 @@ a:hover .a--more {
         padding-top: 0.1rem;
         padding-bottom: 0.1rem; } }
   .divtable.divtable--hover .row:hover {
-    background: #f5f5f5; }
+    background-color: #f5f5f5; }
 
 @media only screen and (max-width: 767px) {
   FORM.form-inline .form-group {
@@ -1569,6 +1615,15 @@ INPUT[type="radio"] {
   width: 46px;
   height: 20px; }
 
+.item-paid {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background: url("../img/icons/i-paid.svg");
+  position: relative;
+  top: 1px;
+  margin-left: 0.5rem; }
+
 .weather {
   display: inline-block;
   height: 50px;
@@ -1641,6 +1696,9 @@ INPUT[type="radio"] {
   top: -0.1rem;
   white-space: nowrap;
   margin-left: 0.5rem; }
+  .star.star--hdr {
+    font-size: 2.5rem;
+    margin-left: 2rem; }
   .star.star-1:after {
     content: "\f005"; }
   .star.star-2:after {
@@ -1915,6 +1973,73 @@ INPUT[type="radio"] {
       color: #999999;
       line-height: 1.2; }
 
+.table-tours .row--th {
+  background: none !important; }
+  @media only screen and (max-width: 767px) {
+    .table-tours .row--th {
+      display: none; } }
+  .table-tours .row--th:hover {
+    cursor: default !important; }
+
+.table-tours .row,
+.table-tours .row:hover {
+  background: url("../img/icons/i-nextr-g.svg") right no-repeat; }
+
+.table-tours.divtable--hover {
+  cursor: pointer; }
+
+@media only screen and (max-width: 767px) {
+  .table-tours .dt-td {
+    padding-left: 0;
+    font-size: 1.4rem; }
+    .table-tours .dt-td:before {
+      font: normal 1.4rem "Roboto Condensed", "Arial Narrow", Arial, Helvetica, sans-serif;
+      color: #999999;
+      display: inline-block;
+      min-width: 8rem;
+      overflow: hidden;
+      position: relative;
+      top: 3px; } }
+
+.table-tours .fa.fa-question-circle-o {
+  margin-left: 0.3rem;
+  color: #666666; }
+
+.table-tours .dt--tours_fly {
+  white-space: nowrap; }
+  @media only screen and (max-width: 767px) {
+    .table-tours .dt--tours_fly:before {
+      content: "Вылет:"; } }
+
+@media only screen and (max-width: 767px) {
+  .table-tours .dt--tours_flycity:before {
+    content: "Город влета:"; } }
+
+@media only screen and (max-width: 767px) {
+  .table-tours .dt--tours_night:before {
+    content: "Ночей:"; } }
+
+@media only screen and (max-width: 767px) {
+  .table-tours .dt--tours_typenum:before {
+    content: "Тип номера:"; } }
+
+@media only screen and (max-width: 767px) {
+  .table-tours .dt--tours_place:before {
+    content: "Размещение:"; } }
+
+.table-tours .dt--tours_eat {
+  white-space: nowrap; }
+  @media only screen and (max-width: 767px) {
+    .table-tours .dt--tours_eat:before {
+      content: "Питание:"; } }
+
+.table-tours .dt--tours_price {
+  white-space: nowrap;
+  color: #4d9b40; }
+  @media only screen and (max-width: 767px) {
+    .table-tours .dt--tours_price:before {
+      content: "Стоимость:"; } }
+
 .block-consult {
   border: solid 2px #dddddd;
   border-radius: 5px;
@@ -1964,6 +2089,20 @@ INPUT[type="radio"] {
         font-size: 2.1rem;
         white-space: nowrap;
         margin-left: 0.6rem; }
+  .block-consult .consult__msgrs {
+    margin: 1rem -1rem 1rem 0; }
+    .block-consult .consult__msgrs:before, .block-consult .consult__msgrs:after {
+      content: " ";
+      display: table; }
+    .block-consult .consult__msgrs:after {
+      clear: both; }
+    .block-consult .consult__msgrs a {
+      float: left;
+      display: inline-block;
+      margin-right: 2rem; }
+      .block-consult .consult__msgrs a img {
+        width: 3rem;
+        height: 3rem; }
   .block-consult .consult__btns {
     margin-right: -1rem; }
     .block-consult .consult__btns:before, .block-consult .consult__btns:after {
@@ -2012,7 +2151,7 @@ INPUT[type="radio"] {
     background: #4d9b40;
     border-radius: 5px; }
   .block-mainrating table {
-    margin-bottom: 1rem; }
+    margin-bottom: 2.6rem; }
     .block-mainrating table td {
       padding: 0.4rem 0 0.6rem 0;
       font-size: 1.6rem;
@@ -3081,6 +3220,45 @@ INPUT[type="radio"] {
     .block-hotel .hotel__descript-links .i--fill {
       font-size: 1.4rem; }
 
+.block-hotelfc_short {
+  margin-bottom: 3rem; }
+  .block-hotelfc_short h2 {
+    margin-top: 0;
+    margin-bottom: 3rem; }
+  .block-hotelfc_short .hotelfc_short__item {
+    font: 1.6rem "Roboto Condensed", "Arial Narrow", Arial, Helvetica, sans-serif;
+    margin-bottom: 2.5rem;
+    white-space: nowrap; }
+    .block-hotelfc_short .hotelfc_short__item.item--negative {
+      color: #bbbbbb !important; }
+    .block-hotelfc_short .hotelfc_short__item .fa {
+      margin-right: 1rem; }
+    .block-hotelfc_short .hotelfc_short__item .item--free {
+      font-size: 1.4rem;
+      color: #4d9b40; }
+    .block-hotelfc_short .hotelfc_short__item .item--pay {
+      font-size: 1.4rem;
+      color: #cc0000; }
+
+.block-hotelfc ul {
+  padding: 0;
+  margin: 0 0 4rem 2rem; }
+
+.block-hotelfc li {
+  list-style-image: url("../img/icons/i-check-g.svg");
+  margin: 1rem 0; }
+  .block-hotelfc li.fname {
+    font: bold 2.1rem "Roboto Condensed", "Arial Narrow", Arial, Helvetica, sans-serif;
+    list-style: none;
+    margin-left: -2rem;
+    margin-bottom: 1.2rem;
+    line-height: 1.1; }
+    .block-hotelfc li.fname .fa {
+      font-size: 1.4rem;
+      margin-right: 0.6rem;
+      position: relative;
+      top: -0.2rem; }
+
 .block-filter {
   margin-top: 1rem;
   background: #e0eef5;
@@ -3463,6 +3641,23 @@ INPUT[type="radio"] {
   margin: 1rem 1.5rem 1.5rem 1.5rem; }
   .block-slider--plate .descript__hdr {
     font: bold 1.6rem "Roboto Condensed", "Arial Narrow", Arial, Helvetica, sans-serif; }
+
+.block-location {
+  height: 100%;
+  padding: 0;
+  margin-bottom: 3rem;
+  background: white url("../img/icons/loc.svg") top right no-repeat;
+  font: 1.4rem "Roboto Condensed", "Arial Narrow", Arial, Helvetica, sans-serif;
+  position: relative; }
+  @media only screen and (max-width: 767px) {
+    .block-location {
+      margin-bottom: 20px;
+      max-width: 380px; } }
+  .block-location .hdr-h2 {
+    padding-top: 6px;
+    margin-bottom: 10px; }
+  .block-location table {
+    background: white; }
 
 .header {
   background-color: white; }

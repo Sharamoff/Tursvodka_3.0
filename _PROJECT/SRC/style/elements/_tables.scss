@@ -57,6 +57,12 @@
 	border-top: solid 1px $color-dlv;
 	width: 100%;
 
+	th {
+		border-bottom: solid 1px $color-dlv;
+		padding-top: 0.2rem;
+		padding-bottom: 0.3rem;
+	}
+
 	td {
 		vertical-align: top;
 		padding-top: 0.4rem;
@@ -224,8 +230,8 @@
 
 		@include respond-to(media-xs) {
 			display: block;
-			padding-top: 0.6rem;
-			padding-bottom: 0.6rem;
+			padding-top: 1rem;
+			padding-bottom: 1.5rem;
 		}
 
 		&.row--th,
@@ -252,9 +258,12 @@
 	&.divtable--hover {
 
 		.row:hover {
-			background: $table-bg-hover;
+			background-color: $table-bg-hover;
 		}
 
 	}
 
 }
+
+
+

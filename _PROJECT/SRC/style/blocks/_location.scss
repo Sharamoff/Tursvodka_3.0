@@ -1,0 +1,30 @@
+///////////////////////////////////////////////
+
+
+
+// расположение
+
+
+.block-location {
+	height: 100%;
+	padding: 0;
+	margin-bottom: 3rem;
+	background: $c-white url("../img/icons/loc.svg") top right no-repeat;
+	font: $font-size-basemin $font-family-cond;
+	position: relative;
+
+	@include respond-to(media-xs) {
+		margin-bottom: 20px;
+		max-width: 380px;
+	}
+
+	.hdr-h2 {
+		padding-top: 6px;
+		margin-bottom: 10px;
+	}
+
+	table {
+		background: $c-white;
+	}
+
+}

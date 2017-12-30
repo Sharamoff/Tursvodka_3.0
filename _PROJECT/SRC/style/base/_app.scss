@@ -273,7 +273,28 @@ ins.emphas {
 		font-weight: normal;
 	}
 
+	&__ex {
+		font-size: 2.5rem;
+		font-weight: normal;
+		text-transform: none !important;
+		color: $c-gray;
+		margin-top: 0.5rem;
+	}
+
+	&__address {
+		font-size: $font-size-hdr;
+		font-weight: normal;
+		text-transform: none !important;
+		margin-top: 1.5rem;
+
+		.fa {
+			margin-right: 0.5rem;
+		}
+
+	}
+
 }
+
 
 H2 {
 	font: normal $font-size-h2 $font-family-cond;
@@ -474,6 +495,14 @@ HR {
 }
 
 
+.scrolled-x {
+	overflow-x: scroll;
+
+	@include respond-to(media-xs) {
+		overflow-x: auto;
+	}
+
+}
 
 
 

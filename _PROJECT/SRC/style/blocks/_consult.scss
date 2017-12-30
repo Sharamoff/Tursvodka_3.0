@@ -69,6 +69,24 @@
 
 	}
 
+	.consult__msgrs {
+		margin: 1rem -1rem 1rem 0;
+		@include clearfix;
+
+		a {
+			float: left;
+			display: inline-block;
+			margin-right: 2rem;
+
+			img {
+				width: 3rem;
+				height: 3rem;
+			}
+
+		}
+
+	}
+
 	.consult__btns {
 		margin-right: -1rem;
 		@include clearfix;
