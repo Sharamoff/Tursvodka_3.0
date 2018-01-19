@@ -74,7 +74,26 @@
 					</div>
 				</div>
 
-				<div class="cabinet-username"><a href="#">Личный кабинет</a></div>
+				<div class="dropdown">
+					<div class="cabinet-enter" data-toggle="dropdown"><i class="fa fa-user-circle-o"></i>Личный кабинет</div>
+					<div class="cabinet-enter-dropdown cabinet-dropdown dropdown-menu dropdown-menu-right">
+						<form name="fm-cabinet-enter" id="fm-cabinet-enter">
+							<p class="hdr">Авторизация</p>
+							<div class="form-group">
+								<label for="fld-cabinet-enter_email">Ваш email</label>
+								<input type="email" id="fld-cabinet-enter_email" class="form-control">
+							</div>
+							<div class="form-group">
+								<label for="fld-cabinet-enter_pass">Ваш пароль</label>
+								<input type="password" id="fld-cabinet-enter_pass" class="form-control">
+							</div>
+							<button class="b-link" type="submit">Войти</button>
+							<div class="clearfix">
+								<a href="#" class="i-link"><strong>Регистрация</strong></a>&nbsp;/&nbsp;<a href="#" class="i-link">Забыли пароль?</a>
+							</div>
+						</form>
+					</div>
+				</div>
 
 			</div>
 

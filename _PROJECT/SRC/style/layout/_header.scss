@@ -47,25 +47,60 @@
 	display: inline-block;
 	float: right;
 	position: relative;
-	width: 38%;
+	width: 40%;
 	text-align: right;
 	@include clearfix;
+
+	.cabinet-enter {
+		display: inline-block;
+		float: right;
+		font: $font-size-basemin $font-family-cond;
+		color: $color-link;
+		padding: 0.3rem 1.5rem;
+		margin: -1px -1px -1px 0;
+		border: solid 1px transparent;
+		cursor: pointer;
+
+		.fa {
+			margin-right: 0.5rem;
+		}
+
+		&:hover {
+			color: $color-link-hover;
+		}
+
+	}
 
 	.cabinet-username {
 		display: inline-block;
 		float: right;
-		font: $font-size-basemin $font-family-cond;
-		color: $c-gray;
-		margin-right: 1.5rem;
-		margin-top: 0.3rem;
+		font: bold $font-size-basemin $font-family-cond;
+		color: $color-link;
+		padding: 0.2rem 1.5rem 0.2rem 0.5rem;
+		line-height: 2rem;
+		margin: -1px -1px -1px 0;
+		border: solid 1px transparent;
+		cursor: pointer;
 
-		a {
-			color: $color-link;
+		.username-img {
+			width: 2rem;
+			height: 2rem;
+			line-height: 1.5rem;
+			border-radius: 50%;
+			margin-right: 0.5rem;
+			float: left;
+			background-color: $c-white;
+			padding: 0.1rem;
 
-			&:hover {
-				color: $color-link-hover;
+			img {
+				width: 100%;
+				height: auto;
 			}
 
+		}
+
+		&:hover {
+			color: $color-link-hover;
 		}
 
 	}
@@ -113,7 +148,6 @@
 
 	}
 
-
 	.open {
 
 		.cabinet-mess,
@@ -124,7 +158,20 @@
 			border-left: solid 1px $c-gray-lighter;
 			border-top: solid 1px $c-gray-lighter;
 			border-right: solid 1px $c-gray-lighter;
-			margin: -1px -1px 0 -1px;
+			margin: -1px -1px 0 0;
+		}
+
+		.cabinet-enter {
+			background: $c-gray-lighter;
+			border-color: $c-gray-lighter;
+			color: $c-gray-dark;
+		}
+
+		.cabinet-username {
+			background: $c-gray-lighter;
+			border: solid 1px $c-gray-lighter;
+			margin: -1px -1px -1px 0;
+			color: $c-gray-dark;
 		}
 
 	}
@@ -140,6 +187,7 @@
 		color: $c-gray-darker;
 		line-height: $line-height-def !important;
 		top: 23px;
+		margin-right: -1px;
 
 		@include respond-to(media-sm) {
 			top: 21px;
@@ -154,6 +202,113 @@
 			font-weight: bold;
 			font-size: $font-size-base;
 			color: $c-black;
+		}
+
+		form {
+
+			.form-group {
+				margin-bottom: 0.8rem;
+			}
+
+			a {
+				font-size: $font-size-basemin;
+			}
+
+			label {
+				font-family: $font-family-cond;
+				margin-bottom: 3px;
+			}
+
+			button {
+				margin-top: 1rem;
+			}
+
+		}
+
+	}
+
+	.cabinet-enter-dropdown {
+		margin-right: 19.5rem;
+		min-width: 30rem;
+
+		@include respond-to(media-sm) {
+			margin-right: 15.7rem;
+		}
+
+	}
+
+	.cabinet-username-dropdown {
+		margin-right: 19.5rem;
+		min-width: 30rem;
+		padding: 0;
+
+		@include respond-to(media-sm) {
+			margin-right: 15.7rem;
+		}
+
+		.username_block {
+			padding: 0.5rem 3rem 0.5rem 1rem;
+			cursor: pointer;
+			font: $font-size-base $font-family-cond;
+			line-height: 5rem;
+			color: $color-link;
+			border-bottom: solid 1px $c-gray-lighter;
+			@include clearfix;
+
+			.username_block-img {
+				width: 5rem;
+				height: 5rem;
+				line-height: 4.5rem;
+				border-radius: 50%;
+				margin-right: 0.8rem;
+				float: left;
+				background-color: $c-white;
+				padding: 0.3rem;
+
+				img {
+					width: 100%;
+					height: auto;
+				}
+
+			}
+
+			&:hover {
+				background: $c-gray-lighter;
+				color: $c-gray-darker;
+			}
+
+			&.open {
+				cursor: default;
+				background: $c-white url("../img/icons/check-user.svg") right no-repeat;
+				font-weight: bold;
+				color: $c-gray-darker;
+			}
+
+		}
+
+		.username_tool {
+			padding: 1rem 1rem 1rem 2rem;
+			font: $font-size-basemin $font-family-cond;
+			@include clearfix;
+			background: $c-white;
+
+			.username_tool__exit {
+				color: $c-gray;
+				float: right;
+
+				&:hover {
+					color: $color-link-hover;
+					text-decoration: none;
+				}
+
+				.fa {
+					font-size: 2.1rem;
+					margin-left: 0.6rem;
+					float: right;
+				}
+
+			}
+
 		}
 
 	}
@@ -178,7 +333,7 @@
 		display: inline-block;
 		width: 25%;
 		min-width: 30rem;
-		z-index: 99999;
+		z-index: 9999;
 
 		@include respond-to(media-sm) {
 			min-width: 23rem;

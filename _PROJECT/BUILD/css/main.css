@@ -3702,24 +3702,50 @@ INPUT[type="radio"] {
   display: inline-block;
   float: right;
   position: relative;
-  width: 38%;
+  width: 40%;
   text-align: right; }
   .header-top__cabinet:before, .header-top__cabinet:after {
     content: " ";
     display: table; }
   .header-top__cabinet:after {
     clear: both; }
-  .header-top__cabinet .cabinet-username {
+  .header-top__cabinet .cabinet-enter {
     display: inline-block;
     float: right;
     font: 1.4rem "Roboto Condensed", "Arial Narrow", Arial, Helvetica, sans-serif;
-    color: #999999;
-    margin-right: 1.5rem;
-    margin-top: 0.3rem; }
-    .header-top__cabinet .cabinet-username a {
-      color: #3c94cc; }
-      .header-top__cabinet .cabinet-username a:hover {
-        color: #ff8000; }
+    color: #3c94cc;
+    padding: 0.3rem 1.5rem;
+    margin: -1px -1px -1px 0;
+    border: solid 1px transparent;
+    cursor: pointer; }
+    .header-top__cabinet .cabinet-enter .fa {
+      margin-right: 0.5rem; }
+    .header-top__cabinet .cabinet-enter:hover {
+      color: #ff8000; }
+  .header-top__cabinet .cabinet-username {
+    display: inline-block;
+    float: right;
+    font: bold 1.4rem "Roboto Condensed", "Arial Narrow", Arial, Helvetica, sans-serif;
+    color: #3c94cc;
+    padding: 0.2rem 1.5rem 0.2rem 0.5rem;
+    line-height: 2rem;
+    margin: -1px -1px -1px 0;
+    border: solid 1px transparent;
+    cursor: pointer; }
+    .header-top__cabinet .cabinet-username .username-img {
+      width: 2rem;
+      height: 2rem;
+      line-height: 1.5rem;
+      border-radius: 50%;
+      margin-right: 0.5rem;
+      float: left;
+      background-color: white;
+      padding: 0.1rem; }
+      .header-top__cabinet .cabinet-username .username-img img {
+        width: 100%;
+        height: auto; }
+    .header-top__cabinet .cabinet-username:hover {
+      color: #ff8000; }
   .header-top__cabinet .cabinet-mess,
   .header-top__cabinet .cabinet-checkhotel,
   .header-top__cabinet .cabinet-fav,
@@ -3772,7 +3798,16 @@ INPUT[type="radio"] {
     border-left: solid 1px #dddddd;
     border-top: solid 1px #dddddd;
     border-right: solid 1px #dddddd;
-    margin: -1px -1px 0 -1px; }
+    margin: -1px -1px 0 0; }
+  .header-top__cabinet .open .cabinet-enter {
+    background: #dddddd;
+    border-color: #dddddd;
+    color: #666666; }
+  .header-top__cabinet .open .cabinet-username {
+    background: #dddddd;
+    border: solid 1px #dddddd;
+    margin: -1px -1px -1px 0;
+    color: #666666; }
   .header-top__cabinet .cabinet-dropdown {
     background: #eeeeee;
     border: solid 1px #dddddd;
@@ -3782,7 +3817,8 @@ INPUT[type="radio"] {
     font-size: 1.4rem;
     color: #333333;
     line-height: 1.2 !important;
-    top: 23px; }
+    top: 23px;
+    margin-right: -1px; }
     @media only screen and (min-width: 768px) and (max-width: 991px) {
       .header-top__cabinet .cabinet-dropdown {
         top: 21px; } }
@@ -3793,6 +3829,79 @@ INPUT[type="radio"] {
       font-weight: bold;
       font-size: 1.6rem;
       color: black; }
+    .header-top__cabinet .cabinet-dropdown form .form-group {
+      margin-bottom: 0.8rem; }
+    .header-top__cabinet .cabinet-dropdown form a {
+      font-size: 1.4rem; }
+    .header-top__cabinet .cabinet-dropdown form label {
+      font-family: "Roboto Condensed", "Arial Narrow", Arial, Helvetica, sans-serif;
+      margin-bottom: 3px; }
+    .header-top__cabinet .cabinet-dropdown form button {
+      margin-top: 1rem; }
+  .header-top__cabinet .cabinet-enter-dropdown {
+    margin-right: 19.5rem;
+    min-width: 30rem; }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .header-top__cabinet .cabinet-enter-dropdown {
+        margin-right: 15.7rem; } }
+  .header-top__cabinet .cabinet-username-dropdown {
+    margin-right: 19.5rem;
+    min-width: 30rem;
+    padding: 0; }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .header-top__cabinet .cabinet-username-dropdown {
+        margin-right: 15.7rem; } }
+    .header-top__cabinet .cabinet-username-dropdown .username_block {
+      padding: 0.5rem 3rem 0.5rem 1rem;
+      cursor: pointer;
+      font: 1.6rem "Roboto Condensed", "Arial Narrow", Arial, Helvetica, sans-serif;
+      line-height: 5rem;
+      color: #3c94cc;
+      border-bottom: solid 1px #dddddd; }
+      .header-top__cabinet .cabinet-username-dropdown .username_block:before, .header-top__cabinet .cabinet-username-dropdown .username_block:after {
+        content: " ";
+        display: table; }
+      .header-top__cabinet .cabinet-username-dropdown .username_block:after {
+        clear: both; }
+      .header-top__cabinet .cabinet-username-dropdown .username_block .username_block-img {
+        width: 5rem;
+        height: 5rem;
+        line-height: 4.5rem;
+        border-radius: 50%;
+        margin-right: 0.8rem;
+        float: left;
+        background-color: white;
+        padding: 0.3rem; }
+        .header-top__cabinet .cabinet-username-dropdown .username_block .username_block-img img {
+          width: 100%;
+          height: auto; }
+      .header-top__cabinet .cabinet-username-dropdown .username_block:hover {
+        background: #dddddd;
+        color: #333333; }
+      .header-top__cabinet .cabinet-username-dropdown .username_block.open {
+        cursor: default;
+        background: white url("../img/icons/check-user.svg") right no-repeat;
+        font-weight: bold;
+        color: #333333; }
+    .header-top__cabinet .cabinet-username-dropdown .username_tool {
+      padding: 1rem 1rem 1rem 2rem;
+      font: 1.4rem "Roboto Condensed", "Arial Narrow", Arial, Helvetica, sans-serif;
+      background: white; }
+      .header-top__cabinet .cabinet-username-dropdown .username_tool:before, .header-top__cabinet .cabinet-username-dropdown .username_tool:after {
+        content: " ";
+        display: table; }
+      .header-top__cabinet .cabinet-username-dropdown .username_tool:after {
+        clear: both; }
+      .header-top__cabinet .cabinet-username-dropdown .username_tool .username_tool__exit {
+        color: #999999;
+        float: right; }
+        .header-top__cabinet .cabinet-username-dropdown .username_tool .username_tool__exit:hover {
+          color: #ff8000;
+          text-decoration: none; }
+        .header-top__cabinet .cabinet-username-dropdown .username_tool .username_tool__exit .fa {
+          font-size: 2.1rem;
+          margin-left: 0.6rem;
+          float: right; }
 
 .header-base {
   padding-top: 2rem;
@@ -3812,7 +3921,7 @@ INPUT[type="radio"] {
     display: inline-block;
     width: 25%;
     min-width: 30rem;
-    z-index: 99999; }
+    z-index: 9999; }
     @media only screen and (min-width: 768px) and (max-width: 991px) {
       .header-base .header-base__logo {
         min-width: 23rem; } }
