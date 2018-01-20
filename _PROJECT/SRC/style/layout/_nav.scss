@@ -345,24 +345,6 @@
 			display: block;
 			margin-bottom: 2rem;
 
-			.cabinet-username {
-				font: $font-size-basemin $font-family-cond;
-				text-transform: none;
-				color: $c-gray;
-				margin-right: 1.5rem;
-				margin-top: 0.3rem;
-
-				a {
-					color: $color-link;
-
-					&:hover {
-						color: $color-link-hover;
-					}
-
-				}
-
-			}
-
 			.cabinet-icons {
 				@include clearfix;
 				margin: 1rem 0;

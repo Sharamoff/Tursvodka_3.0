@@ -281,6 +281,14 @@ ins.emphas {
 		margin-top: 0.5rem;
 	}
 
+	&__timestamp {
+		font-size: $font-size-base;
+		font-weight: normal;
+		text-transform: none !important;
+		color: $c-gray;
+		margin-top: 0.5rem;
+	}
+
 	&__address {
 		font-size: $font-size-hdr;
 		font-weight: normal;

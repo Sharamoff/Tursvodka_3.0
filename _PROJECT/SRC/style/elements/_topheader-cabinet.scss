@@ -1,0 +1,315 @@
+///////////////////////////////////////////////
+
+
+
+// меню Личного кабинета в шапке
+
+
+
+.cabinet-enter {
+	display: inline-block;
+	float: right;
+	font: $font-size-basemin $font-family-cond;
+	color: $color-link;
+	padding: 0.3rem 1.5rem;
+	margin: -1px -1px -1px 0;
+	border: solid 1px transparent;
+	cursor: pointer;
+
+	@include respond-to(media-xs) {
+		display: block;
+		float: none;
+		font-size: $font-size-base;
+		padding: 0.3rem 0;
+		margin: 0;
+	}
+
+	.fa {
+		margin-right: 0.5rem;
+	}
+
+	&:hover {
+		color: $color-link-hover;
+	}
+
+}
+
+.cabinet-username {
+	display: inline-block;
+	float: right;
+	font: bold $font-size-basemin $font-family-cond;
+	color: $color-link;
+	padding: 0.2rem 1.5rem 0.2rem 0.5rem;
+	line-height: 2rem;
+	margin: -1px -1px -1px 0;
+	border: solid 1px transparent;
+	cursor: pointer;
+
+	@include respond-to(media-xs) {
+		display: block;
+		float: none;
+		font-size: $font-size-base;
+		padding: 0.3rem 0;
+		margin: 0;
+	}
+
+	.username-img {
+		width: 2rem;
+		height: 2rem;
+		line-height: 1.5rem;
+		border-radius: 50%;
+		margin-right: 0.5rem;
+		float: left;
+		background-color: $c-white;
+		padding: 0.1rem;
+
+		img {
+			width: 100%;
+			height: auto;
+		}
+
+	}
+
+	&:hover {
+		color: $color-link-hover;
+	}
+
+}
+
+.cabinet-mess,
+.cabinet-checkhotel,
+.cabinet-fav,
+.cabinet-checkhistory {
+	display: inline-block;
+	float: right;
+	font-size: $font-size-base;
+	color: $c-gray-dark;
+	padding: 0.3rem 1.5rem;
+	border-left: dotted 1px $color-border;
+	cursor: pointer;
+
+	@include respond-to(media-sm) {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+
+	&:hover {
+		color: $color-link-hover;
+	}
+
+	.bulcount {
+		top: -2px;
+		left: -4px;
+	}
+
+	&.no--active,
+	&.no--active a {
+		cursor:default;
+		color: $c-gray-lighter;
+	}
+
+}
+
+.cabinet-mess {
+	padding-right: 1rem;
+
+	@include respond-to(media-sm) {
+		padding-right: 0.5rem;
+	}
+
+}
+
+.open {
+
+	.cabinet-mess,
+	.cabinet-checkhotel,
+	.cabinet-fav,
+	.cabinet-checkhistory {
+		background: $c-gray-lighter;
+		border-left: solid 1px $c-gray-lighter;
+		border-top: solid 1px $c-gray-lighter;
+		border-right: solid 1px $c-gray-lighter;
+		margin: -1px -1px 0 0;
+	}
+
+	.cabinet-enter {
+		background: $c-gray-lighter;
+		border-color: $c-gray-lighter;
+		color: $c-gray-dark;
+
+		@include respond-to(media-xs) {
+			background-color: transparent;
+			border-color: transparent;
+			margin: 0;
+		}
+
+	}
+
+	.cabinet-username {
+		background: $c-gray-lighter;
+		border: solid 1px $c-gray-lighter;
+		margin: -1px -1px -1px 0;
+		color: $c-gray-dark;
+
+		@include respond-to(media-xs) {
+			background-color: transparent;
+			border-color: transparent;
+			margin: 0;
+		}
+
+	}
+
+}
+
+
+.cabinet-dropdown {
+	background: $c-gray-lightermore;
+	border: solid 1px $c-gray-lighter;
+	padding: 1.5rem 2rem;
+	border-radius: 0;
+	max-width: 32rem;
+	font-size: $font-size-basemin;
+	color: $c-gray-darker;
+	line-height: $line-height-def !important;
+	top: 23px;
+	margin-right: -1px;
+	box-shadow: 0 3px 9px rgba(0,0,0,0.25);
+
+	@include respond-to(media-xs) {
+		padding: 1.5rem;
+		width: 100%;
+		max-width: 40rem;
+	}
+
+	@include respond-to(media-sm) {
+		top: 21px;
+	}
+
+	.note {
+		font-size: $font-size-note;
+	}
+
+	.hdr {
+		font-family: $font-family-cond;
+		font-weight: bold;
+		font-size: $font-size-base;
+		color: $c-black;
+	}
+
+	form {
+
+		.form-group {
+			margin-bottom: 0.8rem;
+		}
+
+		a {
+			font-size: $font-size-basemin;
+		}
+
+		label {
+			font-family: $font-family-cond;
+			margin-bottom: 3px;
+		}
+
+		button {
+			margin-top: 1rem;
+			margin-bottom: 1rem;
+		}
+
+	}
+
+}
+
+.cabinet-enter-dropdown {
+	margin-right: 19.5rem;
+	min-width: 30rem;
+
+	@include respond-to(media-sm) {
+		margin-right: 15.7rem;
+	}
+
+	@include respond-to(media-xs) {
+		margin-right: 0;
+	}
+
+}
+
+.cabinet-username-dropdown {
+	margin-right: 19.5rem;
+	min-width: 30rem;
+	padding: 0;
+
+	@include respond-to(media-sm) {
+		margin-right: 15.7rem;
+	}
+
+	@include respond-to(media-xs) {
+		margin-right: 0;
+	}
+
+	.username_block {
+		padding: 0.5rem 3rem 0.5rem 1rem;
+		cursor: pointer;
+		font: $font-size-base $font-family-cond;
+		line-height: 5rem;
+		color: $color-link;
+		border-bottom: solid 1px $c-gray-lighter;
+		@include clearfix;
+
+		.username_block-img {
+			width: 5rem;
+			height: 5rem;
+			line-height: 4.5rem;
+			border-radius: 50%;
+			margin-right: 0.8rem;
+			float: left;
+			background-color: $c-white;
+			padding: 0.3rem;
+
+			img {
+				width: 100%;
+				height: auto;
+			}
+
+		}
+
+		&:hover {
+			background: $c-gray-lighter;
+			color: $c-gray-darker;
+		}
+
+		&.open {
+			cursor: default;
+			background: $c-white url("../img/icons/check-user.svg") right no-repeat;
+			font-weight: bold;
+			color: $c-gray-darker;
+		}
+
+	}
+
+	.username_tool {
+		padding: 1rem 1rem 1rem 2rem;
+		font: $font-size-basemin $font-family-cond;
+		@include clearfix;
+		background: $c-white;
+
+		.username_tool__exit {
+			color: $c-gray;
+			float: right;
+
+			&:hover {
+				color: $color-link-hover;
+				text-decoration: none;
+			}
+
+			.fa {
+				font-size: 2.1rem;
+				margin-left: 0.6rem;
+				float: right;
+			}
+
+		}
+
+	}
+
+}

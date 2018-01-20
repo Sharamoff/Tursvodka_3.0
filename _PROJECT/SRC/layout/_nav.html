@@ -16,13 +16,35 @@
 
 
 			<div class="navbar-cabinet visible-xs">
-				<div class="cabinet-username"><a href="#">Личный кабинет</a></div>
+
+				<div class="dropdown">
+					<div class="cabinet-enter" data-toggle="dropdown"><a href="#"><i class="fa fa-user-circle-o"></i>Личный кабинет</a></div>
+					<div class="cabinet-enter-dropdown cabinet-dropdown dropdown-menu">
+						<form name="fm-cabinet-enter-xs" id="fm-cabinet-enter-xs">
+							<p class="hdr">Авторизация</p>
+							<div class="form-group">
+								<label for="fld-cabinet-enter_email-xs">Ваш email</label>
+								<input type="email" id="fld-cabinet-enter_email-xs" class="form-control">
+							</div>
+							<div class="form-group">
+								<label for="fld-cabinet-enter_pass-xs">Ваш пароль</label>
+								<input type="password" id="fld-cabinet-enter_pass-xs" class="form-control">
+							</div>
+							<button class="b-link" type="submit">Войти</button>
+							<div class="clearfix">
+								<a href="#" class="i-link"><strong>Регистрация</strong></a>&nbsp;/&nbsp;<a href="#" class="i-link">Забыли пароль?</a>
+							</div>
+						</form>
+					</div>
+				</div>
+
 				<div class="cabinet-icons">
 					<a href="#" class="cabinet-icons__mess" title="Сообщения"><i class="fa fa-envelope-o"></i><span class="bulcount bk--red">33</span></a>
 					<a href="#" class="cabinet-icons__checkhotel" title="Отслеживать отель"><i class="fa fa-eye"></i></a>
 					<a href="#" class="cabinet-icons__fav" title="Добавить в закладки"><i class="fa fa-heart-o"></i></a>
 					<a href="#" class="cabinet-icons__checkhistory" title="Отслеживать историю"><i class="fa fa-history"></i></a>
 				</div>
+
 			</div>
 
 

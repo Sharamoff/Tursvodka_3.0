@@ -129,13 +129,35 @@
 			
 			
 						<div class="navbar-cabinet visible-xs">
-							<div class="cabinet-username"><a href="#">Личный кабинет</a></div>
+			
+							<div class="dropdown">
+								<div class="cabinet-enter" data-toggle="dropdown"><a href="#"><i class="fa fa-user-circle-o"></i>Личный кабинет</a></div>
+								<div class="cabinet-enter-dropdown cabinet-dropdown dropdown-menu">
+									<form name="fm-cabinet-enter-xs" id="fm-cabinet-enter-xs">
+										<p class="hdr">Авторизация</p>
+										<div class="form-group">
+											<label for="fld-cabinet-enter_email-xs">Ваш email</label>
+											<input type="email" id="fld-cabinet-enter_email-xs" class="form-control">
+										</div>
+										<div class="form-group">
+											<label for="fld-cabinet-enter_pass-xs">Ваш пароль</label>
+											<input type="password" id="fld-cabinet-enter_pass-xs" class="form-control">
+										</div>
+										<button class="b-link" type="submit">Войти</button>
+										<div class="clearfix">
+											<a href="#" class="i-link"><strong>Регистрация</strong></a>&nbsp;/&nbsp;<a href="#" class="i-link">Забыли пароль?</a>
+										</div>
+									</form>
+								</div>
+							</div>
+			
 							<div class="cabinet-icons">
 								<a href="#" class="cabinet-icons__mess" title="Сообщения"><i class="fa fa-envelope-o"></i><span class="bulcount bk--red">33</span></a>
 								<a href="#" class="cabinet-icons__checkhotel" title="Отслеживать отель"><i class="fa fa-eye"></i></a>
 								<a href="#" class="cabinet-icons__fav" title="Добавить в закладки"><i class="fa fa-heart-o"></i></a>
 								<a href="#" class="cabinet-icons__checkhistory" title="Отслеживать историю"><i class="fa fa-history"></i></a>
 							</div>
+			
 						</div>
 			
 			
@@ -861,7 +883,7 @@
 
 				<div class="block-response">
 					<div class="response__name">
-						<span class="user-name">Александра</span><span class="user-date">/&nbsp;11.05.2017</span><span class="user-time">/&nbsp;10:40</span>
+						<span class="miniuser-name">Александра</span><span class="miniuser-date">/&nbsp;11.05.2017</span><span class="miniuser-time">/&nbsp;10:40</span>
 					</div>
 					<div class="response__address">
 						<a href="#">Италия</a>&nbsp;/&nbsp;<a href="#">Ремини</a>&nbsp;/&nbsp;<a href="#">Hotel Bolero 3*</a>
@@ -924,7 +946,7 @@
 
 				<div class="block-response">
 					<div class="response__name">
-						<span class="user-name">UsderMont </span><span class="user-date">/&nbsp;9.08.2016</span><span class="user-time">/&nbsp;16:00</span>
+						<span class="miniuser-name">UsderMont </span><span class="miniuser-date">/&nbsp;9.08.2016</span><span class="miniuser-time">/&nbsp;16:00</span>
 					</div>
 					<div class="response__address">
 						<a href="#">Турция</a>&nbsp;/&nbsp;<a href="#">Кемер</a>&nbsp;/&nbsp;<a href="#">Queen`s Park Resort Goynuk 5*</a>
@@ -987,7 +1009,7 @@
 
 				<div class="block-response">
 				<div class="response__name">
-					<span class="user-name">Ксю</span><span class="user-date">/&nbsp;9.08.2016</span><span class="user-time">/&nbsp;16:00</span>
+					<span class="miniuser-name">Ксю</span><span class="miniuser-date">/&nbsp;9.08.2016</span><span class="miniuser-time">/&nbsp;16:00</span>
 				</div>
 				<div class="response__address">
 					<a href="#">Турция</a>&nbsp;/&nbsp;<a href="#">Аланья</a>&nbsp;/&nbsp;<a href="#">Timo Resort Hotel 5*</a>
@@ -1048,7 +1070,7 @@
 
 				<div class="block-response">
 					<div class="response__name">
-						<span class="user-name">Александра</span><span class="user-date">/&nbsp;11.05.2017</span><span class="user-time">/&nbsp;10:40</span>
+						<span class="miniuser-name">Александра</span><span class="miniuser-date">/&nbsp;11.05.2017</span><span class="miniuser-time">/&nbsp;10:40</span>
 					</div>
 					<div class="response__address">
 						<a href="#">Италия</a>&nbsp;/&nbsp;<a href="#">Ремини</a>&nbsp;/&nbsp;<a href="#">Hotel Bolero 3*</a>
@@ -1111,7 +1133,7 @@
 
 				<div class="block-response">
 					<div class="response__name">
-						<span class="user-name">UsderMont </span><span class="user-date">/&nbsp;9.08.2016</span><span class="user-time">/&nbsp;16:00</span>
+						<span class="miniuser-name">UsderMont </span><span class="miniuser-date">/&nbsp;9.08.2016</span><span class="miniuser-time">/&nbsp;16:00</span>
 					</div>
 					<div class="response__address">
 						<a href="#">Турция</a>&nbsp;/&nbsp;<a href="#">Кемер</a>&nbsp;/&nbsp;<a href="#">Queen`s Park Resort Goynuk 5*</a>
@@ -1178,7 +1200,7 @@
 
 				<div class="block-response">
 					<div class="response__name">
-						<span class="user-name">Ксю</span><span class="user-date">/&nbsp;9.08.2016</span><span class="user-time">/&nbsp;16:00</span>
+						<span class="miniuser-name">Ксю</span><span class="miniuser-date">/&nbsp;9.08.2016</span><span class="miniuser-time">/&nbsp;16:00</span>
 					</div>
 					<div class="response__address">
 						<a href="#">Турция</a>&nbsp;/&nbsp;<a href="#">Аланья</a>&nbsp;/&nbsp;<a href="#">Timo Resort Hotel 5*</a>
@@ -1201,7 +1223,7 @@
 
 				<div class="block-response">
 					<div class="response__name">
-						<span class="user-name">Александра</span><span class="user-date">/&nbsp;11.05.2017</span><span class="user-time">/&nbsp;10:40</span>
+						<span class="miniuser-name">Александра</span><span class="miniuser-date">/&nbsp;11.05.2017</span><span class="miniuser-time">/&nbsp;10:40</span>
 					</div>
 					<div class="response__address">
 						<a href="#">Италия</a>&nbsp;/&nbsp;<a href="#">Ремини</a>&nbsp;/&nbsp;<a href="#">Hotel Bolero 3*</a>
@@ -1264,7 +1286,7 @@
 
 				<div class="block-response">
 					<div class="response__name">
-						<span class="user-name">UsderMont </span><span class="user-date">/&nbsp;9.08.2016</span><span class="user-time">/&nbsp;16:00</span>
+						<span class="miniuser-name">UsderMont </span><span class="miniuser-date">/&nbsp;9.08.2016</span><span class="miniuser-time">/&nbsp;16:00</span>
 					</div>
 					<div class="response__address">
 						<a href="#">Турция</a>&nbsp;/&nbsp;<a href="#">Кемер</a>&nbsp;/&nbsp;<a href="#">Queen`s Park Resort Goynuk 5*</a>
@@ -1331,7 +1353,7 @@
 
 				<div class="block-response">
 					<div class="response__name">
-						<span class="user-name">Ксю</span><span class="user-date">/&nbsp;9.08.2016</span><span class="user-time">/&nbsp;16:00</span>
+						<span class="miniuser-name">Ксю</span><span class="miniuser-date">/&nbsp;9.08.2016</span><span class="miniuser-time">/&nbsp;16:00</span>
 					</div>
 					<div class="response__address">
 						<a href="#">Турция</a>&nbsp;/&nbsp;<a href="#">Аланья</a>&nbsp;/&nbsp;<a href="#">Timo Resort Hotel 5*</a>
@@ -1392,7 +1414,7 @@
 
 				<div class="block-response">
 					<div class="response__name">
-						<span class="user-name">Александра</span><span class="user-date">/&nbsp;11.05.2017</span><span class="user-time">/&nbsp;10:40</span>
+						<span class="miniuser-name">Александра</span><span class="miniuser-date">/&nbsp;11.05.2017</span><span class="miniuser-time">/&nbsp;10:40</span>
 					</div>
 					<div class="response__address">
 						<a href="#">Италия</a>&nbsp;/&nbsp;<a href="#">Ремини</a>&nbsp;/&nbsp;<a href="#">Hotel Bolero 3*</a>

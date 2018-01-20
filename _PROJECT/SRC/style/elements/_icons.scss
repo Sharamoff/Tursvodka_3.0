@@ -122,3 +122,32 @@
 }
 
 
+
+// иконки Зодиак
+
+.icon-zodiac {
+	display: inline-block;
+	width: 	1.8rem;
+	height: 1.8rem;
+	margin-right: 1rem;
+	background-size: cover;
+	font-style: normal;
+
+	&:after {
+		padding-left: 2.2rem;
+	}
+
+	&.zc--oven 			{background-image: url("../img/icons/zodiac/zc-aries.svg"); 			&:after{content: 'Овен'}}
+	&.zc--telec			{background-image: url("../img/icons/zodiac/zc-taurus.svg"); 			&:after{content: 'Телец'}}
+	&.zc--bliznecy	{background-image: url("../img/icons/zodiac/zc-pisces.svg"); 			&:after{content: 'Близнецы'}}
+	&.zc--rak				{background-image: url("../img/icons/zodiac/zc-cancer.svg"); 			&:after{content: 'Рак'}}
+	&.zc--lev				{background-image: url("../img/icons/zodiac/zc-leo.svg");					&:after{content: 'Лев'}}
+	&.zc--deva			{background-image: url("../img/icons/zodiac/zc-virgo.svg"); 			&:after{content: 'Дева'}}
+	&.zc--vesy			{background-image: url("../img/icons/zodiac/zc-libra.svg"); 			&:after{content: 'Весы'}}
+	&.zc--scorp			{background-image: url("../img/icons/zodiac/zc-scorpion.svg"); 		&:after{content: 'Скорпион'}}
+	&.zc--strelec		{background-image: url("../img/icons/zodiac/zc-sagittarius.svg"); &:after{content: 'Стрелец'}}
+	&.zc--kozerog		{background-image: url("../img/icons/zodiac/zc-capricorn.svg"); 	&:after{content: 'Козерог'}}
+	&.zc--vodoley		{background-image: url("../img/icons/zodiac/zc-aquarius.svg"); 		&:after{content: 'Водолей'}}
+	&.zc--ryby			{background-image: url("../img/icons/zodiac/zc-gemini.svg"); 			&:after{content: 'Рыбы'}}
+
+}
