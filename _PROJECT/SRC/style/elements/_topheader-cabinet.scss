@@ -178,7 +178,7 @@
 	@include respond-to(media-xs) {
 		padding: 1.5rem;
 		width: 100%;
-		max-width: 40rem;
+		max-width: 100%;
 	}
 
 	@include respond-to(media-sm) {
