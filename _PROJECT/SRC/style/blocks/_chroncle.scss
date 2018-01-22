@@ -1,0 +1,66 @@
+///////////////////////////////////////////////
+
+
+
+// лента событий
+
+
+.block-chronicle {
+	@include clearfix;
+	padding-bottom: 1.5rem;
+	margin-bottom: 1.5rem;
+	border-bottom: solid 1px $color-dlv;
+
+	.chronicle__name {
+		margin-top: 1.5rem;
+		margin-bottom: 1.5rem;
+	}
+
+	.chronicle__img {
+		margin-top: 1.5rem;
+		margin-bottom: 1.5rem;
+
+		img {
+			width: 100%;
+			height: auto;
+			max-width: 320px;
+			max-height: 320px;
+		}
+
+	}
+
+	.cronicle__address {
+		margin-top: 1.5rem;
+		margin-bottom: 1.5rem;
+		font: normal $font-size-base $font-family-cond;
+		line-height: $line-height-def !important;
+		color: $c-gray;
+
+		a {
+			text-decoration: underline;
+			color: $c-gray-darker;
+
+			&:hover {
+				text-decoration: none;
+				color: $color-link-hover;
+			}
+
+		}
+
+	}
+
+	.chronicle__descript {
+		color: $c-gray-darker;
+
+		@include respond-to(media-xs) {
+			margin-top: 0;
+		}
+
+	}
+
+	.response__icons {
+		margin-top: 1.5rem;
+		@include clearfix;
+	}
+
+}

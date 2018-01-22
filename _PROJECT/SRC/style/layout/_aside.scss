@@ -205,3 +205,26 @@
 
 
 
+.aside-map {
+	margin-bottom: 1.5rem;
+}
+
+
+.aside-countries {
+	font-family: $font-family-cond;
+
+	&__result {
+		display: block;
+		background: $c-gray-lightermore;
+		padding: 0.5rem 1rem 0.6rem 1rem;
+		margin-bottom: 1rem;
+	}
+
+	ul>li {
+		margin-top: 0.8rem;
+		margin-bottom: 0.8rem;
+		font-size: $font-size-basemin;
+	}
+
+
+}
