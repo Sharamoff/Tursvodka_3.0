@@ -1,0 +1,79 @@
+///////////////////////////////////////////////
+
+
+
+// картинки
+
+.pic-thumb {
+	background: $c-gray-lightermore;
+	margin-bottom: 0;
+	margin-top: 0.4rem;
+	position: relative;
+	z-index: 1;
+
+	@include respond-to(media-xs) {
+		max-width: 280px;
+		margin-bottom: 1.5rem;
+	}
+
+	img {
+		width: 100%;
+		height: auto;
+	}
+
+	&__txt {
+		font-size: $font-size-note;
+		color: $c-gray-dark;
+		text-align: center;
+		padding: 0.8rem;
+	}
+
+	&__copy {
+		position: absolute;
+		z-index: 2;
+		font-size: 1rem;
+		color: $c-white;
+		text-shadow: $c-black;
+		right: 0.5rem;
+		top: 0.3rem;
+		text-align: right;
+		line-height: 1;
+		opacity: 0.75;
+
+		a {
+			color: $c-white;
+			text-shadow: $c-black;
+			text-decoration: none;
+		}
+
+	}
+
+}
+
+.thumb--content {
+	max-width: 280px;
+}
+
+.thumb--l {
+	float: left;
+	margin-right: 1.5rem;
+
+	@include respond-to(media-xs) {
+		float: none;
+		margin-right: 0;
+	}
+
+}
+
+.thumb--r {
+	float: right;
+	margin-left: 1.5rem;
+
+	@include respond-to(media-xs) {
+		float: none;
+		margin-left: 0;
+	}
+
+}
+
+
