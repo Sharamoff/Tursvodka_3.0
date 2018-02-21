@@ -137,7 +137,8 @@ section {
 .row--col-flexed {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  margin-bottom: 3rem; }
   .row--col-flexed > div {
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
@@ -1131,6 +1132,18 @@ a:hover .a--more {
         .tablink .tab-more .dropdown-menu > li a:hover {
           background-color: white !important;
           color: #ff8000; }
+      .tablink .tab-more .dropdown-menu > li .active {
+        display: block;
+        padding: 0.5rem 1.2rem;
+        color: #999999;
+        background-color: white; }
+        .tablink .tab-more .dropdown-menu > li .active:before {
+          position: relative;
+          font-family: FontAwesome;
+          font-size: 0.9rem;
+          content: "\f10C";
+          top: -0.1rem;
+          margin-right: 0.5rem; }
   @media only screen and (max-width: 767px) {
     .tablink {
       border-bottom: none;
@@ -1211,7 +1224,7 @@ a:hover .a--more {
 
 .panel-cite {
   background: white;
-  border-left: solid 3px #cc0000;
+  border-left: solid 2px #0068b8;
   line-height: 1.1;
   padding: 0 2rem;
   margin: 3rem 0; }
@@ -1219,14 +1232,14 @@ a:hover .a--more {
     .panel-cite {
       padding: 1.5rem; } }
   .panel-cite .panel-heading {
-    color: #cc0000;
+    color: #0068b8;
     font-size: 1.8rem;
     font-weight: bold;
     padding: 1rem 0 0 0;
     margin-bottom: 1rem; }
   .panel-cite .panel-body {
     font-size: 1.4rem;
-    color: #999999;
+    color: #666666;
     line-height: 1.1;
     padding: 0; }
 
@@ -1264,6 +1277,47 @@ a:hover .a--more {
     border-radius: 5px 0 5px 5px; }
     .panel-quest__pane .hdr {
       font: bold 1.8rem "Roboto Condensed", "Arial Narrow", Arial, Helvetica, sans-serif; }
+
+.panel-info {
+  border: solid 2px #dddddd;
+  border-radius: 5px;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  background: white;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15); }
+  .panel-info .panel-heading {
+    font: bold 1.8rem "Roboto Condensed", "Arial Narrow", Arial, Helvetica, sans-serif;
+    color: black;
+    padding: 0.8rem 1.5rem;
+    line-height: 1.1;
+    border-bottom: solid 1px #dddddd;
+    background: #eeeeee; }
+  .panel-info .panel-body {
+    font-size: 1.4rem;
+    padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+    color: #333333; }
+
+.panel--danger {
+  border-color: rgba(204, 0, 0, 0.4); }
+  .panel--danger .panel-heading {
+    color: #cc0000;
+    background: rgba(204, 0, 0, 0.15);
+    border-color: rgba(204, 0, 0, 0.2); }
+
+.panel--info {
+  border-color: rgba(0, 104, 184, 0.4); }
+  .panel--info .panel-heading {
+    color: #0068b8;
+    background: rgba(0, 104, 184, 0.15);
+    border-color: rgba(0, 104, 184, 0.2); }
+
+.panel--success {
+  border-color: rgba(77, 155, 64, 0.4); }
+  .panel--success .panel-heading {
+    color: #4d9b40;
+    background: rgba(77, 155, 64, 0.15);
+    border-color: rgba(77, 155, 64, 0.2); }
 
 .table {
   margin: 3rem 0; }
@@ -1725,16 +1779,32 @@ INPUT[type="radio"] {
   z-index: 1; }
   @media only screen and (max-width: 767px) {
     .pic-thumb {
-      max-width: 280px;
+      max-width: 290px;
       margin-bottom: 1.5rem; } }
   .pic-thumb img {
     width: 100%;
     height: auto; }
+  .pic-thumb a {
+    color: #3c94cc; }
+    .pic-thumb a:hover {
+      color: #ff8000;
+      text-decoration: underline; }
+  .pic-thumb.thumb--ftr {
+    padding-bottom: 5rem; }
   .pic-thumb__txt {
     font-size: 1.2rem;
     color: #666666;
     text-align: center;
     padding: 0.8rem; }
+  .pic-thumb__ftr {
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    width: 100%;
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 0.8rem;
+    font-weight: bold; }
   .pic-thumb__copy {
     position: absolute;
     z-index: 2;

@@ -131,6 +131,7 @@ section {
 .row--col-flexed {
 	display: -webkit-flex;
 	display: flex;
+	margin-bottom: 3rem;
 
 	> div {
 		align-items: stretch;

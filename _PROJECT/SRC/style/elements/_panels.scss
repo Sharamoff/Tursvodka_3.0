@@ -38,7 +38,7 @@
 
 .panel-cite {
 	background: $c-white;
-	border-left: solid 3px $c-red;
+	border-left: solid 2px $c-blue;
 	line-height: $line-height-min;
 	padding: 0 2rem;
 	margin: 3rem 0;
@@ -48,7 +48,7 @@
 	}
 
 	.panel-heading {
-		color: $c-red;
+		color: $c-blue;
 		font-size: $font-size-h3;
 		font-weight: bold;
 		padding: 1rem 0 0 0;
@@ -57,7 +57,7 @@
 
 	.panel-body {
 		font-size: $font-size-basemin;
-		color: $c-gray;
+		color: $c-gray-dark;
 		line-height: $line-height-min;
 		padding: 0;
 	}
@@ -113,6 +113,88 @@
 	}
 
 }
+
+
+
+
+.panel-info {
+	border: solid 2px $c-gray-lighter;
+	border-radius: 5px;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+	background: $c-white;
+	@include box-shadow(0 1px 1px rgba(0,0,0,.15));
+
+	.panel-heading {
+		font: bold $font-size-h3 $font-family-cond;
+		color: $c-black;
+		padding: 0.8rem 1.5rem;
+		line-height: $line-height-min;
+		border-bottom: solid 1px $c-gray-lighter;
+		background: $c-gray-lightermore;
+	}
+
+	.panel-body {
+		font-size: $font-size-basemin;
+		padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+		color: $c-gray-darker;
+	}
+
+}
+
+
+.panel--danger {
+	border-color: transparentize($c-red, 0.6);
+
+	.panel-heading {
+		color: $c-red;
+		background: transparentize($c-red, 0.85);
+		border-color: transparentize($c-red, 0.8);
+	}
+
+}
+
+.panel--info {
+	border-color: transparentize($c-blue, 0.6);
+
+	.panel-heading {
+		color: $c-blue;
+		background: transparentize($c-blue, 0.85);
+		border-color: transparentize($c-blue, 0.8);
+	}
+
+}
+
+.panel--success {
+	border-color: transparentize($c-green, 0.6);
+
+	.panel-heading {
+		color: $c-green;
+		background: transparentize($c-green, 0.85);
+		border-color: transparentize($c-green, 0.8);
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

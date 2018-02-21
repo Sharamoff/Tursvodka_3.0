@@ -105,6 +105,23 @@
 
 				}
 
+				.active {
+					display: block;
+					padding: 0.5rem 1.2rem;
+					color: $c-gray;
+					background-color: $c-white;
+
+					&:before {
+						position: relative;
+						font-family: $fontawesome;
+						font-size: 0.9rem;
+						content: "\f10C";
+						top: -0.1rem;
+						margin-right:0.5rem;
+					}
+
+				}
+
 			}
 
 		}
