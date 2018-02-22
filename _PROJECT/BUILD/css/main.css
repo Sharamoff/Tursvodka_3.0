@@ -131,8 +131,7 @@ section {
   display: flex; }
   @media only screen and (max-width: 767px) {
     .row--flexed {
-      display: block;
-      margin-bottom: -15px; } }
+      display: block; } }
 
 .row--col-flexed {
   display: -webkit-box;
@@ -606,6 +605,12 @@ HR {
       color: #0068b8;
       font: bold 1.8rem "Roboto Condensed", "Arial Narrow", Arial, Helvetica, sans-serif;
       line-height: 1.2; }
+    .v-base-block .block__descript-img {
+      max-width: 260px;
+      margin-bottom: 1.5rem; }
+      .v-base-block .block__descript-img img {
+        width: 100%;
+        height: auto; }
   .v-base-block a {
     text-decoration: none;
     color: #666666; }
@@ -1084,12 +1089,12 @@ a:hover .a--more {
       .tablink > ul > li .active {
         display: block;
         color: white;
-        padding: 1.2rem 3.5rem;
+        padding: 1.2rem 3rem;
         border-radius: 5px 5px 0 0;
         background: #999999; }
       .tablink > ul > li a {
         display: block;
-        padding: 1.2rem 3.5rem;
+        padding: 1.2rem 3rem;
         border-radius: 5px 5px 0 0; }
         .tablink > ul > li a:hover {
           text-decoration: none; }
@@ -1107,7 +1112,7 @@ a:hover .a--more {
       text-decoration: none; }
   .tablink .tab-more .dropdown-menu {
     background-color: #eeeeee;
-    font: 1.6rem "Roboto Condensed", "Arial Narrow", Arial, Helvetica, sans-serif;
+    font: 1.8rem "Roboto Condensed", "Arial Narrow", Arial, Helvetica, sans-serif;
     text-transform: inherit;
     padding: 0;
     -webkit-box-shadow: none;
@@ -5393,3 +5398,6 @@ INPUT[type="radio"] {
 
 .sc_exchanges-cross__infoval {
   margin-bottom: 3rem; }
+
+.ac_avia-aircrafts {
+  margin-top: 6rem; }

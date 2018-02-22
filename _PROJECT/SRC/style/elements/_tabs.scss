@@ -29,14 +29,14 @@
 			.active {
 				display: block;
 				color: $c-white;
-				padding: 1.2rem 3.5rem;
+				padding: 1.2rem 3rem;
 				border-radius: 5px 5px 0 0;
 				background: $c-gray;
 			}
 
 			a {
 				display: block;
-				padding: 1.2rem 3.5rem;
+				padding: 1.2rem 3rem;
 				border-radius: 5px 5px 0 0;
 
 				&:hover {
@@ -72,7 +72,7 @@
 
 		.dropdown-menu {
 			background-color: $c-gray-lightermore;
-			font: $font-size-base $font-family-cond;
+			font: $font-size-basemax $font-family-cond;
 			text-transform: inherit;
 			padding: 0;
 			box-shadow: none;

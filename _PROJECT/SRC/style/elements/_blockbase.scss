@@ -6,7 +6,7 @@
 
 
 .v-base-block {
-	max-width: 380px;
+	max-width: $block-max;
 	height: 100%;
 	position: relative;
 	margin-bottom: 3rem;
@@ -70,6 +70,17 @@
 			color: $color-link-hdr;
 			font: bold $font-size-basemax $font-family-cond;
 			line-height: $line-height-def;
+		}
+
+		&-img {
+			max-width: 260px;
+			margin-bottom: 1.5rem;
+
+			img {
+				width: 100%;
+				height: auto;
+			}
+
 		}
 
 	}
