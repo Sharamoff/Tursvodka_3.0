@@ -31,10 +31,15 @@ FORM TD {
 }
 
 label {
+	font-family: $font-family-cond;
 	font-weight: normal !important;
 	color: $c-gray-dark;
 	cursor: pointer;
 	line-height: $line-height-min;
+
+	@include respond-to(media-sm) {
+		margin-top: 1px;
+	}
 
 	&.label--ch {
 		color: $color-fields;
@@ -79,6 +84,27 @@ INPUT[type="radio"] {
 .bootstrap-touchspin-up,
 .bootstrap-touchspin-down {
 	height: 34px;
+}
+
+
+
+.form-note {
+	color: $c-gray-dark;
+	font-size: $font-size-note;
+}
+
+
+.required {
+
+	&:before {
+		margin-right: 0.5rem;
+		content: '*';
+		font-size: 2.1rem;
+		color: $c-red;
+		text-decoration: none;
+		font-family: $font-family-base;
+	}
+
 }
 
 

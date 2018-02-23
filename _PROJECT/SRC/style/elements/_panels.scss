@@ -40,8 +40,10 @@
 	background: $c-white;
 	border-left: solid 2px $c-blue;
 	line-height: $line-height-min;
-	padding: 0 2rem;
+	padding: 0 0 0 2rem;
 	margin: 3rem 0;
+	font-size: $font-size-basemin;
+	color: $c-gray-dark;
 
 	@include respond-to(media-xs) {
 		padding: 1.5rem;
@@ -60,6 +62,19 @@
 		color: $c-gray-dark;
 		line-height: $line-height-min;
 		padding: 0;
+	}
+
+	&.panel--danger {
+		border-color: $c-red;
+
+		.panel-heading {
+			color: $c-red;
+			font-size: $font-size-base;
+			font-weight: bold;
+			background: transparent;
+			border: 0;
+		}
+
 	}
 
 }
@@ -178,6 +193,19 @@
 
 
 
+
+.panel--grayed {
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+	padding: 3rem;
+	background: $c-gray-lightermore;
+
+	@include respond-to(media-xs) {
+		padding: 1.5rem;
+	}
+
+
+}
 
 
 

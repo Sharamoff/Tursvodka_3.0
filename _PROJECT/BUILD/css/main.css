@@ -1231,8 +1231,10 @@ a:hover .a--more {
   background: white;
   border-left: solid 2px #0068b8;
   line-height: 1.1;
-  padding: 0 2rem;
-  margin: 3rem 0; }
+  padding: 0 0 0 2rem;
+  margin: 3rem 0;
+  font-size: 1.4rem;
+  color: #666666; }
   @media only screen and (max-width: 767px) {
     .panel-cite {
       padding: 1.5rem; } }
@@ -1247,6 +1249,14 @@ a:hover .a--more {
     color: #666666;
     line-height: 1.1;
     padding: 0; }
+  .panel-cite.panel--danger {
+    border-color: #cc0000; }
+    .panel-cite.panel--danger .panel-heading {
+      color: #cc0000;
+      font-size: 1.6rem;
+      font-weight: bold;
+      background: transparent;
+      border: 0; }
 
 .panel-quest {
   position: relative; }
@@ -1323,6 +1333,15 @@ a:hover .a--more {
     color: #4d9b40;
     background: rgba(77, 155, 64, 0.15);
     border-color: rgba(77, 155, 64, 0.2); }
+
+.panel--grayed {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  padding: 3rem;
+  background: #eeeeee; }
+  @media only screen and (max-width: 767px) {
+    .panel--grayed {
+      padding: 1.5rem; } }
 
 .table {
   margin: 3rem 0; }
@@ -1490,10 +1509,14 @@ FORM TD {
   padding: 0.5rem 1rem 0.5rem 0; }
 
 label {
+  font-family: "Roboto Condensed", "Arial Narrow", Arial, Helvetica, sans-serif;
   font-weight: normal !important;
   color: #666666;
   cursor: pointer;
   line-height: 1.1; }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    label {
+      margin-top: 1px; } }
   label.label--ch {
     color: #333333;
     margin-right: 1rem;
@@ -1529,6 +1552,18 @@ INPUT[type="radio"] {
 .bootstrap-touchspin-up,
 .bootstrap-touchspin-down {
   height: 34px; }
+
+.form-note {
+  color: #666666;
+  font-size: 1.2rem; }
+
+.required:before {
+  margin-right: 0.5rem;
+  content: '*';
+  font-size: 2.1rem;
+  color: #cc0000;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif; }
 
 .form-group-inline {
   margin-left: -5px;
