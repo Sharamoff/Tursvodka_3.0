@@ -1,0 +1,30 @@
+///////////////////////////////////////////////
+
+
+
+// комментарий к отзыву
+
+
+.block-comment {
+	@include clearfix;
+	padding: 1.5rem 3rem;
+	margin-top: 3rem;
+	background: $c-blue-lightermore;
+	font-size: $font-size-basemin;
+
+	@include respond-to(media-xs) {
+		padding: 1.5rem;
+		margin-top: 15px;
+	}
+
+	.comment__name {
+		margin-bottom: 1rem;
+		font-size: $font-size-base !important;
+	}
+
+	.comment__item {
+
+	}
+
+
+}

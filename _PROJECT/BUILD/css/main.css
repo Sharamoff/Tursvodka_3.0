@@ -909,7 +909,8 @@ HR {
   border-radius: 5rem;
   padding: 0.6rem 1.2rem 0.7rem 1.2rem;
   min-width: 10rem;
-  margin-top: 1.5rem; }
+  margin-top: 1.5rem;
+  margin-bottom: 3rem; }
   @media only screen and (max-width: 767px) {
     .b-lonetool {
       float: none !important; } }
@@ -1335,13 +1336,56 @@ a:hover .a--more {
     border-color: rgba(77, 155, 64, 0.2); }
 
 .panel--grayed {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
   padding: 3rem;
   background: #eeeeee; }
   @media only screen and (max-width: 767px) {
     .panel--grayed {
       padding: 1.5rem; } }
+
+.panel--border-grayed {
+  padding: 3rem;
+  border: solid 1px #dddddd; }
+  @media only screen and (max-width: 767px) {
+    .panel--border-grayed {
+      padding: 1.5rem; } }
+
+.panel-toggled {
+  margin-top: 3rem;
+  margin-bottom: 3rem; }
+  .panel-toggled .panel-toggled__btn {
+    background: #dddddd;
+    font-family: "Roboto Condensed", "Arial Narrow", Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+    color: #666666;
+    padding: 0.8rem 1.5rem;
+    cursor: pointer;
+    opacity: 0.75; }
+    .panel-toggled .panel-toggled__btn:hover {
+      opacity: 1; }
+    .panel-toggled .panel-toggled__btn.uncollapsed:before {
+      font-family: FontAwesome;
+      font-size: 2.1rem;
+      content: "\f01b";
+      margin-right: 0.8rem;
+      float: left;
+      display: inline-block;
+      position: relative;
+      top: -0.4rem;
+      opacity: 0.75; }
+    .panel-toggled .panel-toggled__btn.uncollapsed:after {
+      content: 'свернуть окно'; }
+    .panel-toggled .panel-toggled__btn.collapsed:before {
+      font-family: FontAwesome;
+      font-size: 2.1rem;
+      content: "\f01a";
+      margin-right: 0.8rem;
+      float: left;
+      display: inline-block;
+      position: relative;
+      top: -0.4rem;
+      opacity: 0.75; }
+    .panel-toggled .panel-toggled__btn.collapsed:after {
+      content: 'развернуть окно'; }
 
 .table {
   margin: 3rem 0; }
@@ -1548,6 +1592,13 @@ INPUT[type="radio"] {
   top: -0.3rem;
   position: relative; }
 
+INPUT[type="file"] {
+  height: 3rem;
+  margin-right: 0.5rem;
+  position: relative;
+  top: 0.5rem;
+  left: -0.7rem; }
+
 .hastouchspin,
 .bootstrap-touchspin-up,
 .bootstrap-touchspin-down {
@@ -1555,12 +1606,23 @@ INPUT[type="radio"] {
 
 .form-note {
   color: #666666;
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
+
+.form-sublink {
+  display: inline-block;
+  font-family: "Roboto Condensed", "Arial Narrow", Arial, Helvetica, sans-serif;
+  margin-top: 1rem; }
+
+.form-captcha {
+  width: 80px;
+  height: 26px;
+  margin: 0.5rem 0; }
 
 .required:before {
   margin-right: 0.5rem;
   content: '*';
-  font-size: 2.1rem;
   color: #cc0000;
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif; }
@@ -3328,6 +3390,16 @@ INPUT[type="radio"] {
       .block-response .response__address a:hover {
         text-decoration: none;
         color: #ff8000; }
+    .block-response .response__address strong {
+      color: black; }
+  .block-response .response__time {
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    color: #666666;
+    font: normal 1.6rem "Roboto Condensed", "Arial Narrow", Arial, Helvetica, sans-serif;
+    line-height: 1.2 !important; }
+    .block-response .response__time strong {
+      color: black; }
   .block-response .response__rates {
     font-size: 1.4rem; }
     .block-response .response__rates p {
@@ -3361,6 +3433,24 @@ INPUT[type="radio"] {
       display: table; }
     .block-response .response__icons:after {
       clear: both; }
+
+.block-comment {
+  padding: 1.5rem 3rem;
+  margin-top: 3rem;
+  background: #e0eef5;
+  font-size: 1.4rem; }
+  .block-comment:before, .block-comment:after {
+    content: " ";
+    display: table; }
+  .block-comment:after {
+    clear: both; }
+  @media only screen and (max-width: 767px) {
+    .block-comment {
+      padding: 1.5rem;
+      margin-top: 15px; } }
+  .block-comment .comment__name {
+    margin-bottom: 1rem;
+    font-size: 1.6rem !important; }
 
 .block-travelcompany {
   padding-bottom: 2.5rem;
@@ -5420,6 +5510,9 @@ INPUT[type="radio"] {
     color: #666666;
     text-transform: uppercase;
     font-size: 1.4rem; }
+
+.ac_responses-item .block-response {
+  margin-top: 3rem; }
 
 .sc_travelcompany-represent .row {
   margin-top: 1.5rem;

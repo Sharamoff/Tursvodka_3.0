@@ -45,11 +45,11 @@ $('#tourcontact-accordion').on('shown.bs.collapse', toggleIcon);
 
 
 
-// toggle панель
-$('.toggled-panel__header').on('click', function () {
+// toggled панель
+$('.panel-toggled__btn').on('click', function () {
 	var panel = $(this).attr('id');
-	$('#' + panel + '_p').slideToggle();
-	$('#' + panel + ' i').toggleClass('i--up');
+	$('#' + panel + '-plt').slideToggle();
+	$(this).toggleClass('collapsed');
 });
 
 

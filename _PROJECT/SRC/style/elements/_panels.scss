@@ -195,8 +195,6 @@
 
 
 .panel--grayed {
-	margin-top: 3rem;
-	margin-bottom: 3rem;
 	padding: 3rem;
 	background: $c-gray-lightermore;
 
@@ -204,10 +202,86 @@
 		padding: 1.5rem;
 	}
 
+}
+
+.panel--border-grayed {
+	padding: 3rem;
+	border: solid 1px $c-gray-lighter;
+
+	@include respond-to(media-xs) {
+		padding: 1.5rem;
+	}
 
 }
 
 
+
+.panel-toggled {
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+
+	.panel-toggled__plt {
+
+	}
+
+	.panel-toggled__btn {
+		background: $c-gray-lighter;
+		font-family: $font-family-cond;
+		font-size: $font-size-basemin;
+		color: $c-gray-dark;
+		padding: 0.8rem 1.5rem;
+		cursor: pointer;
+		opacity: 0.75;
+
+		&:hover {
+			opacity: 1;
+		}
+
+		&.uncollapsed {
+
+			&:before {
+				font-family: $fontawesome;
+				font-size: 2.1rem;
+				content: "\f01b";
+				margin-right: 0.8rem;
+				float: left;
+				display: inline-block;
+				position: relative;
+				top: -0.4rem;
+				opacity: 0.75;
+			}
+
+			&:after {
+				content: 'свернуть окно';
+			}
+
+		}
+
+		&.collapsed {
+
+			&:before {
+				font-family: $fontawesome;
+				font-size: 2.1rem;
+				content: "\f01a";
+				margin-right: 0.8rem;
+				float: left;
+				display: inline-block;
+				position: relative;
+				top: -0.4rem;
+				opacity: 0.75;
+			}
+
+			&:after {
+				content: 'развернуть окно';
+			}
+
+		}
+
+	}
+
+
+
+}
 
 
 

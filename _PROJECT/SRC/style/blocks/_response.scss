@@ -32,6 +32,23 @@
 
 		}
 
+		strong {
+			color: $c-black;
+		}
+
+	}
+
+	.response__time {
+		margin-top: 2rem;
+		margin-bottom: 1.5rem;
+		color: $c-gray-dark;
+		font: normal $font-size-base $font-family-cond;
+		line-height: $line-height-def !important;
+
+		strong {
+			color: $c-black;
+		}
+
 	}
 
 	.response__rates {
@@ -78,6 +95,10 @@
 		@include respond-to(media-xs) {
 			margin-top: 0;
 		}
+
+	}
+
+	.response__item {
 
 	}
 

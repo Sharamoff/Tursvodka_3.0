@@ -80,6 +80,14 @@ INPUT[type="radio"] {
 	position: relative;
 }
 
+INPUT[type="file"] {
+	height: 3rem;
+	margin-right: 0.5rem;
+	position: relative;
+	top: 0.5rem;
+	left: -0.7rem;
+}
+
 .hastouchspin,
 .bootstrap-touchspin-up,
 .bootstrap-touchspin-down {
@@ -91,15 +99,28 @@ INPUT[type="radio"] {
 .form-note {
 	color: $c-gray-dark;
 	font-size: $font-size-note;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
 }
 
+.form-sublink {
+	display: inline-block;
+	font-family: $font-family-cond;
+	margin-top: 1rem;
+}
+
+.form-captcha {
+	width: 80px;
+	height: 26px;
+	margin: 0.5rem 0;
+}
 
 .required {
 
 	&:before {
 		margin-right: 0.5rem;
 		content: '*';
-		font-size: 2.1rem;
+	//font-size: 2.1rem;
 		color: $c-red;
 		text-decoration: none;
 		font-family: $font-family-base;
