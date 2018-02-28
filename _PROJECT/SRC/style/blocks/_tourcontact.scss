@@ -1,0 +1,25 @@
+///////////////////////////////////////////////
+
+
+
+// где купить туры
+
+
+.aside-tourcontact {
+	margin-bottom: 5rem;
+
+	.hdr-h2 {
+		margin-bottom: 0.5rem;
+	}
+
+}
+
+
+
+.block-tourcontact {
+	border: solid 2px $c-gray-lighter;
+	border-radius: 5px;
+	padding: 1.5rem;
+	height: 100%;
+	@include clearfix;
+}

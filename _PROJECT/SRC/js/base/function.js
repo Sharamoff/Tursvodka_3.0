@@ -34,11 +34,14 @@ function toggleIcon(e) {
 			.find('.hdr_icon')
 			.toggleClass('i--down');
 }
+
 //переключение в tourcontact-accordion
 $('#tourcontact-accordion').on('hidden.bs.collapse', toggleIcon);
 $('#tourcontact-accordion').on('shown.bs.collapse', toggleIcon);
 
-
+//переключение в tourcontact-accordion
+$('#tourcontact-accordion-incontent').on('hidden.bs.collapse', toggleIcon);
+$('#tourcontact-accordion-incontent').on('shown.bs.collapse', toggleIcon);
 
 
 

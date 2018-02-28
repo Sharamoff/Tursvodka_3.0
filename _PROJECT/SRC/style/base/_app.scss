@@ -496,6 +496,14 @@ HR {
 
 }
 
+.to-right {
+	text-align: right;
+
+	@include respond-to(media-xs) {
+		text-align: inherit;
+	}
+
+}
 
 .no--padded {
 	margin-left: -30px;

@@ -99,8 +99,8 @@ INPUT[type="file"] {
 .form-note {
 	color: $c-gray-dark;
 	font-size: $font-size-note;
-	margin-top: 1rem;
-	margin-bottom: 1rem;
+	margin-top: 2rem;
+	margin-bottom: 0;
 }
 
 .form-sublink {
@@ -242,6 +242,46 @@ INPUT[type="file"] {
 
 	}
 
+
+}
+
+
+
+
+
+.formtype-bgblue {
+	padding: 3rem;
+	background: $c-blue;
+
+	@include respond-to(media-xs) {
+		padding: 1.5rem;
+	}
+
+	label {
+		color: $c-blue-lightermore;
+	}
+
+	.required {
+
+		&:before {
+			color: $c-red-light !important;
+		}
+
+	}
+
+	.form-note {
+		color: $c-blue-lighter;
+
+		a {
+			color: $c-white;
+
+			&:hover {
+				color: $color-link-hover;
+			}
+
+		}
+
+	}
 
 }
 

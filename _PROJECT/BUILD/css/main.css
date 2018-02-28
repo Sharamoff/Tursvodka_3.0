@@ -419,6 +419,12 @@ HR {
     .b--to-left {
       margin-right: 0; } }
 
+.to-right {
+  text-align: right; }
+  @media only screen and (max-width: 767px) {
+    .to-right {
+      text-align: inherit; } }
+
 .no--padded {
   margin-left: -30px;
   margin-right: -30px; }
@@ -1607,8 +1613,8 @@ INPUT[type="file"] {
 .form-note {
   color: #666666;
   font-size: 1.2rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem; }
+  margin-top: 2rem;
+  margin-bottom: 0; }
 
 .form-sublink {
   display: inline-block;
@@ -1710,6 +1716,23 @@ INPUT[type="file"] {
 .formtype-search .form-group--bold select,
 .formtype-search .form-group--bold textarea {
   font-weight: bold; }
+
+.formtype-bgblue {
+  padding: 3rem;
+  background: #0068b8; }
+  @media only screen and (max-width: 767px) {
+    .formtype-bgblue {
+      padding: 1.5rem; } }
+  .formtype-bgblue label {
+    color: #e0eef5; }
+  .formtype-bgblue .required:before {
+    color: #e5817f !important; }
+  .formtype-bgblue .form-note {
+    color: #b3e7ff; }
+    .formtype-bgblue .form-note a {
+      color: white; }
+      .formtype-bgblue .form-note a:hover {
+        color: #ff8000; }
 
 .icon--map:after {
   content: "\f041"; }
@@ -4314,6 +4337,53 @@ INPUT[type="file"] {
     .block-chronicle .response__icons:after {
       clear: both; }
 
+.aside-tourcontact {
+  margin-bottom: 5rem; }
+  .aside-tourcontact .hdr-h2 {
+    margin-bottom: 0.5rem; }
+
+.block-tourcontact {
+  border: solid 2px #dddddd;
+  border-radius: 5px;
+  padding: 1.5rem;
+  height: 100%; }
+  .block-tourcontact:before, .block-tourcontact:after {
+    content: " ";
+    display: table; }
+  .block-tourcontact:after {
+    clear: both; }
+
+.block-order {
+  margin-top: 3rem;
+  margin-bottom: 3rem; }
+  .block-order:before, .block-order:after {
+    content: " ";
+    display: table; }
+  .block-order:after {
+    clear: both; }
+  .block-order__note {
+    font-size: 1.4rem;
+    color: #666666;
+    margin-bottom: 3rem; }
+  .block-order__price {
+    text-align: center;
+    font-size: 3.54rem;
+    font-weight: bold;
+    color: #cc0000; }
+    .block-order__price .fa {
+      font-size: 2.5rem;
+      margin-left: 0.5rem; }
+    .block-order__price span {
+      display: block;
+      font-weight: normal;
+      font-size: 1.4rem;
+      color: #666666;
+      margin-bottom: 0.4rem; }
+  .block-order .b-formbtn {
+    margin-top: 1rem;
+    width: 240px;
+    text-transform: uppercase; }
+
 .header {
   background-color: white; }
   .header .headerwrap {
@@ -5152,11 +5222,6 @@ INPUT[type="file"] {
 
 .pagewrap__col-right .block-consult {
   margin-bottom: 5rem; }
-
-.aside-tourcontact {
-  margin-bottom: 5rem; }
-  .aside-tourcontact .hdr-h2 {
-    margin-bottom: 0.5rem; }
 
 .aside-tourinfo {
   margin-bottom: 5rem; }
