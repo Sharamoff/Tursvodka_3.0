@@ -4343,10 +4343,12 @@ INPUT[type="file"] {
     margin-bottom: 0.5rem; }
 
 .block-tourcontact {
-  border: solid 2px #dddddd;
-  border-radius: 5px;
+  background: #eeeeee;
   padding: 1.5rem;
-  height: 100%; }
+  height: 100%;
+  max-width: 380px;
+  margin-top: 0.3rem;
+  margin-bottom: 3rem; }
   .block-tourcontact:before, .block-tourcontact:after {
     content: " ";
     display: table; }

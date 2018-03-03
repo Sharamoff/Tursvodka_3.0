@@ -17,9 +17,11 @@
 
 
 .block-tourcontact {
-	border: solid 2px $c-gray-lighter;
-	border-radius: 5px;
+	background: $c-gray-lightermore;
 	padding: 1.5rem;
 	height: 100%;
+	max-width: $block-max;
+	margin-top: 0.3rem;
+	margin-bottom: 3rem;
 	@include clearfix;
 }

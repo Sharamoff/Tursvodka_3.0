@@ -24,7 +24,98 @@
 
 
 
-//= layout/_header.html
+<header class="header">
+	<div class="headerwrap">
+
+
+
+		<div class="header-top hidden-xs">
+
+
+			<h1>Портал путешествий ТурСводка.ru</h1>
+
+
+			<div class="header-top__cabinet">
+
+				<div class="dropdown">
+					<div class="cabinet-checkhistory" title="Отслеживать историю" data-toggle="dropdown"><i class="fa fa-history" aria-hidden="true"></i></div>
+					<div class="cabinet-dropdown dropdown-menu dropdown-menu-right">
+						<p class="hdr c--red">Зарегистрируйтесь сейчас!</p>
+						<p class="note">Для отслеживания истории поисков нужно зарегистрироваться или авторизоваться на сайте.</p>
+						<a href="#" class="b-link">Регистрация</a>
+					</div>
+				</div>
+
+				<div class="dropdown">
+					<div class="cabinet-fav" title="Добавить в закладки" data-toggle="dropdown"><i class="fa fa-heart-o" aria-hidden="true"></i></div>
+					<div class="cabinet-dropdown dropdown-menu dropdown-menu-right">
+						<p class="hdr c--red">Добавляйте в избранные!</p>
+						<p class="note">Чтобы добавлять отели в список избранных необходимо авторизоваться на сайте.</p>
+						<a href="#" class="b-link">Регистрация</a>
+					</div>
+				</div>
+
+				<div class="dropdown">
+					<div class="cabinet-checkhotel" title="Отслеживать отель" data-toggle="dropdown"><i class="fa fa-eye" aria-hidden="true"></i></div>
+					<div class="cabinet-dropdown dropdown-menu dropdown-menu-right">
+						<p class="hdr c--red">Отслеживайте лучшие цены!</p>
+						<p class="note">Чтобы добавлять отели в список отслеживаемых необходимо авторизоваться на сайте.</p>
+						<a href="#" class="b-link">Регистрация</a>
+					</div>
+				</div>
+
+				<div class="dropdown">
+					<div class="cabinet-mess" title="Сообщения" data-toggle="dropdown"><i class="fa fa-envelope-o" aria-hidden="true"></i><span class="bulcount bk--red">33</span></div>
+					<div class="cabinet-dropdown dropdown-menu dropdown-menu-right">
+						<p class="hdr c--red">Зарегистрируйтесь сейчас!</p>
+						<p class="note">Получайте персональные предложения, экономьте время, узнавайте о горящих турах и акциях первыми.</p>
+						<a href="#" class="b-link">Регистрация</a>
+					</div>
+				</div>
+
+				<div class="dropdown">
+					<div class="cabinet-enter" data-toggle="dropdown"><i class="fa fa-user-circle-o"></i>Личный кабинет</div>
+					<div class="cabinet-enter-dropdown cabinet-dropdown dropdown-menu dropdown-menu-right">
+						<form name="fm-cabinet-enter" id="fm-cabinet-enter">
+							<p class="hdr">Авторизация</p>
+							<div class="form-group">
+								<label for="fld-cabinet-enter_email">Ваш email</label>
+								<input type="email" id="fld-cabinet-enter_email" class="form-control">
+							</div>
+							<div class="form-group">
+								<label for="fld-cabinet-enter_pass">Ваш пароль</label>
+								<input type="password" id="fld-cabinet-enter_pass" class="form-control">
+							</div>
+							<button class="b-link" type="submit">Войти</button>
+							<div class="clearfix">
+								<a href="#" class="i-link"><strong>Регистрация</strong></a>&nbsp;/&nbsp;<a href="#" class="i-link">Забыли пароль?</a>
+							</div>
+						</form>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+
+
+		<div class="header-base">
+
+			<div class="header-base__logo">
+				<a href="https://www.tursvodka.ru/">
+					<img src="img/logo.svg" alt="">
+					<div class="slogan hidden-xs">Портал путешествий</div>
+				</a>
+			</div>
+
+
+		</div>
+
+
+
+	</div>
+</header>
 
 
 
@@ -59,103 +150,66 @@
 
 				<div class="articlehdr">
 					<div class="articlehdr__main">Информация о туре</div>
-					<ins class="emphas bk--green"></ins>
+					<ins class="emphas bk--red"></ins>
 				</div>
 
 
 
-				<section class="sc_order-incontent visible-xs visible-sm">
-					<div class="row row--flexed">
-
-						<div class="col-sm-6">
-							<div class="block-consult">
-								<div class="hdr-h2 hdr--lined"><ins class="emphas bk--red"></ins>Менеджер по продажам туров</div>
-								<div class="clearfix">
-									<div class="consult__img">
-										<img src="img/consultant.jpg" alt="">
-									</div>
-									<div class="consult__descript">
-										<div class="consult_name">Ирина Вставская</div>
-										<div class="consult_prof">турфирма «Мария»</div>
-										<a href="tel:+74953089897" class="consult_tel">+7&nbsp;495<span>308-98-97</span></a>
-									</div>
+				<div class="block-tourcontact visible-xs visible-sm">
+						<div class="hdr-h2 hdr--lined"><ins class="emphas bk--green"></ins>Где купить туры?</div>
+						<div class="aside-accordion" id="tourcontact-accordion-incontent">
+							<div class="accordion panel">
+								<div class="accordion__hdr" data-toggle="collapse" data-parent="#tourcontact-accordion-incontent" data-target="#tourcontact-incontent1">
+									<div class="hdr_icon i--down"></div>
+									Москва
 								</div>
-								<div class="clearfix">
-									<div class="consult__msgrs">
-										<a href="#"><img src="img/icons/im-telegram.svg" alt="Telegram"></a>
-										<a href="#"><img src="img/icons/im-viber.svg" alt="Viber"></a>
-										<a href="#"><img src="img/icons/im-whatsup.svg" alt="WhatsUp"></a>
-									</div>
+								<div class="accordion__plate collapse in" id="tourcontact-incontent1">
+									<table>
+										<tr>
+											<td class="area">Арбатская</td>
+											<td class="tel"><a href="tel:+74956496336">+7&nbsp;495<span>649-63-36</span></a></td>
+										</tr>
+										<tr>
+											<td class="area">Динамо</td>
+											<td class="tel"><a href="tel:+74956496336">+7&nbsp;495<span>280-70-85</span></a></td>
+										</tr>
+										<tr>
+											<td class="area">Китай-город</td>
+											<td class="tel"><a href="tel:+74956496336">+7&nbsp;495<span>308-98-97</span></a></td>
+										</tr>
+										<tr>
+											<td class="area">Марьина Роща</td>
+											<td class="tel"><a href="tel:+74956496336">+7&nbsp;495<span>232-00-62</span></a></td>
+										</tr>
+									</table>
+									<a href="#" class="i-link i--map">показать на карте<i></i></a>
 								</div>
-								<div class="clearfix">
-									<div class="consult__btns">
-										<button class="consult_btn-call b-btn" data-toggle="modal" data-target="#modal__call"><i class="fa fa-phone" aria-hidden="true"></i>Заказать звонок</button>
-										<button class="consult_btn-mess b-btn" data-toggle="modal" data-target="#modal__mess"><i class="fa fa-pencil" aria-hidden="true"></i>Оставить заявку</button>
-									</div>
+							</div>
+							<div class="accordion panel">
+								<div class="accordion__hdr" data-toggle="collapse" data-parent="#tourcontact-accordion-incontent" data-target="#tourcontact-incontent2">
+									<div class="hdr_icon"></div>
+									Регионы России
+								</div>
+								<div class="accordion__plate collapse" id="tourcontact-incontent2">
+									<table>
+										<tr>
+											<td class="area">Кемерово</td>
+											<td class="tel"><a href="tel:+74956496336">+7&nbsp;912<span>649-63-36</span></a></td>
+										</tr>
+										<tr>
+											<td class="area">Санкт-Петербург</td>
+											<td class="tel"><a href="tel:+74956496336">+7&nbsp;915<span>280-70-85</span></a></td>
+										</tr>
+										<tr>
+											<td class="area">Сыктывкар</td>
+											<td class="tel"><a href="tel:+74956496336">+7&nbsp;8099<span>308-98-97</span></a></td>
+										</tr>
+									</table>
+									<a href="#" class="i-link i--map">показать на карте<i></i></a>
 								</div>
 							</div>
 						</div>
-
-						<div class="col-sm-6">
-							<div class="block-tourcontact">
-								<div class="hdr-h2 hdr--lined"><ins class="emphas bk--green"></ins>Где купить туры?</div>
-								<div class="aside-accordion" id="tourcontact-accordion-incontent">
-									<div class="accordion panel">
-										<div class="accordion__hdr" data-toggle="collapse" data-parent="#tourcontact-accordion-incontent" data-target="#tourcontact-incontent1">
-											<div class="hdr_icon i--down"></div>
-											Москва
-										</div>
-										<div class="accordion__plate collapse in" id="tourcontact-incontent1">
-											<table>
-												<tr>
-													<td class="area">Арбатская</td>
-													<td class="tel"><a href="tel:+74956496336">+7&nbsp;495<span>649-63-36</span></a></td>
-												</tr>
-												<tr>
-													<td class="area">Динамо</td>
-													<td class="tel"><a href="tel:+74956496336">+7&nbsp;495<span>280-70-85</span></a></td>
-												</tr>
-												<tr>
-													<td class="area">Китай-город</td>
-													<td class="tel"><a href="tel:+74956496336">+7&nbsp;495<span>308-98-97</span></a></td>
-												</tr>
-												<tr>
-													<td class="area">Марьина Роща</td>
-													<td class="tel"><a href="tel:+74956496336">+7&nbsp;495<span>232-00-62</span></a></td>
-												</tr>
-											</table>
-											<a href="#" class="i-link i--map">показать на карте<i></i></a>
-										</div>
-									</div>
-									<div class="accordion panel">
-										<div class="accordion__hdr" data-toggle="collapse" data-parent="#tourcontact-accordion-incontent" data-target="#tourcontact-incontent2">
-											<div class="hdr_icon"></div>
-											Регионы России
-										</div>
-										<div class="accordion__plate collapse" id="tourcontact-incontent2">
-											<table>
-												<tr>
-													<td class="area">Кемерово</td>
-													<td class="tel"><a href="tel:+74956496336">+7&nbsp;912<span>649-63-36</span></a></td>
-												</tr>
-												<tr>
-													<td class="area">Санкт-Петербург</td>
-													<td class="tel"><a href="tel:+74956496336">+7&nbsp;915<span>280-70-85</span></a></td>
-												</tr>
-												<tr>
-													<td class="area">Сыктывкар</td>
-													<td class="tel"><a href="tel:+74956496336">+7&nbsp;8099<span>308-98-97</span></a></td>
-												</tr>
-											</table>
-											<a href="#" class="i-link i--map">показать на карте<i></i></a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
 					</div>
-				</section>
 
 
 
@@ -314,7 +368,6 @@
 
 
 
-
 			</article>
 
 
@@ -330,22 +383,58 @@
 
 
 
-				<div class="block-consult">
-					<div class="hdr-h2 hdr--lined"><ins class="emphas bk--red"></ins>Менеджер по продажам туров</div>
-					<div class="clearfix">
-						<div class="consult__img">
-							<img src="img/consultant.jpg" alt="">
+				<div class="block-tourcontact">
+					<div class="hdr-h2 hdr--lined"><ins class="emphas bk--green"></ins>Где купить туры?</div>
+					<div class="aside-accordion" id="tourcontact-accordion-aside">
+						<div class="accordion panel">
+							<div class="accordion__hdr" data-toggle="collapse" data-parent="#tourcontact-accordion-aside" data-target="#tourcontact-aside1">
+								<div class="hdr_icon i--down"></div>
+								Москва
+							</div>
+							<div class="accordion__plate collapse in" id="tourcontact-aside1">
+								<table>
+									<tr>
+										<td class="area">Арбатская</td>
+										<td class="tel"><a href="tel:+74956496336">+7&nbsp;495<span>649-63-36</span></a></td>
+									</tr>
+									<tr>
+										<td class="area">Динамо</td>
+										<td class="tel"><a href="tel:+74956496336">+7&nbsp;495<span>280-70-85</span></a></td>
+									</tr>
+									<tr>
+										<td class="area">Китай-город</td>
+										<td class="tel"><a href="tel:+74956496336">+7&nbsp;495<span>308-98-97</span></a></td>
+									</tr>
+									<tr>
+										<td class="area">Марьина Роща</td>
+										<td class="tel"><a href="tel:+74956496336">+7&nbsp;495<span>232-00-62</span></a></td>
+									</tr>
+								</table>
+								<a href="#" class="i-link i--map">показать на карте<i></i></a>
+							</div>
 						</div>
-						<div class="consult__descript">
-							<div class="consult_name">Ирина Вставская</div>
-							<div class="consult_prof">турфирма «Мария»</div>
-							<a href="tel:+74953089897" class="consult_tel">+7&nbsp;495<span>308-98-97</span></a>
-						</div>
-					</div>
-					<div class="clearfix">
-						<div class="consult__btns">
-							<button class="consult_btn-call b-btn" data-toggle="modal" data-target="#modal__call"><i class="fa fa-phone" aria-hidden="true"></i>Заказать звонок</button>
-							<button class="consult_btn-mess b-btn" data-toggle="modal" data-target="#modal__mess"><i class="fa fa-pencil" aria-hidden="true"></i>Оставить заявку</button>
+						<div class="accordion panel">
+							<div class="accordion__hdr" data-toggle="collapse" data-parent="#tourcontact-accordion-aside" data-target="#tourcontact-aside2">
+								<div class="hdr_icon"></div>
+								Регионы России
+							</div>
+							<div class="accordion__plate collapse" id="tourcontact-aside2">
+								<table>
+									<tr>
+										<td class="area">Кемерово</td>
+										<td class="tel"><a href="tel:+74956496336">+7&nbsp;912<span>649-63-36</span></a></td>
+									</tr>
+									<tr>
+										<td class="area">Санкт-Петербург</td>
+										<td class="tel"><a href="tel:+74956496336">+7&nbsp;915<span>280-70-85</span></a></td>
+									</tr>
+									<tr>
+										<td class="area">Сыктывкар</td>
+										<td class="tel"><a href="tel:+74956496336">+7&nbsp;8099<span>308-98-97</span></a></td>
+									</tr>
+								</table>
+								<a href="#" class="i-link i--map">показать на карте<i></i></a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -357,13 +446,6 @@
 		<!-- конец колонка правая ----------------------------------->
 	</div>
 </div>
-
-
-
-
-
-
-//= layout/_footer
 
 
 

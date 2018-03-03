@@ -42,9 +42,11 @@ function toggleIcon(e) {
 $('#tourcontact-accordion').on('hidden.bs.collapse', toggleIcon);
 $('#tourcontact-accordion').on('shown.bs.collapse', toggleIcon);
 
-//переключение в tourcontact-accordion
 $('#tourcontact-accordion-incontent').on('hidden.bs.collapse', toggleIcon);
 $('#tourcontact-accordion-incontent').on('shown.bs.collapse', toggleIcon);
+
+$('#tourcontact-accordion-aside').on('hidden.bs.collapse', toggleIcon);
+$('#tourcontact-accordion-aside').on('shown.bs.collapse', toggleIcon);
 
 
 
