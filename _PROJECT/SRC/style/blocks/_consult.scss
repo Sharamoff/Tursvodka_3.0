@@ -109,3 +109,31 @@
 	}
 
 }
+
+
+
+.consult-popup {
+	display: none;
+	position: fixed;
+	z-index: 9;
+	bottom: 2rem;
+	right: 2rem;
+	width: 320px;
+	height: 200px;
+	background: $c-blue-lightermore;
+	border: solid 2px lighten($c-blue-light, 35%);
+	border-radius: 5px;
+	box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.15);
+
+	button.close {
+		position: absolute;
+		top: 0;
+		right: 0.5rem;
+		color: $c-blue-light;
+	}
+
+	.block-consult {
+		border: none;
+	}
+
+}

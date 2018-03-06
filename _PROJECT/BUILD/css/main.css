@@ -2703,6 +2703,27 @@ INPUT[type="file"] {
       .block-consult .consult__btns .b-btn .fa {
         margin-right: 0.5rem; }
 
+.consult-popup {
+  display: none;
+  position: fixed;
+  z-index: 9;
+  bottom: 2rem;
+  right: 2rem;
+  width: 320px;
+  height: 200px;
+  background: #e0eef5;
+  border: solid 2px #c9e2f1;
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.15); }
+  .consult-popup button.close {
+    position: absolute;
+    top: 0;
+    right: 0.5rem;
+    color: #3c94cc; }
+  .consult-popup .block-consult {
+    border: none; }
+
 .block-mainrating {
   background: #eeeeee;
   padding: 1.8rem 2rem;

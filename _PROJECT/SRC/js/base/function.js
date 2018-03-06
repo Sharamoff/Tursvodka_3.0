@@ -78,6 +78,30 @@ $('#totop').click(function () {
 
 
 
+//popup консультанта
+function ConsultPopup() {
+	var
+			def_top = $(document).scrollTop(),
+			def_width = $(document).width(),
+			val_top = $('.pagewrap').position().top,
+			val_bottom = $('.footer').position().top - $('.footer').height() - $('.consult-popup').height() - 250;
+
+	if (def_width >= 1024) {
+		if (def_top >= val_top && def_top < val_bottom) {
+			$('.consult-popup').fadeIn();
+		}
+		else {
+			$('.consult-popup').fadeOut();
+		}
+	}
+}
+$(window).scroll(function() {ConsultPopup()});
+$(window).resize(function() {ConsultPopup()});
+
+
+
+
+
 //заперщаем закрываться dropdown если клик на класс noclose (spinner e.t.c)
 $(document).on('click.bs.dropdown.data-api', '.noclose', function(e) {
 	e.stopPropagation();
