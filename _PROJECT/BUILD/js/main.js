@@ -82,6 +82,8 @@ $('#totop').click(function () {
 
 
 //popup консультанта
+var cp_indicator = 0;
+
 function ConsultPopup() {
 	var
 			def_top = $(document).scrollTop(),
@@ -89,7 +91,7 @@ function ConsultPopup() {
 			val_top = $('.pagewrap').position().top,
 			val_bottom = $('.footer').position().top - $('.footer').height() - $('.consult-popup').height() - 250;
 
-	if (def_width >= 1024) {
+	if (def_width >= 1024 && cp_indicator != 1) {
 		if (def_top >= val_top && def_top < val_bottom) {
 			$('.consult-popup').fadeIn();
 		}
@@ -101,6 +103,10 @@ function ConsultPopup() {
 $(window).scroll(function() {ConsultPopup()});
 $(window).resize(function() {ConsultPopup()});
 
+$('.consult-popup button').on('click', function () {
+	$('.consult-popup').hide();
+	cp_indicator = 1;
+});
 
 
 
@@ -119,11 +125,7 @@ $(document).on('click.bs.dropdown.data-api', '.noclose', function(e) {
 
 //грузим значение в Откуда
 
-$('#tourpicking-whence ul li').on('click', function () {
-	var text = $(this).text();
-	$('#tourpicking-fld-whence').val(text);
-	$('#tourpicking-fld-whence').attr('title', text);
-});
+c
 
 
 //грузим значение в Куда
