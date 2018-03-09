@@ -122,7 +122,11 @@ $(document).on('click.bs.dropdown.data-api', '.noclose', function(e) {
 
 //грузим значение в Откуда
 
-c
+$('#tourpicking-whence ul li').on('click', function () {
+	var text = $(this).text();
+	$('#tourpicking-fld-whence').val(text);
+	$('#tourpicking-fld-whence').attr('title', text);
+});
 
 
 //грузим значение в Куда
