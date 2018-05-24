@@ -1,0 +1,468 @@
+//= layout/_doctype.html
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+	<title>ТурСводка</title>
+
+	<link href="css/vendor.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/addit.css" rel="stylesheet">
+
+</head>
+
+<body data-spy="scroll" data-target="#as_r-submenu">
+
+
+
+
+
+//= layout/_header.html
+
+
+
+
+
+<div class="breadcrumb">
+	<a href="#">Главная</a>
+	<span>/</span>
+	Курсы валют
+</div>
+
+
+
+
+
+<div class="page-exchanges">
+	<div class="pagewrap">
+		<!-- колонка левая ------------------------------------------>
+		<div class="pagewrap__col-left">
+		<div class="container-fluid">
+
+
+
+			<div class="superhdr">Архив курсов валют</div>
+
+
+
+			<div class="tablink table-hover tab--exchanges">
+				<ul>
+					<li><a href="#">Курсы валют ЦБ РФ</a></li>
+					<li><a href="#">Динамика курсов</a></li>
+					<li><span class="active">Архив курсов</span></li>
+					<li><a href="#">Конвертор валют</a></li>
+				</ul>
+				<div class="tab-more dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Еще</a>
+					<ul class="dropdown-menu dropdown-menu-right animated fadeIn">
+						<li><a href="#">Курсы валют ЕЦБ</a></li>
+						<li><a href="#">Валюты мира</a></li>
+					</ul>
+				</div>
+			</div>
+
+
+			<article class="ac_exchanges-choiceform">
+				<form name="fm-exchanges-choiceform" class="formtype-search" action="">
+
+
+							<div class="exchanges-choiceform__bank">
+								<div class="form-group">
+									<input type="radio" name="fld-exchanges-choiceform__bank" value="cbr" checked="" id="fld-exchanges-choiceform__bank_1">
+									<label for="fld-exchanges-choiceform__bank_1" class="label--ch">Курс ЦБ РФ</label>
+									&nbsp;&nbsp;
+									<input type="radio" name="fld-exchanges-choiceform__bank" value="ecb" id="fld-exchanges-choiceform__bank_2">
+									<label for="fld-exchanges-choiceform__bank_2" class="label--ch">Курс ЕЦБ</label>
+								</div>
+							</div>
+
+							<div class="exchanges-choiceform__date hasdatepicker datepicker--plated" id="fld-exchanges-choiceform__date"></div>
+
+				</form>
+			</article>
+
+
+			<article class="ac_exchanges">
+
+				<h2>Курсы валют ЦБ РФ на 24.05.2018</h2>
+
+				<div class="divtable divtable--hover block-exchanges">
+					<div class="row row--th">
+						<div class="dt-td col-sm-4">Валюта</div>
+						<div class="dt-td col-sm-2">Код</div>
+						<div class="dt-td col-sm-1">Единиц</div>
+						<div class="dt-td col-sm-2">Курс</div>
+						<div class="dt-td col-sm-3">Изменение, руб.&nbsp;(%)</div>
+					</div>
+					<div class="row">
+						<div class="dt-td col-sm-4 dt--exchanges_name"><a href="#">Австралийский доллар</a></div>
+						<div class="dt-td col-sm-2 dt--exchanges_code">AUD (36)</div>
+						<div class="dt-td col-sm-1 dt--exchanges_unit">1</div>
+						<div class="dt-td col-sm-2 dt--exchanges_rate">45.8079</div>
+						<div class="dt-td col-sm-3 dt--exchanges_delta exchanges--down">0.2814 (0.6106)</div>
+					</div>
+					<div class="row">
+						<div class="dt-td col-sm-4 dt--exchanges_name"><a href="#">Азербайджанский манат</a></div>
+						<div class="dt-td col-sm-2 dt--exchanges_code">AZN (944)</div>
+						<div class="dt-td col-sm-1 dt--exchanges_unit">1</div>
+						<div class="dt-td col-sm-2 dt--exchanges_rate">33.7286</div>
+						<div class="dt-td col-sm-3 dt--exchanges_delta exchanges--up">0.281 (0.8262)</div>
+					</div>
+					<div class="row">
+						<div class="dt-td col-sm-4 dt--exchanges_name"><a href="#">Армянский драм</a></div>
+						<div class="dt-td col-sm-2 dt--exchanges_code">AMD (51)</div>
+						<div class="dt-td col-sm-1 dt--exchanges_unit">100</div>
+						<div class="dt-td col-sm-2 dt--exchanges_rate">11.9924</div>
+						<div class="dt-td col-sm-3 dt--exchanges_delta exchanges--up">0.1102 (0.9105)</div>
+					</div>
+					<div class="row">
+						<div class="dt-td col-sm-4 dt--exchanges_name"><a href="#">Белорусский рубль</a></div>
+						<div class="dt-td col-sm-2 dt--exchanges_code">BYN (933)</div>
+						<div class="dt-td col-sm-1 dt--exchanges_unit">1</div>
+						<div class="dt-td col-sm-2 dt--exchanges_rate">35.0160</div>
+						<div class="dt-td col-sm-3 dt--exchanges_delta exchanges--down">0.1236 (0.3517)</div>
+					</div>
+					<div class="row">
+						<div class="dt-td col-sm-4 dt--exchanges_name"><a href="#">Болгарский лев</a></div>
+						<div class="dt-td col-sm-2 dt--exchanges_code">BGN (975)</div>
+						<div class="dt-td col-sm-1 dt--exchanges_unit">1</div>
+						<div class="dt-td col-sm-2 dt--exchanges_rate">35.0160</div>
+						<div class="dt-td col-sm-3 dt--exchanges_delta exchanges--down">0.1236 (0.3517)</div>
+					</div>
+					<div class="row">
+						<div class="dt-td col-sm-4 dt--exchanges_name"><a href="#">Бразильский реал</a></div>
+						<div class="dt-td col-sm-2 dt--exchanges_code">BRL (986)</div>
+						<div class="dt-td col-sm-1 dt--exchanges_unit">1</div>
+						<div class="dt-td col-sm-2 dt--exchanges_rate">18.3949</div>
+						<div class="dt-td col-sm-3 dt--exchanges_delta exchanges--down">0.0229 (0.1243)</div>
+					</div>
+					<div class="row">
+						<div class="dt-td col-sm-4 dt--exchanges_name"><a href="#">Венгерский форинт</a></div>
+						<div class="dt-td col-sm-2 dt--exchanges_code">HUF (348)</div>
+						<div class="dt-td col-sm-1 dt--exchanges_unit">100</div>
+						<div class="dt-td col-sm-2 dt--exchanges_rate">22.3456</div>
+						<div class="dt-td col-sm-3 dt--exchanges_delta exchanges--down">0.1005 (0.4477)</div>
+					</div>
+					<div class="row">
+						<div class="dt-td col-sm-4 dt--exchanges_name"><a href="#">Вон Республики Корея</a></div>
+						<div class="dt-td col-sm-2 dt--exchanges_code">KRW (410)</div>
+						<div class="dt-td col-sm-1 dt--exchanges_unit">1000</div>
+						<div class="dt-td col-sm-2 dt--exchanges_rate">50.5421</div>
+						<div class="dt-td col-sm-3 dt--exchanges_delta exchanges--down">0.5827 (1.1398)</div>
+					</div>
+					<div class="row">
+						<div class="dt-td col-sm-4 dt--exchanges_name"><a href="#">Датская крона</a></div>
+						<div class="dt-td col-sm-2 dt--exchanges_code">DKK (208)</div>
+						<div class="dt-td col-sm-1 dt--exchanges_unit">10</div>
+						<div class="dt-td col-sm-2 dt--exchanges_rate">92.0778</div>
+						<div class="dt-td col-sm-3 dt--exchanges_delta exchanges--down">0.3378 (0.3655)</div>
+					</div>
+					<div class="row">
+						<div class="dt-td col-sm-4 dt--exchanges_name"><a href="#">Доллар США</a></div>
+						<div class="dt-td col-sm-2 dt--exchanges_code">USD (840)</div>
+						<div class="dt-td col-sm-1 dt--exchanges_unit">1</div>
+						<div class="dt-td col-sm-2 dt--exchanges_rate">57.3387</div>
+						<div class="dt-td col-sm-3 dt--exchanges_delta exchanges--down">0.5116 (0.8844)</div>
+					</div>
+					<div class="row">
+						<div class="dt-td col-sm-4 dt--exchanges_name"><a href="#">Евро</a></div>
+						<div class="dt-td col-sm-2 dt--exchanges_code">EUR (978)</div>
+						<div class="dt-td col-sm-1 dt--exchanges_unit">1</div>
+						<div class="dt-td col-sm-2 dt--exchanges_rate">68.4165</div>
+						<div class="dt-td col-sm-3 dt--exchanges_delta exchanges--down">0.3617 (0.5259)</div>
+					</div>
+					<div class="row">
+						<div class="dt-td col-sm-4 dt--exchanges_name"><a href="#">Индийская рупия</a></div>
+						<div class="dt-td col-sm-2 dt--exchanges_code">INR (356)</div>
+						<div class="dt-td col-sm-1 dt--exchanges_unit">100</div>
+						<div class="dt-td col-sm-2 dt--exchanges_rate">89.3544</div>
+						<div class="dt-td col-sm-3 dt--exchanges_delta exchanges--down">0.8464 (0.9384)</div>
+					</div>
+					<div class="row">
+						<div class="dt-td col-sm-4 dt--exchanges_name"><a href="#">Казахстанский тенге</a></div>
+						<div class="dt-td col-sm-2 dt--exchanges_code">KZT (368)</div>
+						<div class="dt-td col-sm-1 dt--exchanges_unit">100</div>
+						<div class="dt-td col-sm-2 dt--exchanges_rate">16.7981</div>
+						<div class="dt-td col-sm-3 dt--exchanges_delta exchanges--down">0.1862 (1.0963)</div>
+					</div>
+					<div class="row">
+						<div class="dt-td col-sm-4 dt--exchanges_name"><a href="#">Канадский доллар</a></div>
+						<div class="dt-td col-sm-2 dt--exchanges_code">CAD (124)</div>
+						<div class="dt-td col-sm-1 dt--exchanges_unit">1</div>
+						<div class="dt-td col-sm-2 dt--exchanges_rate">46.3118</div>
+						<div class="dt-td col-sm-3 dt--exchanges_delta exchanges--down">0.3341 (0.7162)</div>
+					</div>
+					<div class="row">
+						<div class="dt-td col-sm-4 dt--exchanges_name"><a href="#">Киргизский сом</a></div>
+						<div class="dt-td col-sm-2 dt--exchanges_code">KGS (417)</div>
+						<div class="dt-td col-sm-1 dt--exchanges_unit">100</div>
+						<div class="dt-td col-sm-2 dt--exchanges_rate">83.1357</div>
+						<div class="dt-td col-sm-3 dt--exchanges_delta exchanges--down">0.7296 (0.87)</div>
+					</div>
+					<div class="row">
+						<div class="dt-td col-sm-4 dt--exchanges_name"><a href="#">Китайский юань Жэньминьби</a></div>
+						<div class="dt-td col-sm-2 dt--exchanges_code">CNY (156)</div>
+						<div class="dt-td col-sm-1 dt--exchanges_unit">10</div>
+						<div class="dt-td col-sm-2 dt--exchanges_rate">87.8660</div>
+						<div class="dt-td col-sm-3 dt--exchanges_delta exchanges--down">0.4375 (0.4955)</div>
+					</div>
+					<div class="row">
+						<div class="dt-td col-sm-4 dt--exchanges_name"><a href="#">Молдавский лей</a></div>
+						<div class="dt-td col-sm-2 dt--exchanges_code">MDL (498)</div>
+						<div class="dt-td col-sm-1 dt--exchanges_unit">10</div>
+						<div class="dt-td col-sm-2 dt--exchanges_rate">32.3582</div>
+						<div class="dt-td col-sm-3 dt--exchanges_delta exchanges--down">0.1968 (0.6045)</div>
+					</div>
+					<div class="row">
+						<div class="dt-td col-sm-4 dt--exchanges_name"><a href="#">Новая турецкая лира</a></div>
+						<div class="dt-td col-sm-2 dt--exchanges_code">TRY (949)</div>
+						<div class="dt-td col-sm-1 dt--exchanges_unit">1</div>
+						<div class="dt-td col-sm-2 dt--exchanges_rate">16.6585</div>
+						<div class="dt-td col-sm-3 dt--exchanges_delta exchanges--down">0.1243 (0.7406)</div>
+					</div>
+					<div class="row">
+						<div class="dt-td col-sm-4 dt--exchanges_name"><a href="#">Новый румынский лей</a></div>
+						<div class="dt-td col-sm-2 dt--exchanges_code">RON (946)</div>
+						<div class="dt-td col-sm-1 dt--exchanges_unit">1</div>
+						<div class="dt-td col-sm-2 dt--exchanges_rate">14.8978</div>
+						<div class="dt-td col-sm-3 dt--exchanges_delta exchanges--down">0.046 (0.3078)</div>
+					</div>
+					<div class="row">
+						<div class="dt-td col-sm-4 dt--exchanges_name"><a href="#">Норвежская крона</a></div>
+						<div class="dt-td col-sm-2 dt--exchanges_code">NOK (578)</div>
+						<div class="dt-td col-sm-1 dt--exchanges_unit">10</div>
+						<div class="dt-td col-sm-2 dt--exchanges_rate">73.8130</div>
+						<div class="dt-td col-sm-3 dt--exchanges_delta exchanges--down">0.224 (0.3026)</div>
+					</div>
+					<div class="row">
+						<div class="dt-td col-sm-4 dt--exchanges_name"><a href="#">Польский злотый</a></div>
+						<div class="dt-td col-sm-2 dt--exchanges_code">PLN (985)</div>
+						<div class="dt-td col-sm-1 dt--exchanges_unit">1</div>
+						<div class="dt-td col-sm-2 dt--exchanges_rate">16.1372</div>
+						<div class="dt-td col-sm-3 dt--exchanges_delta exchanges--down">0.0846 (0.5215)</div>
+					</div>
+					<div class="row">
+						<div class="dt-td col-sm-4 dt--exchanges_name"><a href="#">СДР</a></div>
+						<div class="dt-td col-sm-2 dt--exchanges_code">XDR (960)</div>
+						<div class="dt-td col-sm-1 dt--exchanges_unit">1</div>
+						<div class="dt-td col-sm-2 dt--exchanges_rate">81.3051</div>
+						<div class="dt-td col-sm-3 dt--exchanges_delta exchanges--down">0.6902 (0.8418)</div>
+					</div>
+					<div class="row">
+						<div class="dt-td col-sm-4 dt--exchanges_name"><a href="#">Сингапурский доллар</a></div>
+						<div class="dt-td col-sm-2 dt--exchanges_code">SGD (702)</div>
+						<div class="dt-td col-sm-1 dt--exchanges_unit">1</div>
+						<div class="dt-td col-sm-2 dt--exchanges_rate">42.4354</div>
+						<div class="dt-td col-sm-3 dt--exchanges_delta exchanges--down">0.2365 (0.5542)</div>
+					</div>
+					<div class="row">
+						<div class="dt-td col-sm-4 dt--exchanges_name"><a href="#">Таджикский сомони</a></div>
+						<div class="dt-td col-sm-2 dt--exchanges_code">TJS (972)</div>
+						<div class="dt-td col-sm-1 dt--exchanges_unit">10</div>
+						<div class="dt-td col-sm-2 dt--exchanges_rate">65.1947</div>
+						<div class="dt-td col-sm-3 dt--exchanges_delta exchanges--down">0.4697 (0.7153)</div>
+					</div>
+					<div class="row">
+						<div class="dt-td col-sm-4 dt--exchanges_name"><a href="#">Узбекский сум</a></div>
+						<div class="dt-td col-sm-2 dt--exchanges_code">UZS (860)</div>
+						<div class="dt-td col-sm-1 dt--exchanges_unit">10000</div>
+						<div class="dt-td col-sm-2 dt--exchanges_rate">70.7885</div>
+						<div class="dt-td col-sm-3 dt--exchanges_delta exchanges--down">0.6316 (0.8843)</div>
+					</div>
+					<div class="row">
+						<div class="dt-td col-sm-4 dt--exchanges_name"><a href="#">Украинская гривна</a></div>
+						<div class="dt-td col-sm-2 dt--exchanges_code">UAH (980)</div>
+						<div class="dt-td col-sm-1 dt--exchanges_unit">10</div>
+						<div class="dt-td col-sm-2 dt--exchanges_rate">22.0788</div>
+						<div class="dt-td col-sm-3 dt--exchanges_delta exchanges--down">0.1756 (0.7891)</div>
+					</div>
+					<div class="row">
+						<div class="dt-td col-sm-4 dt--exchanges_name"><a href="#">Фунт стерлингов Соединенного Королевства</a></div>
+						<div class="dt-td col-sm-2 dt--exchanges_code">GBP (826)</div>
+						<div class="dt-td col-sm-1 dt--exchanges_unit">1</div>
+						<div class="dt-td col-sm-2 dt--exchanges_rate">74.7869</div>
+						<div class="dt-td col-sm-3 dt--exchanges_delta exchanges--down">0.0443 (0.0593)</div>
+					</div>
+					<div class="row">
+						<div class="dt-td col-sm-4 dt--exchanges_name"><a href="#">Чешская крона</a></div>
+						<div class="dt-td col-sm-2 dt--exchanges_code">CZK (203)</div>
+						<div class="dt-td col-sm-1 dt--exchanges_unit">10</div>
+						<div class="dt-td col-sm-2 dt--exchanges_rate">26.2300</div>
+						<div class="dt-td col-sm-3 dt--exchanges_delta exchanges--down">0.1051 (0.3991)</div>
+					</div>
+					<div class="row">
+						<div class="dt-td col-sm-4 dt--exchanges_name"><a href="#">Шведская крона</a></div>
+						<div class="dt-td col-sm-2 dt--exchanges_code">SEK (725)</div>
+						<div class="dt-td col-sm-1 dt--exchanges_unit">10</div>
+						<div class="dt-td col-sm-2 dt--exchanges_rate">72.1242</div>
+						<div class="dt-td col-sm-3 dt--exchanges_delta exchanges--down">0.4672 (0.6436)</div>
+					</div>
+					<div class="row">
+						<div class="dt-td col-sm-4 dt--exchanges_name"><a href="#">Швейцарский франк</a></div>
+						<div class="dt-td col-sm-2 dt--exchanges_code">CHF (756)</div>
+						<div class="dt-td col-sm-1 dt--exchanges_unit">1</div>
+						<div class="dt-td col-sm-2 dt--exchanges_rate">60.1098</div>
+						<div class="dt-td col-sm-3 dt--exchanges_delta exchanges--down">0.1133 (0.1881)</div>
+					</div>
+					<div class="row">
+						<div class="dt-td col-sm-4 dt--exchanges_name"><a href="#">Южноафриканский рэнд</a></div>
+						<div class="dt-td col-sm-2 dt--exchanges_code">ZAR (710)</div>
+						<div class="dt-td col-sm-1 dt--exchanges_unit">10</div>
+						<div class="dt-td col-sm-2 dt--exchanges_rate">44.3709</div>
+						<div class="dt-td col-sm-3 dt--exchanges_delta exchanges--down">0.2491 (0.5583)</div>
+					</div>
+					<div class="row">
+						<div class="dt-td col-sm-4 dt--exchanges_name"><a href="#">Японская йена</a></div>
+						<div class="dt-td col-sm-2 dt--exchanges_code">JPY (392)</div>
+						<div class="dt-td col-sm-1 dt--exchanges_unit">100</div>
+						<div class="dt-td col-sm-2 dt--exchanges_rate">52.7495</div>
+						<div class="dt-td col-sm-3 dt--exchanges_delta exchanges--down">0.0842 (0.1594)</div>
+					</div>
+					<div class="row">
+						<div class="dt-td col-sm-4 dt--exchanges_name"><a href="#">Новый туркменский манат</a></div>
+						<div class="dt-td col-sm-2 dt--exchanges_code">TMT (934)</div>
+						<div class="dt-td col-sm-1 dt--exchanges_unit">1</div>
+						<div class="dt-td col-sm-2 dt--exchanges_rate">16.4083</div>
+						<div class="dt-td col-sm-3 dt--exchanges_delta exchanges--down">0.144 (0.87)</div>
+					</div>
+				</div>
+
+				<div class="footnote footnote--signed">
+					<p>Курсы валют к рублю Российской Федерации устанавливаются ЦБ РФ для использования при расчете доходов и расходов государственного бюджета, для всех видов платежно-расчетных отношений государства с предприятиями, объединениями, организациями и гражданами, а также для целей налогообложения и бухгалтерского учета.</p>
+				</div>
+
+			</article>
+
+
+
+			<article class="ac_linksec">
+
+				<div class="articlehdr">
+					<div class="articlehdr__main">Курсы валют&nbsp; <span>Ссылки раздела</span></div>
+					<ins class="emphas bk--green"></ins>
+				</div>
+
+				<div class="block-linksec">
+					<div class="row">
+						<div class="col-sm-4">
+							<ul class="ul--links">
+								<li><a href="#">Курсы валют ЦБ РФ</a></li>
+								<li><a href="#">Конвертор валют</a></li>
+								<li><a href="#">Курс австралийского доллара</a></li>
+								<li><a href="#">Курс азербайджанского маната</a></li>
+								<li><a href="#">Курс армянского драма</a></li>
+								<li><a href="#">Курс белорусского рубля</a></li>
+								<li><a href="#">Курс болгарского лева</a></li>
+								<li><a href="#">Курс бразильского реала</a></li>
+								<li><a href="#">Курс венгерского форинта</a></li>
+								<li><a href="#">Курс вона Республики Корея</a></li>
+								<li><a href="#">Курс датской кроны</a></li>
+								<li><a href="#">Курс доллара США</a></li>
+							</ul>
+						</div>
+						<div class="col-sm-4">
+							<ul class="ul--links">
+								<li><a href="#">Курс евро</a></li>
+								<li><a href="#">Курс индийской рупии</a></li>
+								<li><a href="#">Курс казахстанского тенге</a></li>
+								<li><a href="#">Курс канадского доллара</a></li>
+								<li><a href="#">Курс киргизского сома</a></li>
+								<li><a href="#">Курс китайского юаня</a></li>
+								<li><a href="#">Курс литовского лита</a></li>
+								<li><a href="#">Курс молдавского лея</a></li>
+								<li><a href="#">Курс новой турецкой лиры</a></li>
+								<li><a href="#">Курс нового румынского лея</a></li>
+								<li><a href="#">Курс норвежской кроны</a></li>
+								<li><a href="#">Курс польского злотого</a></li>
+							</ul>
+						</div>
+						<div class="col-sm-4">
+							<ul class="ul--links">
+								<li><a href="#">Курс СДР</a></li>
+								<li><a href="#">Курс сингапурского доллара</a></li>
+								<li><a href="#">Курс таджикского сомони</a></li>
+								<li><a href="#">Курс узбекского сума</a></li>
+								<li><a href="#">Курс украинской гривны</a></li>
+								<li><a href="#">Курс фунта стерлингов</a></li>
+								<li><a href="#">Курс чешской кроны</a></li>
+								<li><a href="#">Курс шведской кроны</a></li>
+								<li><a href="#">Курс швейцарского франка></a></li>
+								<li><a href="#">Курс южноафриканского рэнда</a></li>
+								<li><a href="#">Курс японской йены</a></li>
+								<li><a href="#">Курс нового туркменского маната</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</article>
+
+
+
+		</div>
+		</div>
+		<!-- конец колонка левая ------------------------------------>
+		<!-- колонка правая ----------------------------------------->
+		<aside class="pagewrap__col-right">
+			<div class="container-fluid">
+
+
+
+				<div class="block-adv" id="as_r-adv">
+					<div class="aside-adv">
+						<img src="img/_tmp/adv1.jpg" width="100%" alt="">
+					</div>
+					<div class="aside-adv">
+						<img src="img/_tmp/adv1.jpg" width="100%" alt="">
+					</div>
+					<div class="aside-adv">
+						<img src="img/_tmp/adv1.jpg" width="100%" alt="">
+					</div>
+				</div>
+
+
+
+			</div>
+		</aside>
+		<!-- конец колонкаколонка правая ----------------------------------->
+	</div>
+</div>
+
+
+
+
+
+
+//= layout/_footer
+
+
+
+
+
+//= layout/_modal.html
+
+
+
+
+
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<script src="js/vendor.js"></script>
+<script src="js/main.js"></script>
+
+
+
+
+
+</body>
+</html>

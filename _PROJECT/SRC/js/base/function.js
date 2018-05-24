@@ -393,3 +393,8 @@ $('.block-slider--adaptive').slick({
 		settings: {	slidesToShow: 1 }
 	}]
 });
+
+
+
+
+//

@@ -51,13 +51,8 @@ BODY {
   max-width: 1560px;
   min-width: 290px;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
+  flex-flow: row nowrap;
   margin: 0 auto;
   padding-left: 30px;
   padding-right: 30px; }
@@ -126,22 +121,16 @@ section {
   position: relative; }
 
 .row--flexed {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex; }
   @media only screen and (max-width: 767px) {
     .row--flexed {
       display: block; } }
 
 .row--col-flexed {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-bottom: 3rem; }
   .row--col-flexed > div {
-    -webkit-box-align: stretch;
-        -ms-flex-align: stretch;
-            align-items: stretch; }
+    align-items: stretch; }
     .row--col-flexed > div > div {
       height: 100%; }
   @media only screen and (max-width: 767px) {
@@ -151,22 +140,12 @@ section {
         margin-bottom: 3rem; } }
 
 .flexed {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap; }
+  flex-flow: row wrap; }
 
 .flexedfix {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap; }
+  flex-flow: row nowrap; }
 
 A {
   color: #3c94cc; }
@@ -850,6 +829,16 @@ HR {
       color: #ff8000;
       text-decoration: none; }
 
+.hasdatepicker,
+.hasdatepicker-daterange {
+  font-family: "Roboto Condensed", "Arial Narrow", Arial, Helvetica, sans-serif; }
+
+.datepicker--plated {
+  padding: 1rem;
+  background: #e0eef5;
+  border-radius: 4px;
+  float: left; }
+
 .b-btn {
   display: inline-block;
   font: 1.6rem "Roboto Condensed", "Arial Narrow", Arial, Helvetica, sans-serif;
@@ -1122,8 +1111,7 @@ a:hover .a--more {
     font: 1.8rem "Roboto Condensed", "Arial Narrow", Arial, Helvetica, sans-serif;
     text-transform: inherit;
     padding: 0;
-    -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
     border-radius: 0;
     border: solid 1px #cccccc;
     top: 4.6rem;
@@ -1306,7 +1294,6 @@ a:hover .a--more {
   margin-top: 3rem;
   margin-bottom: 3rem;
   background: white;
-  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15); }
   .panel-info .panel-heading {
     font: bold 1.8rem "Roboto Condensed", "Arial Narrow", Arial, Helvetica, sans-serif;
@@ -1516,13 +1503,8 @@ a:hover .a--more {
 .divtable {
   margin: 3rem 0; }
   .divtable .row {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
+    flex-flow: row wrap;
     border-top: solid 1px #cccccc;
     border-bottom: solid 1px #cccccc;
     margin-top: -1px;
@@ -2187,7 +2169,6 @@ INPUT[type="file"] {
   width: 100%; }
 
 .slick-slide {
-  -webkit-transition: all ease-in-out .3s;
   transition: all ease-in-out .3s;
   opacity: 1; }
 
@@ -2338,8 +2319,7 @@ INPUT[type="file"] {
   line-height: 1.2 !important;
   top: 23px;
   margin-right: -1px;
-  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.25);
-          box-shadow: 0 3px 9px rgba(0, 0, 0, 0.25); }
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.25); }
   @media only screen and (max-width: 767px) {
     .cabinet-dropdown {
       padding: 1.5rem;
@@ -2714,8 +2694,7 @@ INPUT[type="file"] {
   background: #e0eef5;
   border: solid 2px #c9e2f1;
   border-radius: 5px;
-  -webkit-box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.15);
-          box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.15); }
+  box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.15); }
   .consult-popup button.close {
     position: absolute;
     top: 0;
@@ -3294,13 +3273,11 @@ INPUT[type="file"] {
       width: 80%;
       background: white;
       border: solid 2px #0068b8;
-      -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.25);
-              box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.25);
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.25);
       padding: 2rem; }
       @media only screen and (max-width: 767px) {
         .block-buytours .buytours-card_plate .buytours-card {
-          -webkit-box-shadow: none;
-                  box-shadow: none;
+          box-shadow: none;
           width: 100%;
           margin: 0 auto;
           overflow-y: auto; } }
@@ -4534,8 +4511,7 @@ INPUT[type="file"] {
   margin: 0;
   position: relative; }
   .navbar-custom * {
-    -webkit-box-shadow: none;
-            box-shadow: none; }
+    box-shadow: none; }
   .navbar-custom .navbar-form {
     width: 49%; }
     @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -4853,13 +4829,8 @@ INPUT[type="file"] {
   .nav-country > .row {
     margin-left: 0;
     margin-right: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap; }
+    flex-flow: row nowrap; }
   .nav-country .nav-country__tabs {
     background-color: white;
     border-right: solid 1px #dddddd;
@@ -4913,13 +4884,8 @@ INPUT[type="file"] {
   margin: 0;
   padding: 0;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
+  flex-flow: row nowrap;
   background-color: white;
   position: relative; }
   @media only screen and (max-width: 767px) {
@@ -5080,8 +5046,7 @@ INPUT[type="file"] {
       border-radius: 4px;
       font-size: 1.8rem;
       line-height: 3rem;
-      -webkit-box-shadow: none !important;
-              box-shadow: none !important;
+      box-shadow: none !important;
       padding: 0;
       border: none !important; }
       #fm-tourpicking .dropdown--who .tourpicking-dropdown label:hover {
@@ -5132,13 +5097,8 @@ INPUT[type="file"] {
         color: #ffa300; }
 
 .cl-block {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row;
-          flex-flow: row; }
+  flex-flow: row; }
   @media only screen and (max-width: 767px) {
     .cl-block {
       display: block; } }
@@ -5260,8 +5220,7 @@ INPUT[type="file"] {
   margin: 0;
   padding: 0;
   border: none !important;
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important; }
+  box-shadow: none !important; }
 
 .aside-accordion .accordion .accordion__hdr {
   font-family: "Roboto Condensed", "Arial Narrow", Arial, Helvetica, sans-serif;
@@ -5440,13 +5399,8 @@ INPUT[type="file"] {
     max-width: 1500px;
     min-width: 290px;
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap;
+    flex-flow: row nowrap;
     margin: 2rem auto 0 auto; }
     .footer .footerwrap:before, .footer .footerwrap:after {
       content: " ";
@@ -5605,6 +5559,9 @@ INPUT[type="file"] {
 .sc_travelcompany-represent .row {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem; }
+
+.ac_exchanges-choiceform {
+  margin-top: 3rem; }
 
 .ac_exchanges-convertor__form {
   margin-bottom: 5rem; }
