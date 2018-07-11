@@ -69,6 +69,7 @@
 			background: $c-gray-lightermore;
 			border-radius: 4px;
 			cursor: pointer;
+			@include clearfix;
 
 			@include respond-to(media-md) {
 				height: 30px;
@@ -83,12 +84,33 @@
 			}
 
 			span {
+				display: inline-block;
+				float: left;
 				color: $c-gray;
+				margin-right: 0.5rem;
+
+				@include respond-to(media-sm) {
+					display: none;
+				}
+
 			}
 
 			i {
 				color: $c-gray;
 				margin-left: 0.8rem;
+			}
+
+			ins {
+				display: inline-block;
+				float: left;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+
+				@include respond-to(media-md) {
+					width: 10rem;
+				}
+
 			}
 
 		}

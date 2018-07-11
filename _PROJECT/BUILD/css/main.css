@@ -4562,6 +4562,11 @@ INPUT[type="file"] {
       background: #eeeeee;
       border-radius: 4px;
       cursor: pointer; }
+      .navbar-custom .navbar-region__fld-region:before, .navbar-custom .navbar-region__fld-region:after {
+        content: " ";
+        display: table; }
+      .navbar-custom .navbar-region__fld-region:after {
+        clear: both; }
       @media only screen and (min-width: 992px) and (max-width: 1199px) {
         .navbar-custom .navbar-region__fld-region {
           height: 30px;
@@ -4573,10 +4578,25 @@ INPUT[type="file"] {
           line-height: 28px;
           font-size: 12px !important; } }
       .navbar-custom .navbar-region__fld-region span {
-        color: #999999; }
+        display: inline-block;
+        float: left;
+        color: #999999;
+        margin-right: 0.5rem; }
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+          .navbar-custom .navbar-region__fld-region span {
+            display: none; } }
       .navbar-custom .navbar-region__fld-region i {
         color: #999999;
         margin-left: 0.8rem; }
+      .navbar-custom .navbar-region__fld-region ins {
+        display: inline-block;
+        float: left;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; }
+        @media only screen and (min-width: 992px) and (max-width: 1199px) {
+          .navbar-custom .navbar-region__fld-region ins {
+            width: 10rem; } }
     .navbar-custom .navbar-region__plate {
       top: 3.5rem;
       left: 0;
