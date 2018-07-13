@@ -13,13 +13,14 @@
 	text-decoration: none;
 	text-align: center;
 	line-height: $line-height-min;
-	border: none;
+	border: solid 2px $color-link;
 	border-radius: 5px;
-	padding: 0.4rem 1.5rem 0.6rem 1.5rem;
+	padding: 0.3rem 1.4rem 0.5rem 1.4rem;
 	min-width: 10rem;
 
 	&:hover {
 		background: $color-link-hover;
+		border: solid 2px $color-link-hover;
 	}
 
 	*:focus {
@@ -28,6 +29,16 @@
 
 	&:hover.bk--yellow {
 		background-color: $c-gray;
+	}
+
+	&.nofocused {
+		background: $c-white;
+		color: $color-link;
+
+		&:hover {
+			color: $color-link-hover;
+		}
+
 	}
 
 }

@@ -1,0 +1,44 @@
+///////////////////////////////////////////////
+
+
+
+// Подтверждение региона
+
+
+.block-regionsubmit {
+	position: absolute;
+	z-index: 9999;
+	top: 10rem;
+	right: 30px;
+	background: $c-gray-darker;
+	border-radius: 4px;
+	//border: solid 1px $color-border;
+	padding: 2rem;
+	max-width: $block-max;
+	font-size: $font-size-basemin;
+	box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.15);
+
+	&:before {
+		width: 0;
+		height: 0;
+		box-sizing: border-box;
+		border-left: 8px solid transparent;
+		border-right: 8px solid transparent;
+		border-bottom: 10px solid $c-gray-darker;
+		position: absolute;
+		top: -10px;
+		right: 6px;
+		content: '';
+	}
+
+	p {
+		line-height: $line-height-min;
+		color: $c-gray-lighter;
+	}
+
+	.b-btn {
+		margin-top: 1rem;
+		margin-right: 1rem;
+	}
+
+}

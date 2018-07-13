@@ -92,3 +92,187 @@
 	}
 
 }
+
+
+// ответ полный
+
+
+.block-answer-item {
+	@include clearfix;
+	padding: 1.5rem 1.5rem 3rem 1.5rem;
+	background: $c-gray-lightermore;
+
+	.answer-item__user {
+		float: left;
+		display: inline-block;
+		width: 15%;
+		padding-right: 1.5rem;
+		text-align: center;
+
+		@include respond-to(media-xs) {
+			display: block;
+			float: none;
+			width: 15%;
+			margin-right: 0;
+			margin-bottom: 1.5rem;
+			@include clearfix;
+		}
+
+	}
+
+	.answer-item__descript {
+		float: left;
+		display: inline-block;
+		width: 85%;
+		font-size: $font-size-base;
+		color: $c-black;
+		margin-top: 0.5rem;
+
+		a {
+			color: $c-gray-dark;
+
+			&:hover {
+				color: $c-gray-darker;
+				text-decoration: none;
+			}
+
+		}
+
+		@include respond-to(media-xs) {
+			display: block;
+			float: none;
+			width: 100%;
+			margin-top: 0;
+		}
+
+		.descript-name {
+			margin-bottom: 1rem;
+		}
+
+	}
+
+	.answer-item__result {
+		display: block;
+		font-size: $font-size-12;
+		font-family: $font-family-cond;
+		background: $c-blue-lightermore;
+		color: $c-blue;
+		text-align: center;
+		padding: 0.5rem;
+		border-radius: 5px 5px 5px 0;
+
+		@include respond-to(media-xs) {
+			border-radius: 0 5px 5px 5px;
+		}
+
+		&:hover {
+			text-decoration: none;
+			color: $color-link-hover;
+			background: $c-gray-lightermore;
+		}
+
+		strong {
+			font-size: $font-size-hdr
+		}
+
+		&.answer-item__result--empty {
+			background: $c-gray-lightermore;
+			color: $c-gray;
+		}
+
+	}
+
+
+}
+
+
+// ответ краткий
+
+.block-answer {
+	@include clearfix;
+	padding-bottom: 2.5rem;
+	padding-left: 6rem;
+	margin-bottom: 3rem;
+	border-bottom: solid 1px $color-dlv;
+
+	.answer__user {
+		float: left;
+		display: inline-block;
+		width: 10%;
+		padding-right: 1.5rem;
+		text-align: center;
+
+		@include respond-to(media-xs) {
+			display: block;
+			float: none;
+			width: 10%;
+			margin-right: 0;
+			margin-bottom: 1.5rem;
+			@include clearfix;
+		}
+
+	}
+
+	.answer__descript {
+		float: left;
+		display: inline-block;
+		width: 90%;
+		font-size: $font-size-basemin;
+		color: $c-gray-dark;
+		margin-top: 0.5rem;
+
+		a {
+			color: $c-gray-dark;
+
+			&:hover {
+				color: $c-gray-darker;
+				text-decoration: none;
+			}
+
+		}
+
+		@include respond-to(media-xs) {
+			display: block;
+			float: none;
+			width: 100%;
+			margin-top: 0;
+		}
+
+		.descript-name {
+			margin-bottom: 1rem;
+		}
+
+	}
+
+	.answer__result {
+		display: block;
+		font-size: $font-size-12;
+		font-family: $font-family-cond;
+		background: $c-blue-lightermore;
+		color: $c-blue;
+		text-align: center;
+		padding: 0.5rem;
+		border-radius: 5px 5px 5px 0;
+
+		@include respond-to(media-xs) {
+			border-radius: 0 5px 5px 5px;
+		}
+
+		&:hover {
+			text-decoration: none;
+			color: $color-link-hover;
+			background: $c-gray-lightermore;
+		}
+
+		strong {
+			font-size: $font-size-hdr
+		}
+
+		&.answer__result--empty {
+			background: $c-gray-lightermore;
+			color: $c-gray;
+		}
+
+	}
+
+}

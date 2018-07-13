@@ -115,7 +115,7 @@
 	&__pane {
 		display: none;
 		margin: -0.1rem 0 3rem 0;
-		background: $c-white;
+		background: transparentize($c-white, 0.2);
 		padding: 1.5rem;
 		font-size: $font-size-basemin;
 		color: $c-gray-dark;
@@ -281,6 +281,18 @@
 
 }
 
+
+
+.panel-collapse {
+	background: $c-blue;
+	padding: 2rem 30px 3rem 30px;
+	border-radius: 5px;
+
+	@include respond-to(media-xs) {
+		padding: 2rem 15px;
+	}
+
+}
 
 
 

@@ -847,16 +847,22 @@ HR {
   text-decoration: none;
   text-align: center;
   line-height: 1.1;
-  border: none;
+  border: solid 2px #3c94cc;
   border-radius: 5px;
-  padding: 0.4rem 1.5rem 0.6rem 1.5rem;
+  padding: 0.3rem 1.4rem 0.5rem 1.4rem;
   min-width: 10rem; }
   .b-btn:hover {
-    background: #ff8000; }
+    background: #ff8000;
+    border: solid 2px #ff8000; }
   .b-btn *:focus {
     color: white !important; }
   .b-btn:hover.bk--yellow {
     background-color: #999999; }
+  .b-btn.nofocused {
+    background: white;
+    color: #3c94cc; }
+    .b-btn.nofocused:hover {
+      color: #ff8000; }
 
 .b-formbtn {
   display: inline-block;
@@ -1280,7 +1286,7 @@ a:hover .a--more {
   .panel-quest__pane {
     display: none;
     margin: -0.1rem 0 3rem 0;
-    background: white;
+    background: rgba(255, 255, 255, 0.8);
     padding: 1.5rem;
     font-size: 1.4rem;
     color: #666666;
@@ -1379,6 +1385,14 @@ a:hover .a--more {
       opacity: 0.75; }
     .panel-toggled .panel-toggled__btn.collapsed:after {
       content: 'развернуть окно'; }
+
+.panel-collapse {
+  background: #0068b8;
+  padding: 2rem 30px 3rem 30px;
+  border-radius: 5px; }
+  @media only screen and (max-width: 767px) {
+    .panel-collapse {
+      padding: 2rem 15px; } }
 
 .table {
   margin: 3rem 0; }
@@ -1697,6 +1711,62 @@ INPUT[type="file"] {
 .formtype-search .form-group--bold input,
 .formtype-search .form-group--bold select,
 .formtype-search .form-group--bold textarea {
+  font-weight: bold; }
+
+.formtype-collapse .form-group {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem; }
+  @media only screen and (max-width: 767px) {
+    .formtype-collapse .form-group {
+      margin-bottom: 0; } }
+
+.formtype-collapse label {
+  color: #333333;
+  font-family: "Roboto Condensed", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 1px 0.6rem 3px 0.6rem;
+  margin-bottom: 2px;
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.6); }
+  @media only screen and (max-width: 767px) {
+    .formtype-collapse label {
+      padding: 1px 0.3rem 2px 0.3rem; } }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .formtype-collapse label {
+      padding: 1px 0.3rem 2px 0.3rem; } }
+  @media only screen and (min-width: 1200px) {
+    .formtype-collapse label {
+      font-size: 1.6rem; } }
+  .formtype-collapse label.label--ch {
+    background: transparent;
+    font-size: 1.6rem;
+    margin-top: -0.2rem;
+    white-space: normal;
+    color: #e0eef5; }
+    @media only screen and (max-width: 767px) {
+      .formtype-collapse label.label--ch {
+        margin-top: -0.8rem; } }
+
+.formtype-collapse INPUT[type="checkbox"] {
+  width: 2rem;
+  height: 2rem;
+  top: 0.4rem; }
+
+.formtype-collapse .form-group--bold label {
+  color: white;
+  font-size: 1.6rem;
+  font-weight: bold;
+  background-color: transparent;
+  margin-bottom: 0; }
+  @media only screen and (min-width: 1200px) {
+    .formtype-collapse .form-group--bold label {
+      margin-bottom: 2px; } }
+
+.formtype-collapse .form-group--bold input,
+.formtype-collapse .form-group--bold select,
+.formtype-collapse .form-group--bold textarea {
   font-weight: bold; }
 
 .formtype-bgblue {
@@ -3083,6 +3153,144 @@ INPUT[type="file"] {
       background: #eeeeee;
       color: #999999; }
 
+.block-answer-item {
+  padding: 1.5rem 1.5rem 3rem 1.5rem;
+  background: #eeeeee; }
+  .block-answer-item:before, .block-answer-item:after {
+    content: " ";
+    display: table; }
+  .block-answer-item:after {
+    clear: both; }
+  .block-answer-item .answer-item__user {
+    float: left;
+    display: inline-block;
+    width: 15%;
+    padding-right: 1.5rem;
+    text-align: center; }
+    @media only screen and (max-width: 767px) {
+      .block-answer-item .answer-item__user {
+        display: block;
+        float: none;
+        width: 15%;
+        margin-right: 0;
+        margin-bottom: 1.5rem; }
+        .block-answer-item .answer-item__user:before, .block-answer-item .answer-item__user:after {
+          content: " ";
+          display: table; }
+        .block-answer-item .answer-item__user:after {
+          clear: both; } }
+  .block-answer-item .answer-item__descript {
+    float: left;
+    display: inline-block;
+    width: 85%;
+    font-size: 1.6rem;
+    color: black;
+    margin-top: 0.5rem; }
+    .block-answer-item .answer-item__descript a {
+      color: #666666; }
+      .block-answer-item .answer-item__descript a:hover {
+        color: #333333;
+        text-decoration: none; }
+    @media only screen and (max-width: 767px) {
+      .block-answer-item .answer-item__descript {
+        display: block;
+        float: none;
+        width: 100%;
+        margin-top: 0; } }
+    .block-answer-item .answer-item__descript .descript-name {
+      margin-bottom: 1rem; }
+  .block-answer-item .answer-item__result {
+    display: block;
+    font-size: 12px;
+    font-family: "Roboto Condensed", "Arial Narrow", Arial, Helvetica, sans-serif;
+    background: #e0eef5;
+    color: #0068b8;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 5px 5px 5px 0; }
+    @media only screen and (max-width: 767px) {
+      .block-answer-item .answer-item__result {
+        border-radius: 0 5px 5px 5px; } }
+    .block-answer-item .answer-item__result:hover {
+      text-decoration: none;
+      color: #ff8000;
+      background: #eeeeee; }
+    .block-answer-item .answer-item__result strong {
+      font-size: 2.1rem; }
+    .block-answer-item .answer-item__result.answer-item__result--empty {
+      background: #eeeeee;
+      color: #999999; }
+
+.block-answer {
+  padding-bottom: 2.5rem;
+  padding-left: 6rem;
+  margin-bottom: 3rem;
+  border-bottom: solid 1px #cccccc; }
+  .block-answer:before, .block-answer:after {
+    content: " ";
+    display: table; }
+  .block-answer:after {
+    clear: both; }
+  .block-answer .answer__user {
+    float: left;
+    display: inline-block;
+    width: 10%;
+    padding-right: 1.5rem;
+    text-align: center; }
+    @media only screen and (max-width: 767px) {
+      .block-answer .answer__user {
+        display: block;
+        float: none;
+        width: 10%;
+        margin-right: 0;
+        margin-bottom: 1.5rem; }
+        .block-answer .answer__user:before, .block-answer .answer__user:after {
+          content: " ";
+          display: table; }
+        .block-answer .answer__user:after {
+          clear: both; } }
+  .block-answer .answer__descript {
+    float: left;
+    display: inline-block;
+    width: 90%;
+    font-size: 1.4rem;
+    color: #666666;
+    margin-top: 0.5rem; }
+    .block-answer .answer__descript a {
+      color: #666666; }
+      .block-answer .answer__descript a:hover {
+        color: #333333;
+        text-decoration: none; }
+    @media only screen and (max-width: 767px) {
+      .block-answer .answer__descript {
+        display: block;
+        float: none;
+        width: 100%;
+        margin-top: 0; } }
+    .block-answer .answer__descript .descript-name {
+      margin-bottom: 1rem; }
+  .block-answer .answer__result {
+    display: block;
+    font-size: 12px;
+    font-family: "Roboto Condensed", "Arial Narrow", Arial, Helvetica, sans-serif;
+    background: #e0eef5;
+    color: #0068b8;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 5px 5px 5px 0; }
+    @media only screen and (max-width: 767px) {
+      .block-answer .answer__result {
+        border-radius: 0 5px 5px 5px; } }
+    .block-answer .answer__result:hover {
+      text-decoration: none;
+      color: #ff8000;
+      background: #eeeeee; }
+    .block-answer .answer__result strong {
+      font-size: 2.1rem; }
+    .block-answer .answer__result.answer__result--empty {
+      background: #eeeeee;
+      color: #999999; }
+
 .block-subscript {
   background: #ffa300 url("../img/bk-subscript.png") bottom right no-repeat;
   padding: 1.5rem 2rem;
@@ -4394,6 +4602,35 @@ INPUT[type="file"] {
     width: 240px;
     text-transform: uppercase; }
 
+.block-regionsubmit {
+  position: absolute;
+  z-index: 9999;
+  top: 10rem;
+  right: 30px;
+  background: #333333;
+  border-radius: 4px;
+  padding: 2rem;
+  max-width: 380px;
+  font-size: 1.4rem;
+  box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.15); }
+  .block-regionsubmit:before {
+    width: 0;
+    height: 0;
+    box-sizing: border-box;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 10px solid #333333;
+    position: absolute;
+    top: -10px;
+    right: 6px;
+    content: ''; }
+  .block-regionsubmit p {
+    line-height: 1.1;
+    color: #dddddd; }
+  .block-regionsubmit .b-btn {
+    margin-top: 1rem;
+    margin-right: 1rem; }
+
 .header {
   background-color: white; }
   .header .headerwrap {
@@ -5604,3 +5841,6 @@ INPUT[type="file"] {
 
 .ac_avia-aircrafts {
   margin-top: 6rem; }
+
+.sc_questions-ask {
+  margin-bottom: 8rem; }
