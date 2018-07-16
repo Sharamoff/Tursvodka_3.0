@@ -415,7 +415,47 @@ $('.block-slider--sized').slick({
 });
 
 
-//
+
+
+
+//описание в рекламе
+
+var trinote,
+		tritimeoutId,
+		flnote,
+		fltimeoutId;
+
+$('.block-advertising').hover(function() {
+			$('.advertising__note').fadeOut();
+			trinote = '#' + $(this).attr('rel');
+			clearTimeout(tritimeoutId);
+			$(trinote).slideDown(180);
+		},
+		function () {
+			tritimeoutId = setTimeout($.proxy($(trinote),'fadeOut'), 100);
+		});
+
+$(trinote).mouseenter(function(){
+	clearTimeout(tritimeoutId);
+}).mouseout(function(){
+	$('.advertising__note').hide();
+});
+
+$('.flbanner').hover(function() {
+			$('.flbanner__note').fadeOut();
+			flnote = '#' + $(this).attr('rel');
+			clearTimeout(fltimeoutId);
+			$(flnote).fadeIn(180);
+		},
+		function () {
+			fltimeoutId = setTimeout($.proxy($(flnote),'fadeOut'), 100);
+		});
+
+$(flnote).mouseenter(function(){
+	clearTimeout(fltimeoutId);
+}).mouseout(function(){
+	$('.flbanner__note').hide();
+});
 
 
 });

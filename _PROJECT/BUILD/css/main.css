@@ -2731,10 +2731,10 @@ INPUT[type="file"] {
     .block-consult .consult__msgrs a {
       float: left;
       display: inline-block;
-      margin-right: 2rem; }
+      margin: 0.5rem 1rem 0.5rem 0; }
       .block-consult .consult__msgrs a img {
-        width: 3rem;
-        height: 3rem; }
+        width: 2.5rem;
+        height: 2.5rem; }
   .block-consult .consult__btns {
     margin-right: -1rem; }
     .block-consult .consult__btns:before, .block-consult .consult__btns:after {
@@ -2760,7 +2760,7 @@ INPUT[type="file"] {
   bottom: 2rem;
   right: 2rem;
   width: 320px;
-  height: 200px;
+  height: 240px;
   background: #e0eef5;
   border: solid 2px #c9e2f1;
   border-radius: 5px;
@@ -4631,6 +4631,70 @@ INPUT[type="file"] {
     margin-top: 1rem;
     margin-right: 1rem; }
 
+.sc_advertising {
+  margin-top: 5rem;
+  margin-bottom: 5rem; }
+
+.block-advertising {
+  position: relative;
+  height: 30rem;
+  margin-bottom: 30px;
+  background-color: #dddddd;
+  background-position: 50%;
+  background-size: cover; }
+  @media only screen and (max-width: 767px) {
+    .block-advertising {
+      width: 290px; } }
+  .block-advertising .advertising__hdr {
+    position: absolute;
+    z-index: 3;
+    top: 1.5rem;
+    left: 1.5rem;
+    font: bold 1.8rem "Roboto Condensed", "Arial Narrow", Arial, Helvetica, sans-serif;
+    padding: 0.4rem 0.8rem;
+    background: rgba(255, 255, 255, 0.85);
+    color: #333333;
+    line-height: 1.2; }
+    .block-advertising .advertising__hdr a {
+      color: #333333;
+      text-decoration: none; }
+      .block-advertising .advertising__hdr a:hover {
+        color: #ff8000; }
+  .block-advertising .advertising__btn {
+    position: absolute;
+    z-index: 3;
+    left: 1.5rem;
+    bottom: 1.5rem;
+    font-size: 14px;
+    padding: 0.4rem 1rem;
+    color: #fff;
+    background: #3c94cc;
+    border: solid 2px white;
+    border-radius: 6px; }
+    .block-advertising .advertising__btn:hover {
+      background: #ff8000;
+      text-decoration: none; }
+  .block-advertising .advertising__note {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.65);
+    padding: 7.5rem 1.5rem 6rem 1.5rem;
+    color: #fff;
+    font-size: 1.4rem; }
+    .block-advertising .advertising__note p {
+      line-height: 1.1; }
+    .block-advertising .advertising__note a {
+      color: #dddddd;
+      text-decoration: underline; }
+      .block-advertising .advertising__note a:hover {
+        color: white;
+        text-decoration: none; }
+
 .header {
   background-color: white; }
   .header .headerwrap {
@@ -5550,6 +5614,9 @@ INPUT[type="file"] {
     display: table; }
   .aside-adv:after {
     clear: both; }
+
+.aside-dvertising {
+  margin-bottom: 1.5rem; }
 
 .aside-submenu > ul {
   list-style: none;
