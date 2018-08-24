@@ -75,8 +75,8 @@ INPUT[type="checkbox"] {
 INPUT[type="radio"] {
 	width: 1.8rem;
 	height: 1.8rem;
-	//margin-right: 0.5rem;
-	top: -0.3rem;
+	top: 0.3rem;
+	margin-bottom: 1.2rem;
 	position: relative;
 }
 
@@ -127,6 +127,13 @@ INPUT[type="file"] {
 	}
 
 }
+
+.fld-note {
+	color: $c-gray;
+	font-size: $font-size-note;
+	margin: 0.5rem 0 0 0.4rem;
+}
+
 
 
 

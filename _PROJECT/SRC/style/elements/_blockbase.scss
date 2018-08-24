@@ -241,6 +241,43 @@
 
 
 
+.plate-editpanel {
+	border-top: dotted 1px $color-border;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.editpanel-block {
+	border-bottom: dotted 1px $color-border;
+	padding: 1.5rem 0 0 0;
+
+	&__prop {
+		font-family: $font-family-cond;
+		color: $c-gray-dark;
+		padding: 1rem 15px;
+
+		@include respond-to(media-xs) {
+			padding-bottom: 0.2rem;
+		}
+
+	}
+
+	&__val {
+		padding: 1rem 15px;
+
+		@include respond-to(media-xs) {
+			padding-top: 0.2rem;
+		}
+
+	}
+
+input[type="checkbox"] {
+	margin-top: 0.4rem;
+}
+
+}
+
+
 
 
 

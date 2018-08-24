@@ -75,22 +75,23 @@
 				</div>
 
 				<div class="dropdown">
-					<div class="cabinet-username" data-toggle="dropdown">
-						<div class="username-img"><img src="img/icons/no-user-g.svg" alt=""></div>Иванов Алексей
-					</div>
-					<div class="cabinet-username-dropdown cabinet-dropdown dropdown-menu dropdown-menu-right">
-						<div class="username_block open">
-							<div class="username_block-img"><img src="img/icons/no-user-g.svg" alt=""></div>Иванов Алексей
-						</div>
-						<div class="username_block">
-							<div class="username_block-img"><img src="img/_tmp/logo-so1.png" alt=""></div>Турфирма "Мария"
-						</div>
-						<div class="username_block">
-							<div class="username_block-img"><img src="img/_tmp/logo-so2.png" alt=""></div>Дополнительный аккаунт
-						</div>
-						<div class="username_tool">
-							<a href="#" class="username_tool__exit">Выйти из аккаунта<i class="fa fa-sign-out" aria-hidden="true"></i></a>
-						</div>
+					<div class="cabinet-enter" data-toggle="dropdown"><i class="fa fa-user-circle-o"></i>Личный кабинет</div>
+					<div class="cabinet-enter-dropdown cabinet-dropdown dropdown-menu dropdown-menu-right">
+						<form name="fm-cabinet-enter" id="fm-cabinet-enter">
+							<p class="hdr">Авторизация</p>
+							<div class="form-group">
+								<label for="fld-cabinet-enter_email">Ваш email</label>
+								<input type="email" id="fld-cabinet-enter_email" class="form-control">
+							</div>
+							<div class="form-group">
+								<label for="fld-cabinet-enter_pass">Ваш пароль</label>
+								<input type="password" id="fld-cabinet-enter_pass" class="form-control">
+							</div>
+							<button class="b-link" type="submit">Войти</button>
+							<div class="clearfix">
+								<a href="#" class="i-link"><strong>Регистрация</strong></a>&nbsp;/&nbsp;<a href="#" class="i-link">Забыли пароль?</a>
+							</div>
+						</form>
 					</div>
 				</div>
 
@@ -130,22 +131,23 @@
 						<div class="navbar-cabinet visible-xs">
 			
 							<div class="dropdown">
-								<div class="cabinet-username" data-toggle="dropdown">
-									<div class="username-img"><img src="img/icons/no-user-g.svg" alt=""></div>Иванов Алексей
-								</div>
-								<div class="cabinet-username-dropdown cabinet-dropdown dropdown-menu">
-									<div class="username_block open">
-										<div class="username_block-img"><img src="img/icons/no-user-g.svg" alt=""></div>Иванов Алексей
-									</div>
-									<div class="username_block">
-										<div class="username_block-img"><img src="img/_tmp/logo-so1.png" alt=""></div>Турфирма "Мария"
-									</div>
-									<div class="username_block">
-										<div class="username_block-img"><img src="img/_tmp/logo-so2.png" alt=""></div>Дополнительный аккаунт
-									</div>
-									<div class="username_tool">
-										<a href="#" class="username_tool__exit">Выйти из аккаунта<i class="fa fa-sign-out" aria-hidden="true"></i></a>
-									</div>
+								<div class="cabinet-enter" data-toggle="dropdown"><a href="#"><i class="fa fa-user-circle-o"></i>Личный кабинет</a></div>
+								<div class="cabinet-enter-dropdown cabinet-dropdown dropdown-menu">
+									<form name="fm-cabinet-enter-xs" id="fm-cabinet-enter-xs">
+										<p class="hdr">Авторизация</p>
+										<div class="form-group">
+											<label for="fld-cabinet-enter_email-xs">Ваш email</label>
+											<input type="email" id="fld-cabinet-enter_email-xs" class="form-control">
+										</div>
+										<div class="form-group">
+											<label for="fld-cabinet-enter_pass-xs">Ваш пароль</label>
+											<input type="password" id="fld-cabinet-enter_pass-xs" class="form-control">
+										</div>
+										<button class="b-link" type="submit">Войти</button>
+										<div class="clearfix">
+											<a href="#" class="i-link"><strong>Регистрация</strong></a>&nbsp;/&nbsp;<a href="#" class="i-link">Забыли пароль?</a>
+										</div>
+									</form>
 								</div>
 							</div>
 			
@@ -169,10 +171,10 @@
 						<div class="navbar-region dropdown">
 			
 							<div class="navbar-region__fld-region dropdown-toggle hidden-xs" data-toggle="dropdown">
-								<span>Ваш город:</span> Санкт-Петербург<i class="fa fa-caret-down"></i>
+								<span>Ваш город:</span><ins>Петропавловск-Камчатский</ins><i class="fa fa-caret-down"></i>
 							</div>
 							<div class="navbar-region__fld-region visible-xs">
-								<span>Ваш город:</span> <a href="#">Санкт-Петербург</a>
+								<span>Ваш город:</span> <a href="#">Петропавловск-Камчатский</a>
 							</div>
 			
 							<div class="navbar-region__plate dropdown-menu dropdown-menu-right animated fadeIn">
@@ -358,75 +360,6 @@
 			
 			
 			
-						<ul class="nav navbar-nav">
-			
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Туры</a>
-								<ul class="dropdown-menu animated fadeIn">
-									<li><a href="#"><strong>Поиск тура</strong></a></li>
-									<li><a href="#">Раннее бронирование</a></li>
-									<li><a href="#">Горящие туры</a></li>
-									<li><a href="#">Пляжный отдых</a></li>
-									<li><a href="#">Шоп-туры</a></li>
-									<li><a href="#">Туры на 23 февраля</a></li>
-									<li><a href="#">Туры на 8 марта</a></li>
-									<li><a href="#">Туры на майские праздники</a></li>
-									<li><a href="#">Отдых на островах</a></li>
-									<li><a href="#">Детский отдых</a></li>
-									<li><a href="#">Экзотические туры</a></li>
-									<li><a href="#">Туры выходного дня</a></li>
-									<li><a href="#">Свадебные путешествия</a></li>
-									<li><a href="#">Отдых на горнолыжных курортах</a></li>
-									<li><a href="#">Все туры</a></li>
-								</ul>
-							</li>
-			
-							<li><a href="#">Авиабилеты</a></li>
-			
-							<li class="hidden-xs"><a href="#" class="dropdown-country">Страны</a></li>
-							<li class="visible-xs"><a href="#">Страны</a></li>
-			
-							<li><a href="#">Отели</a></li>
-			
-							<li><a href="#">Попутчики</a></li>
-			
-							<li><a href="#">Отзывы</a></li>
-			
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Турбизнес</a>
-								<ul class="dropdown-menu dropdown-menu-right animated fadeIn">
-									<li><a href="#">Спецпредложения</a></li>
-									<li><a href="#">Каталог турфирм</a></li>
-									<li><a href="#">Каталог сайтов</a></li>
-									<li><a href="#">Новости и анонсы</a></li>
-									<li><a href="#">Пресс-релизы</a></li>
-									<li><a href="#">Работа в туризме</a></li>
-									<li><a href="#">Туристические выставки</a></li>
-								</ul>
-							</li>
-			
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Еще...</a>
-								<ul class="dropdown-menu dropdown-menu-right animated fadeIn">
-									<li><a href="#">Новости туризма</a></li>
-									<li><a href="#">Туристу на заметку</a></li>
-									<li><a href="#">Календарь событий</a></li>
-									<li><a href="#">Рассказы туристов</a></li>
-									<li><a href="#">Карта мира</a></li>
-									<li><a href="#">Курсы валют ЦБ РФ</a></li>
-									<li><a href="#">Курсы валют ЕЦБ</a></li>
-									<li><a href="#">Погода в мире</a></li>
-									<li><a href="#">Оформление виз</a></li>
-									<li><a href="#">Посольства и консульства</a></li>
-									<li><a href="#">Глоссарий</a></li>
-									<li><a href="#">Опросы</a></li>
-									<li><a href="#">Вопросы и ответы</a></li>
-								</ul>
-							</li>
-			
-						</ul>
-			
-			
 						<div class="nav-country animated fadeIn">
 							<div class="row">
 			
@@ -539,7 +472,7 @@
 											</div>
 											<div class="col-sm-3">
 												<ul>
-														<li><a href="#"><span class="flag-icon flag-icon-cy"></span>Кипр</a></li>
+													<li><a href="#"><span class="flag-icon flag-icon-cy"></span>Кипр</a></li>
 													<li><a href="#"><span class="flag-icon flag-icon-ch"></span>Китай</a></li>
 													<li><a href="#"><span class="flag-icon flag-icon-cu"></span>Куба</a></li>
 													<li><a href="#"><span class="flag-icon flag-icon-mu"></span>Маврикий</a></li>
@@ -593,11 +526,11 @@
 									<div class="nav-country_pane" id="nav-country_tab6">
 										<div class="row">
 											<div class="col-sm-3">
-											<ul>
-												<li><a href="#"><span class="flag-icon flag-icon-cy"></span>Кипр</a></li>
-												<li><a href="#"><span class="flag-icon flag-icon-ch"></span>Китай</a></li>
-											</ul>
-										</div>
+												<ul>
+													<li><a href="#"><span class="flag-icon flag-icon-cy"></span>Кипр</a></li>
+													<li><a href="#"><span class="flag-icon flag-icon-ch"></span>Китай</a></li>
+												</ul>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -607,12 +540,93 @@
 						</div>
 			
 			
+			
+						<ul class="nav navbar-nav">
+			
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Туры</a>
+								<ul class="dropdown-menu animated fadeIn">
+									<li><a href="#"><strong>Поиск тура</strong></a></li>
+									<li><a href="#">Раннее бронирование</a></li>
+									<li><a href="#">Горящие туры</a></li>
+									<li><a href="#">Пляжный отдых</a></li>
+									<li><a href="#">Шоп-туры</a></li>
+									<li><a href="#">Туры на 23 февраля</a></li>
+									<li><a href="#">Туры на 8 марта</a></li>
+									<li><a href="#">Туры на майские праздники</a></li>
+									<li><a href="#">Отдых на островах</a></li>
+									<li><a href="#">Детский отдых</a></li>
+									<li><a href="#">Экзотические туры</a></li>
+									<li><a href="#">Туры выходного дня</a></li>
+									<li><a href="#">Свадебные путешествия</a></li>
+									<li><a href="#">Отдых на горнолыжных курортах</a></li>
+									<li><a href="#">Все туры</a></li>
+								</ul>
+							</li>
+			
+							<li><a href="#">Авиабилеты</a></li>
+			
+							<li class="hidden-xs"><a href="#" class="dropdown-country">Страны</a></li>
+							<li class="visible-xs"><a href="#">Страны</a></li>
+			
+							<li><a href="#">Отели</a></li>
+			
+							<li><a href="#">Попутчики</a></li>
+			
+							<li><a href="#">Отзывы</a></li>
+			
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Турбизнес</a>
+								<ul class="dropdown-menu dropdown-menu-right animated fadeIn">
+									<li><a href="#">Спецпредложения</a></li>
+									<li><a href="#">Каталог турфирм</a></li>
+									<li><a href="#">Каталог сайтов</a></li>
+									<li><a href="#">Новости и анонсы</a></li>
+									<li><a href="#">Пресс-релизы</a></li>
+									<li><a href="#">Работа в туризме</a></li>
+									<li><a href="#">Туристические выставки</a></li>
+								</ul>
+							</li>
+			
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Еще...</a>
+								<ul class="dropdown-menu dropdown-menu-right animated fadeIn">
+									<li><a href="#">Новости туризма</a></li>
+									<li><a href="#">Туристу на заметку</a></li>
+									<li><a href="#">Календарь событий</a></li>
+									<li><a href="#">Рассказы туристов</a></li>
+									<li><a href="#">Карта мира</a></li>
+									<li><a href="#">Курсы валют ЦБ РФ</a></li>
+									<li><a href="#">Курсы валют ЕЦБ</a></li>
+									<li><a href="#">Погода в мире</a></li>
+									<li><a href="#">Оформление виз</a></li>
+									<li><a href="#">Посольства и консульства</a></li>
+									<li><a href="#">Глоссарий</a></li>
+									<li><a href="#">Опросы</a></li>
+									<li><a href="#">Вопросы и ответы</a></li>
+								</ul>
+							</li>
+			
+						</ul>
+			
+			
+			
 					</div>
 			
 			
 			
 			
 				</nav>
+			</div>
+
+
+			<div class="block-regionsubmit hidden-xs">
+				<p>Ваш город «Петроправловск-Камчатский»?</p>
+				<p>Кликнув «Да», вы увидите туры с вылетом из этого города, телефоны и адреса местных офисов.</p>
+				<div class="clearfix">
+					<button class="b-btn" onclick="javascript:$('.block-regionsubmit').hide()">Да</button>
+					<button class="b-btn nofocused" onclick="javascript:$('.block-regionsubmit').hide()">Нет</button>
+				</div>
 			</div>
 
 
@@ -821,16 +835,20 @@
 
 
 <div class="breadcrumb">
-		<a href="#">Главная</a>
-		<span>/</span>
-		Личный кабинет
+	<a href="#">Главная</a>
+	<span>/</span>
+	<a href="#">Страны</a>
+	<span>/</span>
+	<a href="#">Турция</a>
+	<span>/</span>
+	Разговорник для туриста
 </div>
 
 
 
 
 
-<div class="page-cabuser">
+<div class="page-country">
 	<div class="pagewrap">
 		<!-- колонка левая ------------------------------------------>
 		<div class="pagewrap__col-left">
@@ -838,136 +856,228 @@
 
 
 
-			<div class="superhdr">Личный кабинет</div>
+			<div class="superhdr"><span class="flag-icon flag-icon-tr"></span>Турция</div>
 
 
 
-			<article class="ac_cabuser-about">
-				<div class="row">
+			<article class="ac_country-about" id="a_country-about">
 
 
-					<div class="col-sm-3">
-						<div class="cabuser-img"><img src="img/_tmp/user1-tmp.jpg" alt=""></div>
-					</div>
+				<div class="articlehdr">
+					<div class="articlehdr__main">О стране</div>
+					<ins class="emphas bk--green"></ins>
+				</div>
 
 
-					<div class="col-sm-9">
+				<!-- Рейтинг -->
+				<section class="sc_country-rating">
+					<div class="row row--flexed">
 
-						<div class="block-cabuser">
-							<p class="cabuser__name">Иванов <span>Алексей</span></p>
-							<p class="cabuser__timestamp"><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;был 26.10.2017 в 09:50</p>
-							<p class="cabuser__address">Россия, Москва, м. Ленинский проспект</p>
-							<p class="cabuser__age">40 лет, <i class="icon-zodiac zc--kozerog"></i></p>
-							<p class="cabuser__profession">Менеджер по туризму в <a href="#">Магазин путешествий «Делай Ноги»</a></p>
-							<div class="tool-box">
-								<a href="#" class="b-tool" title="Задать вопрос"><i class="fa fa-pencil-square-o"></i>Редактировать профиль</a>
-								<a href="#" class="b-tool" title="Задать вопрос"><i class="fa fa-cogs"></i>Настройки</a>
-								<button class="b-lonetool b--to-right"><i class="fa fa-envelope"></i>Мои сообщения</button>
+						<div class="col-sm-8">
+							<div class="block-mainrating">
+								<div class="mainrating__rate bk--rate-height">8.3</div>
+								<div class="hdr-h2">Рейтинг страны</div>
+								<div class="row">
+									<div class="col-sm-6">
+										<table class="tb--inview">
+											<tr>
+												<td class="prop">отношение к туристам</td>
+												<td class="value c--rate-height">8.7</td>
+											</tr>
+											<tr>
+												<td class="prop">индустрия развлечений</td>
+												<td class="value c--rate-low">2.1</td>
+											</tr>
+											<tr>
+												<td class="prop">памятники, исторически значимые места</td>
+												<td class="value c--rate-height">10.0</td>
+											</tr>
+											<tr>
+												<td class="prop">безопасность</td>
+												<td class="value c--rate-height">7.9</td>
+											</tr>
+											<tr>
+												<td class="prop">цены</td>
+												<td class="value c--rate-middle">5.6</td>
+											</tr>
+											<tr>
+												<td class="prop">шоппинг</td>
+												<td class="value c--rate-height">7.9</td>
+											</tr>
+										</table>
+									</div>
+									<div class="col-sm-6">
+										<table class="tb--inview">
+											<tr>
+												<td class="prop">всего отзывов</td>
+												<td class="value"><a href="#">797</a></td>
+											</tr>
+											<tr>
+												<td class="prop">всего фото</td>
+												<td class="value"><a href="#">13</a></td>
+											</tr>
+											<tr>
+												<td class="prop">всего просмотров</td>
+												<td class="value">308469</td>
+											</tr>
+										</table>
+									</div>
+								</div>
+								<div class="mainrating__btns">
+									<button class="b-lonetool b--to-right"><i class="fa fa-camera"></i>Добавить отзыв и фото</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-sm-4">
+							<div class="block-consult">
+								<div class="hdr-h2 hdr--lined"><ins class="emphas bk--red"></ins>Менеджер по продажам туров</div>
+								<div class="clearfix">
+									<div class="consult__img">
+										<img src="img/consultant.jpg" alt="">
+									</div>
+									<div class="consult__descript">
+										<div class="consult_name">Ирина Вставская</div>
+										<div class="consult_prof">турфирма «Мария»</div>
+										<a href="tel:+74953089897" class="consult_tel">+7&nbsp;495<span>308-98-97</span></a>
+									</div>
+								</div>
+								<div class="clearfix">
+									<div class="consult__msgrs">
+										<a href="#"><img src="img/icons/im-telegram.svg" alt="Telegram" title="Связаться через Telegram"></a>
+										<a href="#"><img src="img/icons/im-viber.svg" alt="Viber" title="Связаться через Viber"></a>
+										<a href="#"><img src="img/icons/im-whatsup.svg" alt="WhatsUp" title="Связаться через WhatsUp"></a>
+										<a href="#"><img src="img/icons/im-skype.svg" alt="Skype" title="Связаться через Skype"></a>
+										<a href="#"><img src="img/icons/im-icq.svg" alt="ICQ" title="Связаться через ICQ"></a>
+									</div>
+								</div>
+								<div class="clearfix">
+									<div class="consult__btns">
+										<button class="consult_btn-call b-btn" data-toggle="modal" data-target="#modal__call"><i class="fa fa-phone"></i>Заказать звонок</button>
+										<button class="consult_btn-mess b-btn" data-toggle="modal" data-target="#modal__mess"><i class="fa fa-pencil"></i>Оставить заявку</button>
+									</div>
+								</div>
 							</div>
 						</div>
 
 					</div>
+				</section>
+				<!-- end Рейтинг -->
 
 
-				</div>
-			</article>
+				<!-- Контент -->
+				<section class="sc_country-content">
 
-
-
-			<article class="ac_cabuser-info">
-
-
-				<div class="tablink">
-					<ul>
-						<li><span class="active">Лента событий</span></li>
-						<li><a href="#">Рассказы</a></li>
-						<li><a href="#">Фото</a></li>
-						<li><a href="#">Отзывы</a></li>
-					</ul>
-					<div class="tab-more dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Еще</a>
-						<ul class="dropdown-menu dropdown-menu-right animated fadeIn">
-							<li><a href="#">Карта путешествий</a></li>
-							<li><a href="#">Поиск попутчиков</a></li>
+					<div class="tablink">
+						<ul>
+							<li><a href="#">Страна</a></li>
+							<li><a href="#">Отзывы</a></li>
+							<li><a href="#">Отели</a></li>
+							<li><a href="#">Билеты</a></li>
+							<li><a href="#"><strong>ТУРЫ</strong></a></li>
 						</ul>
-					</div>
-				</div>
-
-
-				<section class="sc_cabuser-chronicle">
-
-					<h2>Лента событий</h2>
-
-					<div class="block-chronicle">
-						<div class="chronicle__name">
-							<span class="miniuser-name">Иванов Алексей</span><span class="miniuser-date">/&nbsp;11.05.2017</span><span class="miniuser-time">/&nbsp;10:40</span>
-						</div>
-						<div class="chronicle__descript">
-							Добавил рассказ <a href="#">Из Монте-Сант-Анджело в Манфредонию c Макаланом и Гаро</a>.
-						</div>
-						<div class="chronicle__img">
-							<img src="img/_tmp/cl1-tmp.jpg" alt="">
-						</div>
-						<div class="cronicle__address">
-							<a href="#">Монте-Сант-Анджело</a>, <a href="#">Манфредония</a>
-						</div>
-						<div class="response__icons">
-							<div class="response-icon icon--view" title="просмотров"><span>39</span></div>
-							<div class="response-icon icon--resp" title="обсуждений"><span>0</span></div>
-							<div class="response-icon icon--photo" title="фотографий"><span>0</span></div>
-							<div class="response-icon icon--like" title="нравится"><span>169</span></div>
-							<div class="response-icon icon--dislike" title="не нравится"><span>-14</span></div>
+						<div class="tab-more dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Еще</a>
+							<ul class="dropdown-menu dropdown-menu-right animated fadeIn">
+								<li><a href="#">Города</a></li>
+								<li><a href="#">Курорты</a></li>
+								<li><a href="#">Места</a></li>
+								<li><a href="#">Виза</a></li>
+								<li><a href="#">Посольства и консульства</a></li>
+								<li><a href="#">Памятка туристу</a></li>
+								<li><a href="#">Погода</a></li>
+								<li><a href="#">Разговорник</a></li>
+							</ul>
 						</div>
 					</div>
 
-					<div class="block-chronicle">
-						<div class="chronicle__name">
-							<span class="miniuser-name">Иванов Алексей</span><span class="miniuser-date">/&nbsp;11.05.2017</span><span class="miniuser-time">/&nbsp;10:40</span>
-						</div>
-						<div class="chronicle__descript">
-							Добавил фото.
-						</div>
-						<div class="chronicle__img">
-							<img src="img/_tmp/ht1-tmp.jpg" alt="">
-						</div>
-						<div class="cronicle__address">
-							<a href="#">Belconti 5*</a>, <a href="#">Белек</a>, <a href="#">Турция</a>
-						</div>
-						<div class="response__icons">
-							<div class="response-icon icon--view" title="просмотров"><span>39</span></div>
-							<div class="response-icon icon--resp" title="обсуждений"><span>0</span></div>
-							<div class="response-icon icon--photo" title="фотографий"><span>0</span></div>
-							<div class="response-icon icon--like" title="нравится"><span>169</span></div>
-							<div class="response-icon icon--dislike" title="не нравится"><span>-14</span></div>
-						</div>
-					</div>
+				</section>
+				<!-- end Контент -->
 
-					<div class="block-chronicle">
-						<div class="chronicle__name">
-							<span class="miniuser-name">Иванов Алексей</span><span class="miniuser-date">/&nbsp;11.05.2017</span><span class="miniuser-time">/&nbsp;10:40</span>
-						</div>
-						<div class="chronicle__descript">
-							Отдыхал в <a href="#">Belconti 5*</a>, <a href="#">Белек</a>, <a href="#">Турция</a>
-						</div>
-						<div class="cronicle__address">
-							<a href="#">Belconti 5*</a>, <a href="#">Белек</a>, <a href="#">Турция.</a>
-						</div>
-					</div>
 
-					<div class="block-chronicle">
-						<div class="chronicle__name">
-							<span class="miniuser-name">Иванов Алексей</span><span class="miniuser-date">/&nbsp;11.05.2017</span><span class="miniuser-time">/&nbsp;10:40</span>
-						</div>
-						<div class="chronicle__descript">
-							Присоединился к <a href="#">ТурСводка</a>.
-						</div>
-					</div>
+				<section class="sc_country-phrasebook">
+
+					<h2>Разговорник для туриста</h2>
+
+					<ul class="tabswitcher">
+						<li class="active"><a href="#phrasebook__it" data-toggle="tab" id="btn_it">Русско-Итальянский</a></li>
+						<li><a href="#phrasebook__de" data-toggle="tab" id="btn_de">Русско-Немецкий</a></li>
+						<li><a href="#phrasebook__fr" data-toggle="tab" id="btn_fr">Русско-Французский</a></li>
+					</ul>
 
 				</section>
 
 
 			</article>
 
+
+
+			<article class="ac_country-subscript">
+
+				<div class="block-subscript">
+
+					<div class="hdr-h2 hdr--lined"><ins class="emphas bk--red"></ins>Подписаться на рассылку <span>/&nbsp;Новости /&nbsp;Акции /&nbsp;Спецпредложения.</span></div>
+
+					<form action="" name="fm-subscript" class="form-inline">
+						<div class="form-group">
+							<label class="sr-only" for="fld-subscript_name">Ваше имя</label>
+							<input class="form-control" id="fld-subscript_name" placeholder="Ваше имя">
+						</div>
+						<div class="form-group">
+							<label class="sr-only" for="fld-subscript_email">Ваш e-mail</label>
+							<input class="form-control" id="fld-subscript_email" placeholder="Ваш e-mail">
+						</div>
+						<button class="b-btn">Подписаться</button>
+					</form>
+
+					<p class="note">Нажимая кнопку «Подписаться» я принимаю <a href="#">пользовательское соглашение</a>.</p>
+
+				</div>
+
+			</article>
+
+
+
+			<article class="ac_country-linksec">
+
+				<div class="articlehdr">
+					<div class="articlehdr__main"><i class="flag-icon flag-icon-tr"></i>Турция&nbsp;&nbsp; <span>Ссылки раздела</span></div>
+					<ins class="emphas bk--green"></ins>
+				</div>
+
+				<div class="block-linksec">
+					<div class="row">
+						<div class="col-sm-4">
+							<ul class="ul--links">
+								<li><a href="#">Отдых в Турции</a></li>
+								<li><a href="#">Фото Турции</a></li>
+								<li><a href="#">Карта Турции</a></li>
+								<li><a href="#">Отзывы о Турции</a></li>
+								<li><a href="#">Отели Турции</a></li>
+							</ul>
+						</div>
+						<div class="col-sm-4">
+							<ul class="ul--links">
+								<li><a href="#">Авиабилеты в Турцию</a></li>
+								<li><a href="#">Поиск туров в Турцию</a></li>
+								<li><a href="#">Города Турции</a></li>
+								<li><a href="#">Курорты Турции</a></li>
+								<li><a href="#">Места Турции</a></li>
+							</ul>
+						</div>
+						<div class="col-sm-4">
+							<ul class="ul--links">
+								<li><a href="#">Виза в Турцию</a></li>
+								<li><a href="#">Посольства и консульства в Турции</a></li>
+								<li><a href="#">Памятка туристу в Турцию</a></li>
+								<li><a href="#">Погода в Турции</a></li>
+								<li><a href="#">Разговорник</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</article>
 
 
 
@@ -978,31 +1088,19 @@
 		<aside class="pagewrap__col-right">
 			<div class="container-fluid">
 
-				<div class="aside-map">
-					<div class="hdr-h2 hdr--lined"><ins class="emphas bk--green"></ins>Карта путешествий</div>
-					<div class="map-aside country-map" id="mycountry-map">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2660752.123465059!2d32.94337729477081!3d39.242309548612376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sby!4v1495869941573" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
-					</div>
+
+
+				<div class="aside-adv">
+					<img src="img/_tmp/adv1.jpg" width="100%" alt="">
 				</div>
 
-				<div class="aside-countries">
-					<div class="aside-countries__result">посещено <strong>12</strong>&nbsp;стран, <strong>42</strong>&nbsp;города</div>
-					<ul class="ul--nolist">
-						<li><a href="#"><span class="flag-icon flag-icon-au"></span>Австралия</a></li>
-						<li><a href="#"><span class="flag-icon flag-icon-at"></span>Австрия</a></li>
-						<li><a href="#"><span class="flag-icon flag-icon-az"></span>Азербайджан</a></li>
-						<li><a href="#"><span class="flag-icon flag-icon-al"></span>Албания</a></li>
-						<li><a href="#"><span class="flag-icon flag-icon-dz"></span>Алжир</a></li>
-						<li><a href="#"><span class="flag-icon flag-icon-ao"></span>Ангола</a></li>
-						<li><a href="#"><span class="flag-icon flag-icon-ad"></span>Андорра</a></li>
-						<li><a href="#"><span class="flag-icon flag-icon-ag"></span>Антигуа и Барбуда</a></li>
-						<li><a href="#"><span class="flag-icon flag-icon-ar"></span>Аргентина</a></li>
-						<li><a href="#"><span class="flag-icon flag-icon-am"></span>Армения</a></li>
-						<li><a href="#"><span class="flag-icon flag-icon-af"></span>Афганистан</a></li>
-					</ul>
+				<div class="aside-adv">
+					<img src="img/_tmp/adv1.jpg" width="100%" alt="">
 				</div>
 
-
+				<div class="aside-adv">
+					<img src="img/_tmp/adv1.jpg" width="100%" alt="">
+				</div>
 
 
 
@@ -1324,6 +1422,41 @@
 
 <script src="js/vendor.js"></script>
 <script src="js/main.js"></script>
+
+<script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
+<script type="text/javascript">
+// карта для Где купить туры
+
+ymaps.ready(init);
+
+function init(){
+
+	var myBuytoursMap = new ymaps.Map ("buytours-map", {
+		center: [55.76, 37.64],
+		zoom: 10
+	});
+
+	myBuytoursPlacemark1 = new ymaps.Placemark([55.687569, 37.570572], {
+			iconCaption: 'Туристическая фирма «Мария»'
+		}, {
+			preset: 'islands#blueDotIconWithCaption'
+		});
+
+	myBuytoursPlacemark2 = new ymaps.Placemark([55.790139, 37.814052], {
+			iconCaption: 'Туристическая компания «Наш тур»'
+		}, {
+			preset: 'islands#blueDotIconWithCaption'
+		});
+
+	myBuytoursMap.geoObjects
+		.add(myBuytoursPlacemark1)
+		.add(myBuytoursPlacemark2);
+
+	myBuytoursMap.behaviors.disable('scrollZoom');
+
+}
+</script>
 
 
 </body>

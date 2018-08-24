@@ -1,0 +1,50 @@
+///////////////////////////////////////////////
+
+
+
+// Компания кабинетная
+
+
+
+.cabсompany-logo {
+	display: inline-block;
+	float: left;
+	width: 160px;
+	height: 160px;
+	line-height: 150px;
+	border: solid 1px $color-border;
+	padding: 5px;
+	text-align: center;
+	margin-right: 30px;
+
+	@include respond-to(media-xs) {
+		margin-bottom: 2rem;
+	}
+
+	img {
+		width: 100%;
+		height: auto;
+	}
+
+}
+
+.cabсompany-additoffice {
+	position: relative;
+	padding-right: 10rem;
+	margin: 0.8rem 0 1.2rem 0;
+
+	.b-microtool {
+		position: absolute;
+		z-index: 2;
+		right: 0;
+	}
+
+}
+
+.cabсompany-btn {
+	display: block;
+	margin: 3rem auto 0 auto;
+	text-transform: uppercase;
+}
+
+

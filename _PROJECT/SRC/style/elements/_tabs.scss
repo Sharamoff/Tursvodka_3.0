@@ -23,7 +23,10 @@
 			background: url("../img/tab-dlv.gif") right no-repeat;
 
 			&:first-child {
-				margin-left: 0px;
+				margin-left: 0;
+
+
+
 			}
 
 			.active {
@@ -222,6 +225,81 @@
 				padding-right: 1.4rem !important;
 			}
 
+		}
+
+	}
+
+}
+
+
+
+//таб типа переключатель
+
+.tabswitcher {
+	padding: 0;
+	margin: 0 1px 0 0;
+	font: $font-size-base $font-family-cond;
+	list-style: none;
+	border: none;
+
+	> li {
+		margin: 0 0 -1px -1px;
+		padding: 0;
+		border-radius: 0;
+		float: left;
+
+		&.active,
+		&.active a,
+		&.active a:hover {
+			background-color: $c-gray-light;
+			color: $c-black;
+			border-color: $c-gray-lightermore;
+			font-weight: bold;
+			margin-bottom: -1px;
+			border-radius: 5px;
+		}
+
+		&:first-child {
+			a {
+				border-radius: 5px 0 0 5px;
+				@include respond-to(media-xs) {
+					border-radius: 5px;
+				}
+			}
+		}
+
+		&:last-child {
+			a {
+				border-radius: 0 5px 5px 0;
+				@include respond-to(media-xs) {
+					border-radius: 5px;
+				}
+			}
+		}
+
+	}
+
+	a {
+		display: block;
+		padding: 0.8rem 1.5rem;
+		margin: 0 0 -1px 0;
+		color: $c-white;
+		white-space: nowrap;
+		text-decoration: none;
+		text-transform: uppercase;
+		text-align: center;
+		border-radius: 0;
+		background: $c-blue-light;
+		border: solid 1px $c-blue-lighter;
+		min-width: 20rem;
+
+		&:hover {
+			background: $color-link-hover;
+			border-color: $c-yellow-lightermore;
+		}
+
+		@include respond-to(media-xs) {
+			border-radius: 5px;
 		}
 
 	}

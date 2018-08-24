@@ -482,6 +482,7 @@ HR {
 
 	@include respond-to(media-xs) {
 		margin-left: 0;
+		margin-top: 2rem !important;
 	}
 
 }
@@ -489,6 +490,7 @@ HR {
 .b--to-left {
 	float: left;
 	margin-right: 2rem;
+	margin-bottom: 0 !important;
 
 	@include respond-to(media-xs) {
 		margin-right: 0;
@@ -498,6 +500,7 @@ HR {
 
 .to-right {
 	text-align: right;
+	margin-bottom: 0 !important;
 
 	@include respond-to(media-xs) {
 		text-align: inherit;

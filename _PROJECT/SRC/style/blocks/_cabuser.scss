@@ -36,16 +36,41 @@
 	color: $c-gray-darker;
 	margin-bottom: 3rem;
 
-	.cabuser--address {
+	.cabuser__name {
+		font-size: $font-size-hdr;
+		font-weight: bold;
+	}
+
+	.cabuser__timestamp {
+		display: block;
+		font-size: $font-size-base;
+		font-weight: normal;
+		color: $c-gray;
+		margin-top: -1rem;
+	}
+
+	.cabuser__address {
 
 	}
 
-	.cabuser--age {
+	.cabuser__age {
 
 	}
 
-	.cabuser--profession {
+	.cabuser__profession {
 
+	}
+
+	.tool-box {
+		margin-top: 3rem;
+	}
+
+	.b-tool {
+		margin: 0 2rem 1rem -0.5rem;
+	}
+
+	.b-lonetool {
+		margin: 0;
 	}
 
 }

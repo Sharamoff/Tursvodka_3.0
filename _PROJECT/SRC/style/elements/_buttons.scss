@@ -87,36 +87,6 @@
 }
 
 
-.b-lonetool {
-	display: inline-block;
-	font: bold $font-size-basemin $font-family-cond;
-	background: $c-yellow;
-	color: $c-white;
-	text-decoration: none;
-	text-align: center;
-	text-transform: uppercase;
-	line-height: $line-height-min;
-	border: none;
-	border-radius: 5rem;
-	padding: 0.6rem 1.2rem 0.7rem 1.2rem;
-	min-width: 10rem;
-	margin-top: 1.5rem;
-	margin-bottom: 3rem;
-
-	@include respond-to(media-xs) {
-		float: none !important;
-	}
-
-	&:hover {
-		background: $c-gray;
-	}
-
-	.fa {
-		margin-right: 0.6rem;
-	}
-
-}
-
 
 .b-link {
 	display: inline-block;
@@ -157,3 +127,10 @@
 	}
 
 }
+
+
+
+
+
+
+

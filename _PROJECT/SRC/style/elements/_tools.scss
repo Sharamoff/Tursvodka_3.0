@@ -10,46 +10,134 @@
 	margin-bottom: 0.4rem;
 	@include clearfix;
 
-	.b-tool {
-		text-decoration: none;
-		font: bold $font-size-basemin $font-family-cond;
-		text-transform: uppercase;
+	&.box--with-pagination {
+		float: right;
+		margin-top: 2.5rem;
+	}
+
+}
+
+
+.b-lonetool {
+	display: inline-block;
+	font: bold $font-size-basemin $font-family-cond;
+	background: $c-yellow;
+	color: $c-white;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	line-height: $line-height-min;
+	border: none;
+	border-radius: 5rem;
+	padding: 0.6rem 1.2rem 0.7rem 1.2rem;
+	min-width: 10rem;
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
+
+	@include respond-to(media-xs) {
+		float: none !important;
+		display: block !important;
+	}
+
+	&:hover {
+		background: $c-gray;
+	}
+
+	.fa {
+		margin-right: 0.6rem;
+	}
+
+}
+
+
+// инструментальная кнопка 1го уровня
+.b-tool {
+	display: inline-block;
+	text-decoration: none;
+	font: bold $font-size-basemin $font-family-cond;
+	text-transform: uppercase;
+	margin: 0;
+
+	i {
+		display: inline-block;
+		width: 3rem;
+		height: 3rem;
+		line-height: 3rem;
+		border-radius: 50%;
+		background-color: $color-link;
+		text-align: center;
+		font-size: 1.5rem;
 		margin: 0 0.5rem;
+		color: $c-white;
+	}
 
-		i {
-			display: inline-block;
-			width: 3rem;
-			height: 3rem;
-			line-height: 3rem;
-			border-radius: 3rem;
-			background-color: $color-link;
-			text-align: center;
-			font-size: 1.5rem;
-			margin: 0 0.5rem;
-			color: $c-white;
-		}
+	@include respond-to(media-xs) {
 
-		@include respond-to(media-xs) {
-
-			span {
-				display: none;
-			}
-
-		}
-
-		&:hover {
-
-			i {
-				background-color: $color-link-hover;
-			}
-
+		span {
+			display: none;
 		}
 
 	}
 
-	&.box--with-pagination {
-		float: right;
-		margin-top: 2.5rem;
+	&:hover {
+
+		i {
+			background-color: $color-link-hover;
+		}
+
+	}
+
+}
+
+
+// инструментальная кнопка 2го уровня
+.b-itool {
+	display: inline-block;
+	font: $font-size-base $font-family-cond;
+	text-decoration: none;
+	border: none;
+	background: $c-blue-lightermore;
+	padding: 0 0.8rem 0.5rem 0.5rem;
+	border-radius: 3px;
+	color: $color-link;
+	margin: 0.3rem 0.8rem 0.7rem 0;
+
+	&:hover {
+		color: $color-link-hover;
+		text-decoration: none;
+	}
+
+	i {
+		position: relative;
+		font-size: 2.1rem;
+		margin-right: 0.5rem;
+		margin-left: 0;
+		top: 0.3rem;
+	}
+
+}
+
+
+// инструментальная кнопка 3го уровня
+.b-microtool {
+	display: inline-block;
+	font: $font-size-basemin $font-family-cond;
+	text-decoration: none;
+	border: solid 1px $c-blue-lightermore;
+	border-radius: 3px;
+	background: $c-white;
+	padding: 0.1rem 0.4rem 0.2rem 0.4rem;
+	color: $color-link;
+	margin: 0 0.5rem 0.5rem 0;
+	line-height: 1;
+
+	&:hover {
+		color: $color-link-hover;
+		text-decoration: none;
+	}
+
+	i {
+		margin-right: 0.3rem;
 	}
 
 }
