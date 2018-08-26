@@ -238,9 +238,10 @@
 .tabswitcher {
 	padding: 0;
 	margin: 0 1px 0 0;
-	font: $font-size-base $font-family-cond;
+	font: $font-size-basemax $font-family-cond;
 	list-style: none;
 	border: none;
+	@include clearfix();
 
 	> li {
 		margin: 0 0 -1px -1px;
@@ -256,24 +257,33 @@
 			border-color: $c-gray-lightermore;
 			font-weight: bold;
 			margin-bottom: -1px;
-			border-radius: 5px;
-		}
-
-		&:first-child {
-			a {
-				border-radius: 5px 0 0 5px;
-				@include respond-to(media-xs) {
-					border-radius: 5px;
-				}
+			border-radius: 0;
+			@include respond-to(media-xs) {
+				border-radius: 5px;
 			}
 		}
 
-		&:last-child {
-			a {
-				border-radius: 0 5px 5px 0;
-				@include respond-to(media-xs) {
-					border-radius: 5px;
-				}
+		&:first-child,
+		&:first-child a,
+		&:first-child a:hover,
+		&:first-child.active,
+		&:first-child.active a,
+		&:first-child.active a:hover {
+			border-radius: 5px 0 0 5px;
+			@include respond-to(media-xs) {
+				border-radius: 5px;
+			}
+		}
+
+		&:last-child,
+		&:last-child a,
+		&:last-child a:hover,
+		&:last-child.active,
+		&:last-child.active a,
+		&:last-child.active a:hover {
+			border-radius: 0 5px 5px 0;
+			@include respond-to(media-xs) {
+				border-radius: 5px;
 			}
 		}
 
@@ -286,12 +296,10 @@
 		color: $c-white;
 		white-space: nowrap;
 		text-decoration: none;
-		text-transform: uppercase;
 		text-align: center;
 		border-radius: 0;
 		background: $c-blue-light;
 		border: solid 1px $c-blue-lighter;
-		min-width: 20rem;
 
 		&:hover {
 			background: $color-link-hover;
@@ -300,6 +308,7 @@
 
 		@include respond-to(media-xs) {
 			border-radius: 5px;
+			min-width: 220px;
 		}
 
 	}

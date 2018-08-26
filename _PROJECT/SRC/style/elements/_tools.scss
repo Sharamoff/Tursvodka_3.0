@@ -15,6 +15,31 @@
 		margin-top: 2.5rem;
 	}
 
+	&.box--hdr_h2,
+	&.box--hdr_h3 {
+		float: right;
+
+		@include respond-to(media-xs) {
+			float: none !important;
+			display: block !important;
+			margin: 1.5rem 0 !important;
+
+			* {
+				padding: 0;
+			}
+
+		}
+
+	}
+
+	&.box--hdr_h2 {
+		margin-top: -5rem;
+	}
+
+	&.box--hdr_h3 {
+		margin-top: -3rem;
+	}
+
 }
 
 
@@ -57,6 +82,9 @@
 	font: bold $font-size-basemin $font-family-cond;
 	text-transform: uppercase;
 	margin: 0;
+	background: transparent;
+	border: none;
+	color: $color-link;
 
 	i {
 		display: inline-block;
@@ -80,6 +108,8 @@
 	}
 
 	&:hover {
+		color: $color-link-hover;
+		text-decoration: none;
 
 		i {
 			background-color: $color-link-hover;
