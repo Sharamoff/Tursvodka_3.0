@@ -481,6 +481,7 @@ HR {
 	margin-left: 2rem;
 
 	@include respond-to(media-xs) {
+		float: none;
 		margin-left: 0;
 		margin-top: 2rem !important;
 	}
@@ -493,6 +494,7 @@ HR {
 	margin-bottom: 0 !important;
 
 	@include respond-to(media-xs) {
+		float: none;
 		margin-right: 0;
 	}
 

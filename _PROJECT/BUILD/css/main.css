@@ -389,6 +389,7 @@ HR {
   margin-left: 2rem; }
   @media only screen and (max-width: 767px) {
     .b--to-right {
+      float: none;
       margin-left: 0;
       margin-top: 2rem !important; } }
 
@@ -398,6 +399,7 @@ HR {
   margin-bottom: 0 !important; }
   @media only screen and (max-width: 767px) {
     .b--to-left {
+      float: none;
       margin-right: 0; } }
 
 .to-right {
@@ -804,13 +806,16 @@ HR {
     clear: both; }
   .stoolbar.stoolbar--top {
     border-bottom: solid 1px #bbbbbb; }
+  .stoolbar.stoolbar--suptop {
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 0; }
   .stoolbar .stb-filter_res {
     float: right;
     display: inline-block;
     color: #999999; }
     .stoolbar .stb-filter_res strong {
       font-size: 1.6rem;
-      color: #666666;
       white-space: nowrap; }
     @media only screen and (max-width: 767px) {
       .stoolbar .stb-filter_res {
@@ -1134,7 +1139,11 @@ a:hover .a--more {
     font-size: 2.1rem;
     margin-right: 0.5rem;
     margin-left: 0;
-    top: 0.3rem; }
+    top: 0.2rem; }
+  .b-itool.b--notxt {
+    padding: 0 1rem 0.5rem 1rem; }
+    .b-itool.b--notxt i {
+      margin-right: 0; }
 
 .b-microtool {
   display: inline-block;
@@ -2309,15 +2318,15 @@ INPUT[type="file"] {
     .miniuser-name a:hover {
       color: #ff8000 !important; }
 
-.minuser-address {
+.miniuser-address {
   font: normal 1.6rem "Roboto Condensed", "Arial Narrow", Arial, Helvetica, sans-serif;
   line-height: 1.2 !important;
   color: #333333;
   margin-right: 0.5rem; }
-  .minuser-address a {
+  .miniuser-address a {
     text-decoration: underline;
     color: #333333; }
-    .minuser-address a:hover {
+    .miniuser-address a:hover {
       text-decoration: none;
       color: #ff8000; }
 
@@ -5005,6 +5014,111 @@ INPUT[type="file"] {
 
 .block-phrasebook .divtable {
   margin-top: 1.5rem; }
+
+.block-announce {
+  padding-top: 2.5rem;
+  padding-bottom: 1.5rem;
+  margin-bottom: -1px;
+  border-top: solid 1px #cccccc;
+  border-bottom: solid 1px #cccccc; }
+  .block-announce:before, .block-announce:after {
+    content: " ";
+    display: table; }
+  .block-announce:after {
+    clear: both; }
+  .block-announce .announce__name {
+    margin-bottom: 1rem;
+    font: bold 1.8rem "Roboto Condensed", "Arial Narrow", Arial, Helvetica, sans-serif;
+    line-height: 1.2 !important; }
+    .block-announce .announce__name-date {
+      font: normal 1.4rem "Roboto Condensed", "Arial Narrow", Arial, Helvetica, sans-serif;
+      color: #ff8000;
+      margin-right: 0.5rem; }
+  .block-announce .announce__descript {
+    font-size: 1.4rem;
+    color: #666666; }
+  .block-announce .announce__itemprice {
+    color: #4d9b40;
+    font: bold 2.5rem "Roboto Condensed", "Arial Narrow", Arial, Helvetica, sans-serif;
+    white-space: nowrap;
+    padding-top: 2.5rem;
+    padding-right: 1.5rem;
+    text-align: right; }
+    @media only screen and (max-width: 767px) {
+      .block-announce .announce__itemprice {
+        padding-top: 1rem;
+        text-align: left; } }
+    .block-announce .announce__itemprice i {
+      font-size: 1.8rem;
+      font-weight: normal;
+      margin-left: 0.3rem; }
+  .block-announce .announce__btns {
+    margin-top: 1.5rem;
+    margin-bottom: 0; }
+    .block-announce .announce__btns:before, .block-announce .announce__btns:after {
+      content: " ";
+      display: table; }
+    .block-announce .announce__btns:after {
+      clear: both; }
+
+.block-cabmessage {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: -1px;
+  border-top: solid 1px #cccccc;
+  border-bottom: solid 1px #cccccc; }
+  .block-cabmessage:before, .block-cabmessage:after {
+    content: " ";
+    display: table; }
+  .block-cabmessage:after {
+    clear: both; }
+  .block-cabmessage .cabmessage__user {
+    float: left;
+    display: inline-block;
+    width: 30%;
+    padding-right: 1.5rem;
+    text-align: center; }
+    @media only screen and (max-width: 767px) {
+      .block-cabmessage .cabmessage__user {
+        display: block;
+        float: none;
+        margin-right: 0;
+        margin-bottom: 1.5rem;
+        text-align: left;
+        width: 100%; }
+        .block-cabmessage .cabmessage__user:before, .block-cabmessage .cabmessage__user:after {
+          content: " ";
+          display: table; }
+        .block-cabmessage .cabmessage__user:after {
+          clear: both; } }
+  .block-cabmessage .cabmessage__descript {
+    float: left;
+    display: inline-block;
+    width: 65%;
+    margin-top: 2.5rem; }
+    @media only screen and (max-width: 767px) {
+      .block-cabmessage .cabmessage__descript {
+        display: block;
+        float: none;
+        width: 100%;
+        margin-top: 0; } }
+  .block-cabmessage .cabmessage-mess {
+    font-family: "Roboto Condensed", "Arial Narrow", Arial, Helvetica, sans-serif;
+    margin-top: 2.5rem; }
+    @media only screen and (max-width: 767px) {
+      .block-cabmessage .cabmessage-mess {
+        margin-top: 1rem; } }
+    .block-cabmessage .cabmessage-mess:before {
+      font-family: FontAwesome;
+      content: "\f0e0";
+      margin-right: 0.5rem; }
+    .block-cabmessage .cabmessage-mess.mess--new {
+      color: #ff8000; }
+  .block-cabmessage .cabmessage-btns {
+    margin-top: 2rem; }
+    @media only screen and (max-width: 767px) {
+      .block-cabmessage .cabmessage-btns {
+        margin-top: 0; } }
 
 .header {
   background-color: white; }

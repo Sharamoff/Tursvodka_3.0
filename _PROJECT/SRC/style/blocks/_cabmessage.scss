@@ -1,0 +1,81 @@
+///////////////////////////////////////////////
+
+
+
+// Сообщения кабинетного юзера
+
+
+
+.block-cabmessage {
+	@include clearfix;
+	padding-top:1rem;
+	padding-bottom: 1rem;
+	margin-bottom: -1px;
+	border-top: solid 1px $color-dlv;
+	border-bottom: solid 1px $color-dlv;
+
+	.cabmessage__user {
+		float: left;
+		display: inline-block;
+		width: 30%;
+		padding-right: 1.5rem;
+		text-align: center;
+
+		@include respond-to(media-xs) {
+			display: block;
+			float: none;
+			margin-right: 0;
+			margin-bottom: 1.5rem;
+			text-align: left;
+			width: 100%;
+			@include clearfix;
+		}
+
+	}
+
+	.cabmessage__descript {
+		float: left;
+		display: inline-block;
+		width: 65%;
+		margin-top: 2.5rem;
+
+		@include respond-to(media-xs) {
+			display: block;
+			float: none;
+			width: 100%;
+			margin-top: 0;
+		}
+
+	}
+
+	.cabmessage-mess {
+		font-family: $font-family-cond;
+		margin-top: 2.5rem;
+
+		@include respond-to(media-xs) {
+			margin-top: 1rem;
+		}
+
+		&:before {
+			font-family: $fontawesome;
+			content: "\f0e0";
+			margin-right: 0.5rem;
+		}
+
+		&.mess--new {
+			color: $c-yellow;
+		}
+
+	}
+
+	.cabmessage-btns {
+		margin-top: 2rem;
+
+		@include respond-to(media-xs) {
+			margin-top: 0;
+		}
+
+	}
+
+}
+
