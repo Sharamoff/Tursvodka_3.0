@@ -1,0 +1,40 @@
+///////////////////////////////////////////////
+
+
+
+// Сообщения в попапе
+
+
+
+.block-popmessages {
+	@include clearfix;
+	overflow-y: auto;
+	height: 40vh;
+	margin: 1rem 0 2rem 0;
+	background: $c-gray-lightermore;
+	padding: 1.5rem;
+
+	.popmessage {
+		margin: 0 0 1.5rem 0;
+
+		&__user {
+			font-size: $font-size-basemin;
+			font-family: $font-family-cond;
+			font-weight: bold;
+		}
+
+		&__date {
+			font-weight: normal;
+			color: $c-gray;
+		}
+
+		&__txt {
+			margin-top: 0.3rem;
+			color: $c-gray-darker;
+			font-size: $font-size-basemin;
+		}
+
+	}
+
+}
+

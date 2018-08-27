@@ -917,7 +917,7 @@
 							</div>
 							<div class="col-sm-3">
 								<div class="cabmessage-btns">
-									<button class="b-itool b--to-right"><i class="fa fa-pencil"></i>написать сообщение</button>
+									<button class="b-itool b--to-right" data-toggle="modal" data-target="#modal__messages"><i class="fa fa-pencil"></i>написать сообщение</button>
 								</div>
 							</div>
 						</div>
@@ -939,7 +939,7 @@
 							</div>
 							<div class="col-sm-3">
 								<div class="cabmessage-btns">
-									<button class="b-itool b--to-right"><i class="fa fa-pencil"></i>написать сообщение</button>
+									<button class="b-itool b--to-right" data-toggle="modal" data-target="#modal__messages"><i class="fa fa-pencil"></i>написать сообщение</button>
 								</div>
 							</div>
 						</div>
@@ -961,7 +961,7 @@
 							</div>
 							<div class="col-sm-3">
 								<div class="cabmessage-btns">
-									<button class="b-itool b--to-right"><i class="fa fa-pencil"></i>написать сообщение</button>
+									<button class="b-itool b--to-right" data-toggle="modal" data-target="#modal__messages"><i class="fa fa-pencil"></i>написать сообщение</button>
 								</div>
 							</div>
 						</div>
@@ -1315,6 +1315,81 @@
 		</div>
 	</div>
 
+</div>
+<div class="modal fade" id="modal__messages" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+
+
+			<div class="modal-body">
+
+				<div class="block-cabmessage">
+					<div class="cabmessage__user">
+						<div class="miniuser-img"><img src="img/icons/no-user.svg" alt=""></div>
+					</div>
+					<div class="cabmessage__descript">
+						<div class="miniuser-name"><a href="index.html">Василиса Никитична</a></div>
+						<div class="miniuser-address">Россия, Нижний Новгород</div>
+					</div>
+				</div>
+
+				<div class="modal-hdr">Сообщения</div>
+
+				<div class="tool-box"><a href="#" class="b-microtool"><i class="fa fa-refresh"></i>обновить</a></div>
+
+				<div class="block-popmessages">
+					<div class="popmessage">
+						<div class="popmessage__user">Таня <span class="popmessage__date">/ 02.09.2012 в 08:55</span></div>
+						<div class="popmessage__txt">
+							Да,друзья,то что очень шумно это правда!!!Но после многочасовых поездок.
+						</div>
+					</div>
+					<div class="popmessage">
+						<div class="popmessage__user">Алексей <span class="popmessage__date">/ 02.09.2012 в 08:55</span></div>
+						<div class="popmessage__txt">
+							Внимание всем, кто хочет испортить себе впечатление об Италии и отдых---вперед. Внимание всем, кто хочет испортить себе впечатление об Италии и отдых---вперед.
+						</div>
+					</div>
+					<div class="popmessage">
+						<div class="popmessage__user">Валентин Юдашкин<span class="popmessage__date">/ 02.09.2012 в 08:55</span></div>
+						<div class="popmessage__txt">тестирую отправку сообщений и рассылку уведомлений об отправленных сообщениях </div>
+					</div>
+					<div class="popmessage">
+						<div class="popmessage__user">Таня <span class="popmessage__date">/ 02.09.2012 в 08:55</span></div>
+						<div class="popmessage__txt">
+							Да,друзья,то что очень шумно это правда!!!Но после многочасовых поездок.
+						</div>
+					</div>
+					<div class="popmessage">
+						<div class="popmessage__user">Алексей <span class="popmessage__date">/ 02.09.2012 в 08:55</span></div>
+						<div class="popmessage__txt">
+							Город вылета – Москва, вылет – 16.10.12, ночей – 7, питание – AI (питание + напитки местного производства), размещение – DBL (двое взрослых), номер – станд. номер с кух. уголком, без опред. вида из номера
+						</div>
+					</div>
+					<div class="popmessage">
+						<div class="popmessage__user">Валентин Юдашкин<span class="popmessage__date">/ 02.09.2012 в 08:55</span></div>
+						<div class="popmessage__txt">тестирую отправку сообщений и рассылку уведомлений об отправленных сообщениях </div>
+					</div>
+				</div>
+
+				<form role="form" action="" name="fm-message">
+					<div class="form-group">
+						<label for="fld-message">Ваше сообщение:</label>
+						<textarea rows="3" id="fld-message" class="form-control"></textarea>
+					</div>
+					<div class="align-block"><div class="align-cr"><div class="align-cl">
+						<button type="submit" name="b-submit__message" class="b-formbtn" data-dismiss="modal">ОТПРАВИТЬ СООБЩЕНИЕ</button>
+					</div></div></div>
+				</form>
+
+			</div>
+
+
+		</div>
+	</div>
 </div>
 
 

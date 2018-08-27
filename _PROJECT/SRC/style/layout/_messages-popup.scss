@@ -1,0 +1,71 @@
+#modal__messages {
+	max-height: 100vh !important;
+
+	.modal-body {
+		padding: 0 !important;
+		margin: 0 30px 30px 30px !important;
+
+		@include respond-to(media-xs) {
+			margin: 0 15px 15px 15px !important;
+		}
+
+	}
+
+	button.close {
+		position: absolute;
+		top: 1rem;
+		right: 1.5rem;
+		color: $c-black;
+		font-size: 3rem;
+		font-weight: normal;
+		z-index: 99;
+	}
+
+	.modal-hdr {
+		font-family: $font-family-cond;
+		font-size: $font-size-h2;
+		text-transform: uppercase;
+		color: $color-hdr;
+		margin-top: 1rem;
+		margin-bottom: 0;
+		line-height: $line-height-min;
+	}
+
+	.tool-box {
+		float: right;
+		margin-top: -2.2rem;
+		margin-right: 0;
+	}
+
+	.block-cabmessage {
+		margin: 0 -30px;
+		padding: 1rem 30px;
+		border-top: none;
+
+		@include respond-to(media-xs) {
+			margin: 0 -15px;
+			padding: 1rem 15px;
+		}
+
+		.cabmessage__user {
+			width: 60px;
+			margin-right: 2rem;
+
+			@include respond-to(media-xs) {
+				display: none;
+			}
+
+		}
+
+		.cabmessage__descript {
+			margin-top: 1rem;
+		}
+
+	}
+
+
+
+
+}
+
+

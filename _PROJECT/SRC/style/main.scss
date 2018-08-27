@@ -75,6 +75,7 @@
 @import 'blocks/phrasebook';
 @import 'blocks/announce';
 @import 'blocks/cabmessage';
+@import 'blocks/popmessages';
 
 @import 'layout/header';
 @import 'layout/nav';
@@ -83,6 +84,7 @@
 @import 'layout/aside';
 @import 'layout/footer';
 @import 'layout/modal';
+@import 'layout/messages-popup';
 
 @import 'pages/index';
 @import 'pages/country';

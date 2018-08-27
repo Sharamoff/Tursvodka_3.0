@@ -5120,6 +5120,31 @@ INPUT[type="file"] {
       .block-cabmessage .cabmessage-btns {
         margin-top: 0; } }
 
+.block-popmessages {
+  overflow-y: auto;
+  height: 40vh;
+  margin: 1rem 0 2rem 0;
+  background: #eeeeee;
+  padding: 1.5rem; }
+  .block-popmessages:before, .block-popmessages:after {
+    content: " ";
+    display: table; }
+  .block-popmessages:after {
+    clear: both; }
+  .block-popmessages .popmessage {
+    margin: 0 0 1.5rem 0; }
+    .block-popmessages .popmessage__user {
+      font-size: 1.4rem;
+      font-family: "Roboto Condensed", "Arial Narrow", Arial, Helvetica, sans-serif;
+      font-weight: bold; }
+    .block-popmessages .popmessage__date {
+      font-weight: normal;
+      color: #999999; }
+    .block-popmessages .popmessage__txt {
+      margin-top: 0.3rem;
+      color: #333333;
+      font-size: 1.4rem; }
+
 .header {
   background-color: white; }
   .header .headerwrap {
@@ -6311,6 +6336,51 @@ INPUT[type="file"] {
     color: #666666;
     text-transform: uppercase;
     font-size: 1.4rem; }
+
+#modal__messages {
+  max-height: 100vh !important; }
+  #modal__messages .modal-body {
+    padding: 0 !important;
+    margin: 0 30px 30px 30px !important; }
+    @media only screen and (max-width: 767px) {
+      #modal__messages .modal-body {
+        margin: 0 15px 15px 15px !important; } }
+  #modal__messages button.close {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    color: black;
+    font-size: 3rem;
+    font-weight: normal;
+    z-index: 99; }
+  #modal__messages .modal-hdr {
+    font-family: "Roboto Condensed", "Arial Narrow", Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: black;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    line-height: 1.1; }
+  #modal__messages .tool-box {
+    float: right;
+    margin-top: -2.2rem;
+    margin-right: 0; }
+  #modal__messages .block-cabmessage {
+    margin: 0 -30px;
+    padding: 1rem 30px;
+    border-top: none; }
+    @media only screen and (max-width: 767px) {
+      #modal__messages .block-cabmessage {
+        margin: 0 -15px;
+        padding: 1rem 15px; } }
+    #modal__messages .block-cabmessage .cabmessage__user {
+      width: 60px;
+      margin-right: 2rem; }
+      @media only screen and (max-width: 767px) {
+        #modal__messages .block-cabmessage .cabmessage__user {
+          display: none; } }
+    #modal__messages .block-cabmessage .cabmessage__descript {
+      margin-top: 1rem; }
 
 .sc_country-phrasebook {
   margin-top: -1.5rem; }
