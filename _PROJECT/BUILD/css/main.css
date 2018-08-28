@@ -1055,7 +1055,8 @@ a:hover .a--more {
     float: right;
     margin-top: 2.5rem; }
   .tool-box.box--hdr_h2, .tool-box.box--hdr_h3 {
-    float: right; }
+    float: right;
+    margin-right: -1rem; }
     @media only screen and (max-width: 767px) {
       .tool-box.box--hdr_h2, .tool-box.box--hdr_h3 {
         float: none !important;
@@ -1113,13 +1114,18 @@ a:hover .a--more {
     margin: 0 0.5rem;
     color: white; }
   @media only screen and (max-width: 767px) {
-    .b-tool span {
-      display: none; } }
+    .b-tool {
+      margin-left: -0.5rem;
+      margin-right: -0.5rem; }
+      .b-tool span {
+        display: none; } }
   .b-tool:hover {
     color: #ff8000;
     text-decoration: none; }
     .b-tool:hover i {
       background-color: #ff8000; }
+  .b-tool.b--to-right {
+    margin-right: -1rem; }
 
 .b-itool {
   display: inline-block;
@@ -5144,6 +5150,109 @@ INPUT[type="file"] {
       margin-top: 0.3rem;
       color: #333333;
       font-size: 1.4rem; }
+
+.block-cabphotoalbum {
+  margin: 2rem 0; }
+  @media only screen and (max-width: 767px) {
+    .block-cabphotoalbum {
+      max-width: 370px; } }
+  .block-cabphotoalbum .cabphotoalbum__tool {
+    text-align: right; }
+    .block-cabphotoalbum .cabphotoalbum__tool:before, .block-cabphotoalbum .cabphotoalbum__tool:after {
+      content: " ";
+      display: table; }
+    .block-cabphotoalbum .cabphotoalbum__tool:after {
+      clear: both; }
+    .block-cabphotoalbum .cabphotoalbum__tool .b-itool {
+      padding: 0 0.5rem 0.2rem 0.5rem;
+      margin: 0 0.3rem; }
+      .block-cabphotoalbum .cabphotoalbum__tool .b-itool i {
+        position: relative;
+        font-size: 1.6rem;
+        top: 0; }
+  .block-cabphotoalbum .cabphotoalbum__content {
+    margin-top: 0.5rem;
+    background: #eeeeee;
+    border: solid 1px #dddddd;
+    border-radius: 4px;
+    padding: 1rem; }
+    .block-cabphotoalbum .cabphotoalbum__content .content_pic {
+      position: relative;
+      overflow: hidden;
+      padding-top: 66%;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: 50% 50%; }
+      .block-cabphotoalbum .cabphotoalbum__content .content_pic:before {
+        width: 100%;
+        display: block;
+        content: ""; }
+      .block-cabphotoalbum .cabphotoalbum__content .content_pic img {
+        width: 100%;
+        min-width: 100%;
+        min-height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0; }
+    .block-cabphotoalbum .cabphotoalbum__content .content_txt {
+      height: 3.5rem;
+      text-align: center;
+      font: bold 1.6rem "Roboto Condensed", "Arial Narrow", Arial, Helvetica, sans-serif;
+      line-height: 1.1;
+      margin: 0.8rem 0 0 0;
+      overflow: hidden; }
+
+.block-cabphoto {
+  margin: 2rem 0; }
+  @media only screen and (max-width: 767px) {
+    .block-cabphoto {
+      max-width: 370px; } }
+  .block-cabphoto .cabphoto__tool {
+    text-align: right; }
+    .block-cabphoto .cabphoto__tool:before, .block-cabphoto .cabphoto__tool:after {
+      content: " ";
+      display: table; }
+    .block-cabphoto .cabphoto__tool:after {
+      clear: both; }
+    .block-cabphoto .cabphoto__tool input[type="checkbox"] {
+      float: left; }
+    .block-cabphoto .cabphoto__tool .b-itool {
+      padding: 0 0.5rem 0.2rem 0.5rem;
+      margin: 0 0.3rem; }
+      .block-cabphoto .cabphoto__tool .b-itool i {
+        position: relative;
+        font-size: 1.6rem;
+        top: 0; }
+  .block-cabphoto .cabphoto__content {
+    margin-top: 0.5rem;
+    border: solid 1px #dddddd;
+    border-radius: 4px;
+    padding: 0.5rem; }
+    .block-cabphoto .cabphoto__content .content_pic {
+      position: relative;
+      overflow: hidden;
+      padding-top: 66%;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: 50% 50%; }
+      .block-cabphoto .cabphoto__content .content_pic:before {
+        width: 100%;
+        display: block;
+        content: ""; }
+      .block-cabphoto .cabphoto__content .content_pic img {
+        width: 100%;
+        min-width: 100%;
+        min-height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0; }
+    .block-cabphoto .cabphoto__content .content_txt {
+      height: 3.5rem;
+      text-align: center;
+      font: bold 1.6rem "Roboto Condensed", "Arial Narrow", Arial, Helvetica, sans-serif;
+      line-height: 1.1;
+      margin: 0.8rem 0 0.4rem 0;
+      overflow: hidden; }
 
 .header {
   background-color: white; }

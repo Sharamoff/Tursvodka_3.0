@@ -18,6 +18,7 @@
 	&.box--hdr_h2,
 	&.box--hdr_h3 {
 		float: right;
+		margin-right: -1rem;
 
 		@include respond-to(media-xs) {
 			float: none !important;
@@ -100,6 +101,8 @@
 	}
 
 	@include respond-to(media-xs) {
+		margin-left: -0.5rem;
+		margin-right: -0.5rem;
 
 		span {
 			display: none;
@@ -115,6 +118,10 @@
 			background-color: $color-link-hover;
 		}
 
+	}
+
+	&.b--to-right {
+		margin-right: -1rem;
 	}
 
 }

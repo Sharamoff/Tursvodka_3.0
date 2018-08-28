@@ -1,0 +1,79 @@
+///////////////////////////////////////////////
+
+
+
+// фотоальбом личного кабинета
+
+
+.block-cabphotoalbum {
+	margin: 2rem 0;
+
+	@include respond-to(media-xs) {
+		max-width: 370px;
+	}
+
+	.cabphotoalbum__tool {
+		@include clearfix;
+		text-align: right;
+
+		.b-itool {
+			padding: 0 0.5rem 0.2rem 0.5rem;
+			margin: 0 0.3rem;
+
+			i {
+				position: relative;
+				font-size: 1.6rem;
+				top: 0;
+			}
+
+		}
+
+	}
+
+	.cabphotoalbum__content {
+		margin-top: 0.5rem;
+		background: $c-gray-lightermore;
+		border: solid 1px $c-gray-lighter;
+		border-radius: 4px;
+		padding: 1rem;
+
+		.content_pic {
+			position: relative;
+			overflow: hidden;
+			padding-top: 66%;
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: 50% 50%;
+
+			&:before {
+				width: 100%;
+				display: block;
+				content: "";
+			}
+
+			img {
+				width: 100%;
+				min-width: 100%;
+				min-height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+
+		}
+
+		.content_txt {
+			height: 3.5rem;
+			text-align: center;
+			font: bold $font-size-base $font-family-cond;
+			line-height: $line-height-min;
+			margin: 0.8rem 0 0 0;
+			overflow: hidden;
+		}
+
+	}
+
+
+
+
+}
