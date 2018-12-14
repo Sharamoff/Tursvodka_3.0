@@ -271,9 +271,26 @@
 
 	}
 
-input[type="checkbox"] {
-	margin-top: 0.4rem;
-}
+	.addit-panel {
+		@include clearfix;
+		position: relative;
+		padding-right: 8rem;
+		padding-bottom: 0.5rem;
+		margin: 0 0 1.2rem 0;
+		border-bottom: dashed 1px $c-gray-lighter;
+
+		.b-microtool {
+			position: absolute;
+			z-index: 2;
+			right: 0;
+			bottom: 1rem;
+		}
+
+	}
+
+	input[type="checkbox"] {
+		margin-top: 0.4rem;
+	}
 
 }
 

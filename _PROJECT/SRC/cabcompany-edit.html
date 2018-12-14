@@ -658,11 +658,11 @@
 								<div class="form-group">
 									<label class="col-sm-4 control-label">Дополнительные оффисы продаж:</label>
 									<div class="col-sm-8">
-										<div class="cabсompany-additoffice">
+										<div class="cabсompany-additoffice addit-panel">
 											Россия, Тверская обл., Тверь, ул. Благоева, д. 5
 											<button class="b-microtool"><i class="fa fa-times"></i>удалить</button>
 										</div>
-										<div class="cabсompany-additoffice">
+										<div class="cabсompany-additoffice addit-panel">
 											Россия, Тверская обл., Тверь, ул. 148 Партизан, д.14, корпус 5, офис 6
 											<button class="b-microtool"><i class="fa fa-times"></i>удалить</button>
 										</div>
@@ -708,6 +708,45 @@
 									<div class="col-sm-5">
 										<input type="text" class="form-control" id="fld_cabcompany__сtel">
 										<p class="fld-note"><i>Пример:</i> +7 495 982-37-25</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="editpanel-block">
+								<div class="form-group">
+									<label for="fld_cabcompany__сtel" class="col-sm-4 control-label"><span class="required"></span>Время работы:</label>
+									<div class="col-sm-8">
+										<div class="addit-panel">
+											<label><input type="checkbox" checked>Пн</label>&nbsp;&nbsp;
+											<label><input type="checkbox" checked>Вт</label>&nbsp;&nbsp;
+											<label><input type="checkbox" checked>Ср</label>&nbsp;&nbsp;
+											<label><input type="checkbox" checked>Чт</label>&nbsp;&nbsp;
+											<label><input type="checkbox" checked>Пт</label>&nbsp;&nbsp;
+											<label><input type="checkbox">Сб</label>&nbsp;&nbsp;
+											<label><input type="checkbox">Вс</label>&nbsp;&nbsp;
+											<div class="timeperiod-panel">
+												<input type="time" value="09:00" class="form-control">
+												<span>—</span>
+												<input type="time" value="21:00" class="form-control">
+											</div>
+											<button class="b-microtool"><i class="fa fa-times"></i>удалить</button>
+										</div>
+										<div class="addit-panel">
+											<label><input type="checkbox">Пн</label>&nbsp;&nbsp;
+											<label><input type="checkbox">Вт</label>&nbsp;&nbsp;
+											<label><input type="checkbox">Ср</label>&nbsp;&nbsp;
+											<label><input type="checkbox">Чт</label>&nbsp;&nbsp;
+											<label><input type="checkbox">Пт</label>&nbsp;&nbsp;
+											<label><input type="checkbox" checked>Сб</label>&nbsp;&nbsp;
+											<label><input type="checkbox" checked>Вс</label>&nbsp;&nbsp;
+											<div class="timeperiod-panel">
+												<input type="time" value="11:00" class="form-control">
+												<span>—</span>
+												<input type="time" value="17:00" class="form-control">
+											</div>
+											<button class="b-microtool"><i class="fa fa-times"></i>удалить</button>
+										</div>
+										<button class="b-itool"><i class="fa fa-plus-circle"></i>добавить время работы</button>
 									</div>
 								</div>
 							</div>

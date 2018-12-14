@@ -711,6 +711,22 @@ HR {
     @media only screen and (max-width: 767px) {
       .editpanel-block__val {
         padding-top: 0.2rem; } }
+  .editpanel-block .addit-panel {
+    position: relative;
+    padding-right: 8rem;
+    padding-bottom: 0.5rem;
+    margin: 0 0 1.2rem 0;
+    border-bottom: dashed 1px #dddddd; }
+    .editpanel-block .addit-panel:before, .editpanel-block .addit-panel:after {
+      content: " ";
+      display: table; }
+    .editpanel-block .addit-panel:after {
+      clear: both; }
+    .editpanel-block .addit-panel .b-microtool {
+      position: absolute;
+      z-index: 2;
+      right: 0;
+      bottom: 1rem; }
   .editpanel-block input[type="checkbox"] {
     margin-top: 0.4rem; }
 
@@ -1133,7 +1149,7 @@ a:hover .a--more {
   text-decoration: none;
   border: none;
   background: #e0eef5;
-  padding: 0 0.8rem 0.5rem 0.5rem;
+  padding: 0.25rem 0.8rem 0.5rem 0.5rem;
   border-radius: 3px;
   color: #3c94cc;
   margin: 0.3rem 0.8rem 0.7rem 0; }
@@ -1160,7 +1176,7 @@ a:hover .a--more {
   background: white;
   padding: 0.1rem 0.4rem 0.2rem 0.4rem;
   color: #3c94cc;
-  margin: 0 0.5rem 0.5rem 0;
+  margin: 0 0.5rem 0 0;
   line-height: 1; }
   .b-microtool:hover {
     color: #ff8000;
@@ -1976,6 +1992,22 @@ INPUT[type="file"] {
       .formtype-bgblue .form-note a:hover {
         color: #ff8000; }
 
+.timeperiod-panel {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem; }
+  .timeperiod-panel:before, .timeperiod-panel:after {
+    content: " ";
+    display: table; }
+  .timeperiod-panel:after {
+    clear: both; }
+  .timeperiod-panel * {
+    display: inline-block;
+    float: left; }
+  .timeperiod-panel input {
+    width: 10rem; }
+  .timeperiod-panel span {
+    margin: 0.6rem 0.5rem; }
+
 .icon--map:after {
   content: "\f041"; }
 
@@ -2641,7 +2673,7 @@ INPUT[type="file"] {
     .cabinet-username-dropdown .username_block .username_block-img {
       width: 5rem;
       height: 5rem;
-      line-height: 4.5rem;
+      line-height: 4rem;
       border-radius: 50%;
       margin-right: 0.8rem;
       float: left;
@@ -4678,19 +4710,22 @@ INPUT[type="file"] {
 .cabuser-img {
   display: inline-block;
   width: 100%;
-  height: 100%;
-  min-width: 60px;
-  min-height: 60px;
   max-width: 240px;
+  height: 240px;
   max-height: 240px;
-  background-color: #dddddd;
-  text-align: center; }
+  text-align: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top left; }
   @media only screen and (max-width: 767px) {
     .cabuser-img {
-      margin-bottom: 2rem; } }
+      margin-bottom: 1rem;
+      height: 200px; } }
   .cabuser-img img {
     width: 100%;
-    height: auto; }
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover; }
 
 .block-cabuser {
   font: normal 1.6rem "Roboto Condensed", "Arial Narrow", Arial, Helvetica, sans-serif;
@@ -4742,7 +4777,8 @@ INPUT[type="file"] {
   .cabсompany-additoffice .b-microtool {
     position: absolute;
     z-index: 2;
-    right: 0; }
+    right: 0;
+    bottom: 0.6rem !important; }
 
 .cabсompany-btn {
   display: block;

@@ -381,3 +381,23 @@ INPUT[type="file"] {
 
 
 
+
+.timeperiod-panel {
+	@include clearfix;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+
+	* {
+		display: inline-block;
+		float: left;
+	}
+
+	input {
+		width: 10rem;
+	}
+
+	span {
+		margin: 0.6rem 0.5rem;
+	}
+
+}
