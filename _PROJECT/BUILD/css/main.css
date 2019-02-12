@@ -4140,6 +4140,101 @@ INPUT[type="file"] {
         color: #ff8000;
         text-decoration: none !important; }
 
+.block-travelcompany-s {
+  margin: 0 0 4rem 0;
+  border: solid 2px #dddddd;
+  border-radius: 5px;
+  padding: 1.5rem; }
+  .block-travelcompany-s .travelcompany-s__img {
+    margin-top: 2rem; }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .block-travelcompany-s .travelcompany-s__img {
+        margin-top: 0; } }
+    @media only screen and (max-width: 767px) {
+      .block-travelcompany-s .travelcompany-s__img {
+        margin-top: 0; } }
+    .block-travelcompany-s .travelcompany-s__img img {
+      width: 100%;
+      max-width: 165px;
+      height: auto;
+      margin-bottom: 1.5rem; }
+  .block-travelcompany-s .travelcompany-s__descript .descript_address {
+    padding-left: 2rem; }
+    .block-travelcompany-s .travelcompany-s__descript .descript_address:before {
+      font-family: FontAwesome;
+      color: #3c94cc;
+      content: "\f041";
+      margin-left: -2rem; }
+    .block-travelcompany-s .travelcompany-s__descript .descript_address .address_link {
+      display: block;
+      margin-top: -2rem;
+      color: #333333;
+      text-decoration: underline; }
+      .block-travelcompany-s .travelcompany-s__descript .descript_address .address_link:before, .block-travelcompany-s .travelcompany-s__descript .descript_address .address_link:after {
+        content: " ";
+        display: table; }
+      .block-travelcompany-s .travelcompany-s__descript .descript_address .address_link:after {
+        clear: both; }
+      .block-travelcompany-s .travelcompany-s__descript .descript_address .address_link:hover {
+        color: #ff8000; }
+    .block-travelcompany-s .travelcompany-s__descript .descript_address span {
+      float: left;
+      display: inline-block;
+      font-family: "Roboto Condensed", "Arial Narrow", Arial, Helvetica, sans-serif;
+      font-size: 1.6rem;
+      color: #333333;
+      margin-right: 0.5rem;
+      line-height: 1.2; }
+      .block-travelcompany-s .travelcompany-s__descript .descript_address span:after {
+        color: #999999;
+        content: '/';
+        margin-left: 0.5rem; }
+      .block-travelcompany-s .travelcompany-s__descript .descript_address span:last-child:after {
+        content: ''; }
+  .block-travelcompany-s .travelcompany-s__descript .descript_phones {
+    margin-top: 1.5rem;
+    font-family: "Roboto Condensed", "Arial Narrow", Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    color: #666666;
+    line-height: 1.2;
+    padding-left: 2rem; }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .block-travelcompany-s .travelcompany-s__descript .descript_phones {
+        margin-top: 0; } }
+    .block-travelcompany-s .travelcompany-s__descript .descript_phones:before {
+      font-family: FontAwesome;
+      color: #3c94cc;
+      content: "\f095";
+      margin-left: -2rem;
+      margin-right: 0.3rem; }
+    .block-travelcompany-s .travelcompany-s__descript .descript_phones a {
+      color: #333333;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.8rem;
+      white-space: nowrap; }
+      .block-travelcompany-s .travelcompany-s__descript .descript_phones a:hover {
+        color: #333333;
+        text-decoration: none; }
+    .block-travelcompany-s .travelcompany-s__descript .descript_phones span {
+      font-weight: normal !important; }
+  .block-travelcompany-s .travelcompany-s__worktime {
+    font-family: "Roboto Condensed", "Arial Narrow", Arial, Helvetica, sans-serif;
+    margin-top: 2rem; }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .block-travelcompany-s .travelcompany-s__worktime {
+        margin-top: 0; } }
+    .block-travelcompany-s .travelcompany-s__worktime .worktime-label {
+      font-size: 1.6rem;
+      margin-bottom: -0.5rem; }
+      .block-travelcompany-s .travelcompany-s__worktime .worktime-label:before {
+        font-family: FontAwesome;
+        color: #3c94cc;
+        content: "\f017";
+        margin-right: 0.8rem; }
+    .block-travelcompany-s .travelcompany-s__worktime .tb--worktime {
+      margin-left: 2rem; }
+
 .block-travelcompany_naming .travelcompany_naming__img img {
   width: 100%;
   max-width: 165px;
