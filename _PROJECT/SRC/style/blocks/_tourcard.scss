@@ -2,183 +2,414 @@
 
 
 
-// карточка тура
+// карточка тура (вертикальный блок)
 
 
 .block-tourcard {
-	 height: 100%;
-	 background: $c-gray-lightermore;
-	 position: relative;
-	 max-width: 380px;
-	 padding-bottom: 18rem;
+	height: 100%;
+	background: $c-gray-lightermore;
+	position: relative;
+	max-width: 380px;
+	padding-bottom: 18rem;
 
-	 @include respond-to(media-lg) {
-		 padding-bottom: 15rem;
-	 }
+	@include respond-to(media-lg) {
+		padding-bottom: 15rem;
+	}
 
-	 @include respond-to(media-xs) {
-		 padding-bottom: 0;
-		 margin-bottom: 3rem;
-	 }
+	@include respond-to(media-xs) {
+		padding-bottom: 0;
+		margin-bottom: 3rem;
+	}
 
-	 .tourcard__img {
+	.tourcard__img {
 
-		 img {
-			 width: 100%;
-			 height: auto;
-		 }
+		img {
+			width: 100%;
+			height: auto;
+		}
 
-	 }
+	}
 
-	 .tourcard__descript {
-		 position: relative;
-		 margin: 1.5rem 2rem;
+	.tourcard__descript {
+		position: relative;
+		margin: 1.5rem 2rem;
 
-		 &-name {
-			 margin: 0 5rem 0 0;
-			 font-family: $font-family-cond;
-			 min-height: 6rem;
+		&-name {
+			margin: 0 5rem 0 0;
+			font-family: $font-family-cond;
+			min-height: 6rem;
 
-			 @include respond-to(media-xs) {
-				 min-height: inherit;
-			 }
+			@include respond-to(media-xs) {
+				min-height: inherit;
+			}
 
-			 .name {
-				 font-size: $font-size-basemax;
-				 font-weight: bold;
-				 color: $c-blue;
-				 margin: 0;
+			.name {
+				font-size: $font-size-basemax;
+				font-weight: bold;
+				color: $c-blue;
+				margin: 0;
 
-				 a {
-					 color: $c-blue;
+				a {
+					color: $c-blue;
 
-					 &:hover {
-						 color: $color-link-hover;
-					 }
+					&:hover {
+						color: $color-link-hover;
+					}
 
-				 }
+				}
 
-			 }
+			}
 
-			 .subname {
-				 font-size: $font-size-base;
-				 font-weight: bold;
-				 color: $c-gray-darker;
-				 margin: 0 0 0.5rem 0;
-				 line-height: $line-height-def;
+			.subname {
+				font-size: $font-size-base;
+				font-weight: bold;
+				color: $c-gray-darker;
+				margin: 0 0 0.5rem 0;
+				line-height: $line-height-def;
 
-				 a {
-					 color: $c-gray-darker;
-					 text-decoration: underline;
+				a {
+					color: $c-gray-darker;
+					text-decoration: underline;
 
-					 &:hover {
-						 color: $color-link-hover;
-					 }
+					&:hover {
+						color: $color-link-hover;
+					}
 
-				 }
+				}
 
-			 }
+			}
 
-		 }
+		}
 
-		 &-weather {
-			 position: absolute;
-			 top: -0.5rem;
-			 right: -1rem;
-		 }
+		&-weather {
+			position: absolute;
+			top: -0.5rem;
+			right: -1rem;
+		}
 
-		 &-note {
-			 color: $c-gray-dark;
-			 font-size: $font-size-note;
+		&-note {
+			color: $c-gray-dark;
+			font-size: $font-size-note;
 
-			 strong {
-				 color: $color-text;
-			 }
+			strong {
+				color: $color-text;
+			}
 
-		 }
+		}
 
-	 }
+	}
 
-	 .tourcard__footer {
-		 position: absolute;
-		 z-index: 1;
-		 bottom: 2rem;
-		 left: 2rem;
-		 right: 2rem;
-		 border-top: solid 1px $color-dlv;
+	.tourcard__footer {
+		position: absolute;
+		z-index: 1;
+		bottom: 2rem;
+		left: 2rem;
+		right: 2rem;
+		border-top: solid 1px $color-dlv;
 
-		 @include respond-to(media-xs) {
-			 position: static;
-			 margin: 1rem 2rem;
-		 }
+		@include respond-to(media-xs) {
+			position: static;
+			margin: 1rem 2rem;
+		}
 
-		 &-itemprice {
-			 margin-top: 2rem;
-			 @include clearfix;
+		&-itemprice {
+			margin-top: 2rem;
+			@include clearfix;
 
-			 .itemlink {
-				 float: left;
-				 width: 60%;
-				 margin: 0 1rem 1rem 0;
+			.itemlink {
+				float: left;
+				width: 60%;
+				margin: 0 1rem 1rem 0;
 
-				 @include respond-to(media-md) {
-					 width: 100%;
-				 }
+				@include respond-to(media-md) {
+					width: 100%;
+				}
 
-				 @include respond-to(media-sm) {
-					 width: 100%;
-				 }
+				@include respond-to(media-sm) {
+					width: 100%;
+				}
 
-				 .itemlink_about {
-					 font-size: $font-size-basemin;
-				 }
+				.itemlink_about {
+					font-size: $font-size-basemin;
+				}
 
-				 .itemlink_more {
-					 display: block;
-					 margin-top: 0.5rem;
-					 font-size: $font-size-basemin;
-				 }
+				.itemlink_more {
+					display: block;
+					margin-top: 0.5rem;
+					font-size: $font-size-basemin;
+				}
 
-			 }
+			}
 
-			 .itemprice {
-				 float: left;
-				 width: 36%;
-				 font-size: 2.5rem;
-				 color: $c-green;
-				 text-align: right;
-				 font-weight: bold;
-				 font-family: $font-family-cond;
-				 white-space: nowrap;
-				 margin-top: -0.3rem;
+			.itemprice {
+				float: left;
+				width: 36%;
+				font-size: 2.5rem;
+				color: $c-green;
+				text-align: right;
+				font-weight: bold;
+				font-family: $font-family-cond;
+				white-space: nowrap;
+				margin-top: -0.3rem;
 
-				 @include respond-to(media-md) {
-					 width: 100%;
-					 text-align: left;
-				 }
+				@include respond-to(media-md) {
+					width: 100%;
+					text-align: left;
+				}
 
-				 @include respond-to(media-sm) {
-					 width: 100%;
-					 text-align: left;
-				 }
+				@include respond-to(media-sm) {
+					width: 100%;
+					text-align: left;
+				}
 
-				 i {
-					 font-size: 1.8rem;
-					 font-weight: normal;
-					 margin-left: 0.3rem;
-				 }
+				i {
+					font-size: 1.8rem;
+					font-weight: normal;
+					margin-left: 0.3rem;
+				}
 
-			 }
+			}
 
-		 }
+		}
 
-		 &-warn {
-			 margin-top: 0.5rem;
-			 font-size: $font-size-note;
-			 color: $c-gray;
-			 line-height: $line-height-def;
-		 }
+		&-warn {
+			margin-top: 0.5rem;
+			font-size: $font-size-note;
+			color: $c-gray;
+			line-height: $line-height-def;
+		}
 
-	 }
+	}
 
- }
+}
+
+
+
+
+// карточка тура (горизонтальный блок) (результат поиска)
+
+
+.block-tourcard-h {
+	@include clearfix;
+	background: $c-gray-lightermore;
+	margin-bottom: 3rem;
+
+	@include respond-to(media-xs) {
+		max-width: $block-max;
+	}
+
+	.tourcard-h__img {
+		background-color: $color-bk-body;
+
+		img {
+			width: 100%;
+			height: auto;
+			max-width: $block-max;
+		}
+
+	}
+
+	.tourcard-h__descript {
+		position: relative;
+		padding: 1rem 3rem 8rem 1.5rem;
+
+		@include respond-to(media-md) {
+			padding-bottom: 10rem;
+		}
+
+		@include respond-to(media-sm) {
+			padding-bottom: 10rem;
+		}
+
+		@include respond-to(media-xs) {
+			padding-left: 3rem;
+			padding-bottom: 1rem;
+		}
+
+		&-name {
+			font-family: $font-family-cond;
+			margin-bottom: 1rem;
+			margin-right: 6rem;
+
+			.name {
+				font-size: $font-size-basemax;
+				font-weight: bold;
+				color: $c-blue;
+				margin: 0;
+
+				a {
+					color: $c-blue;
+
+					&:hover {
+						color: $color-link-hover;
+					}
+
+				}
+
+			}
+
+			.subname {
+				font-size: $font-size-base;
+				font-weight: bold;
+				color: $c-gray-darker;
+				margin: 0.5rem 0;
+				line-height: $line-height-def;
+
+				a {
+					color: $c-gray-darker;
+					text-decoration: underline;
+
+					&:hover {
+						color: $color-link-hover;
+					}
+
+				}
+
+			}
+
+			.rating {
+				color: $c-gray-dark;
+				font-size: $font-size-note;
+			}
+
+		}
+
+		&-weather {
+			position: absolute;
+			top: 1rem;
+			right: 2.5rem;
+		}
+
+		&-links {
+			margin-bottom: 1rem;
+
+			.i--fill {
+				font-size: $font-size-note;
+				background-color: $c-gray;
+				color: $c-white;
+				padding: 0.1rem 0.5rem 0.3rem 0.5rem;
+				margin: 0 0.2rem 0 0;
+
+				&:hover {
+					background-color: $color-link-hover;
+				}
+
+			}
+
+		}
+
+		&-note {
+			color: $c-gray-dark;
+			font-size: $font-size-note;
+
+			strong {
+				color: $color-text;
+			}
+
+		}
+
+		&-footer {
+			@include clearfix;
+			position: absolute;
+			z-index: 1;
+			bottom: 0;
+			left: 1.5rem;
+			right: 3rem;
+			border-top: solid 1px $color-dlv;
+			padding: 1rem 0;
+
+			@include respond-to(media-xs) {
+				position: static;
+				margin-top: 1.5rem;
+				padding-left: 0;
+				padding-bottom: 0.5rem;
+			}
+
+			.itemprice {
+				float: left;
+				font-size: 2.5rem;
+				color: $c-green;
+				text-align: right;
+				font-weight: bold;
+				font-family: $font-family-cond;
+				white-space: nowrap;
+				background-color: $c-white;
+				padding: 0.5rem 0.5rem 0.2rem 1rem;
+				border-radius: 6px;
+
+				@include respond-to(media-md) {
+					width: 100%;
+					text-align: left;
+					padding: 0.5rem 0.5rem 0.5rem 1rem;
+
+					.b-btn {
+						float: right;
+						top: 0 !important;
+					}
+
+				}
+
+				@include respond-to(media-sm) {
+					width: 100%;
+					text-align: left;
+					padding: 0.5rem 0.5rem 0.5rem 1rem;
+
+					.b-btn {
+						float: right;
+						top: 0 !important;
+					}
+
+				}
+
+				@include respond-to(media-xs) {
+					width: 100%;
+					text-align: left;
+					padding: 0.5rem 0.5rem 0.5rem 1rem;
+
+					.b-btn {
+						float: right;
+						top: 0 !important;
+					}
+
+				}
+
+				i {
+					font-size: 1.8rem;
+					font-weight: normal;
+					margin-left: 0.3rem;
+				}
+
+				.b-btn {
+					position: relative;
+					margin-left: 1rem;
+					top: -0.4rem;
+				}
+
+			}
+
+			.itemlink {
+				float: right;
+				margin: 1rem 0 0 1rem;
+				font: $font-size-basemin $font-family-cond;
+				color: $c-gray;
+				white-space: nowrap;
+
+				@include respond-to(media-md) {
+					width: 100%;
+				}
+
+				@include respond-to(media-sm) {
+					width: 100%;
+				}
+
+				@include respond-to(media-xs) {
+					width: 100%;
+				}
+
+			}
+
+		}
+
+	}
+
+}

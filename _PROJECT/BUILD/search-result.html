@@ -19,7 +19,7 @@
 
 </head>
 
-<body data-spy="scroll" data-target="#as_r-submenu">
+<body>
 
 
 
@@ -75,22 +75,23 @@
 				</div>
 
 				<div class="dropdown">
-					<div class="cabinet-username" data-toggle="dropdown">
-						<div class="username-img"><img src="img/icons/no-user-g.svg" alt=""></div>Иванов Алексей
-					</div>
-					<div class="cabinet-username-dropdown cabinet-dropdown dropdown-menu dropdown-menu-right">
-						<div class="username_block">
-							<div class="username_block-img"><img src="img/icons/no-user-g.svg" alt=""></div>Иванов Алексей
-						</div>
-						<div class="username_block">
-							<div class="username_block-img"><img src="img/_tmp/logo-so1.png" alt=""></div>Турфирма "Мария"
-						</div>
-						<div class="username_block">
-							<div class="username_block-img"><img src="img/_tmp/logo-so2.png" alt=""></div>Дополнительный аккаунт
-						</div>
-						<div class="username_tool">
-							<a href="#" class="username_tool__exit">Выйти из аккаунта<i class="fa fa-sign-out" aria-hidden="true"></i></a>
-						</div>
+					<div class="cabinet-enter" data-toggle="dropdown"><i class="fa fa-user-circle-o"></i>Личный кабинет</div>
+					<div class="cabinet-enter-dropdown cabinet-dropdown dropdown-menu dropdown-menu-right">
+						<form name="fm-cabinet-enter" id="fm-cabinet-enter">
+							<p class="hdr">Авторизация</p>
+							<div class="form-group">
+								<label for="fld-cabinet-enter_email">Ваш email</label>
+								<input type="email" id="fld-cabinet-enter_email" class="form-control">
+							</div>
+							<div class="form-group">
+								<label for="fld-cabinet-enter_pass">Ваш пароль</label>
+								<input type="password" id="fld-cabinet-enter_pass" class="form-control">
+							</div>
+							<button class="b-link" type="submit">Войти</button>
+							<div class="clearfix">
+								<a href="#" class="i-link"><strong>Регистрация</strong></a>&nbsp;/&nbsp;<a href="#" class="i-link">Забыли пароль?</a>
+							</div>
+						</form>
 					</div>
 				</div>
 
@@ -130,22 +131,23 @@
 						<div class="navbar-cabinet visible-xs">
 			
 							<div class="dropdown">
-								<div class="cabinet-username" data-toggle="dropdown">
-									<div class="username-img"><img src="img/icons/no-user-g.svg" alt=""></div>Иванов Алексей
-								</div>
-								<div class="cabinet-username-dropdown cabinet-dropdown dropdown-menu">
-									<div class="username_block open">
-										<div class="username_block-img"><img src="img/icons/no-user-g.svg" alt=""></div>Иванов Алексей
-									</div>
-									<div class="username_block">
-										<div class="username_block-img"><img src="img/_tmp/logo-so1.png" alt=""></div>Турфирма "Мария"
-									</div>
-									<div class="username_block">
-										<div class="username_block-img"><img src="img/_tmp/logo-so2.png" alt=""></div>Дополнительный аккаунт
-									</div>
-									<div class="username_tool">
-										<a href="#" class="username_tool__exit">Выйти из аккаунта<i class="fa fa-sign-out" aria-hidden="true"></i></a>
-									</div>
+								<div class="cabinet-enter" data-toggle="dropdown"><a href="#"><i class="fa fa-user-circle-o"></i>Личный кабинет</a></div>
+								<div class="cabinet-enter-dropdown cabinet-dropdown dropdown-menu">
+									<form name="fm-cabinet-enter-xs" id="fm-cabinet-enter-xs">
+										<p class="hdr">Авторизация</p>
+										<div class="form-group">
+											<label for="fld-cabinet-enter_email-xs">Ваш email</label>
+											<input type="email" id="fld-cabinet-enter_email-xs" class="form-control">
+										</div>
+										<div class="form-group">
+											<label for="fld-cabinet-enter_pass-xs">Ваш пароль</label>
+											<input type="password" id="fld-cabinet-enter_pass-xs" class="form-control">
+										</div>
+										<button class="b-link" type="submit">Войти</button>
+										<div class="clearfix">
+											<a href="#" class="i-link"><strong>Регистрация</strong></a>&nbsp;/&nbsp;<a href="#" class="i-link">Забыли пароль?</a>
+										</div>
+									</form>
 								</div>
 							</div>
 			
@@ -169,10 +171,10 @@
 						<div class="navbar-region dropdown">
 			
 							<div class="navbar-region__fld-region dropdown-toggle hidden-xs" data-toggle="dropdown">
-								<span>Ваш город:</span> Санкт-Петербург<i class="fa fa-caret-down"></i>
+								<span>Ваш город:</span><ins>Петропавловск-Камчатский</ins><i class="fa fa-caret-down"></i>
 							</div>
 							<div class="navbar-region__fld-region visible-xs">
-								<span>Ваш город:</span> <a href="#">Санкт-Петербург</a>
+								<span>Ваш город:</span> <a href="#">Петропавловск-Камчатский</a>
 							</div>
 			
 							<div class="navbar-region__plate dropdown-menu dropdown-menu-right animated fadeIn">
@@ -358,75 +360,6 @@
 			
 			
 			
-						<ul class="nav navbar-nav">
-			
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Туры</a>
-								<ul class="dropdown-menu animated fadeIn">
-									<li><a href="#"><strong>Поиск тура</strong></a></li>
-									<li><a href="#">Раннее бронирование</a></li>
-									<li><a href="#">Горящие туры</a></li>
-									<li><a href="#">Пляжный отдых</a></li>
-									<li><a href="#">Шоп-туры</a></li>
-									<li><a href="#">Туры на 23 февраля</a></li>
-									<li><a href="#">Туры на 8 марта</a></li>
-									<li><a href="#">Туры на майские праздники</a></li>
-									<li><a href="#">Отдых на островах</a></li>
-									<li><a href="#">Детский отдых</a></li>
-									<li><a href="#">Экзотические туры</a></li>
-									<li><a href="#">Туры выходного дня</a></li>
-									<li><a href="#">Свадебные путешествия</a></li>
-									<li><a href="#">Отдых на горнолыжных курортах</a></li>
-									<li><a href="#">Все туры</a></li>
-								</ul>
-							</li>
-			
-							<li><a href="#">Авиабилеты</a></li>
-			
-							<li class="hidden-xs"><a href="#" class="dropdown-country">Страны</a></li>
-							<li class="visible-xs"><a href="#">Страны</a></li>
-			
-							<li><a href="#">Отели</a></li>
-			
-							<li><a href="#">Попутчики</a></li>
-			
-							<li><a href="#">Отзывы</a></li>
-			
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Турбизнес</a>
-								<ul class="dropdown-menu dropdown-menu-right animated fadeIn">
-									<li><a href="#">Спецпредложения</a></li>
-									<li><a href="#">Каталог турфирм</a></li>
-									<li><a href="#">Каталог сайтов</a></li>
-									<li><a href="#">Новости и анонсы</a></li>
-									<li><a href="#">Пресс-релизы</a></li>
-									<li><a href="#">Работа в туризме</a></li>
-									<li><a href="#">Туристические выставки</a></li>
-								</ul>
-							</li>
-			
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Еще...</a>
-								<ul class="dropdown-menu dropdown-menu-right animated fadeIn">
-									<li><a href="#">Новости туризма</a></li>
-									<li><a href="#">Туристу на заметку</a></li>
-									<li><a href="#">Календарь событий</a></li>
-									<li><a href="#">Рассказы туристов</a></li>
-									<li><a href="#">Карта мира</a></li>
-									<li><a href="#">Курсы валют ЦБ РФ</a></li>
-									<li><a href="#">Курсы валют ЕЦБ</a></li>
-									<li><a href="#">Погода в мире</a></li>
-									<li><a href="#">Оформление виз</a></li>
-									<li><a href="#">Посольства и консульства</a></li>
-									<li><a href="#">Глоссарий</a></li>
-									<li><a href="#">Опросы</a></li>
-									<li><a href="#">Вопросы и ответы</a></li>
-								</ul>
-							</li>
-			
-						</ul>
-			
-			
 						<div class="nav-country animated fadeIn">
 							<div class="row">
 			
@@ -539,7 +472,7 @@
 											</div>
 											<div class="col-sm-3">
 												<ul>
-														<li><a href="#"><span class="flag-icon flag-icon-cy"></span>Кипр</a></li>
+													<li><a href="#"><span class="flag-icon flag-icon-cy"></span>Кипр</a></li>
 													<li><a href="#"><span class="flag-icon flag-icon-ch"></span>Китай</a></li>
 													<li><a href="#"><span class="flag-icon flag-icon-cu"></span>Куба</a></li>
 													<li><a href="#"><span class="flag-icon flag-icon-mu"></span>Маврикий</a></li>
@@ -593,11 +526,11 @@
 									<div class="nav-country_pane" id="nav-country_tab6">
 										<div class="row">
 											<div class="col-sm-3">
-											<ul>
-												<li><a href="#"><span class="flag-icon flag-icon-cy"></span>Кипр</a></li>
-												<li><a href="#"><span class="flag-icon flag-icon-ch"></span>Китай</a></li>
-											</ul>
-										</div>
+												<ul>
+													<li><a href="#"><span class="flag-icon flag-icon-cy"></span>Кипр</a></li>
+													<li><a href="#"><span class="flag-icon flag-icon-ch"></span>Китай</a></li>
+												</ul>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -607,12 +540,93 @@
 						</div>
 			
 			
+			
+						<ul class="nav navbar-nav">
+			
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Туры</a>
+								<ul class="dropdown-menu animated fadeIn">
+									<li><a href="#"><strong>Поиск тура</strong></a></li>
+									<li><a href="#">Раннее бронирование</a></li>
+									<li><a href="#">Горящие туры</a></li>
+									<li><a href="#">Пляжный отдых</a></li>
+									<li><a href="#">Шоп-туры</a></li>
+									<li><a href="#">Туры на 23 февраля</a></li>
+									<li><a href="#">Туры на 8 марта</a></li>
+									<li><a href="#">Туры на майские праздники</a></li>
+									<li><a href="#">Отдых на островах</a></li>
+									<li><a href="#">Детский отдых</a></li>
+									<li><a href="#">Экзотические туры</a></li>
+									<li><a href="#">Туры выходного дня</a></li>
+									<li><a href="#">Свадебные путешествия</a></li>
+									<li><a href="#">Отдых на горнолыжных курортах</a></li>
+									<li><a href="#">Все туры</a></li>
+								</ul>
+							</li>
+			
+							<li><a href="#">Авиабилеты</a></li>
+			
+							<li class="hidden-xs"><a href="#" class="dropdown-country">Страны</a></li>
+							<li class="visible-xs"><a href="#">Страны</a></li>
+			
+							<li><a href="#">Отели</a></li>
+			
+							<li><a href="#">Попутчики</a></li>
+			
+							<li><a href="#">Отзывы</a></li>
+			
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Турбизнес</a>
+								<ul class="dropdown-menu dropdown-menu-right animated fadeIn">
+									<li><a href="#">Спецпредложения</a></li>
+									<li><a href="#">Каталог турфирм</a></li>
+									<li><a href="#">Каталог сайтов</a></li>
+									<li><a href="#">Новости и анонсы</a></li>
+									<li><a href="#">Пресс-релизы</a></li>
+									<li><a href="#">Работа в туризме</a></li>
+									<li><a href="#">Туристические выставки</a></li>
+								</ul>
+							</li>
+			
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Еще...</a>
+								<ul class="dropdown-menu dropdown-menu-right animated fadeIn">
+									<li><a href="#">Новости туризма</a></li>
+									<li><a href="#">Туристу на заметку</a></li>
+									<li><a href="#">Календарь событий</a></li>
+									<li><a href="#">Рассказы туристов</a></li>
+									<li><a href="#">Карта мира</a></li>
+									<li><a href="#">Курсы валют ЦБ РФ</a></li>
+									<li><a href="#">Курсы валют ЕЦБ</a></li>
+									<li><a href="#">Погода в мире</a></li>
+									<li><a href="#">Оформление виз</a></li>
+									<li><a href="#">Посольства и консульства</a></li>
+									<li><a href="#">Глоссарий</a></li>
+									<li><a href="#">Опросы</a></li>
+									<li><a href="#">Вопросы и ответы</a></li>
+								</ul>
+							</li>
+			
+						</ul>
+			
+			
+			
 					</div>
 			
 			
 			
 			
 				</nav>
+			</div>
+
+
+			<div class="block-regionsubmit hidden-xs">
+				<p>Ваш город «Петроправловск-Камчатский»?</p>
+				<p>Кликнув «Да», вы увидите туры с вылетом из этого города, телефоны и адреса местных офисов.</p>
+				<div class="clearfix">
+					<button class="b-btn" onclick="javascript:$('.block-regionsubmit').hide()">Да</button>
+					<button class="b-btn nofocused" onclick="javascript:$('.block-regionsubmit').hide()">Нет</button>
+				</div>
 			</div>
 
 
@@ -821,18 +835,18 @@
 
 
 <div class="breadcrumb">
-		<a href="#">Главная</a>
-		<span>/</span>
-		<a href="#">Личный кабинет</a>
-		<span>/</span>
-		Мои сообщния
+	<a href="#">Главная</a>
+	<span>/</span>
+	<a href="#">Поиск тура</a>
+	<span>/</span>
+	Результат поиска тура
 </div>
 
 
 
 
 
-<div class="page-cabuser">
+<div class="page-search-result">
 	<div class="pagewrap">
 		<!-- колонка левая ------------------------------------------>
 		<div class="pagewrap__col-left">
@@ -840,137 +854,232 @@
 
 
 
-			<div class="superhdr">Личный кабинет</div>
+			<div class="superhdr">Результат поиска тура</div>
 
 
 
-			<article class="ac_cabuser-about">
-				<div class="row">
 
-
-					<div class="col-sm-3">
-						<div class="cabuser-img" style="background-image:url('img/_tmp/user1-tmp.jpg')"></div>
+			<div class="block-consult visible-xs visible-sm">
+				<div class="hdr-h2 hdr--lined"><ins class="emphas bk--red"></ins>Менеджер по продажам туров</div>
+				<div class="clearfix">
+					<div class="consult__img">
+						<img src="img/consultant.jpg" alt="">
 					</div>
+					<div class="consult__descript">
+						<div class="consult_name">Ирина Вставская</div>
+						<div class="consult_prof">турфирма «Мария»</div>
+						<a href="tel:+74953089897" class="consult_tel">+7&nbsp;495<span>308-98-97</span></a>
+					</div>
+				</div>
+				<div class="clearfix">
+					<div class="consult__msgrs">
+						<a href="#"><img src="img/icons/im-telegram.svg" alt="Telegram" title="Связаться через Telegram"></a>
+						<a href="#"><img src="img/icons/im-viber.svg" alt="Viber" title="Связаться через Viber"></a>
+						<a href="#"><img src="img/icons/im-whatsup.svg" alt="WhatsUp" title="Связаться через WhatsUp"></a>
+						<a href="#"><img src="img/icons/im-skype.svg" alt="Skype" title="Связаться через Skype"></a>
+						<a href="#"><img src="img/icons/im-icq.svg" alt="ICQ" title="Связаться через ICQ"></a>
+					</div>
+				</div>
+				<div class="clearfix">
+					<div class="consult__btns">
+						<button class="consult_btn-call b-btn" data-toggle="modal" data-target="#modal__call"><i class="fa fa-phone"></i>Заказать звонок</button>
+						<button class="consult_btn-mess b-btn" data-toggle="modal" data-target="#modal__mess"><i class="fa fa-pencil"></i>Оставить заявку</button>
+					</div>
+				</div>
+			</div>
 
 
-					<div class="col-sm-9">
-						<div class="block-cabuser">
-							<p class="cabuser__name">Иванов <span>Алексей</span></p>
-							<p class="cabuser__timestamp"><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;был 26.10.2017 в 09:50</p>
-							<p class="cabuser__address">Россия, Москва, м. Ленинский проспект</p>
-							<p class="cabuser__age">40 лет, <i class="icon-zodiac zc--kozerog"></i></p>
-							<p class="cabuser__profession">Менеджер по туризму в <a href="#">Магазин путешествий «Делай Ноги»</a></p>
-							<div class="tool-box">
-								<a href="#" class="b-tool" title="Задать вопрос"><i class="fa fa-pencil-square-o"></i>Редактировать профиль</a>
-								<a href="#" class="b-tool" title="Задать вопрос"><i class="fa fa-cogs"></i>Настройки</a>
+
+			<article class="ac_search-result">
+
+				<div class="stoolbar stoolbar--top">
+					<div class="stb-filter_res">Всего туров найдено <strong>125</strong></div>
+				</div>
+
+				<div class="block-tourcard-h">
+				<div class="row row--flexed">
+					<div class="col-sm-4 tourcard-h__img"><img src="img/_tmp/ht1-tmp.jpg" alt="Galil Hotel"></div>
+					<div class="col-sm-8 tourcard-h__descript">
+						<div class="tourcard-h__descript-name">
+							<div class="name"><a href="#">Galil Hotel</a><i class="star star-5"></i></div>
+							<div class="rating">Рейтинг отеля: <strong class="c--rate-height">9.4</strong> <a href="#">по 12 отзывам</a></div>
+							<div class="subname"><a href="#">Израиль</a>, <a href="#">Нетания</a></div>
+						</div>
+						<div class="tourcard-h__descript-weather"><div class="weather i--weather-g1">+16..+21</div></div>
+						<div class="tourcard-h__descript-links">
+							<a href="#" class="i-link i--fill">Описание отеля</a>
+							<a href="#" class="i-link i--fill">На карте</a>
+							<a href="#" class="i-link i--fill">Фото</a>
+							<a href="#" class="i-link i--fill">Отзывы</a>
+							<a href="#" class="i-link i--fill">Туры</a>
+						</div>
+						<div class="tourcard-h__descript-note">
+							город вылета: <strong>Санкт-Петербург</strong>, вылет: <strong>30.03.2017</strong>,  ночей: <strong>7</strong>, питание: <strong>BB(только завтрак)</strong>, размещение: <strong>DBL(2-е взрослых)</strong>, номер: <strong>regular room</strong>
+						</div>
+						<div class="tourcard-h__descript-footer">
+							<div class="itemprice">89 300<i class="fa fa-rub"></i><button class="b-btn">Заказать тур</button></div>
+							<div class="itemlink"><a href="#" class="i-sublink">еще туры в этот отель</a>&nbsp;(33&nbsp;тура)</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+				<div class="block-tourcard-h">
+					<div class="row row--flexed">
+						<div class="col-sm-4 tourcard-h__img"><img src="img/_tmp/ht1-tmp.jpg" alt="Galil Hotel"></div>
+						<div class="col-sm-8 tourcard-h__descript">
+							<div class="tourcard-h__descript-name">
+								<div class="name"><a href="#">The Metropole Hotel Phuket</a><i class="star star-3"></i></div>
+								<div class="rating">Рейтинг отеля: <strong class="c--rate-low">2.9</strong> <a href="#">по 4 отзывам</a></div>
+								<div class="subname"><a href="#">Израиль</a>, <a href="#">Нетания</a></div>
+							</div>
+							<div class="tourcard-h__descript-weather"><div class="weather i--weather-g3">+6..+11</div></div>
+							<div class="tourcard-h__descript-links">
+								<a href="#" class="i-link i--fill">Описание отеля</a>
+								<a href="#" class="i-link i--fill">На карте</a>
+								<a href="#" class="i-link i--fill">Фото</a>
+								<a href="#" class="i-link i--fill">Отзывы</a>
+								<a href="#" class="i-link i--fill">Туры</a>
+							</div>
+							<div class="tourcard-h__descript-note">
+								город вылета: <strong>Санкт-Петербург</strong>, вылет: <strong>30.03.2017</strong>,  ночей: <strong>7</strong>, питание: <strong>BB(только завтрак)</strong>, размещение: <strong>DBL(2-е взрослых)</strong>, номер: <strong>regular room</strong>
+							</div>
+							<div class="tourcard-h__descript-footer">
+								<div class="itemprice">128 900<i class="fa fa-rub"></i><button class="b-btn">Заказать тур</button></div>
+								<div class="itemlink"><a href="#" class="i-sublink">еще туры в этот отель</a>&nbsp;(33&nbsp;тура)</div>
 							</div>
 						</div>
 					</div>
-
-
 				</div>
-			</article>
 
+				<div class="block-tourcard-h">
+					<div class="row row--flexed">
+						<div class="col-sm-4 tourcard-h__img"><img src="img/_tmp/ht1-tmp.jpg" alt="Galil Hotel"></div>
+						<div class="col-sm-8 tourcard-h__descript">
+							<div class="tourcard-h__descript-name">
+								<div class="name"><a href="#">Barcelo Marina Marina Palace</a><i class="star star-5"></i></div>
+								<div class="rating">Рейтинг отеля: <strong class="c--rate-middle">5.9</strong> <a href="#">по 256 отзывам</a></div>
+								<div class="subname"><a href="#">Куба</a>, <a href="#">Варадеро</a></div>
+							</div>
+							<div class="tourcard-h__descript-weather"><div class="weather i--weather-g5">+6..+11</div></div>
+							<div class="tourcard-h__descript-links">
+								<a href="#" class="i-link i--fill">Описание отеля</a>
+								<a href="#" class="i-link i--fill">На карте</a>
+								<a href="#" class="i-link i--fill">Фото</a>
+								<a href="#" class="i-link i--fill">Отзывы</a>
+								<a href="#" class="i-link i--fill">Туры</a>
+							</div>
+							<div class="tourcard-h__descript-note">
+								город вылета: <strong>Санкт-Петербург</strong>, вылет: <strong>30.03.2017</strong>,  ночей: <strong>7</strong>, питание: <strong>AI(3-х разовое питание)</strong>, размещение: <strong>DBL(2-е взрослых)</strong>, номер: <strong>улучшенный номер</strong>
+							</div>
+							<div class="tourcard-h__descript-footer">
+								<div class="itemprice">128 900<i class="fa fa-rub"></i><button class="b-btn">Заказать тур</button></div>
+								<div class="itemlink"><a href="#" class="i-sublink">еще туры в этот отель</a>&nbsp;(33&nbsp;тура)</div>
+							</div>
+						</div>
+					</div>
+				</div>
 
+				<div class="block-tourcard-h">
+					<div class="row row--flexed">
+						<div class="col-sm-4 tourcard-h__img"><img src="img/_tmp/ht1-tmp.jpg" alt="Galil Hotel"></div>
+						<div class="col-sm-8 tourcard-h__descript">
+							<div class="tourcard-h__descript-name">
+								<div class="name"><a href="#">Galil Hotel</a><i class="star star-5"></i></div>
+								<div class="rating">Рейтинг отеля: <strong class="c--rate-height">9.4</strong> <a href="#">по 12 отзывам</a></div>
+								<div class="subname"><a href="#">Израиль</a>, <a href="#">Нетания</a></div>
+							</div>
+							<div class="tourcard-h__descript-weather"><div class="weather i--weather-g1">+16..+21</div></div>
+							<div class="tourcard-h__descript-links">
+								<a href="#" class="i-link i--fill">Описание отеля</a>
+								<a href="#" class="i-link i--fill">На карте</a>
+								<a href="#" class="i-link i--fill">Фото</a>
+								<a href="#" class="i-link i--fill">Отзывы</a>
+								<a href="#" class="i-link i--fill">Туры</a>
+							</div>
+							<div class="tourcard-h__descript-note">
+								город вылета: <strong>Санкт-Петербург</strong>, вылет: <strong>30.03.2017</strong>,  ночей: <strong>7</strong>, питание: <strong>BB(только завтрак)</strong>, размещение: <strong>DBL(2-е взрослых)</strong>, номер: <strong>regular room</strong>
+							</div>
+							<div class="tourcard-h__descript-footer">
+								<div class="itemprice">89 300<i class="fa fa-rub"></i><button class="b-btn">Заказать тур</button></div>
+								<div class="itemlink"><a href="#" class="i-sublink">еще туры в этот отель</a>&nbsp;(33&nbsp;тура)</div>
+							</div>
+						</div>
+					</div>
+				</div>
 
-			<article class="ac_cabuser-info">
+				<div class="block-tourcard-h">
+					<div class="row row--flexed">
+						<div class="col-sm-4 tourcard-h__img"><img src="img/_tmp/ht1-tmp.jpg" alt="Galil Hotel"></div>
+						<div class="col-sm-8 tourcard-h__descript">
+							<div class="tourcard-h__descript-name">
+								<div class="name"><a href="#">The Metropole Hotel Phuket</a><i class="star star-3"></i></div>
+								<div class="rating">Рейтинг отеля: <strong class="c--rate-low">2.9</strong> <a href="#">по 4 отзывам</a></div>
+								<div class="subname"><a href="#">Израиль</a>, <a href="#">Нетания</a></div>
+							</div>
+							<div class="tourcard-h__descript-weather"><div class="weather i--weather-g3">+6..+11</div></div>
+							<div class="tourcard-h__descript-links">
+								<a href="#" class="i-link i--fill">Описание отеля</a>
+								<a href="#" class="i-link i--fill">На карте</a>
+								<a href="#" class="i-link i--fill">Фото</a>
+								<a href="#" class="i-link i--fill">Отзывы</a>
+								<a href="#" class="i-link i--fill">Туры</a>
+							</div>
+							<div class="tourcard-h__descript-note">
+								город вылета: <strong>Санкт-Петербург</strong>, вылет: <strong>30.03.2017</strong>,  ночей: <strong>7</strong>, питание: <strong>BB(только завтрак)</strong>, размещение: <strong>DBL(2-е взрослых)</strong>, номер: <strong>regular room</strong>
+							</div>
+							<div class="tourcard-h__descript-footer">
+								<div class="itemprice">128 900<i class="fa fa-rub"></i><button class="b-btn">Заказать тур</button></div>
+								<div class="itemlink"><a href="#" class="i-sublink">еще туры в этот отель</a>&nbsp;(33&nbsp;тура)</div>
+							</div>
+						</div>
+					</div>
+				</div>
 
+				<div class="block-tourcard-h">
+					<div class="row row--flexed">
+						<div class="col-sm-4 tourcard-h__img"><img src="img/_tmp/ht1-tmp.jpg" alt="Galil Hotel"></div>
+						<div class="col-sm-8 tourcard-h__descript">
+							<div class="tourcard-h__descript-name">
+								<div class="name"><a href="#">Barcelo Marina Marina Palace</a><i class="star star-5"></i></div>
+								<div class="rating">Рейтинг отеля: <strong class="c--rate-middle">5.9</strong> <a href="#">по 256 отзывам</a></div>
+								<div class="subname"><a href="#">Куба</a>, <a href="#">Варадеро</a></div>
+							</div>
+							<div class="tourcard-h__descript-weather"><div class="weather i--weather-g5">+6..+11</div></div>
+							<div class="tourcard-h__descript-links">
+								<a href="#" class="i-link i--fill">Описание отеля</a>
+								<a href="#" class="i-link i--fill">На карте</a>
+								<a href="#" class="i-link i--fill">Фото</a>
+								<a href="#" class="i-link i--fill">Отзывы</a>
+								<a href="#" class="i-link i--fill">Туры</a>
+							</div>
+							<div class="tourcard-h__descript-note">
+								город вылета: <strong>Санкт-Петербург</strong>, вылет: <strong>30.03.2017</strong>,  ночей: <strong>7</strong>, питание: <strong>AI(3-х разовое питание)</strong>, размещение: <strong>DBL(2-е взрослых)</strong>, номер: <strong>улучшенный номер</strong>
+							</div>
+							<div class="tourcard-h__descript-footer">
+								<div class="itemprice">128 900<i class="fa fa-rub"></i><button class="b-btn">Заказать тур</button></div>
+								<div class="itemlink"><a href="#" class="i-sublink">еще туры в этот отель</a>&nbsp;(33&nbsp;тура)</div>
+							</div>
+						</div>
+					</div>
+				</div>
 
-				<div class="tablink">
-					<ul>
-						<li><a href="#">Лента событий</a></li>
-						<li><a href="#">Рассказы</a></li>
-						<li><a href="#">Фото</a></li>
-						<li><a href="#">Отзывы</a></li>
+				<div class="stoolbar">
+					<ul class="pagination">
+						<li><a href="#">&laquo;</a></li>
+						<li class="active"><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li><a href="#">&raquo;</a></li>
 					</ul>
-					<div class="tab-more dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Еще</a>
-						<ul class="dropdown-menu dropdown-menu-right animated fadeIn">
-							<li><a href="#">Карта путешествий</a></li>
-							<li><a href="#">Поиск попутчиков</a></li>
-						</ul>
-					</div>
+					<div class="clearfix visible-xs"></div>
+					<div class="stb-filter_res">Всего туров найдено <strong>125</strong></div>
 				</div>
 
-
-				<section class="sc_cabuser-messages">
-
-					<h2>Мои сообщения</h2>
-
-					<div class="stoolbar stoolbar--suptop">
-						<div class="stb-filter_res"><strong>29</strong> сообщений / <span class="c--yellow"><strong>2</strong> новых сообщения</span></div>
-					</div>
-
-					<div class="block-cabmessage">
-						<div class="row">
-							<div class="col-sm-6">
-								<div class="cabmessage__user">
-									<div class="miniuser-img"><img src="img/icons/no-user.svg" alt=""></div>
-								</div>
-								<div class="cabmessage__descript">
-									<div class="miniuser-name"><a href="#">Саша</a></div>
-									<div class="miniuser-address">Россия, Москва</div>
-								</div>
-							</div>
-							<div class="col-sm-3">
-								<div class="cabmessage-mess">1 сообщение</div>
-							</div>
-							<div class="col-sm-3">
-								<div class="cabmessage-btns">
-									<button class="b-itool b--to-right" data-toggle="modal" data-target="#modal__messages"><i class="fa fa-pencil"></i>написать сообщение</button>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="block-cabmessage">
-						<div class="row">
-							<div class="col-sm-6">
-								<div class="cabmessage__user">
-									<div class="miniuser-img"><img src="img/icons/no-user.svg" alt=""></div>
-								</div>
-								<div class="cabmessage__descript">
-									<div class="miniuser-name"><a href="#">Василиса Никитична</a></div>
-									<div class="miniuser-address">Россия, Нижний Новгород</div>
-								</div>
-							</div>
-							<div class="col-sm-3">
-								<div class="cabmessage-mess mess--new">2 новых сообщения</div>
-							</div>
-							<div class="col-sm-3">
-								<div class="cabmessage-btns">
-									<button class="b-itool b--to-right" data-toggle="modal" data-target="#modal__messages"><i class="fa fa-pencil"></i>написать сообщение</button>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="block-cabmessage">
-						<div class="row">
-							<div class="col-sm-6">
-								<div class="cabmessage__user">
-									<div class="miniuser-img"><img src="img/icons/no-user.svg" alt=""></div>
-								</div>
-								<div class="cabmessage__descript">
-									<div class="miniuser-name"><a href="#">Валера</a></div>
-									<div class="miniuser-address">Россия, Москва</div>
-								</div>
-							</div>
-							<div class="col-sm-3">
-								<div class="cabmessage-mess">12 сообщений</div>
-							</div>
-							<div class="col-sm-3">
-								<div class="cabmessage-btns">
-									<button class="b-itool b--to-right" data-toggle="modal" data-target="#modal__messages"><i class="fa fa-pencil"></i>написать сообщение</button>
-								</div>
-							</div>
-						</div>
-					</div>
-
-				</section>
-
-
 			</article>
+
 
 
 
@@ -982,37 +1091,125 @@
 		<aside class="pagewrap__col-right">
 			<div class="container-fluid">
 
-				<div class="aside-map">
-					<div class="hdr-h2 hdr--lined"><ins class="emphas bk--green"></ins>Карта путешествий</div>
-					<div class="map-aside country-map" id="mycountry-map">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2660752.123465059!2d32.94337729477081!3d39.242309548612376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sby!4v1495869941573" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+
+				<div class="block-callorder">
+					<div class="txt1">Если у вас нет времени</div>
+					<div class="txt2">подобрать тур самостоятельно</div>
+					<div class="txt3">поручите подбор тура нашим менеджерам</div>
+					<div class="clearfix"></div>
+					<button class="b-callorder">Отправить заявку<br>на подбор тура</button>
+					<div class="bk"><img src="img/bk-callorder.png" alt=""></div>
+				</div>
+
+
+
+				<div class="block-consult">
+					<div class="hdr-h2 hdr--lined"><ins class="emphas bk--red"></ins>Менеджер по продажам туров</div>
+					<div class="clearfix">
+						<div class="consult__img">
+							<img src="img/consultant.jpg" alt="">
+						</div>
+						<div class="consult__descript">
+							<div class="consult_name">Ирина Вставская</div>
+							<div class="consult_prof">турфирма «Мария»</div>
+							<a href="tel:+74953089897" class="consult_tel">+7&nbsp;495<span>308-98-97</span></a>
+						</div>
+					</div>
+					<div class="clearfix">
+						<div class="consult__msgrs">
+							<a href="#"><img src="img/icons/im-telegram.svg" alt="Telegram" title="Связаться через Telegram"></a>
+							<a href="#"><img src="img/icons/im-viber.svg" alt="Viber" title="Связаться через Viber"></a>
+							<a href="#"><img src="img/icons/im-whatsup.svg" alt="WhatsUp" title="Связаться через WhatsUp"></a>
+							<a href="#"><img src="img/icons/im-skype.svg" alt="Skype" title="Связаться через Skype"></a>
+							<a href="#"><img src="img/icons/im-icq.svg" alt="ICQ" title="Связаться через ICQ"></a>
+						</div>
+					</div>
+					<div class="clearfix">
+						<div class="consult__btns">
+							<button class="consult_btn-call b-btn" data-toggle="modal" data-target="#modal__call"><i class="fa fa-phone"></i>Заказать звонок</button>
+							<button class="consult_btn-mess b-btn" data-toggle="modal" data-target="#modal__mess"><i class="fa fa-pencil"></i>Оставить заявку</button>
+						</div>
 					</div>
 				</div>
 
-				<div class="aside-countries">
-					<div class="aside-countries__result">посещено <strong>12</strong>&nbsp;стран, <strong>42</strong>&nbsp;города</div>
-					<ul class="ul--nolist">
-						<li><a href="#"><span class="flag-icon flag-icon-au"></span>Австралия</a></li>
-						<li><a href="#"><span class="flag-icon flag-icon-at"></span>Австрия</a></li>
-						<li><a href="#"><span class="flag-icon flag-icon-az"></span>Азербайджан</a></li>
-						<li><a href="#"><span class="flag-icon flag-icon-al"></span>Албания</a></li>
-						<li><a href="#"><span class="flag-icon flag-icon-dz"></span>Алжир</a></li>
-						<li><a href="#"><span class="flag-icon flag-icon-ao"></span>Ангола</a></li>
-						<li><a href="#"><span class="flag-icon flag-icon-ad"></span>Андорра</a></li>
-						<li><a href="#"><span class="flag-icon flag-icon-ag"></span>Антигуа и Барбуда</a></li>
-						<li><a href="#"><span class="flag-icon flag-icon-ar"></span>Аргентина</a></li>
-						<li><a href="#"><span class="flag-icon flag-icon-am"></span>Армения</a></li>
-						<li><a href="#"><span class="flag-icon flag-icon-af"></span>Афганистан</a></li>
-					</ul>
+
+
+				<div class="aside-tourinfo">
+
+					<div class="hdr-h2 hdr--lined"><ins class="emphas bk--blue"></ins>Ранее вы смотрели</div>
+
+					<table class="tb--inview">
+						<tr>
+							<td class="prop">
+								<div class="prop--name"><a href="#"><strong>Ada Hotel Istanbul 4*</strong></a></div>
+								<div class="prop--desc"><a href="#">Турция</a>, <a href="#">Кемер</a></div>
+							</td>
+							<td class="value td--price">от 22 435<i class="fa fa-rub"></i></td>
+						</tr>
+						<tr>
+							<td class="prop">
+								<div class="prop--name"><a href="#"><strong>Galil Hotel 5*</strong></a></div>
+								<div class="prop--desc"><a href="#">Израиль</a>, <a href="#">Нетания</a></div>
+							</td>
+							<td class="value td--price">от 44 600<i class="fa fa-rub"></i></td>
+						</tr>
+						<tr>
+							<td class="prop">
+								<div class="prop--name"><a href="#"><strong>The Metropole Hotel Phuket 3*</strong></a></div>
+								<div class="prop--desc"><a href="#">Турция</a>, <a href="#">Кемер</a></div>
+							</td>
+							<td class="value td--price">от 25 500<i class="fa fa-rub"></i></td>
+						</tr>
+						<tr>
+							<td class="prop">
+								<div class="prop--name"><a href="#"><strong>Barcelo Marina Palace 5*</strong></a></div>
+								<div class="prop--desc"><a href="#">Израиль</a>, <a href="#">Нетания</a></div>
+							</td>
+							<td class="value td--price">от 17 200<i class="fa fa-rub"></i></td>
+						</tr>
+						<tr>
+							<td class="prop">
+								<div class="prop--name"><a href="#"><strong>Panchi Villa 4*</strong></a></div>
+								<div class="prop--desc"><a href="#">Турция</a>, <a href="#">Кемер</a></div>
+							</td>
+							<td class="value td--price">от 128 000<i class="fa fa-rub"></i></td>
+						</tr>
+					</table>
+
 				</div>
 
 
+
+				<div class="aside-advertising">
+
+					<div class="block-advertising advertising--aside" style="background-image: url('img/_tmp/cl1-tmp.jpg');" rel="id_banner4">
+						<div class="advertising__hdr"><a href="#">АРЕНДА КРАНА-МАНИПУЛЯТОРА</a></div>
+						<a href="#" class="advertising__btn">arendacranoff.ru</a>
+						<div class="advertising__note" id="id_banner4">
+							<p>Предоставляем услуги манипулятор КАМАЗ-43118(6х6) выполнит перевозку в условиях бездорожья.</p>
+							<p>Грузоподъемность шасси 10 т.</p>
+							<p><a href="#">Копровые установки</a><br>
+								<a href="#">Трубоукладчики</a></p>
+							<p><a href="#">Контакты</a></p>
+						</div>
+					</div>
+
+					<div class="block-advertising" style="background-image: url('img/_tmp/ht1-tmp.jpg');" rel="id_banner5">
+						<div class="advertising__hdr"><a href="#">Аренда mанипулятора полуприцеп 15 тонн</a></div>
+						<a href="#" class="advertising__btn">ooo.ru</a>
+						<div class="advertising__note" id="id_banner5">
+							<p>В нашем парке манипуляторы грузоподъемностью от 3 до 20 тонн, шоссейные и вездеходы.</p>
+						</div>
+					</div>
+
+				</div>
 
 
 
 			</div>
 		</aside>
-		<!-- конец колонкаколонка правая ----------------------------------->
+		<!-- конец колонка правая ----------------------------------->
 	</div>
 </div>
 
@@ -1316,81 +1513,6 @@
 	</div>
 
 </div>
-<div class="modal fade" id="modal__messages" tabindex="-1" role="dialog" aria-hidden="true">
-	<div class="modal-dialog">
-		<div class="modal-content">
-
-
-			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-
-
-			<div class="modal-body">
-
-				<div class="block-cabmessage">
-					<div class="cabmessage__user">
-						<div class="miniuser-img"><img src="img/icons/no-user.svg" alt=""></div>
-					</div>
-					<div class="cabmessage__descript">
-						<div class="miniuser-name"><a href="index.html">Василиса Никитична</a></div>
-						<div class="miniuser-address">Россия, Нижний Новгород</div>
-					</div>
-				</div>
-
-				<div class="modal-hdr">Сообщения</div>
-
-				<div class="tool-box"><a href="#" class="b-microtool"><i class="fa fa-refresh"></i>обновить</a></div>
-
-				<div class="block-popmessages">
-					<div class="popmessage">
-						<div class="popmessage__user">Таня <span class="popmessage__date">/ 02.09.2012 в 08:55</span></div>
-						<div class="popmessage__txt">
-							Да,друзья,то что очень шумно это правда!!!Но после многочасовых поездок.
-						</div>
-					</div>
-					<div class="popmessage">
-						<div class="popmessage__user">Алексей <span class="popmessage__date">/ 02.09.2012 в 08:55</span></div>
-						<div class="popmessage__txt">
-							Внимание всем, кто хочет испортить себе впечатление об Италии и отдых---вперед. Внимание всем, кто хочет испортить себе впечатление об Италии и отдых---вперед.
-						</div>
-					</div>
-					<div class="popmessage">
-						<div class="popmessage__user">Валентин Юдашкин<span class="popmessage__date">/ 02.09.2012 в 08:55</span></div>
-						<div class="popmessage__txt">тестирую отправку сообщений и рассылку уведомлений об отправленных сообщениях </div>
-					</div>
-					<div class="popmessage">
-						<div class="popmessage__user">Таня <span class="popmessage__date">/ 02.09.2012 в 08:55</span></div>
-						<div class="popmessage__txt">
-							Да,друзья,то что очень шумно это правда!!!Но после многочасовых поездок.
-						</div>
-					</div>
-					<div class="popmessage">
-						<div class="popmessage__user">Алексей <span class="popmessage__date">/ 02.09.2012 в 08:55</span></div>
-						<div class="popmessage__txt">
-							Город вылета – Москва, вылет – 16.10.12, ночей – 7, питание – AI (питание + напитки местного производства), размещение – DBL (двое взрослых), номер – станд. номер с кух. уголком, без опред. вида из номера
-						</div>
-					</div>
-					<div class="popmessage">
-						<div class="popmessage__user">Валентин Юдашкин<span class="popmessage__date">/ 02.09.2012 в 08:55</span></div>
-						<div class="popmessage__txt">тестирую отправку сообщений и рассылку уведомлений об отправленных сообщениях </div>
-					</div>
-				</div>
-
-				<form role="form" action="" name="fm-message">
-					<div class="form-group">
-						<label for="fld-message">Ваше сообщение:</label>
-						<textarea rows="3" id="fld-message" class="form-control"></textarea>
-					</div>
-					<div class="align-block"><div class="align-cr"><div class="align-cl">
-						<button type="submit" name="b-submit__message" class="b-formbtn" data-dismiss="modal">ОТПРАВИТЬ СООБЩЕНИЕ</button>
-					</div></div></div>
-				</form>
-
-			</div>
-
-
-		</div>
-	</div>
-</div>
 
 
 
@@ -1403,7 +1525,6 @@
 
 <script src="js/vendor.js"></script>
 <script src="js/main.js"></script>
-
 
 </body>
 </html>

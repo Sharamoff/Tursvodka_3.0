@@ -2827,6 +2827,160 @@ INPUT[type="file"] {
       color: #999999;
       line-height: 1.2; }
 
+.block-tourcard-h {
+  background: #eeeeee;
+  margin-bottom: 3rem; }
+  .block-tourcard-h:before, .block-tourcard-h:after {
+    content: " ";
+    display: table; }
+  .block-tourcard-h:after {
+    clear: both; }
+  @media only screen and (max-width: 767px) {
+    .block-tourcard-h {
+      max-width: 380px; } }
+  .block-tourcard-h .tourcard-h__img {
+    background-color: white; }
+    .block-tourcard-h .tourcard-h__img img {
+      width: 100%;
+      height: auto;
+      max-width: 380px; }
+  .block-tourcard-h .tourcard-h__descript {
+    position: relative;
+    padding: 1rem 3rem 8rem 1.5rem; }
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+      .block-tourcard-h .tourcard-h__descript {
+        padding-bottom: 10rem; } }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .block-tourcard-h .tourcard-h__descript {
+        padding-bottom: 10rem; } }
+    @media only screen and (max-width: 767px) {
+      .block-tourcard-h .tourcard-h__descript {
+        padding-left: 3rem;
+        padding-bottom: 1rem; } }
+    .block-tourcard-h .tourcard-h__descript-name {
+      font-family: "Roboto Condensed", "Arial Narrow", Arial, Helvetica, sans-serif;
+      margin-bottom: 1rem;
+      margin-right: 6rem; }
+      .block-tourcard-h .tourcard-h__descript-name .name {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: #0068b8;
+        margin: 0; }
+        .block-tourcard-h .tourcard-h__descript-name .name a {
+          color: #0068b8; }
+          .block-tourcard-h .tourcard-h__descript-name .name a:hover {
+            color: #ff8000; }
+      .block-tourcard-h .tourcard-h__descript-name .subname {
+        font-size: 1.6rem;
+        font-weight: bold;
+        color: #333333;
+        margin: 0.5rem 0;
+        line-height: 1.2; }
+        .block-tourcard-h .tourcard-h__descript-name .subname a {
+          color: #333333;
+          text-decoration: underline; }
+          .block-tourcard-h .tourcard-h__descript-name .subname a:hover {
+            color: #ff8000; }
+      .block-tourcard-h .tourcard-h__descript-name .rating {
+        color: #666666;
+        font-size: 1.2rem; }
+    .block-tourcard-h .tourcard-h__descript-weather {
+      position: absolute;
+      top: 1rem;
+      right: 2.5rem; }
+    .block-tourcard-h .tourcard-h__descript-links {
+      margin-bottom: 1rem; }
+      .block-tourcard-h .tourcard-h__descript-links .i--fill {
+        font-size: 1.2rem;
+        background-color: #999999;
+        color: white;
+        padding: 0.1rem 0.5rem 0.3rem 0.5rem;
+        margin: 0 0.2rem 0 0; }
+        .block-tourcard-h .tourcard-h__descript-links .i--fill:hover {
+          background-color: #ff8000; }
+    .block-tourcard-h .tourcard-h__descript-note {
+      color: #666666;
+      font-size: 1.2rem; }
+      .block-tourcard-h .tourcard-h__descript-note strong {
+        color: black; }
+    .block-tourcard-h .tourcard-h__descript-footer {
+      position: absolute;
+      z-index: 1;
+      bottom: 0;
+      left: 1.5rem;
+      right: 3rem;
+      border-top: solid 1px #cccccc;
+      padding: 1rem 0; }
+      .block-tourcard-h .tourcard-h__descript-footer:before, .block-tourcard-h .tourcard-h__descript-footer:after {
+        content: " ";
+        display: table; }
+      .block-tourcard-h .tourcard-h__descript-footer:after {
+        clear: both; }
+      @media only screen and (max-width: 767px) {
+        .block-tourcard-h .tourcard-h__descript-footer {
+          position: static;
+          margin-top: 1.5rem;
+          padding-left: 0;
+          padding-bottom: 0.5rem; } }
+      .block-tourcard-h .tourcard-h__descript-footer .itemprice {
+        float: left;
+        font-size: 2.5rem;
+        color: #4d9b40;
+        text-align: right;
+        font-weight: bold;
+        font-family: "Roboto Condensed", "Arial Narrow", Arial, Helvetica, sans-serif;
+        white-space: nowrap;
+        background-color: white;
+        padding: 0.5rem 0.5rem 0.2rem 1rem;
+        border-radius: 6px; }
+        @media only screen and (min-width: 992px) and (max-width: 1199px) {
+          .block-tourcard-h .tourcard-h__descript-footer .itemprice {
+            width: 100%;
+            text-align: left;
+            padding: 0.5rem 0.5rem 0.5rem 1rem; }
+            .block-tourcard-h .tourcard-h__descript-footer .itemprice .b-btn {
+              float: right;
+              top: 0 !important; } }
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+          .block-tourcard-h .tourcard-h__descript-footer .itemprice {
+            width: 100%;
+            text-align: left;
+            padding: 0.5rem 0.5rem 0.5rem 1rem; }
+            .block-tourcard-h .tourcard-h__descript-footer .itemprice .b-btn {
+              float: right;
+              top: 0 !important; } }
+        @media only screen and (max-width: 767px) {
+          .block-tourcard-h .tourcard-h__descript-footer .itemprice {
+            width: 100%;
+            text-align: left;
+            padding: 0.5rem 0.5rem 0.5rem 1rem; }
+            .block-tourcard-h .tourcard-h__descript-footer .itemprice .b-btn {
+              float: right;
+              top: 0 !important; } }
+        .block-tourcard-h .tourcard-h__descript-footer .itemprice i {
+          font-size: 1.8rem;
+          font-weight: normal;
+          margin-left: 0.3rem; }
+        .block-tourcard-h .tourcard-h__descript-footer .itemprice .b-btn {
+          position: relative;
+          margin-left: 1rem;
+          top: -0.4rem; }
+      .block-tourcard-h .tourcard-h__descript-footer .itemlink {
+        float: right;
+        margin: 1rem 0 0 1rem;
+        font: 1.4rem "Roboto Condensed", "Arial Narrow", Arial, Helvetica, sans-serif;
+        color: #999999;
+        white-space: nowrap; }
+        @media only screen and (min-width: 992px) and (max-width: 1199px) {
+          .block-tourcard-h .tourcard-h__descript-footer .itemlink {
+            width: 100%; } }
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+          .block-tourcard-h .tourcard-h__descript-footer .itemlink {
+            width: 100%; } }
+        @media only screen and (max-width: 767px) {
+          .block-tourcard-h .tourcard-h__descript-footer .itemlink {
+            width: 100%; } }
+
 .table-tours .row--th {
   background: none !important; }
   @media only screen and (max-width: 767px) {
