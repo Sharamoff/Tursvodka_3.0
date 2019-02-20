@@ -55,7 +55,6 @@ gulp.task('html:build', function(done) {
 		.pipe(rigger())
 		.pipe(gulp.dest(path.build.html))
 		.pipe(reload({stream: true}));
-	done();
 });
 
 gulp.task('js:build', function(done) {
@@ -66,7 +65,6 @@ gulp.task('js:build', function(done) {
 		.pipe(sourcemaps.write())
 		.pipe(gulp.dest(path.build.js))
 		.pipe(reload({stream: true}));
-	done();
 });
 
 gulp.task('style:build', function(done) {
@@ -82,7 +80,6 @@ gulp.task('style:build', function(done) {
 		//.pipe(sourcemaps.write())
 		.pipe(gulp.dest(path.build.css))
 		.pipe(reload({stream: true}));
-	done();
 });
 
 gulp.task('image:build', function(done) {
@@ -95,13 +92,11 @@ gulp.task('image:build', function(done) {
 		})))
 		.pipe(gulp.dest(path.build.img))
 		.pipe(reload({stream: true}));
-	done();
 });
 
 gulp.task('fonts:build', function(done) {
 	return gulp.src(path.src.fonts)
 		.pipe(gulp.dest(path.build.fonts));
-	done();
 });
 
 gulp.task('build', gulp.parallel(
@@ -115,11 +110,11 @@ gulp.task('build', gulp.parallel(
 
 
 gulp.task('watch', function(done) {
-	gulp.watch(path.watch.html,  gulp.parallel('html:build'));
-	gulp.watch(path.watch.js,    gulp.parallel('js:build'));
-	gulp.watch(path.watch.style, gulp.parallel('style:build'));
-	gulp.watch(path.watch.fonts, gulp.parallel('fonts:build'));
-	gulp.watch(path.watch.img,   gulp.parallel('image:build'));
+	gulp.watch(path.watch.html,  gulp.series('html:build'));
+	gulp.watch(path.watch.js,    gulp.series('js:build'));
+	gulp.watch(path.watch.style, gulp.series('style:build'));
+	gulp.watch(path.watch.fonts, gulp.series('fonts:build'));
+	gulp.watch(path.watch.img, gulp.series('image:build'));
 	done();
 });
 
@@ -135,4 +130,4 @@ gulp.task('clean', function(cb) {
 });
 
 
-gulp.task('default', gulp.series('build', 'watch', 'webserver'));
+gulp.task('default', gulp.series('build', 'webserver', 'watch'));

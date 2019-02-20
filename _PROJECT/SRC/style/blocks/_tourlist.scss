@@ -1,0 +1,75 @@
+///////////////////////////////////////////////
+
+
+
+// список категорий туров
+
+
+.block-tourlist {
+	position: relative;
+	min-height: 150px;
+	padding-bottom: 3rem;
+	padding-left: 150px;
+	margin-bottom: 3rem;
+	border-bottom: solid 1px $color-border;
+
+	@include respond-to(media-xs) {
+		padding-bottom: 1.5rem;
+		padding-left: 0;
+		margin-bottom: 3rem;
+	}
+
+	a {
+		text-decoration: none;
+		color: $c-gray-dark;
+
+		&:hover h2 {
+			color: $color-link-hover !important;
+		}
+
+		&:hover p {
+			color: $c-gray-darker;
+		}
+
+	}
+
+	.tourlist__img {
+		position: absolute;
+		top: 0.2rem;
+		left: 0;
+		z-index: 1;
+
+		@include respond-to(media-xs) {
+			position: static;
+			margin-bottom: 1.5rem;
+		}
+
+		img {
+			width: 118px;
+			height: auto;
+			border: solid 1px $color-border;
+		}
+
+	}
+
+	.tourlist__desc {
+		font-size: $font-size-basemin;
+		color: $c-gray-dark;
+
+		h2 {
+			color: $c-blue;
+			margin-bottom: 1rem;
+			line-height: $line-height-min;
+			font-size: $font-size-hdr;
+			font-weight: bold;
+		}
+
+		p {
+			margin-top: 1rem;
+			margin-bottom: 0;
+		}
+
+	}
+
+}
+

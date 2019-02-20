@@ -310,6 +310,11 @@ P {
 :-ms-input-placeholder {
   color: #999999; }
 
+UL {
+  padding-left: 3rem; }
+  UL > LI {
+    margin: 0.7rem 0; }
+
 UL.ul--base {
   padding-left: 2rem; }
   UL.ul--base > ul {
@@ -5538,6 +5543,51 @@ INPUT[type="file"] {
       line-height: 1.1;
       margin: 0.8rem 0 0.4rem 0;
       overflow: hidden; }
+
+.block-tourlist {
+  position: relative;
+  min-height: 150px;
+  padding-bottom: 3rem;
+  padding-left: 150px;
+  margin-bottom: 3rem;
+  border-bottom: solid 1px #bbbbbb; }
+  @media only screen and (max-width: 767px) {
+    .block-tourlist {
+      padding-bottom: 1.5rem;
+      padding-left: 0;
+      margin-bottom: 3rem; } }
+  .block-tourlist a {
+    text-decoration: none;
+    color: #666666; }
+    .block-tourlist a:hover h2 {
+      color: #ff8000 !important; }
+    .block-tourlist a:hover p {
+      color: #333333; }
+  .block-tourlist .tourlist__img {
+    position: absolute;
+    top: 0.2rem;
+    left: 0;
+    z-index: 1; }
+    @media only screen and (max-width: 767px) {
+      .block-tourlist .tourlist__img {
+        position: static;
+        margin-bottom: 1.5rem; } }
+    .block-tourlist .tourlist__img img {
+      width: 118px;
+      height: auto;
+      border: solid 1px #bbbbbb; }
+  .block-tourlist .tourlist__desc {
+    font-size: 1.4rem;
+    color: #666666; }
+    .block-tourlist .tourlist__desc h2 {
+      color: #0068b8;
+      margin-bottom: 1rem;
+      line-height: 1.1;
+      font-size: 2.1rem;
+      font-weight: bold; }
+    .block-tourlist .tourlist__desc p {
+      margin-top: 1rem;
+      margin-bottom: 0; }
 
 .header {
   background-color: white; }
