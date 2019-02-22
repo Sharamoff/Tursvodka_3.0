@@ -3162,38 +3162,40 @@
 
 
 <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-
 <script type="text/javascript">
+	$(document).ready(function () {
+
 // карта для Где купить туры
+		ymaps.ready(init);
 
-ymaps.ready(init);
+		function init(){
 
-function init(){
+			var myBuytoursMap = new ymaps.Map ("buytours-map_ymap", {
+				center: [55.76, 37.64],
+				zoom: 10
+			});
 
-	var myBuytoursMap = new ymaps.Map ("buytours-map", {
-		center: [55.76, 37.64],
-		zoom: 10
+			myBuytoursPlacemark1 = new ymaps.Placemark([55.687569, 37.570572], {
+				iconCaption: 'Туристическая фирма «Мария»'
+			}, {
+				preset: 'islands#blueDotIconWithCaption'
+			});
+
+			myBuytoursPlacemark2 = new ymaps.Placemark([55.790139, 37.814052], {
+				iconCaption: 'Туристическая компания «Наш тур»'
+			}, {
+				preset: 'islands#blueDotIconWithCaption'
+			});
+
+			myBuytoursMap.geoObjects
+				.add(myBuytoursPlacemark1)
+				.add(myBuytoursPlacemark2);
+
+			myBuytoursMap.behaviors.disable('scrollZoom');
+
+		}
+
 	});
-
-	myBuytoursPlacemark1 = new ymaps.Placemark([55.687569, 37.570572], {
-			iconCaption: 'Туристическая фирма «Мария»'
-		}, {
-			preset: 'islands#blueDotIconWithCaption'
-		});
-
-	myBuytoursPlacemark2 = new ymaps.Placemark([55.790139, 37.814052], {
-			iconCaption: 'Туристическая компания «Наш тур»'
-		}, {
-			preset: 'islands#blueDotIconWithCaption'
-		});
-
-	myBuytoursMap.geoObjects
-		.add(myBuytoursPlacemark1)
-		.add(myBuytoursPlacemark2);
-
-	myBuytoursMap.behaviors.disable('scrollZoom');
-
-}
 </script>
 
 
