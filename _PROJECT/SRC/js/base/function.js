@@ -335,12 +335,15 @@ $('.panel-quest__btn button').on('click', function () {
 
 // настройка полей
 
+
 // подключения select2
 $('#fld-buytours_metro').select2({
 	placeholder: "Станция метро",
 	language: "ru",
 	theme: "bootstrap"
 });
+
+
 
 // класс выбора даты
 $('.hasdatepicker').datepicker({

@@ -310,11 +310,6 @@ P {
 :-ms-input-placeholder {
   color: #999999; }
 
-UL {
-  padding-left: 3rem; }
-  UL > LI {
-    margin: 0.7rem 0; }
-
 UL.ul--base {
   padding-left: 2rem; }
   UL.ul--base > ul {
@@ -2012,6 +2007,11 @@ INPUT[type="file"] {
     width: 10rem; }
   .timeperiod-panel span {
     margin: 0.6rem 0.5rem; }
+
+#fld-buytours_metro {
+  height: 3rem !important;
+  padding-top: 0rem !important;
+  padding-bottom: 0.3rem !important; }
 
 .icon--map:after {
   content: "\f041"; }
@@ -3793,13 +3793,13 @@ INPUT[type="file"] {
       color: #666666;
       border-bottom: solid 1px #dddddd; }
     .block-buytours #buytours-list .buytours-list_body {
-      height: 39rem;
+      height: 46.3rem;
       overflow-y: auto;
       padding: 2rem; }
       @media only screen and (max-width: 767px) {
         .block-buytours #buytours-list .buytours-list_body {
           height: auto;
-          max-height: 80rem; } }
+          max-height: 39rem; } }
       .block-buytours #buytours-list .buytours-list_body .buytours {
         padding: 2rem 0 0.5rem 0;
         border-bottom: solid 1px #dddddd;

@@ -2197,7 +2197,7 @@
 							<div class="col-sm-4 col-xs-12">
 								<div class="form-group">
 									<label class="sr-only" for="fld-buytours_metro">Станция метро</label>
-									<select name="fld-buytours_metro" id="fld-buytours_metro" class="form-control select2-multiple" multiple style="width: 100%">
+									<select multiple name="fld-buytours_metro" id="fld-buytours_metro" style="width:100%">
 										<option value="Авиамоторная">Авиамоторная</option>
 										<option value="Автозаводская">Автозаводская</option>
 										<option value="Автозаводская">Автозаводская</option>
@@ -2227,8 +2227,8 @@
 
 				<div class="block-buytours tab-content">
 
-					<div class="tab-pane active">
-						<div class="map-fullpage" id="buytours-map"></div>
+					<div class="tab-pane active" id="buytours-map">
+						<div class="map-fullpage" id="buytours-map_ymap"></div>
 					</div>
 
 					<div class="tab-pane" id="buytours-list">
@@ -2867,16 +2867,19 @@
 <script src="js/vendor.js"></script>
 <script src="js/main.js"></script>
 
+
+
+
 <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-
 <script type="text/javascript">
-// карта для Где купить туры
+$(document).ready(function () {
 
+// карта для Где купить туры
 ymaps.ready(init);
 
 function init(){
 
-	var myBuytoursMap = new ymaps.Map ("buytours-map", {
+	var myBuytoursMap = new ymaps.Map ("buytours-map_ymap", {
 		center: [55.76, 37.64],
 		zoom: 10
 	});
@@ -2900,6 +2903,8 @@ function init(){
 	myBuytoursMap.behaviors.disable('scrollZoom');
 
 }
+
+});
 </script>
 
 
