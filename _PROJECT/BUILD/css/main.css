@@ -5653,7 +5653,7 @@ INPUT[type="file"] {
     display: inline-block;
     width: 25%;
     min-width: 30rem;
-    z-index: 9999; }
+    z-index: 9; }
     @media only screen and (min-width: 768px) and (max-width: 991px) {
       .header-base .header-base__logo {
         min-width: 23rem; } }
