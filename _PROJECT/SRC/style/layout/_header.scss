@@ -73,7 +73,7 @@
 		display: inline-block;
 		width: 25%;
 		min-width: 30rem;
-		z-index: 9999;
+		z-index: 9;
 
 		@include respond-to(media-sm) {
 			min-width: 23rem;
