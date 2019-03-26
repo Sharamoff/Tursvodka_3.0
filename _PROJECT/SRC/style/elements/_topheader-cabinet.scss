@@ -251,18 +251,19 @@
 		padding: 0.5rem 3rem 0.5rem 1rem;
 		cursor: pointer;
 		font: $font-size-base $font-family-cond;
-		line-height: 5rem;
+		line-height: $line-height-min;
 		color: $color-link;
 		border-bottom: solid 1px $c-gray-lighter;
-		@include clearfix;
+		display: flex;
+		align-items: center;
 
 		.username_block-img {
-			width: 5rem;
-			height: 5rem;
-			line-height: 4rem;
+			display: block;
+			width: 4rem;
+			height: 4rem;
+			line-height: 3rem;
 			border-radius: 50%;
 			margin-right: 0.8rem;
-			float: left;
 			background-color: $c-white;
 			padding: 0.3rem;
 

@@ -2008,11 +2008,6 @@ INPUT[type="file"] {
   .timeperiod-panel span {
     margin: 0.6rem 0.5rem; }
 
-#fld-buytours_metro {
-  height: 3rem !important;
-  padding-top: 0rem !important;
-  padding-bottom: 0.3rem !important; }
-
 .icon--map:after {
   content: "\f041"; }
 
@@ -2667,21 +2662,18 @@ INPUT[type="file"] {
     padding: 0.5rem 3rem 0.5rem 1rem;
     cursor: pointer;
     font: 1.6rem "Roboto Condensed", "Arial Narrow", Arial, Helvetica, sans-serif;
-    line-height: 5rem;
+    line-height: 1.1;
     color: #3c94cc;
-    border-bottom: solid 1px #dddddd; }
-    .cabinet-username-dropdown .username_block:before, .cabinet-username-dropdown .username_block:after {
-      content: " ";
-      display: table; }
-    .cabinet-username-dropdown .username_block:after {
-      clear: both; }
+    border-bottom: solid 1px #dddddd;
+    display: flex;
+    align-items: center; }
     .cabinet-username-dropdown .username_block .username_block-img {
-      width: 5rem;
-      height: 5rem;
-      line-height: 4rem;
+      display: block;
+      width: 4rem;
+      height: 4rem;
+      line-height: 3rem;
       border-radius: 50%;
       margin-right: 0.8rem;
-      float: left;
       background-color: white;
       padding: 0.3rem; }
       .cabinet-username-dropdown .username_block .username_block-img img {
@@ -4973,7 +4965,7 @@ INPUT[type="file"] {
   background-position: top left; }
   @media only screen and (max-width: 767px) {
     .cabuser-img {
-      margin-bottom: 1rem;
+      margin-bottom: 6rem;
       height: 200px; } }
   .cabuser-img img {
     width: 100%;
@@ -6831,6 +6823,13 @@ INPUT[type="file"] {
 
 .ac_responses-item .block-response {
   margin-top: 3rem; }
+
+.ac_travelcompany-list .b-lonetool {
+  margin-top: 0;
+  margin-bottom: 5rem; }
+  @media only screen and (max-width: 767px) {
+    .ac_travelcompany-list .b-lonetool {
+      margin-top: 3rem; } }
 
 .sc_travelcompany-represent .row {
   margin-top: 1.5rem;

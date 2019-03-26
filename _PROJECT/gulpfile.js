@@ -110,11 +110,11 @@ gulp.task('build', gulp.parallel(
 
 
 gulp.task('watch', function(done) {
-	gulp.watch(path.watch.html,  gulp.series('html:build'));
-	gulp.watch(path.watch.js,    gulp.series('js:build'));
-	gulp.watch(path.watch.style, gulp.series('style:build'));
-	gulp.watch(path.watch.fonts, gulp.series('fonts:build'));
-	gulp.watch(path.watch.img, gulp.series('image:build'));
+	gulp.watch(path.watch.html,  gulp.parallel('html:build'));
+	gulp.watch(path.watch.js,    gulp.parallel('js:build'));
+	gulp.watch(path.watch.style, gulp.parallel('style:build'));
+	gulp.watch(path.watch.fonts, gulp.parallel('fonts:build'));
+	gulp.watch(path.watch.img, gulp.parallel('image:build'));
 	done();
 });
 
