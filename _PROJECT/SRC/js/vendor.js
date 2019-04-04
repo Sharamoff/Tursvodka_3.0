@@ -9,4 +9,4 @@
 //= vendor/select2/select2.full.min.js
 //= vendor/salvattore.min.js
 //= vendor/slick.min.js
-
+//= vendor/hc-sticky.js

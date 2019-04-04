@@ -277,29 +277,6 @@ function fixAsSubmenu() {  // подменю
 $(window).scroll(function() {fixAsSubmenu()});
 $(window).resize(function() {fixAsSubmenu()});
 
-function fixAsAdv() {  // блок рекламы
-	var
-			def_top 			= $(document).scrollTop(),
-			def_width 		=	$(document).width(),
-			val_top 			= $('.pagewrap').position().top,
-			val_bottom 		= $('footer').position().top - $('footer').height() - 80,
-			val_width			=	$('.pagewrap__col-right').width(),
-			val_margin    = $('.pagewrap').height() - $('#as_r-adv').height() - 100;
-
-	if (def_width >= 1024) {
-		if (def_top >= val_top && def_top <= val_bottom) {
-			$('#as_r-adv').css({position: 'fixed', top: '2rem', 'margin-top': 'auto', width: val_width});
-		}
-		else {
-			$('#as_r-adv').css({position: 'relative', top: '0', 'margin-top': 'auto', width: val_width});
-		}
-		if (def_top >= ($('.pagewrap').height() + 80)) {
-			$('#as_r-adv').css({position: 'relative', top: '0', 'margin-top': val_margin, width: val_width});
-		}
-	}
-}
-//$(window).scroll(function() {fixAsAdv()});
-//$(window).resize(function() {fixAsAdv()});
 
 
 
@@ -458,6 +435,18 @@ $(flnote).mouseenter(function(){
 	clearTimeout(fltimeoutId);
 }).mouseout(function(){
 	$('.flbanner__note').hide();
+});
+
+
+
+
+// фиксируем в правой колонке c hc-sticky
+
+$('#as_hs-sticked').hcSticky({
+	stickTo: '.pagewrap',
+	innerSticker: '#as_r-adv',
+	top: 60,
+	followScroll: false
 });
 
 
