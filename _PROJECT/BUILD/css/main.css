@@ -2219,6 +2219,23 @@ INPUT[type="file"] {
       color: white;
       text-shadow: black;
       text-decoration: none; }
+  .pic-thumb__copy-negative {
+    position: absolute;
+    z-index: 2;
+    font-size: 1rem;
+    color: white;
+    text-shadow: black;
+    right: 0.3rem;
+    top: 0.3rem;
+    text-align: right;
+    line-height: 1;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 0.3rem 0.5rem;
+    border-radius: 3px; }
+    .pic-thumb__copy-negative a {
+      color: white;
+      text-shadow: black;
+      text-decoration: none; }
 
 .thumb--content {
   max-width: 280px; }
@@ -2238,6 +2255,18 @@ INPUT[type="file"] {
     .thumb--r {
       float: none;
       margin-left: 0; } }
+
+.nophoto {
+  background: #e0eef5 url("../img/no-photo.png") 50% 50% no-repeat;
+  min-width: 280px;
+  min-height: 180px; }
+
+.maxpic {
+  margin: 3rem auto;
+  text-align: center; }
+  .maxpic img {
+    width: 100%;
+    height: auto; }
 
 .weather {
   display: inline-block;
@@ -5299,6 +5328,41 @@ INPUT[type="file"] {
       .block-advertising .advertising__note a:hover {
         color: white;
         text-decoration: none; }
+
+.advertising-top {
+  margin: 3rem auto 3rem auto;
+  text-align: center;
+  max-width: 1560px;
+  min-width: 290px;
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px; }
+  .advertising-top:before, .advertising-top:after {
+    content: " ";
+    display: table; }
+  .advertising-top:after {
+    clear: both; }
+  @media only screen and (max-width: 767px) {
+    .advertising-top {
+      padding-left: 15px;
+      padding-right: 15px; } }
+  .advertising-top .block-advertising-top {
+    margin-left: auto;
+    margin-right: auto; }
+    .advertising-top .block-advertising-top img.imgadv {
+      width: 100%;
+      height: auto; }
+
+.advertising-h {
+  margin: 1rem auto 5rem auto;
+  background-color: #eeeeee;
+  text-align: center; }
+  .advertising-h .block-advertising-h {
+    margin-left: auto;
+    margin-right: auto; }
+    .advertising-h .block-advertising-h img.imgadv {
+      width: 100%;
+      height: auto; }
 
 .block-phrasebook .divtable {
   margin-top: 1.5rem; }

@@ -73,6 +73,28 @@
 
 	}
 
+	&__copy-negative {
+		position: absolute;
+		z-index: 2;
+		font-size: 1rem;
+		color: $c-white;
+		text-shadow: $c-black;
+		right: 0.3rem;
+		top: 0.3rem;
+		text-align: right;
+		line-height: 1;
+		background: transparentize($c-black, 0.5);
+		padding: 0.3rem 0.5rem;
+		border-radius: 3px;
+
+		a {
+			color: $c-white;
+			text-shadow: $c-black;
+			text-decoration: none;
+		}
+
+	}
+
 }
 
 .thumb--content {
@@ -101,3 +123,21 @@
 
 }
 
+
+.nophoto {
+	background: $c-blue-lightermore url("../img/no-photo.png") 50% 50% no-repeat;
+	min-width: 280px;
+	min-height: 180px;
+}
+
+
+.maxpic {
+	margin: 3rem auto;
+	text-align: center;
+
+	img {
+		width: 100%;
+		height: auto;
+	}
+
+}

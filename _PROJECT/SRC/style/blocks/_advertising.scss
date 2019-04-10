@@ -103,3 +103,54 @@
 
 }
 
+
+
+
+.advertising-top {
+	margin: 3rem auto 3rem auto;
+	text-align: center;
+	max-width: $m-max;
+	min-width: $m-min;
+	width: 100%;
+	padding-left: 30px;
+	padding-right: 30px;
+	@include clearfix;
+
+	@include respond-to(media-xs) {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.block-advertising-top {
+		margin-left: auto;
+		margin-right: auto;
+
+		img.imgadv {
+			width: 100%;
+			height: auto;
+		}
+
+	}
+
+}
+
+
+
+
+.advertising-h {
+	margin: 1rem auto 5rem auto;
+	background-color: $c-gray-lightermore;
+	text-align: center;
+
+	.block-advertising-h {
+		margin-left: auto;
+		margin-right: auto;
+
+		img.imgadv {
+			width: 100%;
+			height: auto;
+		}
+
+	}
+
+}
