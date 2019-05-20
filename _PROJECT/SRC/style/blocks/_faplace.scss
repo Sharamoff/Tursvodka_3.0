@@ -1,0 +1,97 @@
+///////////////////////////////////////////////
+
+
+
+// блок рекламы для агентов (for-agencies)
+
+
+.block-faplace {
+	margin-bottom: 3rem;
+	@include clearfix;
+
+	.faplace__hdr {
+		font: 2.5rem/1.1 $font-family-cond;
+		color: $c-black;
+		position: relative;
+		z-index: 2;
+		margin-bottom: 1.5rem;
+		margin-left: 0.5rem;
+
+		@include respond-to(media-xs) {
+			margin-left: 0;
+		}
+
+		ins {
+			display: inline-block;
+			width: 8rem;
+			height: 8rem;
+			border-radius: 50%;
+			border: solid 3px $c-white;
+			color: $c-white;
+			background: $c-yellow;
+			text-align: center;
+			font-size: 5rem !important;
+			line-height: 7.4rem !important;
+			text-decoration: none;
+			margin-right: 0.8rem;
+			position: relative;
+			top: 1rem;
+		}
+
+		strong {
+			text-transform: uppercase;
+			color: $c-red;
+		}
+
+	}
+
+	.faplace__place {
+		display: inline-block;
+		position: relative;
+		z-index: 1;
+		border-radius: 9px;
+		padding: 5px;
+		background: $c-yellow-light;
+		margin-top: 0;
+
+		@include respond-to(media-xs) {
+			border-radius: 0;
+		}
+
+		img {
+			border-radius: 5px;
+			width: 100%;
+			height: auto;
+
+			@include respond-to(media-xs) {
+				border-radius: 0;
+			}
+
+		}
+
+	}
+
+	.faplace__txt {
+		margin-top: 1.5rem;
+		margin-left: 0.5rem;
+
+		@include respond-to(media-xs) {
+			margin-left: 0;
+		}
+
+		a {
+			text-decoration: underline;
+
+			&:hover {
+				text-decoration: none;
+			}
+
+		}
+
+		span {
+			color: $c-gray-dark;
+		}
+
+	}
+
+}

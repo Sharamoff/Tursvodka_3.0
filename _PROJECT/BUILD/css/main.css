@@ -5645,6 +5645,72 @@ INPUT[type="file"] {
       margin-top: 1rem;
       margin-bottom: 0; }
 
+.block-faplace {
+  margin-bottom: 3rem; }
+  .block-faplace:before, .block-faplace:after {
+    content: " ";
+    display: table; }
+  .block-faplace:after {
+    clear: both; }
+  .block-faplace .faplace__hdr {
+    font: 2.5rem/1.1 "Roboto Condensed", "Arial Narrow", Arial, Helvetica, sans-serif;
+    color: black;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 1.5rem;
+    margin-left: 0.5rem; }
+    @media only screen and (max-width: 767px) {
+      .block-faplace .faplace__hdr {
+        margin-left: 0; } }
+    .block-faplace .faplace__hdr ins {
+      display: inline-block;
+      width: 8rem;
+      height: 8rem;
+      border-radius: 50%;
+      border: solid 3px white;
+      color: white;
+      background: #ff8000;
+      text-align: center;
+      font-size: 5rem !important;
+      line-height: 7.4rem !important;
+      text-decoration: none;
+      margin-right: 0.8rem;
+      position: relative;
+      top: 1rem; }
+    .block-faplace .faplace__hdr strong {
+      text-transform: uppercase;
+      color: #cc0000; }
+  .block-faplace .faplace__place {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    border-radius: 9px;
+    padding: 5px;
+    background: #ffa300;
+    margin-top: 0; }
+    @media only screen and (max-width: 767px) {
+      .block-faplace .faplace__place {
+        border-radius: 0; } }
+    .block-faplace .faplace__place img {
+      border-radius: 5px;
+      width: 100%;
+      height: auto; }
+      @media only screen and (max-width: 767px) {
+        .block-faplace .faplace__place img {
+          border-radius: 0; } }
+  .block-faplace .faplace__txt {
+    margin-top: 1.5rem;
+    margin-left: 0.5rem; }
+    @media only screen and (max-width: 767px) {
+      .block-faplace .faplace__txt {
+        margin-left: 0; } }
+    .block-faplace .faplace__txt a {
+      text-decoration: underline; }
+      .block-faplace .faplace__txt a:hover {
+        text-decoration: none; }
+    .block-faplace .faplace__txt span {
+      color: #666666; }
+
 .header {
   background-color: white; }
   .header .headerwrap {

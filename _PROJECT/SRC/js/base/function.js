@@ -445,3 +445,5 @@ $('#as_hs-sticked').hcSticky({
 	top: 60,
 	followScroll: false
 });
+
+
