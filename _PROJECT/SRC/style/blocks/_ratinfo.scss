@@ -1,0 +1,51 @@
+///////////////////////////////////////////////
+
+
+
+// рейтинг инфопанель
+
+
+.panel-ratinfo {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	margin-right: -3px;
+
+	@include respond-to(media-xs) {
+		flex-wrap: wrap;
+	}
+
+}
+
+
+.block-ratinfo {
+	background: $c-gray-lightermore;
+	padding: 1.5rem 0.5rem 0.5rem 0.5rem;
+	position: relative;
+	border-radius: 5px;
+	text-align: center;
+	align-items: stretch;
+	flex-grow: 1;
+	margin-right: 3px;
+	font-family: $font-family-cond;
+	font-size: $font-size-basemin;
+	color: $c-black;
+	@include clearfix;
+
+	@include respond-to(media-xs) {
+		margin-bottom: 3px;
+	}
+
+	img {
+		margin-bottom: 0.8rem;
+	}
+
+	.hdr {
+		font-size: $font-size-base;
+		font-weight: bold;
+		text-transform: uppercase;
+		color: $c-green;
+		margin-bottom: 0.5rem;
+	}
+
+}
