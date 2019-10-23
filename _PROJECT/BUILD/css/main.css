@@ -274,7 +274,7 @@ H2 {
   font: normal 2.5rem "Roboto Condensed", "Arial Narrow", Arial, Helvetica, sans-serif;
   line-height: 1.2;
   color: black;
-  margin-top: 0;
+  margin-top: 2rem;
   margin-bottom: 2rem; }
 
 .hdr-h2 {
@@ -943,6 +943,21 @@ HR {
   margin: 2rem auto 0 auto; }
   .b-searchbtn:hover {
     background: #999999 !important; }
+
+.b-bigbtn {
+  display: block;
+  font: bold 1.8rem "Roboto Condensed", "Arial Narrow", Arial, Helvetica, sans-serif;
+  background: #3c94cc;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  line-height: 1.1;
+  border: none;
+  border-radius: 5px;
+  padding: 2rem 5rem 2.1rem 5rem;
+  min-width: 10rem; }
+  .b-bigbtn:hover {
+    background: #ff8000 !important; }
 
 .b-link {
   display: inline-block;
@@ -2190,6 +2205,14 @@ INPUT[type="file"] {
       text-decoration: underline; }
   .pic-thumb.thumb--ftr {
     padding-bottom: 5rem; }
+  .pic-thumb.thumb--bigpic {
+    background: none;
+    text-align: center;
+    max-width: 800px;
+    margin: 1.5rem auto; }
+    .pic-thumb.thumb--bigpic .pic-thumb__txt {
+      font-size: 1.4rem;
+      padding: 1.5rem 0; }
   .pic-thumb__txt {
     font-size: 1.2rem;
     color: #666666;

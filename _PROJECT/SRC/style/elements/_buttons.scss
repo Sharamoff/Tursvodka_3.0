@@ -87,6 +87,27 @@
 }
 
 
+.b-bigbtn {
+	display: block;
+	font: bold $font-size-basemax $font-family-cond;
+	background: $color-link;
+	color: $c-white;
+	text-decoration: none;
+	text-align: center;
+	line-height: $line-height-min;
+	border: none;
+	border-radius: 5px;
+	padding: 2rem 5rem 2.1rem 5rem;
+	min-width: 10rem;
+
+	&:hover {
+		background: $color-link-hover !important;
+	}
+
+}
+
+
+
 
 .b-link {
 	display: inline-block;
