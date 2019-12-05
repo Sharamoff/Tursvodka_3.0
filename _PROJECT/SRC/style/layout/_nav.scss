@@ -28,26 +28,38 @@
 			width: 42%;
 		}
 
+		> div {
+			position: relative;
+			border: solid 2px $color-border;
+			border-radius: 4px;
+		}
+
 		input[type="search"] {
 			width: 100%;
 			font-size: $font-size-basemin;
-			padding: 0.4rem 1rem 0.5rem 3rem !important;
-			border: solid 2px $color-border;
-			border-radius: 4px;
+			padding: auto 3rem auto 1rem !important;
+			border: none;
+			margin: 0;
+			height: 28px;
+			line-height: 28px;
+		}
+
+		button[type="submit"] {
+			border: none;
+			position: absolute;
+			z-index: 3;
+			right: -2px;
+			top: -2px;
 			height: 32px;
-			line-height: 32px;
-			background: url("../img/icons/i-lupa.svg") left no-repeat;
+			width: 32px;
+			text-align: center;
+			background: transparent;
+			border-radius: 4px;
+			color: $c-gray-light;
+			font-family: $fontawesome;
 
-			@include respond-to(media-md) {
-				height: 30px;
-				line-height: 30px;
-				font-size: 14px !important;
-			}
-
-			@include respond-to(media-sm) {
-				height: 28px;
-				line-height: 28px;
-				font-size: 12px !important;
+			i {
+				font-style: normal;
 			}
 
 		}
@@ -71,17 +83,7 @@
 			cursor: pointer;
 			@include clearfix;
 
-			@include respond-to(media-md) {
-				height: 30px;
-				line-height: 30px;
-				font-size: 14px !important;
-			}
 
-			@include respond-to(media-sm) {
-				height: 28px;
-				line-height: 28px;
-				font-size: 12px !important;
-			}
 
 			span {
 				display: inline-block;

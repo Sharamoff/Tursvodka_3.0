@@ -5908,25 +5908,33 @@ INPUT[type="file"] {
     @media only screen and (min-width: 768px) and (max-width: 991px) {
       .navbar-custom .navbar-form {
         width: 42%; } }
+    .navbar-custom .navbar-form > div {
+      position: relative;
+      border: solid 2px #bbbbbb;
+      border-radius: 4px; }
     .navbar-custom .navbar-form input[type="search"] {
       width: 100%;
       font-size: 1.4rem;
-      padding: 0.4rem 1rem 0.5rem 3rem !important;
-      border: solid 2px #bbbbbb;
-      border-radius: 4px;
+      padding: auto 3rem auto 1rem !important;
+      border: none;
+      margin: 0;
+      height: 28px;
+      line-height: 28px; }
+    .navbar-custom .navbar-form button[type="submit"] {
+      border: none;
+      position: absolute;
+      z-index: 3;
+      right: -2px;
+      top: -2px;
       height: 32px;
-      line-height: 32px;
-      background: url("../img/icons/i-lupa.svg") left no-repeat; }
-      @media only screen and (min-width: 992px) and (max-width: 1199px) {
-        .navbar-custom .navbar-form input[type="search"] {
-          height: 30px;
-          line-height: 30px;
-          font-size: 14px !important; } }
-      @media only screen and (min-width: 768px) and (max-width: 991px) {
-        .navbar-custom .navbar-form input[type="search"] {
-          height: 28px;
-          line-height: 28px;
-          font-size: 12px !important; } }
+      width: 32px;
+      text-align: center;
+      background: transparent;
+      border-radius: 4px;
+      color: #bbbbbb;
+      font-family: FontAwesome; }
+      .navbar-custom .navbar-form button[type="submit"] i {
+        font-style: normal; }
   .navbar-custom .navbar-region {
     position: relative; }
     .navbar-custom .navbar-region__fld-region {
@@ -5945,16 +5953,6 @@ INPUT[type="file"] {
         display: table; }
       .navbar-custom .navbar-region__fld-region:after {
         clear: both; }
-      @media only screen and (min-width: 992px) and (max-width: 1199px) {
-        .navbar-custom .navbar-region__fld-region {
-          height: 30px;
-          line-height: 30px;
-          font-size: 14px !important; } }
-      @media only screen and (min-width: 768px) and (max-width: 991px) {
-        .navbar-custom .navbar-region__fld-region {
-          height: 28px;
-          line-height: 28px;
-          font-size: 12px !important; } }
       .navbar-custom .navbar-region__fld-region span {
         display: inline-block;
         float: left;
