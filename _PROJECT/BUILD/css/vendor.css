@@ -13125,3 +13125,19 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.focus {
     .slick-dots li.slick-active button:before {
       color: #333333;
       opacity: 0.75; }
+
+.flex-images {
+  overflow: hidden; }
+
+.flex-images .item {
+  float: left;
+  margin: 4px;
+  border: 1px solid #eee;
+  box-sizing: content-box;
+  overflow: hidden;
+  position: relative; }
+
+.flex-images .item img {
+  display: block;
+  width: auto;
+  height: 100%; }

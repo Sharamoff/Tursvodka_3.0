@@ -5915,7 +5915,7 @@ INPUT[type="file"] {
     .navbar-custom .navbar-form input[type="search"] {
       width: 100%;
       font-size: 1.4rem;
-      padding: auto 3rem auto 1rem !important;
+      padding: 0 3rem 0 1rem !important;
       border: none;
       margin: 0;
       height: 28px;

@@ -450,4 +450,13 @@ $('#as_hs-sticked').hcSticky({
 });
 
 
+
+
+// гибкая фотогалерея
+
+$('.flex-images').flexImages({
+	rowHeight: 360
+});
+
+
 });

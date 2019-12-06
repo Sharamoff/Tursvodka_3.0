@@ -10,3 +10,5 @@
 //= vendor/salvattore.min.js
 //= vendor/slick.min.js
 //= vendor/hc-sticky.js
+
+//= vendor/flex-images.min.js
