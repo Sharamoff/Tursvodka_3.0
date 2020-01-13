@@ -651,8 +651,9 @@
 
 
 					<ul class="nav nav-tabs">
-						<li class="active"><a href="#search_short" data-toggle="tab">Быстрый<span class="hidden-xs"> поиск</span></a></li>
-						<li class="hidden-xs"><a href="#search_full" data-toggle="tab">Расширенный<span class="hidden-xs">  поиск</span></a></li>
+						<li class="active"><a href="#search_short" data-toggle="tab">Быстрый <br class="visible-xs"> поиск</a></li>
+						<li><a href="#search_full" data-toggle="tab">Расширенный <br class="visible-xs"> поиск</a></li>
+						<li><a href="#search_order" data-toggle="tab">Заявка <br class="visible-xs"> на подбор тура</a></li>
 					</ul>
 
 
@@ -921,7 +922,7 @@
 
 
 						<!-- search full -->
-						<div class="block-search__full tab-pane hidden-xs" id="search_full">
+						<div class="block-search__full tab-pane" id="search_full">
 							<div class="panel-quest">
 								<div class="panel-quest__btn"><button class="c--white" rel="quest_full" title="Помощь"></button></div>
 								<div class="panel-quest__pane" id="quest_full">
@@ -1354,6 +1355,28 @@
 						<!-- end search full -->
 
 
+
+						<!-- search full -->
+						<div class="block-search__full tab-pane" id="search_order">
+							<div class="panel-quest">
+								<div class="panel-quest__btn"><button class="c--white" rel="quest_full" title="Помощь"></button></div>
+								<div class="panel-quest__pane" id="quest_order">
+									<p class="hdr">УВАЖАЕМЫЙ ПОСЕТИТЕЛЬ!</p>
+									<p>Вы выбираете город, из которого планируете отправляться на отдых, и определяетесь с направлением. Это может быть страна, город, или курорт. На сайте можно ввести название полностью или частично и затем выбрать направление из выпадающего списка.</p>
+									<p>Далее указываете временной промежуток, когда вы желаете вылетать на отдых, вводите требуемое количество ночей. Указываете количество взрослых и детей, уточняете возраст детей.</p>
+								</div>
+							</div>
+
+							<!-- form -->
+							<form action="" name="fm-search__full" id="fm-search__order" class="formtype-search">
+
+							</form>
+							<!-- end form -->
+
+						</div>
+						<!-- end search full -->
+
+
 					</div>
 
 
@@ -1383,6 +1406,7 @@
 			<article class="ac_consult visible-xs visible-sm">
 
 				<div class="block-consult">
+					<button type="button" class="b-btn consult__refresh" title="Обновить данные"><i class="fa fa-refresh" aria-hidden="true"></i></button>
 					<div class="hdr-h2 hdr--lined"><ins class="emphas bk--red"></ins>Менеджер по продажам туров</div>
 					<div class="clearfix">
 						<div class="consult__img">
@@ -1532,6 +1556,7 @@
 
 
 				<div class="block-consult">
+					<button type="button" class="b-btn consult__refresh" title="Обновить данные"><i class="fa fa-refresh" aria-hidden="true"></i></button>
 					<div class="hdr-h2 hdr--lined"><ins class="emphas bk--red"></ins>Менеджер по продажам туров</div>
 					<div class="clearfix">
 						<div class="consult__img">
@@ -1898,6 +1923,7 @@
 	<button type="button" class="close">&times;</button>
 
 	<div class="block-consult">
+		<button type="button" class="b-btn consult__refresh" title="Обновить данные"><i class="fa fa-refresh" aria-hidden="true"></i></button>
 		<div class="hdr-h2 hdr--lined"><ins class="emphas bk--blue"></ins>Менеджер по продажам туров</div>
 		<div class="clearfix">
 			<div class="consult__img">

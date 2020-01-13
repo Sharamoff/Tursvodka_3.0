@@ -16,15 +16,25 @@
 		li {
 
 			> a {
-				padding: 1.2rem 5rem;
+				padding: 1.2rem 2rem;
 				background-color: $c-gray-lightermore;
 				border-color: $c-gray-lighter;
 				border-bottom: solid 1px $c-yellow;
 				text-align: center;
+				line-height: 1.1;
+
+				@include respond-to(media-md) {
+					font-size: $font-size-basemin;
+				}
+
+				@include respond-to(media-sm) {
+					font-size: $font-size-basemin;
+					padding: 1rem;
+				}
 
 				@include respond-to(media-xs) {
-					padding: 1.2rem 2.9rem;
-					overflow: hidden;
+					font-size: $font-size-basemin;
+					padding: 1rem 0.9rem;
 				}
 
 			}

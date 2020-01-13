@@ -6,6 +6,7 @@
 
 
 .block-consult {
+	position: relative;
 	border: solid 2px $c-gray-lighter;
 	border-radius: 5px;
 	padding: 1.5rem;
@@ -17,6 +18,27 @@
 	}
 	@include respond-to(media-sm) {
 		margin-bottom: 3rem;
+	}
+
+	.consult__refresh {
+		position: absolute;
+		z-index: 9;
+		top: -2px;
+		right: -2px;
+		padding: 0.5rem 0.8rem 0.7rem 0.8rem;
+		min-width: auto;
+		border: none;
+		border-radius: 0 5px 0 5px;
+		background: $c-gray-light;
+
+		&:hover {
+			background: $c-gray;
+		}
+
+	}
+
+	.hdr-h2 {
+		padding-right: 2rem;
 	}
 
 	.consult__img {
