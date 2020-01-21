@@ -230,7 +230,6 @@ $('input[name="who-childs"]').on('change', function () {
 
 
 
-
 // фиксируем в правое колонке
 
 function fixAsFilterHotel() {  // фильтр отелей
@@ -308,7 +307,6 @@ $('.buytours__btn').on('click', function (event) {
 $('.panel-quest__btn button').on('click', function () {
 	$('#' + $(this).attr('rel')).fadeToggle();
 });
-
 
 
 

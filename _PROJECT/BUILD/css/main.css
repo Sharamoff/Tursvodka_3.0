@@ -2038,6 +2038,32 @@ INPUT[type="file"] {
   .timeperiod-panel span {
     margin: 0.6rem 0.5rem; }
 
+.form-control-feedback {
+  margin-top: 0.3rem; }
+  @media only screen and (max-width: 767px) {
+    .form-control-feedback {
+      margin-top: -0.3rem; } }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .form-control-feedback {
+      margin-top: -0.3rem; } }
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .form-control-feedback {
+      margin-top: 0.1rem; } }
+
+.with-errors {
+  display: inline-block;
+  background: #cc0000;
+  color: white !important;
+  border-radius: 3px;
+  font-family: "Roboto Condensed", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 1.1; }
+  .with-errors ul {
+    margin: 0.3rem 1rem 0.4rem 1rem; }
+  .with-errors li {
+    margin: 0;
+    padding: 0; }
+
 .icon--map:after {
   content: "\f041"; }
 

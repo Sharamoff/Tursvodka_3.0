@@ -401,3 +401,43 @@ INPUT[type="file"] {
 	}
 
 }
+
+
+
+
+.form-control-feedback {
+	margin-top: 0.3rem;
+
+	@include respond-to(media-xs) {
+		margin-top: -0.3rem;
+	}
+
+	@include respond-to(media-sm) {
+		margin-top: -0.3rem;
+	}
+
+	@include respond-to(media-md) {
+		margin-top: 0.1rem;
+	}
+
+}
+
+.with-errors {
+	display: inline-block;
+	background: $c-red;
+	color: $c-white !important;
+	border-radius: 3px;
+	font-family: $font-family-cond;
+	font-size: $font-size-12;
+	line-height: 1.1;
+
+	ul {
+		margin: 0.3rem 1rem 0.4rem 1rem;
+	}
+
+	li {
+		margin: 0;
+		padding: 0;
+	}
+
+}

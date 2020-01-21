@@ -169,7 +169,7 @@
 							</div>
 
 							<!-- form -->
-							<form action="" name="fm-search__short" id="fm-search__short" class="formtype-search">
+							<form action="" name="fm-search__short" id="fm-search__short" class="formtype-search" data-toggle="validator">
 
 
 								<div class="row">
@@ -303,9 +303,11 @@
 									</div>
 
 									<div class="col-sm-6">
-										<div class="form-group">
+										<div class="form-group has-feedback">
 											<label for="fld-search__short-resort">Направления:</label>
-											<input id="fld-search__short-resort" placeholder="Введите часть названия и выберите из списка" value="" autocomplete="off" class="form-control">
+											<input id="fld-search__short-resort" placeholder="Введите часть названия и выберите из списка" value="" autocomplete="off" class="form-control" data-error="Пожалуйста заполните это поле" required>
+											<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+											<div class="help-block with-errors"></div>
 										</div>
 									</div>
 
@@ -400,7 +402,7 @@
 
 
 								<div class="align-block"><div class="align-cr"><div class="align-cl">
-									<button class="b-searchbtn">Найти туры</button>
+									<button class="b-searchbtn" type="submit">Найти туры</button>
 								</div></div></div>
 
 
