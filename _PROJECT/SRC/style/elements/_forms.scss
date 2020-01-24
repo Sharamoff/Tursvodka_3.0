@@ -424,6 +424,9 @@ INPUT[type="file"] {
 
 .with-errors {
 	display: inline-block;
+	position: absolute;
+	z-index: 2;
+	bottom: -3.2rem;
 	background: $c-red;
 	color: $c-white !important;
 	border-radius: 3px;

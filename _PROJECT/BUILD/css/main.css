@@ -2059,6 +2059,9 @@ INPUT[type="file"] {
 
 .with-errors {
   display: inline-block;
+  position: absolute;
+  z-index: 2;
+  bottom: -3.2rem;
   background: #cc0000;
   color: white !important;
   border-radius: 3px;

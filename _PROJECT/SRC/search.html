@@ -848,7 +848,7 @@
 
 
 
-						<!-- search full -->
+						<!-- order -->
 						<div class="block-search__full tab-pane" id="search_order">
 							<div class="panel-quest">
 								<div class="panel-quest__btn"><button class="c--white" rel="quest_full" title="Помощь"></button></div>
@@ -860,13 +860,491 @@
 							</div>
 
 							<!-- form -->
-							<form action="" name="fm-search__full" id="fm-search__order" class="formtype-search">
-
+							<form name="form_appselect" id="form_appselect" method="post" action="#send" autocomplete="off" class="formtype-search" data-toggle="validator" novalidate="true">
+								<input type="hidden" name="filter_flag" value="1">
+								<input type="hidden" name="form_appselect" value="1">
+								<input type="hidden" name="form_check_code" value="">
+								<div class="row">
+									<div class="col-sm-6">
+										<div class="form-group">
+											<label for="citydep_id">Город вылета:</label>
+											<select name="citydep_id" id="citydep_id" class="form-control" style="border: 1px solid rgb(204, 204, 204);">
+												<option value="832" selected="">Москва</option>
+												<option value="1264">Санкт-Петербург</option>
+												<option value="1357">Абакан</option>
+												<option value="1347">Актау</option>
+												<option value="1342">Актобе</option>
+												<option value="1312">Алматы</option>
+												<option value="1329">Алушта</option>
+												<option value="1335">Анадырь</option>
+												<option value="1372">Анапа</option>
+												<option value="1330">Тольятти</option>
+												<option value="1275">Архангельск</option>
+												<option value="1323">Нур-Султан</option>
+												<option value="1292">Астрахань</option>
+												<option value="1346">Атырау</option>
+												<option value="1373">Баку</option>
+												<option value="1305">Барнаул</option>
+												<option value="1370">Батуми</option>
+												<option value="1306">Белгород</option>
+												<option value="1351">Бишкек</option>
+												<option value="1331">Благовещенск</option>
+												<option value="1340">Братск</option>
+												<option value="1321">Брест</option>
+												<option value="1302">Брянск</option>
+												<option value="1398">Бухара</option>
+												<option value="1380">Варшава</option>
+												<option value="1360">Вильнюс</option>
+												<option value="1387">Винница</option>
+												<option value="1364">Витебск</option>
+												<option value="1293">Владивосток</option>
+												<option value="1314">Владикавказ</option>
+												<option value="1279">Волгоград</option>
+												<option value="1283">Воронеж</option>
+												<option value="1381">Гданьск</option>
+												<option value="1366">Гомель</option>
+												<option value="1368">Гродно</option>
+												<option value="1376">Грозный</option>
+												<option value="1338">Курган</option>
+												<option value="1320">Днепр</option>
+												<option value="1397">Гюмри</option>
+												<option value="1316">Донецк</option>
+												<option value="1382">Душанбе</option>
+												<option value="1265">Екатеринбург</option>
+												<option value="1378">Ереван</option>
+												<option value="1315">Запорожье</option>
+												<option value="1324">Ивано-Франковск</option>
+												<option value="1375">Ижевск</option>
+												<option value="1285">Иркутск</option>
+												<option value="1266">Казань</option>
+												<option value="1280">Калининград</option>
+												<option value="1383">Калуга</option>
+												<option value="1313">Нальчик</option>
+												<option value="1343">Караганда</option>
+												<option value="1282">Кемерово</option>
+												<option value="1311">Киев</option>
+												<option value="1402">Карши</option>
+												<option value="1384">Киров</option>
+												<option value="1317">Кишинев</option>
+												<option value="1345">Костанай</option>
+												<option value="1270">Краснодар</option>
+												<option value="1281">Красноярск</option>
+												<option value="1395">Кокшетау</option>
+												<option value="1388">Кривой Рог</option>
+												<option value="1287">Курск</option>
+												<option value="1354">Липецк</option>
+												<option value="1325">Луганск</option>
+												<option value="1322">Львов</option>
+												<option value="1334">Магадан</option>
+												<option value="1288">Магнитогорск</option>
+												<option value="1358">Махачкала</option>
+												<option value="1299">Минеральные Воды</option>
+												<option value="1308">Минск</option>
+												<option value="1367">Могилев</option>
+												<option value="1284">Мурманск</option>
+												<option value="1386">Набережные Челны</option>
+												<option value="1298">Нижневартовск</option>
+												<option value="1289">Нижнекамск</option>
+												<option value="1268">Нижний Новгород</option>
+												<option value="1389">Николаев</option>
+												<option value="1341">Новокузнецк</option>
+												<option value="1403">Навои</option>
+												<option value="1339">Новороссийск</option>
+												<option value="1267">Новосибирск</option>
+												<option value="1353">Новый Уренгой</option>
+												<option value="1374">Норильск</option>
+												<option value="1319">Одесса</option>
+												<option value="1278">Омск</option>
+												<option value="1290">Оренбург</option>
+												<option value="1304">Орск</option>
+												<option value="1348">Павлодар</option>
+												<option value="1336">Пенза</option>
+												<option value="1276">Пермь</option>
+												<option value="1333">Петропавловск-Камчатский</option>
+												<option value="1390">Полтава</option>
+												<option value="1385">Псков</option>
+												<option value="1363">Псков</option>
+												<option value="1371">Рига</option>
+												<option value="1391">Ровно</option>
+												<option value="1269">Ростов-на-Дону</option>
+												<option value="1271">Самара</option>
+												<option value="1396">Петропавловск</option>
+												<option value="1300">Саратов</option>
+												<option value="1365">Севастополь</option>
+												<option value="1326">Симферополь</option>
+												<option value="1291">Сочи</option>
+												<option value="1355">Ставрополь</option>
+												<option value="1294">Сургут</option>
+												<option value="1337">Сызрань</option>
+												<option value="1399">Самарканд</option>
+												<option value="1296">Сыктывкар</option>
+												<option value="1377">Таллин</option>
+												<option value="1356">Ташкент</option>
+												<option value="1404">София</option>
+												<option value="1369">Тбилиси</option>
+												<option value="1301">Томск</option>
+												<option value="1328">Трускавец</option>
+												<option value="1273">Тюмень</option>
+												<option value="1309">Улан-Удэ</option>
+												<option value="1295">Ульяновск</option>
+												<option value="1394">Тараз</option>
+												<option value="1350">Уральск</option>
+												<option value="1362">Ургенч</option>
+												<option value="1344">Усть-Каменогорск</option>
+												<option value="1274">Уфа</option>
+												<option value="1401">Термез</option>
+												<option value="1286">Хабаровск</option>
+												<option value="1297">Ханты-Мансийск</option>
+												<option value="1318">Харьков</option>
+												<option value="1361">Хельсинки</option>
+												<option value="1392">Херсон</option>
+												<option value="1303">Чебоксары</option>
+												<option value="1272">Челябинск</option>
+												<option value="1393">Черновцы</option>
+												<option value="1352">Чита</option>
+												<option value="1349">Шымкент</option>
+												<option value="1307">Южно-Сахалинск</option>
+												<option value="1400">Фергана</option>
+												<option value="1332">Якутск</option>
+												<option value="1327">Ялта</option>
+												<option value="1379">Ярославль</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="form-group">
+											<label for="country">Страна:</label>
+											<select name="country" id="country" class="form-control" onchange="var a=['resort', 'hotel']; updateSelect2(a, this.value, 'citiesareaslist');" style="border: 1px solid rgb(204, 204, 204);">
+												<option value="0">--- любая ---</option>
+												<option value="314">Абхазия</option>
+												<option value="142">Австралия</option>
+												<option value="1">Австрия</option>
+												<option value="45">Азербайджан</option>
+												<option value="2">Албания</option>
+												<option value="90">Алжир</option>
+												<option value="91">Ангола</option>
+												<option value="3">Андорра</option>
+												<option value="160">Антигуа и Барбуда</option>
+												<option value="180">Аргентина</option>
+												<option value="46">Армения</option>
+												<option value="47">Афганистан</option>
+												<option value="161">Багамы</option>
+												<option value="48">Бангладеш</option>
+												<option value="162">Барбадос</option>
+												<option value="49">Бахрейн</option>
+												<option value="163">Белиз</option>
+												<option value="5">Бельгия</option>
+												<option value="92">Бенин</option>
+												<option value="6">Болгария</option>
+												<option value="181">Боливия</option>
+												<option value="7">Босния и Герцеговина</option>
+												<option value="93">Ботсвана</option>
+												<option value="182">Бразилия</option>
+												<option value="50">Бруней</option>
+												<option value="94">Буркина-Фасо</option>
+												<option value="95">Бурунди</option>
+												<option value="51">Бутан</option>
+												<option value="143">Вануату</option>
+												<option value="8">Ватикан</option>
+												<option value="9">Великобритания</option>
+												<option value="10">Венгрия</option>
+												<option value="183">Венесуэла</option>
+												<option value="52">Восточный Тимор</option>
+												<option value="53">Вьетнам</option>
+												<option value="96">Габон</option>
+												<option value="164">Гаити</option>
+												<option value="184">Гайана</option>
+												<option value="97">Гамбия</option>
+												<option value="98">Гана</option>
+												<option value="165">Гватемала</option>
+												<option value="99">Гвинея</option>
+												<option value="100">Гвинея-Бисау</option>
+												<option value="11">Германия</option>
+												<option value="166">Гондурас</option>
+												<option value="167">Гренада</option>
+												<option value="12">Греция</option>
+												<option value="54">Грузия</option>
+												<option value="13">Дания</option>
+												<option value="101">Демократическая Республика Конго</option>
+												<option value="102">Джибути</option>
+												<option value="168">Доминика</option>
+												<option value="169">Доминиканская Республика</option>
+												<option value="103">Египет</option>
+												<option value="104">Замбия</option>
+												<option value="105">Зимбабве</option>
+												<option value="55">Израиль</option>
+												<option value="56">Индия</option>
+												<option value="57">Индонезия</option>
+												<option value="58">Иордания</option>
+												<option value="59">Ирак</option>
+												<option value="60">Иран</option>
+												<option value="14">Ирландия</option>
+												<option value="15">Исландия</option>
+												<option value="16">Испания</option>
+												<option value="17">Италия</option>
+												<option value="61">Йемен</option>
+												<option value="106">Кабо-Верде</option>
+												<option value="62">Казахстан</option>
+												<option value="200">Камбоджа</option>
+												<option value="107">Камерун</option>
+												<option value="157">Канада</option>
+												<option value="63">Катар</option>
+												<option value="108">Кения</option>
+												<option value="18">Кипр</option>
+												<option value="64">Киргизия</option>
+												<option value="145">Кирибати</option>
+												<option value="65">Китай</option>
+												<option value="66">КНДР</option>
+												<option value="185">Колумбия</option>
+												<option value="109">Коморские острова</option>
+												<option value="170">Коста-Рика</option>
+												<option value="110">Кот-д’Ивуар</option>
+												<option value="171">Куба</option>
+												<option value="67">Кувейт</option>
+												<option value="68">Лаос</option>
+												<option value="19">Латвия</option>
+												<option value="111">Лесото</option>
+												<option value="112">Либерия</option>
+												<option value="69">Ливан</option>
+												<option value="113">Ливия</option>
+												<option value="20">Литва</option>
+												<option value="21">Лихтенштейн</option>
+												<option value="22">Люксембург</option>
+												<option value="114">Маврикий</option>
+												<option value="214">Мавритания</option>
+												<option value="115">Мадагаскар</option>
+												<option value="116">Малави</option>
+												<option value="70">Малайзия</option>
+												<option value="117">Мали</option>
+												<option value="71">Мальдивы</option>
+												<option value="24">Мальта</option>
+												<option value="118">Марокко</option>
+												<option value="146">Маршалловы Острова</option>
+												<option value="158">Мексика</option>
+												<option value="119">Мозамбик</option>
+												<option value="25">Молдавия</option>
+												<option value="26">Монако</option>
+												<option value="72">Монголия</option>
+												<option value="73">Мьянма</option>
+												<option value="120">Намибия</option>
+												<option value="148">Науру</option>
+												<option value="74">Непал</option>
+												<option value="122">Нигер</option>
+												<option value="123">Нигерия</option>
+												<option value="27">Нидерланды</option>
+												<option value="172">Никарагуа</option>
+												<option value="150">Новая Зеландия</option>
+												<option value="28">Норвегия</option>
+												<option value="75">ОАЭ</option>
+												<option value="76">Оман</option>
+												<option value="77">Пакистан</option>
+												<option value="151">Палау</option>
+												<option value="173">Панама</option>
+												<option value="152">Папуа-Новая Гвинея</option>
+												<option value="186">Парагвай</option>
+												<option value="187">Перу</option>
+												<option value="29">Польша</option>
+												<option value="30">Португалия</option>
+												<option value="4">Республика Беларусь</option>
+												<option value="121">Республика Конго</option>
+												<option value="230">Республика Корея</option>
+												<option value="31">Россия</option>
+												<option value="124">Руанда</option>
+												<option value="32">Румыния</option>
+												<option value="174">Сальвадор</option>
+												<option value="144">Самоа</option>
+												<option value="33">Сан-Марино</option>
+												<option value="125">Сан-Томе и Принсипи</option>
+												<option value="79">Саудовская Аравия</option>
+												<option value="23">Северная Македония</option>
+												<option value="127">Сейшелы</option>
+												<option value="128">Сенегал</option>
+												<option value="175">Сент-Винсент и Гренадины</option>
+												<option value="176">Сент-Китс и Невис</option>
+												<option value="177">Сент-Люсия</option>
+												<option value="34">Сербия</option>
+												<option value="80">Сингапур</option>
+												<option value="81">Сирия</option>
+												<option value="35">Словакия</option>
+												<option value="36">Словения</option>
+												<option value="153">Соломоновы Острова</option>
+												<option value="129">Сомали</option>
+												<option value="130">Судан</option>
+												<option value="188">Суринам</option>
+												<option value="159">США</option>
+												<option value="131">Сьерра-Леоне</option>
+												<option value="82">Таджикистан</option>
+												<option value="83">Таиланд</option>
+												<option value="132">Танзания</option>
+												<option value="133">Того</option>
+												<option value="154">Тонга</option>
+												<option value="178">Тринидад и Тобаго</option>
+												<option value="155">Тувалу</option>
+												<option value="134">Тунис</option>
+												<option value="84">Туркменистан</option>
+												<option value="85">Турция</option>
+												<option value="135">Уганда</option>
+												<option value="86">Узбекистан</option>
+												<option value="37">Украина</option>
+												<option value="189">Уругвай</option>
+												<option value="147">Федеративные Штаты Микронезии</option>
+												<option value="156">Фиджи</option>
+												<option value="87">Филиппины</option>
+												<option value="38">Финляндия</option>
+												<option value="39">Франция</option>
+												<option value="40">Хорватия</option>
+												<option value="136">Центрально-Африканская Республика</option>
+												<option value="137">Чад</option>
+												<option value="223">Черногория</option>
+												<option value="41">Чехия</option>
+												<option value="190">Чили</option>
+												<option value="42">Швейцария</option>
+												<option value="43">Швеция</option>
+												<option value="88">Шри-Ланка</option>
+												<option value="191">Эквадор</option>
+												<option value="138">Экваториальная Гвинея</option>
+												<option value="139">Эритрея</option>
+												<option value="126">Эсватини</option>
+												<option value="44">Эстония</option>
+												<option value="140">Эфиопия</option>
+												<option value="141">Южно-Африканская Республика</option>
+												<option value="313">Южный Судан</option>
+												<option value="179">Ямайка</option>
+												<option value="89">Япония</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-6">
+										<div class="form-group">
+											<label for="resort">Курорт:</label>
+											<select name="resort" id="resort" class="form-control" onchange="var a=['hotel'];updateSelect2(a, this.value, 'hotelslist');" disabled="" style="border: 1px solid rgb(204, 204, 204);">
+												<option value="0">--- любой ---</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="form-group">
+											<label for="hotel">Отель:</label>
+											<select name="hotel" id="hotel" class="form-control" disabled="" style="border: 1px solid rgb(204, 204, 204);">
+												<option value="0">--- любой ---</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-3 col-xs-12">
+										<div class="form-group">
+											<label for="df">Интервал дат вылета:</label>
+											<div class="input-daterange input-group hasdatepicker-daterange_2" id="fld-search__order-df" title="Интервал дат вылета">
+												<input type="text" name="df" id="df" value="31.01.2020" class="form-control ts_app_datepickerdf" style="border: 1px solid rgb(204, 204, 204);">
+												<span class="input-group-addon">-</span>
+												<input type="text" name="dt" id="dt" value="07.02.2020" class="form-control ts_app_datepickerdt" style="border: 1px solid rgb(204, 204, 204);">
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-3 col-xs-12">
+										<div class="form-group-inline">
+											<div class="form-group col-xs-6">
+												<label for="dayfrom">Ночей от:</label>
+												<input type="number" name="dayfrom" id="dayfrom" value="7" min="1" max="34" class="form-control" style="border: 1px solid rgb(204, 204, 204);">
+											</div>
+											<div class="form-group col-xs-6">
+												<label for="dayto">до:</label>
+												<input type="number" name="dayto" id="dayto" value="14" min="1" max="34" class="form-control" style="border: 1px solid rgb(204, 204, 204);">
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="form-group">
+											<label>Категория:</label>
+											<div class="form-fld-inline">
+												<label class="label--ch"><input type="checkbox" name="star_2" value="2" checked="">2*</label>
+												<label class="label--ch"><input type="checkbox" name="star_3" value="3" checked="">3*</label>
+												<label class="label--ch"><input type="checkbox" name="star_4" value="4" checked="">4*</label>
+												<label class="label--ch"><input type="checkbox" name="star_5" value="5" checked="">5*</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-6 col-xs-12">
+										<div class="form-group-inline">
+											<div class="form-group col-xs-6">
+												<label for="adult">Взрослых:</label>
+												<input type="number" name="adult" id="adult" value="2" min="1" max="5" class="form-control" style="border: 1px solid rgb(204, 204, 204);">
+											</div>
+											<div class="form-group col-xs-6">
+												<label for="kid">Детей:</label>
+												<input type="number" name="kid" id="kid" value="0" min="0" max="3" class="form-control" style="border: 1px solid rgb(204, 204, 204);">
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-6 col-xs-12">
+										<div class="form-group">
+											<label for="priceto">Стоимость тура не более:</label>
+											<div class="form-fld-inline">
+												<div class="col-sm-6 col-xs-6">
+													<input type="number" name="priceto" id="priceto" value="" min="1000" step="100" class="form-control">
+												</div>
+												<div class="col-sm-6 col-xs-6">
+													<select name="currency" id="currency" class="form-control" style="border: 1px solid rgb(204, 204, 204);">
+														<option value="RUB" selected="">RUB</option>
+														<option value="USD">USD</option>
+														<option value="EUR">EUR</option>
+													</select>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-6 col-xs-12">
+										<div class="form-group">
+											<label for="note">Уточнения и пожелания:</label>
+											<textarea name="note" id="note" rows="13" class="form-control"></textarea>
+										</div>
+									</div>
+									<div class="col-sm-6 col-xs-12">
+										<div class="form-group-inline">
+											<div class="form-group has-feedback col-sm-12 col-xs-12 has-success">
+												<label for="object_order_office"><span class="required"></span>Офис продаж:</label>
+												<select name="office_mail" id="object_order_office" class="form-control" data-error="Пожалуйста, выберите офис из списка" required="" style="border: 1px solid rgb(204, 204, 204);">
+													<option value="">-- выберите офис --</option>
+													<option value="5664">г. Москва, м. Китай-город - МАРИЯ - туристическая фирма</option>
+													<option value="12996">г. Москва, м. Кропоткинская - Наш Тур</option>
+													<option value="13464">г. Москва, м. Смоленская (Арбатско-Покровская линия) - ДОЛЬЧЕ ВИТА ТРЭВЭЛ</option>
+												</select>
+												<div class="help-block with-errors"></div>
+											</div>
+											<div class="form-group has-feedback col-sm-12 col-xs-12 has-success">
+												<label for="name"><span class="required"></span>Ваше имя:</label>
+												<input type="text" name="name" id="name" value="" class="form-control" data-error="Пожалуйста, заполните поле" required="" style="border: 1px solid rgb(204, 204, 204);">
+												<span class="glyphicon form-control-feedback glyphicon-ok" aria-hidden="true"></span>
+												<div class="help-block with-errors"></div>
+											</div>
+											<div class="form-group has-feedback col-sm-12 col-xs-12">
+												<label for="phone"><span class="required"></span>Ваш телефон:</label>
+												<input type="text" name="phone" id="phone" value="" class="form-control" data-error="Пожалуйста, заполните поле" required="">
+												<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+												<div class="help-block with-errors"></div>
+											</div>
+											<div class="form-group col-sm-12 col-xs-12">
+												<label for="email">Ваш e-mail:</label>
+												<input type="text" name="email" id="email" value="" class="form-control">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="align-block"><div class="align-cr"><div class="align-cl">
+									<button class="b-searchbtn">Отправить</button>
+								</div></div></div>
 							</form>
 							<!-- end form -->
 
 						</div>
-						<!-- end search full -->
+						<!-- end order -->
 
 
 					</div>
