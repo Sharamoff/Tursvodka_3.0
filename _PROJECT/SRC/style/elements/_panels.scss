@@ -307,11 +307,60 @@
 
 
 
+.panel-xs-super {
+	display: none;
+	position: fixed;
+	z-index: 9990;
+	padding: 0 15px;
+	text-align: center;
 
+	@include respond-to(media-xs) {
+		display: block;
+	}
 
+	.super__icon {
+		position: absolute;
+		left: 17px;
+		top: 1.3rem;
+		font-size: 2.5rem;
+		color: $c-yellow-light;
+	}
 
+	.super__close {
+		position: absolute;
+		right: 15px;
+		top: 1.5rem;
+		font-size: 2.1rem;
+		color: $c-gray;
+		cursor: pointer;
+	}
 
+	.super__link {
+		display: inline-block;
+		text-decoration: none;
+		margin-left: auto;
+		margin-right: auto;
+		font: $font-size-basemax $font-family-cond;
+		padding: 1.5rem 3rem;
+	}
 
+}
+
+.panel-xs--top {
+	top: 4rem;
+	left: 0;
+	right: 0;
+	background: $c-yellow-lightermore;
+	box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3);
+}
+
+.panel-xs--btm {
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: $c-yellow-lightermore;
+	border-top: solid 1px $c-gray-lighter;
+}
 
 
 

@@ -97,18 +97,17 @@
 
 			</div>
 
+
 		</div>
 
 
 
 		<div class="header-base">
 
-			<div class="header-base__logo">
-				<a href="https://www.tursvodka.ru/">
-					<img src="img/logo.svg" alt="">
-					<div class="slogan hidden-xs">Портал путешествий</div>
-				</a>
-			</div>
+
+			<a href="https://www.tursvodka.ru/" class="header-base__logo">
+				<div class="slogan hidden-xs">Портал путешествий</div>
+			</a>
 
 
 			<div class="navigation-block">
@@ -117,8 +116,9 @@
 			
 			
 			
-					<div class="navbar-header">
+					<div class="navbar-header visible-xs">
 						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainmenu"><i class="fa fa-bars"></i></button>
+						<button class="totop" title="Наверх"><i class="fa fa-chevron-circle-up"></i></button>
 					</div>
 			
 			
@@ -178,6 +178,7 @@
 							</div>
 							<div class="navbar-region__fld-region visible-xs">
 								<span>Ваш город:</span> <a href="#">Петропавловск-Камчатский</a>
+								<a href="#" class="navbar-superlink">Где купить?</a>
 							</div>
 			
 							<div class="navbar-region__plate dropdown-menu dropdown-menu-right animated fadeIn">
@@ -555,7 +556,7 @@
 									<li><a href="#">Пляжный отдых</a></li>
 									<li><a href="#">Шоп-туры</a></li>
 									<li><a href="#">Туры на 23 февраля</a></li>
-									<li><a href="#">Туры на 8 марта</a></li>
+									<li><a href="#">Туры на 8 м��рта</a></li>
 									<li><a href="#">Туры на майские праздники</a></li>
 									<li><a href="#">Отдых на островах</a></li>
 									<li><a href="#">Детский отдых</a></li>
@@ -637,201 +638,201 @@
 
 
 
-		<div class="header-tourpicking">
-
-			<form action="" name="fm-tourpicking" id="fm-tourpicking">
-			
-			
-			
-				<div class="dropdown dropdown--whence">
-			
-					<div class="tourpicking-fldbox dropdown-toggle" data-toggle="dropdown">
-						<div class="fldbox-sh"></div>
-						<input type="text" name="tourpicking-fld-whence" id="tourpicking-fld-whence" value="Санкт-Петербург" placeholder="откуда" title="Санкт-Петербург" readonly>
-					</div>
-			
-					<div class="tourpicking-dropdown dropdown-menu" id="tourpicking-whence">
-						<ul class="tpd-list">
-							<li>Москва</li>
-							<li>Санкт-Петербург</li>
-							<hr>
-							<li>Абакан</li>
-							<li>Анапа</li>
-							<li>Арзамас</li>
-							<li>Архангельск</li>
-							<li>Балаково</li>
-							<li>Барнаул</li>
-							<li>Белгород</li>
-							<li>Бийск</li>
-							<li>Брянск</li>
-							<li>Владикавказ</li>
-							<li>Владимир</li>
-							<li>Волгоград</li>
-							<li>Волоколамск</li>
-							<li>Воронеж</li>
-							<li>Казань</li>
-							<li>Калининград</li>
-							<li>Калуга</li>
-							<li>Киров</li>
-							<li>Клинцы</li>
-							<li>Коломна</li>
-							<li>Королев</li>
-							<li>Кострома</li>
-							<li>Краснодар</li>
-							<li>Красноярск</li>
-							<li>Курск</li>
-						</ul>
-					</div>
-			
-				</div>
-			
-			
-			
-				<div class="dropdown dropdown--where">
-			
-					<div class="tourpicking-fldbox dropdown-toggle" data-toggle="dropdown">
-						<div class="fldbox-sh"></div>
-						<input type="text" name="tourpicking-fld-where" id="tourpicking-fld-where" value="" placeholder="cтрана, город или отель" title="" readonly>
-					</div>
-			
-					<div class="tourpicking-dropdown dropdown-menu" id="tourpicking-where">
-						<ul class="tpd-list">
-							<li><strong>Турция</strong></li>
-							<li>Турция, <strong>Стамбул</strong></li>
-							<li>Турция, <strong>Аланья</strong></li>
-							<li>Турция, <strong>Анталья</strong></li>
-							<li>Турция, <strong>Бодрум</strong></li>
-							<li>Турция, <strong>Кемер</strong></li>
-							<li>Турция, <strong>Мармарис</strong></li>
-							<hr>
-							<li><strong>Греция</strong></li>
-							<li>Греция, <strong>Афины</strong></li>
-							<li>Греция, <strong>о.Родос</strong></li>
-							<li>Греция, <strong>о.Кос</strong></li>
-							<li>Греция, <strong>о.Крит</strong></li>
-							<hr>
-							<li><strong>Испания</strong></li>
-							<li>Испания, <strong>Мадрид</strong></li>
-							<li>Испания, <strong>Барселона</strong></li>
-							<li>Испания, <strong>Марбелья</strong></li>
-							<li>Испания, <strong>Аниссарас</strong></li>
-						</ul>
-					</div>
-			
-				</div>
-			
-			
-			
-				<div class="dropdown dropdown--when">
-			
-					<div class="tourpicking-fldbox dropdown-toggle" data-toggle="dropdown">
-						<div class="fldbox-sh"></div>
-						<input type="text" name="tourpicking-fld-when" id="tourpicking-fld-when" value="" placeholder="с даты" title="" readonly>
-					</div>
-			
-					<div class="tourpicking-dropdown dropdown-menu" id="tourpicking-when">
-						<div class="dropdown-close">&times;</div>
-						<div class="when-datepicker"></div>
-					</div>
-			
-				</div>
-			
-			
-			
-				<div class="dropdown dropdown--how">
-			
-					<div class="tourpicking-fldbox dropdown-toggle" data-toggle="dropdown">
-						<div class="fldbox-sh"></div>
-						<input type="text" name="tourpicking-fld-how" id="tourpicking-fld-how" value="ночей 7—10" placeholder="на сколько ночей" title="ночей 7—10" readonly>
-					</div>
-			
-					<div class="tourpicking-dropdown dropdown-menu" id="tourpicking-how">
-						<div class="dropdown-close">&times;</div>
-						<div class="how-block">
-							<div class="form-group noclose">
-								<label for="tourpicking-how1">ночей с</label>
-								<input type="text" name="tourpicking-how1" class="form-control" id="tourpicking-how1" value="7" min="1" max="60">
-								<label for="tourpicking-how2">по</label>
-								<input type="text" name="tourpicking-how2" class="form-control" id="tourpicking-how2" value="10" min="1" max="60">
-							</div>
-						</div>
-					</div>
-			
-				</div>
-			
-			
-			
-				<div class="dropdown dropdown--who">
-			
-					<div class="tourpicking-fldbox fldbox--who dropdown-toggle" data-toggle="dropdown" title="">
-						<div class="fldbox-sh"></div>
-						<input type="text" name="tourpicking-fld-who" id="tourpicking-fld-who" value="1 взрослый" placeholder="сколько человек" title="1 взрослый" readonly>
-					</div>
-			
-					<div class="tourpicking-dropdown dropdown-menu dropdown-menu-right" id="tourpicking-who">
-						<div class="dropdown-close">&times;</div>
-						<div class="who-block">
-							<p class="hdr">Взрослые</p>
-							<div data-toggle="buttons">
-								<label class="btn btn-toggle active">
-									<input type="radio" name="who-adults" id="who-adults1" value="1" checked>
-									1
-								</label>
-								<label class="btn btn-toggle">
-									<input type="radio" name="who-adults" id="who-adults2" value="2">
-									2
-								</label>
-								<label class="btn btn-toggle">
-									<input type="radio" name="who-adults" id="who-adults3" value="3">
-									3
-								</label>
-								<label class="btn btn-toggle">
-									<input type="radio" name="who-adults" id="who-adults4" value="4">
-									4
-								</label>
-							</div>
-						</div>
-						<div class="who-block">
-							<p class="hdr">Дети до 13 лет включительно</p>
-							<div data-toggle="buttons">
-								<label class="btn btn-toggle active">
-									<input type="radio" name="who-childs" id="who-childs1" value="0" checked>
-									нет
-								</label>
-								<label class="btn btn-toggle">
-									<input type="radio" name="who-childs" id="who-childs2" value="1">
-									1
-								</label>
-								<label class="btn btn-toggle">
-									<input type="radio" name="who-childs" id="who-childs3" value="2">
-									2
-								</label>
-								<label class="btn btn-toggle">
-									<input type="radio" name="who-childs" id="who-childs4" value="3">
-									3
-								</label>
-							</div>
-						</div>
-					</div>
-			
-				</div>
-			
-			
-			
-				<div class="tourpicking-run">
-					<button type="submit">Подобрать тур</button>
-				</div>
-			
-			
-			
-			</form>
-
-		</div>
-
-
-
 	</div>
 </header>
+
+
+
+<div class="header-tourpicking">
+
+	<form action="" name="fm-tourpicking" id="fm-tourpicking">
+	
+	
+	
+		<div class="dropdown dropdown--whence">
+	
+			<div class="tourpicking-fldbox dropdown-toggle" data-toggle="dropdown">
+				<div class="fldbox-sh"></div>
+				<input type="text" name="tourpicking-fld-whence" id="tourpicking-fld-whence" value="Санкт-Петербург" placeholder="откуда" title="Санкт-Петербург" readonly>
+			</div>
+	
+			<div class="tourpicking-dropdown dropdown-menu" id="tourpicking-whence">
+				<ul class="tpd-list">
+					<li>Москва</li>
+					<li>Санкт-Петербург</li>
+					<hr>
+					<li>Абакан</li>
+					<li>Анапа</li>
+					<li>Арзамас</li>
+					<li>Архангельск</li>
+					<li>Балаково</li>
+					<li>Барнаул</li>
+					<li>Белгород</li>
+					<li>Бийск</li>
+					<li>Брянск</li>
+					<li>Владикавказ</li>
+					<li>Владимир</li>
+					<li>Волгоград</li>
+					<li>Волоколамск</li>
+					<li>Воронеж</li>
+					<li>Казань</li>
+					<li>Калининград</li>
+					<li>Калуга</li>
+					<li>Киров</li>
+					<li>Клинцы</li>
+					<li>Коломна</li>
+					<li>Королев</li>
+					<li>Кострома</li>
+					<li>Краснодар</li>
+					<li>Красноярск</li>
+					<li>Курск</li>
+				</ul>
+			</div>
+	
+		</div>
+	
+	
+	
+		<div class="dropdown dropdown--where">
+	
+			<div class="tourpicking-fldbox dropdown-toggle" data-toggle="dropdown">
+				<div class="fldbox-sh"></div>
+				<input type="text" name="tourpicking-fld-where" id="tourpicking-fld-where" value="" placeholder="cтрана, город или отель" title="" readonly>
+			</div>
+	
+			<div class="tourpicking-dropdown dropdown-menu" id="tourpicking-where">
+				<ul class="tpd-list">
+					<li><strong>Турция</strong></li>
+					<li>Турция, <strong>Стамбул</strong></li>
+					<li>Турция, <strong>Аланья</strong></li>
+					<li>Турция, <strong>Анталья</strong></li>
+					<li>Турция, <strong>Бодрум</strong></li>
+					<li>Турция, <strong>Кемер</strong></li>
+					<li>Турция, <strong>Мармарис</strong></li>
+					<hr>
+					<li><strong>Греция</strong></li>
+					<li>Греция, <strong>Афины</strong></li>
+					<li>Греция, <strong>о.Родос</strong></li>
+					<li>Греция, <strong>о.Кос</strong></li>
+					<li>Греция, <strong>о.Крит</strong></li>
+					<hr>
+					<li><strong>Испания</strong></li>
+					<li>Испания, <strong>Мадрид</strong></li>
+					<li>Испания, <strong>Барселона</strong></li>
+					<li>Испания, <strong>Марбелья</strong></li>
+					<li>Испания, <strong>Аниссарас</strong></li>
+				</ul>
+			</div>
+	
+		</div>
+	
+	
+	
+		<div class="dropdown dropdown--when">
+	
+			<div class="tourpicking-fldbox dropdown-toggle" data-toggle="dropdown">
+				<div class="fldbox-sh"></div>
+				<input type="text" name="tourpicking-fld-when" id="tourpicking-fld-when" value="" placeholder="с даты" title="" readonly>
+			</div>
+	
+			<div class="tourpicking-dropdown dropdown-menu" id="tourpicking-when">
+				<div class="dropdown-close">&times;</div>
+				<div class="when-datepicker"></div>
+			</div>
+	
+		</div>
+	
+	
+	
+		<div class="dropdown dropdown--how">
+	
+			<div class="tourpicking-fldbox dropdown-toggle" data-toggle="dropdown">
+				<div class="fldbox-sh"></div>
+				<input type="text" name="tourpicking-fld-how" id="tourpicking-fld-how" value="ночей 7—10" placeholder="на сколько ночей" title="ночей 7—10" readonly>
+			</div>
+	
+			<div class="tourpicking-dropdown dropdown-menu" id="tourpicking-how">
+				<div class="dropdown-close">&times;</div>
+				<div class="how-block">
+					<div class="form-group noclose">
+						<label for="tourpicking-how1">ночей с</label>
+						<input type="text" name="tourpicking-how1" class="form-control" id="tourpicking-how1" value="7" min="1" max="60">
+						<label for="tourpicking-how2">по</label>
+						<input type="text" name="tourpicking-how2" class="form-control" id="tourpicking-how2" value="10" min="1" max="60">
+					</div>
+				</div>
+			</div>
+	
+		</div>
+	
+	
+	
+		<div class="dropdown dropdown--who">
+	
+			<div class="tourpicking-fldbox fldbox--who dropdown-toggle" data-toggle="dropdown" title="">
+				<div class="fldbox-sh"></div>
+				<input type="text" name="tourpicking-fld-who" id="tourpicking-fld-who" value="1 взрослый" placeholder="сколько человек" title="1 взрослый" readonly>
+			</div>
+	
+			<div class="tourpicking-dropdown dropdown-menu dropdown-menu-right" id="tourpicking-who">
+				<div class="dropdown-close">&times;</div>
+				<div class="who-block">
+					<p class="hdr">Взрослые</p>
+					<div data-toggle="buttons">
+						<label class="btn btn-toggle active">
+							<input type="radio" name="who-adults" id="who-adults1" value="1" checked>
+							1
+						</label>
+						<label class="btn btn-toggle">
+							<input type="radio" name="who-adults" id="who-adults2" value="2">
+							2
+						</label>
+						<label class="btn btn-toggle">
+							<input type="radio" name="who-adults" id="who-adults3" value="3">
+							3
+						</label>
+						<label class="btn btn-toggle">
+							<input type="radio" name="who-adults" id="who-adults4" value="4">
+							4
+						</label>
+					</div>
+				</div>
+				<div class="who-block">
+					<p class="hdr">Дети до 13 лет включительно</p>
+					<div data-toggle="buttons">
+						<label class="btn btn-toggle active">
+							<input type="radio" name="who-childs" id="who-childs1" value="0" checked>
+							нет
+						</label>
+						<label class="btn btn-toggle">
+							<input type="radio" name="who-childs" id="who-childs2" value="1">
+							1
+						</label>
+						<label class="btn btn-toggle">
+							<input type="radio" name="who-childs" id="who-childs3" value="2">
+							2
+						</label>
+						<label class="btn btn-toggle">
+							<input type="radio" name="who-childs" id="who-childs4" value="3">
+							3
+						</label>
+					</div>
+				</div>
+			</div>
+	
+		</div>
+	
+	
+	
+		<div class="tourpicking-run">
+			<button type="submit">Подобрать тур</button>
+		</div>
+	
+	
+	
+	</form>
+
+</div>
 
 
 
@@ -1755,7 +1756,7 @@
 					<ul class="footer-menu">
 						<li class="hdr">Страны</li>
 						<li><a href="#"><span class="flag-icon flag-icon-at"></span>Австрия</a></li>
-						<li><a href="#"><span class="flag-icon flag-icon-bg"></span>Болгария</a></li>
+						<li><a href="#"><span class="flag-icon flag-icon-bg"></span>Болга��ия</a></li>
 						<li><a href="#"><span class="flag-icon flag-icon-vn"></span>Вьетнам</a></li>
 						<li><a href="#"><span class="flag-icon flag-icon-gr"></span>Греция</a></li>
 						<li><a href="#"><span class="flag-icon flag-icon-eg"></span>Египет</a></li>

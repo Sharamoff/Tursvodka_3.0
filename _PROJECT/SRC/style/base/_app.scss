@@ -22,6 +22,7 @@ BODY {
 	min-height: 100%;
 	height: auto !important;
 	line-height: $line-height-def;
+	position: relative;
 }
 
 
@@ -551,7 +552,20 @@ HR {
 }
 
 
+.totop {
+	border: none;
+	background: transparent;
+	color: $c-gray-light;
+	font-size: 2.6rem;
+	float: right;
+	display: none;
+	margin-right: 1.5rem;
 
+	&:hover {
+		color: $color-link-hover;
+	}
+
+}
 
 
 

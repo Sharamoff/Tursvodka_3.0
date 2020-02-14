@@ -1,6 +1,15 @@
 .header {
 	background-color: $color-bk-header;
 
+	@include respond-to(media-xs) {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 9999;
+		border-bottom: solid 1px $c-gray-lighter;
+	}
+
 	.headerwrap {
 		position: relative;
 		max-width: $m-max;
@@ -63,38 +72,32 @@
 	padding-bottom: 2rem;
 
 	@include respond-to(media-xs) {
-		padding-top: 1rem;
-		padding-bottom: 1rem;
+		padding-top: 0.5rem;
+		padding-bottom: 0.3rem;
 	}
 
 	.header-base__logo {
 		float: left;
 		position: relative;
-		display: inline-block;
+		display: block;
+		height: 70px;
 		width: 25%;
 		min-width: 30rem;
 		z-index: 9;
+		background-position: left;
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-image: url("../img/logo.svg");
 
 		@include respond-to(media-sm) {
+			height: 50px;
 			min-width: 23rem;
 		}
 
 		@include respond-to(media-xs) {
-			min-width: 15rem;
-		}
-
-		img {
-			height: 70px;
-			width: auto;
-
-			@include respond-to(media-sm) {
-				height: 50px;
-			}
-
-			@include respond-to(media-xs) {
-				height: 30px;
-			}
-
+			height: 26px;
+			min-width: 115px;
+			background-image: url("../img/logo-xs.svg");
 		}
 
 		.slogan {
@@ -136,8 +139,7 @@
 
 	@include respond-to(media-xs) {
 		border-radius: 0;
-		margin-left: -15px;
-		margin-right: -15px;
+		margin: 4rem 0 0 0;
 		background-size: 260%;
 	}
 

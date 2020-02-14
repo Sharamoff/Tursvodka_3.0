@@ -61,13 +61,13 @@ $('.panel-toggled__btn').on('click', function () {
 //кнопка наверх
 $(window).scroll(function () {
 	if ($(this).scrollTop() > 650) {
-		$('#totop').fadeIn();
+		$('.totop').fadeIn();
 	} else {
-		$('#totop').fadeOut();
+		$('.totop').fadeOut();
 	}
 });
 
-$('#totop').click(function () {
+$('.totop').click(function () {
 	$('body,html').animate({
 		scrollTop: 0
 	}, 800);

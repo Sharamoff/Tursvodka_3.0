@@ -297,9 +297,11 @@
 		height: 30px;
 		border-color: transparent;
 
+
+
 		i {
 			position: relative;
-			font-size: 2rem;
+			font-size: 3rem;
 			font-weight: normal;
 		}
 
@@ -425,6 +427,26 @@
 			.navbar-region__fld-region {
 				display: block;
 				float: none !important;
+				position: relative;
+				@include clearfix;
+			}
+
+		}
+
+		.navbar-superlink {
+			display: inline-block;
+			float: right;
+			font: $font-size-base $font-family-cond;
+			color: $c-white;
+			background: $color-link;
+			text-decoration: none;
+			padding: 1px 5px 2px 5px;
+			border-radius: 3px;
+			margin-top: 0.6rem;
+			margin-right: -0.3rem;
+
+			&:hover {
+				background: $color-link-hover;
 			}
 
 		}
