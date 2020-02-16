@@ -62,7 +62,7 @@ gulp.task('js:build', function(done) {
 		.pipe(rigger())
 		//.pipe(sourcemaps.init())
 		//.pipe(uglify()) !не минимизируем
-		.pipe(sourcemaps.write())
+		//.pipe(sourcemaps.write())
 		.pipe(gulp.dest(path.build.js))
 		.pipe(reload({stream: true}));
 });
@@ -114,7 +114,7 @@ gulp.task('watch', function(done) {
 	gulp.watch(path.watch.js,    gulp.parallel('js:build'));
 	gulp.watch(path.watch.style, gulp.parallel('style:build'));
 	gulp.watch(path.watch.fonts, gulp.parallel('fonts:build'));
-	gulp.watch(path.watch.img, gulp.parallel('image:build'));
+	gulp.watch(path.watch.img,   gulp.parallel('image:build'));
 	done();
 });
 

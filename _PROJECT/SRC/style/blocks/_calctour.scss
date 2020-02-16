@@ -1,0 +1,45 @@
+///////////////////////////////////////////////
+
+
+
+// модальное окно Расчет стоимости тура
+
+
+.block-calctour {
+
+	.nav>li>a {
+		padding: 1rem 1rem;
+		line-height: 1;
+	}
+
+	.calctour-nav__item {
+
+		span {
+			background: $c-gray;
+			color: $c-white;
+			border-radius: 50%;
+			padding: 2px 6px 2px 6px;
+		}
+
+		&.check>a>span{
+			background: $c-blue !important;
+		}
+
+		&.active>a>span{
+			background: $c-red !important;
+		}
+
+	}
+
+	.b-formbtn {
+		padding: 1rem 3rem 1.2rem 3rem;
+		font-weight: normal;
+	}
+
+	button[type="submit"] {
+		width: 100%;
+		font-size: $font-size-basemax;
+		padding: 1.5rem 3rem 1.6rem 3rem;
+	}
+
+}

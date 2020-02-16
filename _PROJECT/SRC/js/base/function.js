@@ -456,7 +456,37 @@ $('.flex-images').flexImages({
 
 
 
+// табы модального Расчета стоимости туров
 
+
+$('.block-calctour a[data-toggle="tab"]').on('show.bs.tab', function (e) {
+	var $target = $(e.target);
+	if ($target.parent().hasClass('disabled')) {
+		return false;
+	}
+});
+
+$('.block-calctour .calctour-next').click(function (e) {
+	var form = $(this).closest('.calctour-item');
+	//if ($('form').validate().form() === false) return false;
+	var $active = $('.block-calctour .nav-tabs li.active');
+	$active.addClass('check');
+	$active.next().removeClass('disabled');
+	nextTab($active);
+});
+
+$('.block-calctour .calctour-back').click(function (e) {
+	var $active = $('.block-calctour .nav-tabs li.active');
+	prevTab($active);
+});
+
+
+function nextTab(elem) {
+	$(elem).next().find('a[data-toggle="tab"]').click();
+}
+function prevTab(elem) {
+	$(elem).prev().find('a[data-toggle="tab"]').click();
+}
 
 
 
