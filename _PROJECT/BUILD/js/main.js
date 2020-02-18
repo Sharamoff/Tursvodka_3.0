@@ -394,6 +394,27 @@ $('.block-slider--sized').slick({
 
 
 
+// слайдеровый блок для мобильного
+
+function SliderXS() {
+	var
+		def_width = $(document).width();
+	if (def_width <= 768) {
+		$('.block-slider--xs').slick({
+			dots: true,
+			infinite: true,
+			autoplay: false,
+			slidesToShow: 1
+		});
+	}
+	else {
+		$('.block-slider--xs').slick('unslick');
+		return false;
+	}
+}
+$(window).scroll(function() {SliderXS()});
+$(window).resize(function() {SliderXS()});
+
 
 
 //описание в рекламе

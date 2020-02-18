@@ -19,7 +19,7 @@
 
 </head>
 
-<body data-spy="scroll" data-target="#as_r-submenu">
+<body>
 
 
 
@@ -836,12 +836,22 @@
 
 
 
-<div class="collage cl-country">
+<div class="panel-xs-super panel-xs--top" id="id_panel-xs-top">
+	<div class="super__icon"><i class="fa fa-calculator"></i></div>
+	<a href="#" class="super__link" data-toggle="modal" data-target="#modal__calctour"><strong>Рассчитать цену тура</strong></a>
+	<div class="super__close" onClick="document.getElementById('id_panel-xs-top').style.display='none';return false;"><i class="fa fa-close"></i></div>
+</div>
+
+
+
+
+
+<div class="collage cl-idx">
 	<div class="container">
 
 
 		<div class="row">
-			<p class="mainhdr"><strong>Турция</strong> Популярные направления&nbsp;&nbsp;&nbsp;<a href="#">все города и курорты</a></p>
+			<p class="mainhdr">Популярные направления&nbsp;&nbsp;&nbsp;<a href="#">все страны</a></p>
 		</div>
 
 
@@ -852,7 +862,7 @@
 					<div class="cl cl1">
 						<a href="#" class="cl_link animated fadeIn"></a>
 						<div class="weather i--weather-w1">+16..+21</div>
-						<div class="cl_name cl_name--blue">Каппадокия</div>
+						<div class="cl_name cl_name--blue"><strong>Таиланд</strong> Чиангмай</div>
 						<img src="img/_tmp/cl1-tmp.jpg" alt="">
 					</div>
 				</div>
@@ -861,13 +871,13 @@
 					<div class="cl cl2">
 						<a href="#" class="cl_link animated fadeIn"></a>
 						<div class="weather i--weather-w2">+16..+21</div>
-						<div class="cl_name">Аланья</div>
+						<div class="cl_name"><strong>Турция</strong> Каппадокия</div>
 						<img src="img/_tmp/cl1-tmp.jpg" alt="">
 					</div>
 					<div class="cl cl3">
 						<a href="#" class="cl_link animated fadeIn"></a>
 						<div class="weather i--weather-w3">+16..+21</div>
-						<div class="cl_name">Кушадасы</div>
+						<div class="cl_name"><strong>Германия</strong> Боден</div>
 						<img src="img/_tmp/cl1-tmp.jpg" alt="">
 					</div>
 				</div>
@@ -876,13 +886,13 @@
 					<div class="cl cl4">
 						<a href="#" class="cl_link animated fadeIn"></a>
 						<div class="weather i--weather-w4">+16..+21</div>
-						<div class="cl_name">Анталья</div>
+						<div class="cl_name"><strong>Италия</strong> Абрузо</div>
 						<img src="img/_tmp/cl1-tmp.jpg" alt="">
 					</div>
 					<div class="cl cl5">
 						<a href="#" class="cl_link animated fadeIn"></a>
 						<div class="weather i--weather-w5">+16..+21</div>
-						<div class="cl_name">Мармарис</div>
+						<div class="cl_name"><strong>Испания</strong> Мадрид</div>
 						<img src="img/_tmp/cl1-tmp.jpg" alt="">
 					</div>
 				</div>
@@ -891,13 +901,13 @@
 					<div class="cl cl6">
 						<a href="#" class="cl_link animated fadeIn"></a>
 						<div class="weather i--weather-w6">+16..+21</div>
-						<div class="cl_name cl_name--yellow">Стамбул</div>
+						<div class="cl_name cl_name--yellow"><strong>Россия</strong> Севастополь</div>
 						<img src="img/_tmp/cl1-tmp.jpg" alt="">
 					</div>
 					<div class="cl cl7">
 						<a href="#" class="cl_link animated fadeIn"></a>
 						<div class="weather i--weather-w1">+16..+21</div>
-						<div class="cl_name cl_name--yellow">Кемер</div>
+						<div class="cl_name cl_name--yellow"><strong>Россия</strong> Крым</div>
 						<img src="img/_tmp/cl1-tmp.jpg" alt="">
 					</div>
 				</div>
@@ -906,28 +916,14 @@
 			</div>
 		</div>
 
+
 	</div>
 </div>
 
 
 
 
-
-<div class="breadcrumb">
-	<a href="#">Главная</a>
-	<span>/</span>
-	<a href="#">Страны</a>
-	<span>/</span>
-	<a href="#">Турция</a>
-	<span>/</span>
-	Отели Турции
-</div>
-
-
-
-
-
-<div class="page-country page-hotels">
+<div class="page-idx">
 	<div class="pagewrap">
 		<!-- колонка левая ------------------------------------------>
 		<div class="pagewrap__col-left">
@@ -935,816 +931,431 @@
 
 
 
-			<div class="superhdr"><span class="flag-icon flag-icon-tr"></span>Турция</div>
+			<div class="block-consult visible-xs visible-sm">
+				<button type="button" class="b-btn consult__refresh" title="Обновить данные"><i class="fa fa-refresh" aria-hidden="true"></i></button>
+				<div class="hdr-h2 hdr--lined"><ins class="emphas bk--red"></ins>Менеджер по продажам туров</div>
+				<div class="clearfix">
+					<div class="consult__img">
+						<img src="img/consultant.jpg" alt="">
+					</div>
+					<div class="consult__descript">
+						<div class="consult_name">Ирина Вставская</div>
+						<div class="consult_prof">турфирма «Мария»</div>
+						<a href="tel:+74953089897" class="consult_tel">+7&nbsp;495<span>308-98-97</span></a>
+					</div>
+				</div>
+				<div class="clearfix">
+					<div class="consult__msgrs">
+						<a href="#"><img src="img/icons/im-fbm.svg" alt="Facebook Messenger" title="Связаться через Facebook Messenger"></a>
+						<a href="#"><img src="img/icons/im-telegram.svg" alt="Telegram" title="Связаться через Telegram"></a>
+						<a href="#"><img src="img/icons/im-viber.svg" alt="Viber" title="Связаться через Viber"></a>
+						<a href="#"><img src="img/icons/im-whatsup.svg" alt="WhatsUp" title="Связаться через WhatsUp"></a>
+						<a href="#"><img src="img/icons/im-skype.svg" alt="Skype" title="Связаться через Skype"></a>
+						<a href="#"><img src="img/icons/im-icq.svg" alt="ICQ" title="Связаться через ICQ"></a>
+					</div>
+				</div>
+				<div class="clearfix">
+					<div class="consult__btns">
+						<button class="consult_btn-call b-btn" data-toggle="modal" data-target="#modal__call"><i class="fa fa-phone"></i>Заказать звонок</button>
+						<button class="consult_btn-mess b-btn" data-toggle="modal" data-target="#modal__mess"><i class="fa fa-pencil"></i>Оставить заявку</button>
+					</div>
+				</div>
+			</div>
 
 
 
-			<article class="ac_country-about" id="a_country-about">
+			<article class="ac_country-tours">
 
 
-				<!-- Рейтинг -->
-				<section class="sc_country-rating">
-					<div class="row row--flexed">
+				<div class="row slider block-slider block-slider--xs">
 
-						<div class="col-sm-8">
-							<div class="block-mainrating">
-								<div class="mainrating__rate bk--rate-height">8.3</div>
-								<div class="hdr-h2">Рейтинг страны</div>
-								<div class="row">
-									<div class="col-sm-6">
-										<table class="tb--inview">
-											<tr>
-												<td class="prop">отношение к туристам</td>
-												<td class="value c--rate-height">8.7</td>
-											</tr>
-											<tr>
-												<td class="prop">индустрия развлечений</td>
-												<td class="value c--rate-low">2.1</td>
-											</tr>
-											<tr>
-												<td class="prop">памятники, исторически значимые места</td>
-												<td class="value c--rate-height">10.0</td>
-											</tr>
-											<tr>
-												<td class="prop">безопасность</td>
-												<td class="value c--rate-height">7.9</td>
-											</tr>
-											<tr>
-												<td class="prop">цены</td>
-												<td class="value c--rate-middle">5.6</td>
-											</tr>
-											<tr>
-												<td class="prop">шоппинг</td>
-												<td class="value c--rate-height">7.9</td>
-											</tr>
-										</table>
+					<div class="col-sm-4">
+						<div class="block-tourcard">
+							<div class="tourcard__img"><img src="img/_tmp/ht1-tmp.jpg" alt="Galil Hotel"></div>
+							<div class="tourcard__descript">
+								<div class="tourcard__descript-name">
+									<div class="name"><a href="#">Galil Hotel</a><i class="star star-5"></i></div>
+									<div class="subname"><a href="#">Израиль</a>, <a href="#">Нетания</a></div>
+								</div>
+								<div class="tourcard__descript-weather"><div class="weather i--weather-g1">+16..+21</div></div>
+								<div class="tourcard__descript-note">
+									город вылета: <strong>Санкт-Петербург</strong>, вылет: <strong>30.03.2017</strong>,  ночей: <strong>7</strong>, питание: <strong>BB(только завтрак)</strong>, размещение: <strong>DBL(2-е взрослых)</strong>, номер: <strong>regular room</strong>
+								</div>
+							</div>
+							<div class="tourcard__footer">
+								<div class="tourcard__footer-itemprice">
+									<div class="itemlink">
+										<a href="#" class="b-link itemlink_about">подробнее о туре</a>
+										<a href="#" class="i-sublink itemlink_more">еще туры в этот отель</a>
 									</div>
-									<div class="col-sm-6">
-										<table class="tb--inview">
-											<tr>
-												<td class="prop">всего отзывов</td>
-												<td class="value"><a href="#">797</a></td>
-											</tr>
-											<tr>
-												<td class="prop">всего фото</td>
-												<td class="value"><a href="#">13</a></td>
-											</tr>
-											<tr>
-												<td class="prop">всего просмотров</td>
-												<td class="value">308469</td>
-											</tr>
-										</table>
+									<div class="itemprice">89 300<i class="fa fa-rub"></i></div>
+								</div>
+								<div class="tourcard__footer-warn">для некоторых авиакомпаний в цену не включен топливный сбор</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-4">
+						<div class="block-tourcard">
+							<div class="tourcard__img"><img src="img/_tmp/ht1-tmp.jpg" alt="Galil Hotel"></div>
+							<div class="tourcard__descript">
+								<div class="tourcard__descript-name">
+									<div class="name"><a href="#">The Metropole Hotel Phuket</a><i class="star star-3"></i></div>
+									<div class="subname"><a href="#">Израиль</a>, <a href="#">Нетания</a></div>
+								</div>
+								<div class="tourcard__descript-weather"><div class="weather i--weather-g1">+16..+21</div></div>
+								<div class="tourcard__descript-note">
+									город вылета: <strong>Санкт-Петербург</strong>, вылет: <strong>30.03.2017</strong>,  ночей: <strong>7</strong>, питание: <strong>AI(3-х разовое питание + спиртные напитки местного производства)</strong>, размещение: <strong>DBL(2-е взрослых)</strong>, номер: <strong>regular room</strong>
+								</div>
+							</div>
+							<div class="tourcard__footer">
+								<div class="tourcard__footer-itemprice">
+									<div class="itemlink">
+										<a href="#" class="b-link itemlink_about">подробнее о туре</a>
+										<a href="#" class="i-sublink itemlink_more">еще туры в этот отель</a>
 									</div>
+									<div class="itemprice">128 990<i class="fa fa-rub"></i></div>
 								</div>
-								<div class="mainrating__btns">
-									<button class="b-lonetool b--to-right"><i class="fa fa-camera"></i>Добавить отзыв и фото</button>
-								</div>
+								<div class="tourcard__footer-warn">для некоторых авиакомпаний в цену не включен топливный сбор</div>
 							</div>
 						</div>
+					</div>
 
-						<div class="col-sm-4">
-							<div class="block-consult">
-								<button type="button" class="b-btn consult__refresh" title="Обновить данные"><i class="fa fa-refresh" aria-hidden="true"></i></button>
-								<div class="hdr-h2 hdr--lined"><ins class="emphas bk--red"></ins>Менеджер по продажам туров</div>
-								<div class="clearfix">
-									<div class="consult__img">
-										<img src="img/consultant.jpg" alt="">
+					<div class="col-sm-4">
+						<div class="block-tourcard">
+							<div class="tourcard__img"><img src="img/_tmp/ht1-tmp.jpg" alt="Galil Hotel"></div>
+							<div class="tourcard__descript">
+								<div class="tourcard__descript-name">
+									<div class="name"><a href="#">Barcelo Marina Palace</a><i class="star star-5"></i></div>
+									<div class="subname"><a href="#">Куба</a>, <a href="#">Варадеро</a></div>
+								</div>
+								<div class="tourcard__descript-weather"><div class="weather i--weather-g2">+11..+12</div></div>
+								<div class="tourcard__descript-note">
+									город вылета: <strong>Санкт-Петербург</strong>, вылет: <strong>30.03.2017</strong>,  ночей: <strong>7</strong>, питание: <strong>AI(3-х разовое питание)</strong>, размещение: <strong>DBL(2-е взрослых)</strong>, номер: <strong>улучшенный номер</strong>
+								</div>
+							</div>
+							<div class="tourcard__footer">
+								<div class="tourcard__footer-itemprice">
+									<div class="itemlink">
+										<a href="#" class="b-link itemlink_about">подробнее о туре</a>
+										<a href="#" class="i-sublink itemlink_more">еще туры в этот отель</a>
 									</div>
-									<div class="consult__descript">
-										<div class="consult_name">Ирина Вставская</div>
-										<div class="consult_prof">турфирма «Мария»</div>
-										<a href="tel:+74953089897" class="consult_tel">+7&nbsp;495<span>308-98-97</span></a>
+									<div class="itemprice">122 300<i class="fa fa-rub"></i></div>
+								</div>
+								<div class="tourcard__footer-warn">для некоторых авиакомпаний в цену не включен топливный сбор</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-4">
+						<div class="block-tourcard">
+							<div class="tourcard__img"><img src="img/_tmp/ht1-tmp.jpg" alt="Galil Hotel"></div>
+							<div class="tourcard__descript">
+								<div class="tourcard__descript-name">
+									<div class="name"><a href="#">Panchi Villa</a><i class="star star-4"></i></div>
+									<div class="subname"><a href="#">Шри-Ланка</a>, <a href="#">Беллона</a></div>
+								</div>
+								<div class="tourcard__descript-weather"><div class="weather i--weather-g2">+11..+12</div></div>
+								<div class="tourcard__descript-note">
+									город вылета: <strong>Санкт-Петербург</strong>, вылет: <strong>30.03.2017</strong>,  ночей: <strong>7</strong>, питание: <strong>:BB(только завтрак)</strong>, размещение: <strong>DBL(2-е взрослых)</strong>, номер: <strong>улучшенный номер</strong>
+								</div>
+							</div>
+							<div class="tourcard__footer">
+								<div class="tourcard__footer-itemprice">
+									<div class="itemlink">
+										<a href="#" class="b-link itemlink_about">подробнее о туре</a>
+										<a href="#" class="i-sublink itemlink_more">еще туры в этот отель</a>
 									</div>
+									<div class="itemprice">84 500<i class="fa fa-rub"></i></div>
 								</div>
-								<div class="clearfix">
-									<div class="consult__msgrs">
-										<a href="#"><img src="img/icons/im-fbm.svg" alt="Facebook Messenger" title="Связаться через Facebook Messenger"></a>
-										<a href="#"><img src="img/icons/im-telegram.svg" alt="Telegram" title="Связаться через Telegram"></a>
-										<a href="#"><img src="img/icons/im-viber.svg" alt="Viber" title="Связаться через Viber"></a>
-										<a href="#"><img src="img/icons/im-whatsup.svg" alt="WhatsUp" title="Связаться через WhatsUp"></a>
-										<a href="#"><img src="img/icons/im-skype.svg" alt="Skype" title="Связаться через Skype"></a>
-										<a href="#"><img src="img/icons/im-icq.svg" alt="ICQ" title="Связаться через ICQ"></a>
+								<div class="tourcard__footer-warn">для некоторых авиакомпаний в цену не включен топливный сбор</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-4">
+						<div class="block-tourcard">
+							<div class="tourcard__img"><img src="img/_tmp/ht1-tmp.jpg" alt="Galil Hotel"></div>
+							<div class="tourcard__descript">
+								<div class="tourcard__descript-name">
+									<div class="name"><a href="#">Park Rotana Abu Dhabi</a><i class="star star-5"></i></div>
+									<div class="subname"><a href="#">ОАЭ</a>, <a href="#">Абу-Даби</a></div>
+								</div>
+								<div class="tourcard__descript-weather"><div class="weather i--weather-g3">+11..+12</div></div>
+								<div class="tourcard__descript-note">
+									город вылета: <strong>Санкт-Петербург</strong>, вылет: <strong>30.03.2017</strong>,  ночей: <strong>7</strong>, питание: <strong>:BB(только завтрак)</strong>, размещение: <strong>DBL(2-е взрослых)</strong>, номер: <strong>улучшенный номер</strong>
+								</div>
+							</div>
+							<div class="tourcard__footer">
+								<div class="tourcard__footer-itemprice">
+									<div class="itemlink">
+										<a href="#" class="b-link itemlink_about">подробнее о туре</a>
+										<a href="#" class="i-sublink itemlink_more">еще туры в этот отель</a>
 									</div>
+									<div class="itemprice">230 500<i class="fa fa-rub"></i></div>
 								</div>
-								<div class="clearfix">
-									<div class="consult__btns">
-										<button class="consult_btn-call b-btn" data-toggle="modal" data-target="#modal__call"><i class="fa fa-phone"></i>Заказать звонок</button>
-										<button class="consult_btn-mess b-btn" data-toggle="modal" data-target="#modal__mess"><i class="fa fa-pencil"></i>Оставить заявку</button>
+								<div class="tourcard__footer-warn">для некоторых авиакомпаний в цену не включен топливный сбор</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-4">
+						<div class="block-tourcard">
+							<div class="tourcard__img"><img src="img/_tmp/ht1-tmp.jpg" alt="Galil Hotel"></div>
+							<div class="tourcard__descript">
+								<div class="tourcard__descript-name">
+									<div class="name"><a href="#">Oriental Pearl Resort</a><i class="star star-3"></i></div>
+									<div class="subname"><a href="#">Вьтнам</a>, <a href="#">Фпнхъет</a></div>
+								</div>
+								<div class="tourcard__descript-weather"><div class="weather i--weather-g4">+11..+12</div></div>
+								<div class="tourcard__descript-note">
+									город вылета: <strong>Санкт-Петербург</strong>, вылет: <strong>30.03.2017</strong>,  ночей: <strong>7</strong>, питание: <strong>:BB(только завтрак)</strong>, размещение: <strong>DBL(2-е взрослых)</strong>, номер: <strong>улучшенный номер</strong>
+								</div>
+							</div>
+							<div class="tourcard__footer">
+								<div class="tourcard__footer-itemprice">
+									<div class="itemlink">
+										<a href="#" class="b-link itemlink_about">подробнее о туре</a>
+										<a href="#" class="i-sublink itemlink_more">еще туры в этот отель</a>
 									</div>
+									<div class="itemprice">101 688<i class="fa fa-rub"></i></div>
 								</div>
-							</div>
-						</div>
-
-					</div>
-				</section>
-				<!-- end Рейтинг -->
-
-				
-				<!-- Контент -->
-				<section class="sc_country-content">
-
-					
-					<div class="tablink">
-						<ul>
-							<li><a href="#">Страна</a></li>
-							<li><a href="#">Отзывы</a></li>
-							<li><span class="active">Отели</span></li>
-							<li><a href="#">Билеты</a></li>
-							<li><a href="#"><strong>ТУРЫ</strong></a></li>
-						</ul>
-						<div class="tab-more dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Еще</a>
-							<ul class="dropdown-menu dropdown-menu-right animated fadeIn">
-								<li><a href="#">Города</a></li>
-								<li><a href="#">Курорты</a></li>
-								<li><a href="#">Места</a></li>
-								<li><a href="#">Виза</a></li>
-								<li><a href="#">Посольства и консульства</a></li>
-								<li><a href="#">Памятка туристу</a></li>
-								<li><a href="#">Погода</a></li>
-								<li><a href="#">Разговорник</a></li>
-							</ul>
-						</div>
-					</div>
-
-					
-					<h2>Отели Турции</h2>
-
-
-					<div class="block-filter filter--hotel visible-xs visible-sm">
-
-						<div class="hdr-h2 hdr--lined"><ins class="emphas bk--blue"></ins>Отбор отелей</div>
-
-						<form name="fm-filter_hotel" id="fm-filter_hotel">
-							<div class="form-group">
-								<label for="fld-filter_hotel-city">Город Турции</label>
-								<select name="а" id="fld-filter_hotel-city" class="form-control">
-									<option value="0">не имеет значения</option>
-									<option value="445250">Аванос</option>
-									<option value="445416">Адакёй</option>
-									<option value="415572">Адана</option>
-									<option value="445240">Адапазары</option>
-									<option value="445413">Аджарлар</option>
-									<option value="445325">Адрасан</option>
-									<option value="445224">Адыяман</option>
-									<option value="445358">Айваджик</option>
-									<option value="445308">Айвалык</option>
-									<option value="445210">Айдин</option>
-									<option value="445313">Акбук</option>
-									<option value="445304">Акиюрт</option>
-									<option value="445279">Аксакоса</option>
-									<option value="445280">Акхисар</option>
-									<option value="445374">Акчай</option>
-									<option value="445383">Акьяка</option>
-									<option value="445384">Акьярлар</option>
-									<option value="1300">Аланья</option>
-									<option value="445316">Алачати</option>
-									<option value="445403">Алашехир</option>
-									<option value="445246">Алтинкум</option>
-									<option value="445382">Алтинолук</option>
-									<option value="445323">Амасра</option>
-									<option value="445405">Анамур</option>
-									<option value="1299">Анкара</option>
-									<option value="445237">Антакья</option>
-									<option value="1301">Анталья</option>
-									<option value="445393">Арапгир</option>
-									<option value="445392">Ардесен</option>
-									<option value="445303">Армутлу</option>
-									<option value="445231">Артвин</option>
-									<option value="445299">Ассос</option>
-									<option value="415956">Афьон-Карахисар</option>
-									<option value="445423">Аяс</option>
-									<option value="445400">Бадемли</option>
-									<option value="445385">Балабани</option>
-									<option value="445226">Балыкесир</option>
-									<option value="445342">Бейджик</option>
-									<option value="445408">Бейшехир</option>
-									<option value="1302">Белек</option>
-									<option value="445305">Бельдиби</option>
-									<option value="445236">Бергама</option>
-									<option value="445265">Битез</option>
-									<option value="445283">Богазичи</option>
-									<option value="445376">Богазкале</option>
-									<option value="445371">Богазкент</option>
-									<option value="1303">Бодрум</option>
-									<option value="445354">Бозбурун</option>
-									<option value="445282">Бозкада</option>
-									<option value="415954">Болу</option>
-									<option value="415843">Бурса</option>
-									<option value="445352">Бурхание</option>
-									<option value="445349">Буюкесели</option>
-									<option value="445335">Бююкада</option>
-									<option value="445235">Ван</option>
-									<option value="445216">Газиантеп</option>
-									<option value="445298">Газипаса</option>
-									<option value="445293">Гамбет</option>
-									<option value="445286">Гандоган</option>
-									<option value="445252">Гебзе</option>
-									<option value="445321">Гекчеада</option>
-									<option value="445409">Гелиболу</option>
-									<option value="445294">Гереде</option>
-									<option value="445415">Гёкчеорен</option>
-									<option value="445245">Гёреме</option>
-									<option value="445273">Гиресун</option>
-									<option value="445295">Голтуркбуку</option>
-									<option value="445292">Госек</option>
-									<option value="445244">Гоуник</option>
-									<option value="445275">Гумульдур</option>
-									<option value="445318">Гюзельчамлы</option>
-									<option value="445345">Гюзельюрт</option>
-									<option value="445270">Гюллюк</option>
-									<option value="445284">Гюмюшлюк</option>
-									<option value="445425">Гюре</option>
-									<option value="445395">Давутлар</option>
-									<option value="445327">Дадай</option>
-									<option value="1305">Даламан</option>
-									<option value="445242">Далян</option>
-									<option value="445241">Датса</option>
-									<option value="445281">Демре</option>
-									<option value="445212">Денизли</option>
-									<option value="445257">Денизяка</option>
-									<option value="445387">Дёртъёл</option>
-									<option value="445424">Джамликой</option>
-									<option value="1306">Дидим</option>
-									<option value="445213">Диярбакир</option>
-									<option value="445386">Дорттепе</option>
-									<option value="445230">Дюздже</option>
-									<option value="445291">Ежеабат</option>
-									<option value="445338">Зонгулдак</option>
-									<option value="445326">Игнеада</option>
-									<option value="1307">Измир</option>
-									<option value="445239">Измит</option>
-									<option value="445363">Инеболу</option>
-									<option value="445357">Инегёль</option>
-									<option value="445238">Искендерун</option>
-									<option value="445346">Испарта</option>
-									<option value="445319">Ичмелер</option>
-									<option value="445389">Йозгат</option>
-									<option value="445309">Йомра</option>
-									<option value="445414">Кавак</option>
-									<option value="445355">Кадрие</option>
-									<option value="445377">Кайели</option>
-									<option value="445373">Каймаклы</option>
-									<option value="1308">Кайсери</option>
-									<option value="445253">Калкан</option>
-									<option value="445381">Капыкыры</option>
-									<option value="445420">Караагач</option>
-									<option value="445232">Карабук</option>
-									<option value="445402">Карабурун</option>
-									<option value="445364">Карадениз Эрегли</option>
-									<option value="445359">Карамюрсель</option>
-									<option value="445411">Карасу</option>
-									<option value="445365">Карс</option>
-									<option value="445397">Картепе</option>
-									<option value="445256">Кас</option>
-									<option value="445324">Кастамону</option>
-									<option value="445272">Кахраманмараш</option>
-									<option value="445315">Каякой</option>
-									<option value="445379">Кекова</option>
-									<option value="445288">Кемальпаша</option>
-									<option value="1309">Кемер</option>
-									<option value="445261">Кенджкеркоу</option>
-									<option value="445350">Кешан</option>
-									<option value="445300">Кизилагас</option>
-									<option value="445380">Кизилот</option>
-									<option value="445366">Кийикой</option>
-									<option value="445396">Киразли</option>
-									<option value="445391">Козлу</option>
-									<option value="445322">Койчегиз</option>
-									<option value="445217">Кониа</option>
-									<option value="445233">Корум</option>
-									<option value="445334">Кула</option>
-									<option value="445290">Кумлуджа</option>
-									<option value="445262">Курсунлу</option>
-									<option value="445306">Кучуккую</option>
-									<option value="1311">Кушадасы</option>
-									<option value="445348">Кызкалеси</option>
-									<option value="445218">Кютахья</option>
-									<option value="445410">Лапсеки</option>
-									<option value="445227">Малатья</option>
-									<option value="445251">Манавгат</option>
-									<option value="445260">Маниса</option>
-									<option value="445228">Мардин</option>
-									<option value="445412">Мармара Эреглиси</option>
-									<option value="1312">Мармарис</option>
-									<option value="445344">Мачка</option>
-									<option value="445219">Мерси</option>
-									<option value="445372">Меселик</option>
-									<option value="445418">Месудие</option>
-									<option value="445360">Мидиат</option>
-									<option value="445331">Милас</option>
-									<option value="445220">Мугла</option>
-									<option value="445328">Муданьи</option>
-									<option value="445361">Мудурну</option>
-									<option value="445421">Мустафапаса</option>
-									<option value="1313">Невшехир</option>
-									<option value="445234">Нигде</option>
-									<option value="445243">Оздер</option>
-									<option value="445336">Олимпос</option>
-									<option value="445254">Олудениз</option>
-									<option value="445274">Орду</option>
-									<option value="445314">Орен</option>
-									<option value="445255">Ортака</option>
-									<option value="445370">Ортакей</option>
-									<option value="445287">Ортахисар</option>
-									<option value="445417">Паламутбюкю</option>
-									<option value="1315">Памуккале</option>
-									<option value="445317">Патара</option>
-									<option value="445407">Пертек</option>
-									<option value="445221">Ризе</option>
-									<option value="445337">Салихлы</option>
-									<option value="445222">Самсун</option>
-									<option value="445388">Сандикли</option>
-									<option value="445229">Санлиурфа</option>
-									<option value="445259">Сапанка</option>
-									<option value="445297">Сарайкой</option>
-									<option value="445353">Саригерме</option>
-									<option value="1316">Сарыкамыш</option>
-									<option value="445268">Сафранболу</option>
-									<option value="445310">Серик</option>
-									<option value="1319">Сеферихисар</option>
-									<option value="445378">Сёгют</option>
-									<option value="445398">Сёке</option>
-									<option value="445367">Сивас</option>
-									<option value="445406">Сивридже</option>
-									<option value="1320">Сиде</option>
-									<option value="445341">Силифке</option>
-									<option value="445340">Синоп</option>
-									<option value="445267">Сирали</option>
-									<option value="1321">Стамбул</option>
-									<option value="445399">Татван</option>
-									<option value="445351">Текирдаг</option>
-									<option value="445356">Текирова</option>
-									<option value="445330">Термал</option>
-									<option value="445333">Торба</option>
-									<option value="445277">Торбалы</option>
-									<option value="445223">Трабзон</option>
-									<option value="445332">Тузла</option>
-									<option value="445266">Тургутрейз</option>
-									<option value="445312">Турунс</option>
-									<option value="445422">Узунгёль</option>
-									<option value="445390">Узуньюрт</option>
-									<option value="445302">Ула</option>
-									<option value="445343">Унье</option>
-									<option value="415558">Ургуп</option>
-									<option value="445329">Урла</option>
-									<option value="445278">Учхисар</option>
-									<option value="1323">Фетхие</option>
-									<option value="445296">Финике</option>
-									<option value="445276">Фоча</option>
-									<option value="445347">Хейбелиада</option>
-									<option value="445401">Хельвачи</option>
-									<option value="445289">Хопа</option>
-									<option value="445311">Чамьюва</option>
-									<option value="415587">Чанаккале</option>
-									<option value="445271">Черкезкой</option>
-									<option value="1324">Чешме</option>
-									<option value="445369">Чифтлик</option>
-									<option value="445264">Чолаклы</option>
-									<option value="445339">Чорлу</option>
-									<option value="445394">Чынарджык</option>
-									<option value="445269">Эгирдир</option>
-									<option value="445214">Эдирне</option>
-									<option value="445248">Эдремит</option>
-									<option value="445419">Эмеджик</option>
-									<option value="445426">Эмет</option>
-									<option value="445247">Эрдек</option>
-									<option value="445301">Эрдемли</option>
-									<option value="445375">Эрзинджан</option>
-									<option value="415955">Эрзурум</option>
-									<option value="445362">Эрин</option>
-									<option value="445307">Эрсис</option>
-									<option value="445215">Эскизегир</option>
-									<option value="445368">Юсуфели</option>
-									<option value="445320">Яликавак</option>
-									<option value="415584">Ялова</option>
-									<option value="445285">Яниклар</option>
-								</select>
-							</div>
-							<div class="form-group">
-								<label>Категория отеля</label>
-								<br>
-								<label class="label--ch"><input type="checkbox" name="fld-filter_hotel-category[1]" id="fld-filter_hotel-category1" value="1">1<i class="star star-1"></i></label>
-								<label class="label--ch"><input type="checkbox" name="fld-filter_hotel-category[2]" id="fld-filter_hotel-category2" value="2">2<i class="star star-1"></i></label>
-								<label class="label--ch"><input type="checkbox" name="fld-filter_hotel-category[3]" id="fld-filter_hotel-category3" value="3">3<i class="star star-1"></i></label>
-								<label class="label--ch"><input type="checkbox" name="fld-filter_hotel-category[4]" id="fld-filter_hotel-category4" value="4">4<i class="star star-1"></i></label>
-								<label class="label--ch"><input type="checkbox" name="fld-filter_hotel-category[5]" id="fld-filter_hotel-category5" value="5">5<i class="star star-1"></i></label>
-								<label class="label--ch"><input type="checkbox" name="fld-filter_hotel-category[6]" id="fld-filter_hotel-category6" value="6">HV</label>
-							</div>
-							<div class="form-group">
-								<label>Расположение отеля</label>
-								<br>
-								<label class="label--ch"><input type="checkbox" name="fld-filter_hotel-line[1]" id="fld-filter_hotel-line1" value="1">1-я линия</label>
-								<label class="label--ch"><input type="checkbox" name="fld-filter_hotel-line[2]" id="fld-filter_hotel-line2" value="2">2-я линия</label>
-								<label class="label--ch"><input type="checkbox" name="fld-filter_hotel-line[3]" id="fld-filter_hotel-line3" value="3">3-я линия</label>
-							</div>
-							<div class="form-group">
-								<label>Тип пляжа</label>
-								<br>
-								<label class="label--ch"><input type="checkbox" name="fld-filter_hotel-beach[1]" id="fld-filter_hotel-beach1" value="1">песчаный</label>
-								<label class="label--ch"><input type="checkbox" name="fld-filter_hotel-beach[2]" id="fld-filter_hotel-beach2" value="2">галечный</label>
-							</div>
-							<div class="form-group">
-								<label>Интернет</label>
-								<br>
-								<label class="label--ch"><input type="checkbox" name="fld-filter_hotel-internet" id="fld-filter_hotel-internet" value="1">бесплатный Wi-Fi</label>
-							</div>
-							<button class="b-btn">Отобрать отели</button>
-						</form>
-
-					</div>
-
-
-					<div class="stoolbar stoolbar--top">
-						<div class="stb-filter_res">Всего отобрано <strong>2 659</strong></div>
-					</div>
-
-
-					<div class="block-hotel">
-						<div class="row">
-							<div class="hotel__img col-sm-2">
-								<a href="#"><img src="img/_tmp/ht1-tmp.jpg" alt=""></a>
-							</div>
-							<div class="hotel__descript col-sm-7">
-								<div class="hotel__descript-name">
-									<a href="#">Oleander Hotel<i class="star star-5"></i></a>
-								</div>
-								<div class="hotel__descript-contact">
-									<a href="#"><strong>Манавгат</strong></a>,
-									<a href="#">Турция</a>
-								</div>
-								<div class="hotel__descript-note">
-									<a href="#">
-										<p>Удобное бронирование туров в Oleander Hotel 5*. Специальные предложения от проверенных туроператоров. Заказ дополнительных услуг. <i class="a--more"></i></p>
-									</a>
-								</div>
-								<div class="hotel__descript-links">
-									<a href="#" class="i-link i--fill">Туры<i></i></a>
-									<a href="#" class="i-link i--fill">Фото<i></i></a>
-									<a href="#" class="i-link i--fill">Карта<i></i></a>
-								</div>
-							</div>
-							<div class="hotel__rates col-sm-3">
-								<table class="tb--inrates table-condensed">
-									<tr>
-										<td class="prop">рейтинг</td>
-										<td class="value"><span class="c--rate-height">9.4</span></td>
-									</tr>
-									<tr>
-										<td class="prop">рекомендуют</td>
-										<td class="value"><a href="#">462</a></td>
-									</tr>
-									<tr>
-										<td class="prop">отзывы</td>
-										<td class="value"><a href="#">60</a></td>
-									</tr>
-								</table>
+								<div class="tourcard__footer-warn">для некоторых авиакомпаний в цену не включен топливный сбор</div>
 							</div>
 						</div>
 					</div>
 
-					<div class="block-hotel">
-						<div class="row">
-							<div class="hotel__img col-sm-2">
-								<a href="#"><img src="img/_tmp/ht1-tmp.jpg" alt=""></a>
-							</div>
-							<div class="hotel__descript col-sm-7">
-								<div class="hotel__descript-name">
-									<a href="#">Dalyan Queens Hotel<i class="star star-3"></i></a>
+					<div class="col-sm-4">
+						<div class="block-tourcard">
+							<div class="tourcard__img"><img src="img/_tmp/ht1-tmp.jpg" alt="Galil Hotel"></div>
+							<div class="tourcard__descript">
+								<div class="tourcard__descript-name">
+									<div class="name"><a href="#">Galil Hotel</a><i class="star star-5"></i></div>
+									<div class="subname"><a href="#">Израиль</a>, <a href="#">Нетания</a></div>
 								</div>
-								<div class="hotel__descript-contact">
-									<a href="#"><strong>Далян</strong></a>,
-									<a href="#">Турция</a>
-								</div>
-								<div class="hotel__descript-note">
-									<a href="#">
-										<p>Отель Dalyan Queens Hotel расположен в городе Далян, что делает его одним из лучших мест пребывания в городе. Отель Dalyan Queens Hotel гордится удобным расположением, современными удобствами в каждом номере и превосходным сервисом. <i class="a--more"></i></p>
-									</a>
-								</div>
-								<div class="hotel__descript-links">
-									<a href="#" class="i-link i--fill">Туры<i></i></a>
-									<a href="#" class="i-link i--fill">Фото<i></i></a>
-									<a href="#" class="i-link i--fill">Карта<i></i></a>
+								<div class="tourcard__descript-weather"><div class="weather i--weather-g1">+16..+21</div></div>
+								<div class="tourcard__descript-note">
+									город вылета: <strong>Санкт-Петербург</strong>, вылет: <strong>30.03.2017</strong>,  ночей: <strong>7</strong>, питание: <strong>BB(только завтрак)</strong>, размещение: <strong>DBL(2-е взрослых)</strong>, номер: <strong>regular room</strong>
 								</div>
 							</div>
-							<div class="hotel__rates col-sm-3">
-								<table class="tb--inrates table-condensed">
-									<tr>
-										<td class="prop">рейтинг</td>
-										<td class="value"><span class="c--rate-middle">6.9</span></td>
-									</tr>
-									<tr>
-										<td class="prop">рекомендуют</td>
-										<td class="value"><a href="#">0</a></td>
-									</tr>
-									<tr>
-										<td class="prop">отзывы</td>
-										<td class="value"><a href="#">0</a></td>
-									</tr>
-								</table>
+							<div class="tourcard__footer">
+								<div class="tourcard__footer-itemprice">
+									<div class="itemlink">
+										<a href="#" class="b-link itemlink_about">подробнее о туре</a>
+										<a href="#" class="i-sublink itemlink_more">еще туры в этот отель</a>
+									</div>
+									<div class="itemprice">89 300<i class="fa fa-rub"></i></div>
+								</div>
+								<div class="tourcard__footer-warn">для некоторых авиакомпаний в цену не включен топливный сбор</div>
 							</div>
 						</div>
 					</div>
 
-					<div class="block-hotel">
-						<div class="row">
-							<div class="hotel__img col-sm-2">
-								<a href="#"><img src="img/_tmp/ht1-tmp.jpg" alt=""></a>
-							</div>
-							<div class="hotel__descript col-sm-7">
-								<div class="hotel__descript-name">
-									<a href="#">Bakkhos Guesthouse Kusadasi<i class="star star-4"></i></a>
+					<div class="col-sm-4">
+						<div class="block-tourcard">
+							<div class="tourcard__img"><img src="img/_tmp/ht1-tmp.jpg" alt="Galil Hotel"></div>
+							<div class="tourcard__descript">
+								<div class="tourcard__descript-name">
+									<div class="name"><a href="#">The Metropole Hotel Phuket</a><i class="star star-3"></i></div>
+									<div class="subname"><a href="#">Израиль</a>, <a href="#">Нетания</a></div>
 								</div>
-								<div class="hotel__descript-contact">
-									<a href="#"><strong>Кушадасы</strong></a>,
-									<a href="#">Турция</a>
-								</div>
-								<div class="hotel__descript-note">
-									<a href="#">
-										<p>Отель Bakkhos Guesthouse расположен в городе Кушадасы, что делает его одним из лучших мест пребывания в городе. Для комфорта постояльцев во всех номерах отеля предоставлены удобства, ожидаемые от отеля этого класса. В каждом номере есть кондиционер, душ, отдельный душ и ванная. <i class="a--more"></i></p>
-									</a>
-								</div>
-								<div class="hotel__descript-links">
-									<a href="#" class="i-link i--fill">Туры<i></i></a>
-									<a href="#" class="i-link i--fill">Фото<i></i></a>
-									<a href="#" class="i-link i--fill">Карта<i></i></a>
+								<div class="tourcard__descript-weather"><div class="weather i--weather-g1">+16..+21</div></div>
+								<div class="tourcard__descript-note">
+									город вылета: <strong>Санкт-Петербург</strong>, вылет: <strong>30.03.2017</strong>,  ночей: <strong>7</strong>, питание: <strong>AI(3-х разовое питание + спиртные напитки местного производства)</strong>, размещение: <strong>DBL(2-е взрослых)</strong>, номер: <strong>regular room</strong>
 								</div>
 							</div>
-							<div class="hotel__rates col-sm-3">
-								<table class="tb--inrates table-condensed">
-									<tr>
-										<td class="prop">рейтинг</td>
-										<td class="value"><span class="c--rate-low">2.4</span></td>
-									</tr>
-									<tr>
-										<td class="prop">рекомендуют</td>
-										<td class="value"><a href="#">1</a></td>
-									</tr>
-									<tr>
-										<td class="prop">отзывы</td>
-										<td class="value"><a href="#">3</a></td>
-									</tr>
-								</table>
+							<div class="tourcard__footer">
+								<div class="tourcard__footer-itemprice">
+									<div class="itemlink">
+										<a href="#" class="b-link itemlink_about">подробнее о туре</a>
+										<a href="#" class="i-sublink itemlink_more">еще туры в этот отель</a>
+									</div>
+									<div class="itemprice">128 990<i class="fa fa-rub"></i></div>
+								</div>
+								<div class="tourcard__footer-warn">для некоторых авиакомпаний в цену не включен топливный сбор</div>
 							</div>
 						</div>
 					</div>
 
-					<div class="block-hotel">
-						<div class="row">
-							<div class="hotel__img col-sm-2">
-								<a href="#"><img src="img/_tmp/ht1-tmp.jpg" alt=""></a>
-							</div>
-							<div class="hotel__descript col-sm-7">
-								<div class="hotel__descript-name">
-									<a href="#">Oleander Hotel<i class="star star-5"></i></a>
+					<div class="col-sm-4">
+						<div class="block-tourcard">
+							<div class="tourcard__img"><img src="img/_tmp/ht1-tmp.jpg" alt="Galil Hotel"></div>
+							<div class="tourcard__descript">
+								<div class="tourcard__descript-name">
+									<div class="name"><a href="#">Barcelo Marina Palace</a><i class="star star-5"></i></div>
+									<div class="subname"><a href="#">Куба</a>, <a href="#">Варадеро</a></div>
 								</div>
-								<div class="hotel__descript-contact">
-									<a href="#"><strong>Манавгат</strong></a>,
-									<a href="#">Турция</a>
-								</div>
-								<div class="hotel__descript-note">
-									<a href="#">
-										<p>Удобное бронирование туров в Oleander Hotel 5*. Специальные предложения от проверенных туроператоров. Заказ дополнительных услуг. <i class="a--more"></i></p>
-									</a>
-								</div>
-								<div class="hotel__descript-links">
-									<a href="#" class="i-link i--fill">Туры<i></i></a>
-									<a href="#" class="i-link i--fill">Фото<i></i></a>
-									<a href="#" class="i-link i--fill">Карта<i></i></a>
+								<div class="tourcard__descript-weather"><div class="weather i--weather-g2">+11..+12</div></div>
+								<div class="tourcard__descript-note">
+									город вылета: <strong>Санкт-Петербург</strong>, вылет: <strong>30.03.2017</strong>,  ночей: <strong>7</strong>, питание: <strong>AI(3-х разовое питание)</strong>, размещение: <strong>DBL(2-е взрослых)</strong>, номер: <strong>улучшенный номер</strong>
 								</div>
 							</div>
-							<div class="hotel__rates col-sm-3">
-								<table class="tb--inrates table-condensed">
-									<tr>
-										<td class="prop">рейтинг</td>
-										<td class="value"><span class="c--rate-height">9.4</span></td>
-									</tr>
-									<tr>
-										<td class="prop">рекомендуют</td>
-										<td class="value"><a href="#">462</a></td>
-									</tr>
-									<tr>
-										<td class="prop">отзывы</td>
-										<td class="value"><a href="#">60</a></td>
-									</tr>
-								</table>
+							<div class="tourcard__footer">
+								<div class="tourcard__footer-itemprice">
+									<div class="itemlink">
+										<a href="#" class="b-link itemlink_about">подробнее о туре</a>
+										<a href="#" class="i-sublink itemlink_more">еще туры в этот отель</a>
+									</div>
+									<div class="itemprice">122 300<i class="fa fa-rub"></i></div>
+								</div>
+								<div class="tourcard__footer-warn">для некоторых авиакомпаний в цену не включен топливный сбор</div>
 							</div>
 						</div>
 					</div>
 
-					<div class="block-hotel">
-						<div class="row">
-							<div class="hotel__img col-sm-2">
-								<a href="#"><img src="img/_tmp/ht1-tmp.jpg" alt=""></a>
-							</div>
-							<div class="hotel__descript col-sm-7">
-								<div class="hotel__descript-name">
-									<a href="#">Dalyan Queens Hotel<i class="star star-3"></i></a>
+					<div class="col-sm-4">
+						<div class="block-tourcard">
+							<div class="tourcard__img"><img src="img/_tmp/ht1-tmp.jpg" alt="Galil Hotel"></div>
+							<div class="tourcard__descript">
+								<div class="tourcard__descript-name">
+									<div class="name"><a href="#">Panchi Villa</a><i class="star star-4"></i></div>
+									<div class="subname"><a href="#">Шри-Ланка</a>, <a href="#">Беллона</a></div>
 								</div>
-								<div class="hotel__descript-contact">
-									<a href="#"><strong>Далян</strong></a>,
-									<a href="#">Турция</a>
-								</div>
-								<div class="hotel__descript-note">
-									<a href="#">
-										<p>Отель Dalyan Queens Hotel расположен в городе Далян, что делает его одним из лучших мест пребывания в городе. Отель Dalyan Queens Hotel гордится удобным расположением, современными удобствами в каждом номере и превосходным сервисом. <i class="a--more"></i></p>
-									</a>
-								</div>
-								<div class="hotel__descript-links">
-									<a href="#" class="i-link i--fill">Туры<i></i></a>
-									<a href="#" class="i-link i--fill">Фото<i></i></a>
-									<a href="#" class="i-link i--fill">Карта<i></i></a>
+								<div class="tourcard__descript-weather"><div class="weather i--weather-g2">+11..+12</div></div>
+								<div class="tourcard__descript-note">
+									город вылета: <strong>Санкт-Петербург</strong>, вылет: <strong>30.03.2017</strong>,  ночей: <strong>7</strong>, питание: <strong>:BB(только завтрак)</strong>, размещение: <strong>DBL(2-е взрослых)</strong>, номер: <strong>улучшенный номер</strong>
 								</div>
 							</div>
-							<div class="hotel__rates col-sm-3">
-								<table class="tb--inrates table-condensed">
-									<tr>
-										<td class="prop">рейтинг</td>
-										<td class="value"><span class="c--rate-middle">6.9</span></td>
-									</tr>
-									<tr>
-										<td class="prop">рекомендуют</td>
-										<td class="value"><a href="#">0</a></td>
-									</tr>
-									<tr>
-										<td class="prop">отзывы</td>
-										<td class="value"><a href="#">0</a></td>
-									</tr>
-								</table>
+							<div class="tourcard__footer">
+								<div class="tourcard__footer-itemprice">
+									<div class="itemlink">
+										<a href="#" class="b-link itemlink_about">подробнее о туре</a>
+										<a href="#" class="i-sublink itemlink_more">еще туры в этот отель</a>
+									</div>
+									<div class="itemprice">84 500<i class="fa fa-rub"></i></div>
+								</div>
+								<div class="tourcard__footer-warn">для некоторых авиакомпаний в цену не включен топливный сбор</div>
 							</div>
 						</div>
 					</div>
 
-					<div class="block-hotel">
-						<div class="row">
-							<div class="hotel__img col-sm-2">
-								<a href="#"><img src="img/_tmp/ht1-tmp.jpg" alt=""></a>
-							</div>
-							<div class="hotel__descript col-sm-7">
-								<div class="hotel__descript-name">
-									<a href="#">Bakkhos Guesthouse Kusadasi<i class="star star-4"></i></a>
+					<div class="col-sm-4">
+						<div class="block-tourcard">
+							<div class="tourcard__img"><img src="img/_tmp/ht1-tmp.jpg" alt="Galil Hotel"></div>
+							<div class="tourcard__descript">
+								<div class="tourcard__descript-name">
+									<div class="name"><a href="#">Park Rotana Abu Dhabi</a><i class="star star-5"></i></div>
+									<div class="subname"><a href="#">ОАЭ</a>, <a href="#">Абу-Даби</a></div>
 								</div>
-								<div class="hotel__descript-contact">
-									<a href="#"><strong>Кушадасы</strong></a>,
-									<a href="#">Турция</a>
-								</div>
-								<div class="hotel__descript-note">
-									<a href="#">
-										<p>Отель Bakkhos Guesthouse расположен в городе Кушадасы, что делает его одним из лучших мест пребывания в городе. Для комфорта постояльцев во всех номерах отеля предоставлены удобства, ожидаемые от отеля этого класса. В каждом номере есть кондиционер, душ, отдельный душ и ванная. <i class="a--more"></i></p>
-									</a>
-								</div>
-								<div class="hotel__descript-links">
-									<a href="#" class="i-link i--fill">Туры<i></i></a>
-									<a href="#" class="i-link i--fill">Фото<i></i></a>
-									<a href="#" class="i-link i--fill">Карта<i></i></a>
+								<div class="tourcard__descript-weather"><div class="weather i--weather-g3">+11..+12</div></div>
+								<div class="tourcard__descript-note">
+									город вылета: <strong>Санкт-Петербург</strong>, вылет: <strong>30.03.2017</strong>,  ночей: <strong>7</strong>, питание: <strong>:BB(только завтрак)</strong>, размещение: <strong>DBL(2-е взрослых)</strong>, номер: <strong>улучшенный номер</strong>
 								</div>
 							</div>
-							<div class="hotel__rates col-sm-3">
-								<table class="tb--inrates table-condensed">
-									<tr>
-										<td class="prop">рейтинг</td>
-										<td class="value"><span class="c--rate-low">2.4</span></td>
-									</tr>
-									<tr>
-										<td class="prop">рекомендуют</td>
-										<td class="value"><a href="#">1</a></td>
-									</tr>
-									<tr>
-										<td class="prop">отзывы</td>
-										<td class="value"><a href="#">3</a></td>
-									</tr>
-								</table>
+							<div class="tourcard__footer">
+								<div class="tourcard__footer-itemprice">
+									<div class="itemlink">
+										<a href="#" class="b-link itemlink_about">подробнее о туре</a>
+										<a href="#" class="i-sublink itemlink_more">еще туры в этот отель</a>
+									</div>
+									<div class="itemprice">230 500<i class="fa fa-rub"></i></div>
+								</div>
+								<div class="tourcard__footer-warn">для некоторых авиакомпаний в цену не включен топливный сбор</div>
 							</div>
 						</div>
 					</div>
 
-					<div class="block-hotel">
-						<div class="row">
-							<div class="hotel__img col-sm-2">
-								<a href="#"><img src="img/_tmp/ht1-tmp.jpg" alt=""></a>
-							</div>
-							<div class="hotel__descript col-sm-7">
-								<div class="hotel__descript-name">
-									<a href="#">Dalyan Queens Hotel<i class="star star-3"></i></a>
+					<div class="col-sm-4">
+						<div class="block-tourcard">
+							<div class="tourcard__img"><img src="img/_tmp/ht1-tmp.jpg" alt="Galil Hotel"></div>
+							<div class="tourcard__descript">
+								<div class="tourcard__descript-name">
+									<div class="name"><a href="#">Oriental Pearl Resort</a><i class="star star-3"></i></div>
+									<div class="subname"><a href="#">Вьтнам</a>, <a href="#">Фпнхъет</a></div>
 								</div>
-								<div class="hotel__descript-contact">
-									<a href="#"><strong>Далян</strong></a>,
-									<a href="#">Турция</a>
-								</div>
-								<div class="hotel__descript-note">
-									<a href="#">
-										<p>Отель Dalyan Queens Hotel расположен в городе Далян, что делает его одним из лучших мест пребывания в городе. Отель Dalyan Queens Hotel гордится удобным расположением, современными удобствами в каждом номере и превосходным сервисом. <i class="a--more"></i></p>
-									</a>
-								</div>
-								<div class="hotel__descript-links">
-									<a href="#" class="i-link i--fill">Туры<i></i></a>
-									<a href="#" class="i-link i--fill">Фото<i></i></a>
-									<a href="#" class="i-link i--fill">Карта<i></i></a>
+								<div class="tourcard__descript-weather"><div class="weather i--weather-g4">+11..+12</div></div>
+								<div class="tourcard__descript-note">
+									город вылета: <strong>Санкт-Петербург</strong>, вылет: <strong>30.03.2017</strong>,  ночей: <strong>7</strong>, питание: <strong>:BB(только завтрак)</strong>, размещение: <strong>DBL(2-е взрослых)</strong>, номер: <strong>улучшенный номер</strong>
 								</div>
 							</div>
-							<div class="hotel__rates col-sm-3">
-								<table class="tb--inrates table-condensed">
-									<tr>
-										<td class="prop">рейтинг</td>
-										<td class="value"><span class="c--rate-middle">6.9</span></td>
-									</tr>
-									<tr>
-										<td class="prop">рекомендуют</td>
-										<td class="value"><a href="#">0</a></td>
-									</tr>
-									<tr>
-										<td class="prop">отзывы</td>
-										<td class="value"><a href="#">0</a></td>
-									</tr>
-								</table>
+							<div class="tourcard__footer">
+								<div class="tourcard__footer-itemprice">
+									<div class="itemlink">
+										<a href="#" class="b-link itemlink_about">подробнее о туре</a>
+										<a href="#" class="i-sublink itemlink_more">еще туры в этот отель</a>
+									</div>
+									<div class="itemprice">101 688<i class="fa fa-rub"></i></div>
+								</div>
+								<div class="tourcard__footer-warn">для некоторых авиакомпаний в цену не включен топливный сбор</div>
 							</div>
 						</div>
 					</div>
-
-
-					<div class="stoolbar">
-						<ul class="pagination">
-							<li><a href="#">&laquo;</a></li>
-							<li class="active"><a href="#">1</a></li>
-							<li><a href="#">2</a></li>
-							<li><a href="#">&raquo;</a></li>
-						</ul>
-						<div class="clearfix visible-xs"></div>
-						<div class="stb-filter_res">Всего отобрано <strong>2 659</strong></div>
-					</div>
-
-					
-				</section>
-
-
-			</article>
-
-
-
-			<article class="ac_country-subscript">
-
-				<div class="block-subscript">
-
-					<div class="hdr-h2 hdr--lined"><ins class="emphas bk--red"></ins>Подписаться на рассылку <span>/&nbsp;Новости /&nbsp;Акции /&nbsp;Спецпредложения.</span></div>
-
-					<form action="" name="fm-subscript" class="form-inline">
-						<div class="form-group">
-							<label class="sr-only" for="fld-subscript_name">Ваше имя</label>
-							<input class="form-control" id="fld-subscript_name" placeholder="Ваше имя">
-						</div>
-						<div class="form-group">
-							<label class="sr-only" for="fld-subscript_email">Ваш e-mail</label>
-							<input class="form-control" id="fld-subscript_email" placeholder="Ваш e-mail">
-						</div>
-						<button class="b-btn">Подписаться</button>
-					</form>
-
-					<p class="note">Нажимая кнопку «Подписаться» я принимаю <a href="#">пользовательское соглашение</a>.</p>
 
 				</div>
 
+
 			</article>
 
 
 
-			<article class="ac_country-linksec">
+			<article class="ac_country-news">
+
 
 				<div class="articlehdr">
-					<div class="articlehdr__main"><i class="flag-icon flag-icon-tr"></i>Турция&nbsp;&nbsp; <span>Ссылки раздела</span></div>
-					<ins class="emphas bk--green"></ins>
+					<div class="articlehdr__main">Новости</div>
+					<div class="articlehdr__tool">
+						<a href="#" class="icon-hdr"><img src="img/icons/i-yandex.svg" alt="Яндекс"></a>
+						<a href="#" class="icon-hdr"><img src="img/icons/i-rss.svg" alt="RSS"></a>
+					</div>
+					<ins class="emphas bk--red"></ins>
 				</div>
 
-				<div class="block-linksec">
-					<div class="row">
-						<div class="col-sm-4">
-							<ul class="ul--links">
-								<li><a href="#">Отдых в Турции</a></li>
-								<li><a href="#">Фото Турции</a></li>
-								<li><a href="#">Карта Турции</a></li>
-								<li><a href="#">Отзывы о Турции</a></li>
-								<li><a href="#">Отели Турции</a></li>
-							</ul>
-						</div>
-						<div class="col-sm-4">
-							<ul class="ul--links">
-								<li><a href="#">Авиабилеты в Турцию</a></li>
-								<li><a href="#">Поиск туров в Турцию</a></li>
-								<li><a href="#">Города Турции</a></li>
-								<li><a href="#">Курорты Турции</a></li>
-								<li><a href="#">Места Турции</a></li>
-							</ul>
-						</div>
-						<div class="col-sm-4">
-							<ul class="ul--links">
-								<li><a href="#">Виза в Турцию</a></li>
-								<li><a href="#">Посольства и консульства в Турции</a></li>
-								<li><a href="#">Памятка туристу в Турцию</a></li>
-								<li><a href="#">Погода в Турции</a></li>
-								<li><a href="#">Разговорник</a></li>
-							</ul>
+
+				<div class="row slider block-slider block-slider--xs">
+
+					<div class="col-sm-4">
+						<div class="v-base-block block-newscard">
+							<div class="block__img"><img src="img/_tmp/news1-tmp.jpg" alt=""></div>
+							<div class="block__address">
+								<span class="block__address-date"><ins class="emphas bk--yellow"></ins>01.04.2017</span>/&nbsp;<a
+											href="#">Испания</a>
+							</div>
+							<div class="block__descript">
+								<a href="#">
+									<p class="block__descript-hdr">Международный фестиваль музыки и танца в Гранаде</p>
+									<p>Международный фестиваль музыки и танца в Гранаде — один из самых популярных летних праздников в Испании. Впервые он состоялся в 1922 году по инициативе Федерико Гарсия Лорка, Мануэль де Фалья, Рамона Гомеса де ла Серна, Сантьяго Русиньола и других интеллектуалов и артистов той эпохи.</p>
+								</a>
+							</div>
 						</div>
 					</div>
+
+					<div class="col-sm-4">
+						<div class="v-base-block block-newscard">
+							<div class="block__img"><img src="img/_tmp/news1-tmp.jpg" alt=""></div>
+							<div class="block__address">
+								<span class="block__address-date"><ins class="emphas bk--yellow"></ins>09.04.2017</span>/&nbsp;<a
+											href="#">Вьетнам</a>
+							</div>
+							<div class="block__descript">
+								<a href="#">
+									<p class="block__descript-hdr">Фестиваль ароматной Пагоды</p>
+									<p>Ароматная пагода — одно из древнейших во Вьетнаме буддийских святилищ в провинции Хатаи, что в 70 км к юго-западу от Ханоя. Пагода была основана в XV веке. Сейчас это не просто храм, а целый комплекс горных и пещерных святилищ и усыпальниц, считающийся одним из главных исторических памятников Вьетнама.</p>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-4">
+						<div class="v-base-block block-newscard">
+							<div class="block__img"><img src="img/_tmp/news1-tmp.jpg" alt=""></div>
+							<div class="block__address">
+								<span class="block__address-date"><ins class="emphas bk--yellow"></ins>16.04.2017</span>/&nbsp;<a
+											href="#">Испания</a>
+							</div>
+							<div class="block__descript">
+								<a href="#">
+									<p class="block__descript-hdr">Семана Санта (Страстная неделя)</p>
+									<p>Семана Санта (Страстная неделя) – главный религиозный праздник в Испании, когда испанцы вспоминают о том, что произошло с момента входа Христа в Иерусалим и до дня его Светлого Воскрешения и устраивают представления, иллюстрирующие эти события. За неделю в Испании несколько раз в день проходят массовые религиозные шествия.</p>
+								</a>
+							</div>
+						</div>
+					</div>
+
 				</div>
+
+
+				<a href="#" class="i-link i--more"><i></i>все новости</a>
+
 
 			</article>
 
@@ -1759,287 +1370,112 @@
 
 
 
-				<div class="block-filter filter--hotel" id="as_filter-hotel">
+				<div class="block-consult">
+					<button type="button" class="b-btn consult__refresh" title="Обновить данные"><i class="fa fa-refresh" aria-hidden="true"></i></button>
+					<div class="hdr-h2 hdr--lined"><ins class="emphas bk--red"></ins>Менеджер по продажам туров</div>
+					<div class="clearfix">
+						<div class="consult__img">
+							<img src="img/consultant.jpg" alt="">
+						</div>
+						<div class="consult__descript">
+							<div class="consult_name">Ирина Вставская</div>
+							<div class="consult_prof">турфирма «Мария»</div>
+							<a href="tel:+74953089897" class="consult_tel">+7&nbsp;495<span>308-98-97</span></a>
+						</div>
+					</div>
+					<div class="clearfix">
+						<div class="consult__msgrs">
+							<a href="#"><img src="img/icons/im-fbm.svg" alt="Facebook Messenger" title="Связаться через Facebook Messenger"></a>
+							<a href="#"><img src="img/icons/im-telegram.svg" alt="Telegram" title="Связаться через Telegram"></a>
+							<a href="#"><img src="img/icons/im-viber.svg" alt="Viber" title="Связаться через Viber"></a>
+							<a href="#"><img src="img/icons/im-whatsup.svg" alt="WhatsUp" title="Связаться через WhatsUp"></a>
+							<a href="#"><img src="img/icons/im-skype.svg" alt="Skype" title="Связаться через Skype"></a>
+							<a href="#"><img src="img/icons/im-icq.svg" alt="ICQ" title="Связаться через ICQ"></a>
+						</div>
+					</div>
+					<div class="clearfix">
+						<div class="consult__btns">
+							<button class="consult_btn-call b-btn" data-toggle="modal" data-target="#modal__call"><i class="fa fa-phone"></i>Заказать звонок</button>
+							<button class="consult_btn-mess b-btn" data-toggle="modal" data-target="#modal__mess"><i class="fa fa-pencil"></i>Оставить заявку</button>
+						</div>
+					</div>
+				</div>
 
-					<div class="hdr-h2 hdr--lined"><ins class="emphas bk--blue"></ins>Отбор отелей</div>
 
-					<form name="aside-fm-filter_hotel" id="aside-fm-filter_hotel">
-						<div class="form-group">
-							<label for="aside-fld-filter_hotel-city">Город Турции</label>
-							<select name="а" id="aside-fld-filter_hotel-city" class="form-control">
-								<option value="0">не имеет значения</option>
-								<option value="445250">Аванос</option>
-								<option value="445416">Адакёй</option>
-								<option value="415572">Адана</option>
-								<option value="445240">Адапазары</option>
-								<option value="445413">Аджарлар</option>
-								<option value="445325">Адрасан</option>
-								<option value="445224">Адыяман</option>
-								<option value="445358">Айваджик</option>
-								<option value="445308">Айвалык</option>
-								<option value="445210">Айдин</option>
-								<option value="445313">Акбук</option>
-								<option value="445304">Акиюрт</option>
-								<option value="445279">Аксакоса</option>
-								<option value="445280">Акхисар</option>
-								<option value="445374">Акчай</option>
-								<option value="445383">Акьяка</option>
-								<option value="445384">Акьярлар</option>
-								<option value="1300">Аланья</option>
-								<option value="445316">Алачати</option>
-								<option value="445403">Алашехир</option>
-								<option value="445246">Алтинкум</option>
-								<option value="445382">Алтинолук</option>
-								<option value="445323">Амасра</option>
-								<option value="445405">Анамур</option>
-								<option value="1299">Анкара</option>
-								<option value="445237">Антакья</option>
-								<option value="1301">Анталья</option>
-								<option value="445393">Арапгир</option>
-								<option value="445392">Ардесен</option>
-								<option value="445303">Армутлу</option>
-								<option value="445231">Артвин</option>
-								<option value="445299">Ассос</option>
-								<option value="415956">Афьон-Карахисар</option>
-								<option value="445423">Аяс</option>
-								<option value="445400">Бадемли</option>
-								<option value="445385">Балабани</option>
-								<option value="445226">Балыкесир</option>
-								<option value="445342">Бейджик</option>
-								<option value="445408">Бейшехир</option>
-								<option value="1302">Белек</option>
-								<option value="445305">Бельдиби</option>
-								<option value="445236">Бергама</option>
-								<option value="445265">Битез</option>
-								<option value="445283">Богазичи</option>
-								<option value="445376">Богазкале</option>
-								<option value="445371">Богазкент</option>
-								<option value="1303">Бодрум</option>
-								<option value="445354">Бозбурун</option>
-								<option value="445282">Бозкада</option>
-								<option value="415954">Болу</option>
-								<option value="415843">Бурса</option>
-								<option value="445352">Бурхание</option>
-								<option value="445349">Буюкесели</option>
-								<option value="445335">Бююкада</option>
-								<option value="445235">Ван</option>
-								<option value="445216">Газиантеп</option>
-								<option value="445298">Газипаса</option>
-								<option value="445293">Гамбет</option>
-								<option value="445286">Гандоган</option>
-								<option value="445252">Гебзе</option>
-								<option value="445321">Гекчеада</option>
-								<option value="445409">Гелиболу</option>
-								<option value="445294">Гереде</option>
-								<option value="445415">Гёкчеорен</option>
-								<option value="445245">Гёреме</option>
-								<option value="445273">Гиресун</option>
-								<option value="445295">Голтуркбуку</option>
-								<option value="445292">Госек</option>
-								<option value="445244">Гоуник</option>
-								<option value="445275">Гумульдур</option>
-								<option value="445318">Гюзельчамлы</option>
-								<option value="445345">Гюзельюрт</option>
-								<option value="445270">Гюллюк</option>
-								<option value="445284">Гюмюшлюк</option>
-								<option value="445425">Гюре</option>
-								<option value="445395">Давутлар</option>
-								<option value="445327">Дадай</option>
-								<option value="1305">Даламан</option>
-								<option value="445242">Далян</option>
-								<option value="445241">Датса</option>
-								<option value="445281">Демре</option>
-								<option value="445212">Денизли</option>
-								<option value="445257">Денизяка</option>
-								<option value="445387">Дёртъёл</option>
-								<option value="445424">Джамликой</option>
-								<option value="1306">Дидим</option>
-								<option value="445213">Диярбакир</option>
-								<option value="445386">Дорттепе</option>
-								<option value="445230">Дюздже</option>
-								<option value="445291">Ежеабат</option>
-								<option value="445338">Зонгулдак</option>
-								<option value="445326">Игнеада</option>
-								<option value="1307">Измир</option>
-								<option value="445239">Измит</option>
-								<option value="445363">Инеболу</option>
-								<option value="445357">Инегёль</option>
-								<option value="445238">Искендерун</option>
-								<option value="445346">Испарта</option>
-								<option value="445319">Ичмелер</option>
-								<option value="445389">Йозгат</option>
-								<option value="445309">Йомра</option>
-								<option value="445414">Кавак</option>
-								<option value="445355">Кадрие</option>
-								<option value="445377">Кайели</option>
-								<option value="445373">Каймаклы</option>
-								<option value="1308">Кайсери</option>
-								<option value="445253">Калкан</option>
-								<option value="445381">Капыкыры</option>
-								<option value="445420">Караагач</option>
-								<option value="445232">Карабук</option>
-								<option value="445402">Карабурун</option>
-								<option value="445364">Карадениз Эрегли</option>
-								<option value="445359">Карамюрсель</option>
-								<option value="445411">Карасу</option>
-								<option value="445365">Карс</option>
-								<option value="445397">Картепе</option>
-								<option value="445256">Кас</option>
-								<option value="445324">Кастамону</option>
-								<option value="445272">Кахраманмараш</option>
-								<option value="445315">Каякой</option>
-								<option value="445379">Кекова</option>
-								<option value="445288">Кемальпаша</option>
-								<option value="1309">Кемер</option>
-								<option value="445261">Кенджкеркоу</option>
-								<option value="445350">Кешан</option>
-								<option value="445300">Кизилагас</option>
-								<option value="445380">Кизилот</option>
-								<option value="445366">Кийикой</option>
-								<option value="445396">Киразли</option>
-								<option value="445391">Козлу</option>
-								<option value="445322">Койчегиз</option>
-								<option value="445217">Кониа</option>
-								<option value="445233">Корум</option>
-								<option value="445334">Кула</option>
-								<option value="445290">Кумлуджа</option>
-								<option value="445262">Курсунлу</option>
-								<option value="445306">Кучуккую</option>
-								<option value="1311">Кушадасы</option>
-								<option value="445348">Кызкалеси</option>
-								<option value="445218">Кютахья</option>
-								<option value="445410">Лапсеки</option>
-								<option value="445227">Малатья</option>
-								<option value="445251">Манавгат</option>
-								<option value="445260">Маниса</option>
-								<option value="445228">Мардин</option>
-								<option value="445412">Мармара Эреглиси</option>
-								<option value="1312">Мармарис</option>
-								<option value="445344">Мачка</option>
-								<option value="445219">Мерси</option>
-								<option value="445372">Меселик</option>
-								<option value="445418">Месудие</option>
-								<option value="445360">Мидиат</option>
-								<option value="445331">Милас</option>
-								<option value="445220">Мугла</option>
-								<option value="445328">Муданьи</option>
-								<option value="445361">Мудурну</option>
-								<option value="445421">Мустафапаса</option>
-								<option value="1313">Невшехир</option>
-								<option value="445234">Нигде</option>
-								<option value="445243">Оздер</option>
-								<option value="445336">Олимпос</option>
-								<option value="445254">Олудениз</option>
-								<option value="445274">Орду</option>
-								<option value="445314">Орен</option>
-								<option value="445255">Ортака</option>
-								<option value="445370">Ортакей</option>
-								<option value="445287">Ортахисар</option>
-								<option value="445417">Паламутбюкю</option>
-								<option value="1315">Памуккале</option>
-								<option value="445317">Патара</option>
-								<option value="445407">Пертек</option>
-								<option value="445221">Ризе</option>
-								<option value="445337">Салихлы</option>
-								<option value="445222">Самсун</option>
-								<option value="445388">Сандикли</option>
-								<option value="445229">Санлиурфа</option>
-								<option value="445259">Сапанка</option>
-								<option value="445297">Сарайкой</option>
-								<option value="445353">Саригерме</option>
-								<option value="1316">Сарыкамыш</option>
-								<option value="445268">Сафранболу</option>
-								<option value="445310">Серик</option>
-								<option value="1319">Сеферихисар</option>
-								<option value="445378">Сёгют</option>
-								<option value="445398">Сёке</option>
-								<option value="445367">Сивас</option>
-								<option value="445406">Сивридже</option>
-								<option value="1320">Сиде</option>
-								<option value="445341">Силифке</option>
-								<option value="445340">Синоп</option>
-								<option value="445267">Сирали</option>
-								<option value="1321">Стамбул</option>
-								<option value="445399">Татван</option>
-								<option value="445351">Текирдаг</option>
-								<option value="445356">Текирова</option>
-								<option value="445330">Термал</option>
-								<option value="445333">Торба</option>
-								<option value="445277">Торбалы</option>
-								<option value="445223">Трабзон</option>
-								<option value="445332">Тузла</option>
-								<option value="445266">Тургутрейз</option>
-								<option value="445312">Турунс</option>
-								<option value="445422">Узунгёль</option>
-								<option value="445390">Узуньюрт</option>
-								<option value="445302">Ула</option>
-								<option value="445343">Унье</option>
-								<option value="415558">Ургуп</option>
-								<option value="445329">Урла</option>
-								<option value="445278">Учхисар</option>
-								<option value="1323">Фетхие</option>
-								<option value="445296">Финике</option>
-								<option value="445276">Фоча</option>
-								<option value="445347">Хейбелиада</option>
-								<option value="445401">Хельвачи</option>
-								<option value="445289">Хопа</option>
-								<option value="445311">Чамьюва</option>
-								<option value="415587">Чанаккале</option>
-								<option value="445271">Черкезкой</option>
-								<option value="1324">Чешме</option>
-								<option value="445369">Чифтлик</option>
-								<option value="445264">Чолаклы</option>
-								<option value="445339">Чорлу</option>
-								<option value="445394">Чынарджык</option>
-								<option value="445269">Эгирдир</option>
-								<option value="445214">Эдирне</option>
-								<option value="445248">Эдремит</option>
-								<option value="445419">Эмеджик</option>
-								<option value="445426">Эмет</option>
-								<option value="445247">Эрдек</option>
-								<option value="445301">Эрдемли</option>
-								<option value="445375">Эрзинджан</option>
-								<option value="415955">Эрзурум</option>
-								<option value="445362">Эрин</option>
-								<option value="445307">Эрсис</option>
-								<option value="445215">Эскизегир</option>
-								<option value="445368">Юсуфели</option>
-								<option value="445320">Яликавак</option>
-								<option value="415584">Ялова</option>
-								<option value="445285">Яниклар</option>
-							</select>
-						</div>
-						<div class="form-group">
-							<label>Категория отеля</label>
-							<br>
-							<label class="label--ch"><input type="checkbox" name="aside-fld-filter_hotel-category[1]" id="aside-fld-filter_hotel-category1" value="1">1<i class="star star-1"></i></label>
-							<label class="label--ch"><input type="checkbox" name="aside-fld-filter_hotel-category[2]" id="aside-fld-filter_hotel-category2" value="2">2<i class="star star-1"></i></label>
-							<label class="label--ch"><input type="checkbox" name="aside-fld-filter_hotel-category[3]" id="aside-fld-filter_hotel-category3" value="3">3<i class="star star-1"></i></label>
-							<label class="label--ch"><input type="checkbox" name="aside-fld-filter_hotel-category[4]" id="aside-fld-filter_hotel-category4" value="4">4<i class="star star-1"></i></label>
-							<label class="label--ch"><input type="checkbox" name="aside-fld-filter_hotel-category[5]" id="aside-fld-filter_hotel-category5" value="5">5<i class="star star-1"></i></label>
-							<label class="label--ch"><input type="checkbox" name="aside-fld-filter_hotel-category[6]" id="aside-fld-filter_hotel-category6" value="6">HV</label>
-						</div>
-						<div class="form-group">
-							<label>Расположение отеля</label>
-							<br>
-							<label class="label--ch"><input type="checkbox" name="aside-fld-filter_hotel-line[1]" id="aside-fld-filter_hotel-line1" value="1">1-я линия</label>
-							<label class="label--ch"><input type="checkbox" name="aside-fld-filter_hotel-line[2]" id="aside-fld-filter_hotel-line2" value="2">2-я линия</label>
-							<label class="label--ch"><input type="checkbox" name="aside-fld-filter_hotel-line[3]" id="aside-fld-filter_hotel-line3" value="3">3-я линия</label>
-						</div>
-						<div class="form-group">
-							<label>Тип пляжа</label>
-							<br>
-							<label class="label--ch"><input type="checkbox" name="aside-fld-filter_hotel-beach[1]" id="aside-fld-filter_hotel-beach1" value="1">песчаный</label>
-							<label class="label--ch"><input type="checkbox" name="aside-fld-filter_hotel-beach[2]" id="aside-fld-filter_hotel-beach2" value="2">галечный</label>
-						</div>
-						<div class="form-group">
-							<label>Интернет</label>
-							<br>
-							<label class="label--ch"><input type="checkbox" name="aside-fld-filter_hotel-internet" id="aside-fld-filter_hotel-internet" value="1">бесплатный Wi-Fi</label>
-						</div>
-						<button class="b-btn">Отобрать отели</button>
-					</form>
 
+				<div class="aside-tourcontact">
+
+					<div class="hdr-h2 hdr--lined"><ins class="emphas bk--green"></ins>Где купить туры?</div>
+
+					<div class="aside-accordion" id="tourcontact-accordion">
+
+						<div class="accordion panel">
+							<div class="accordion__hdr" data-toggle="collapse" data-parent="#tourcontact-accordion" data-target="#tourcontact1">
+								<div class="hdr_icon i--down"></div>
+								Москва
+							</div>
+							<div class="accordion__plate collapse in" id="tourcontact1">
+								<table>
+									<tr>
+										<td class="area">Арбатская</td>
+										<td class="tel"><a href="tel:+74956496336">+7&nbsp;495<span>649-63-36</span></a></td>
+									</tr>
+									<tr>
+										<td class="area">Динамо</td>
+										<td class="tel"><a href="tel:+74956496336">+7&nbsp;495<span>280-70-85</span></a></td>
+									</tr>
+									<tr>
+										<td class="area">Китай-город</td>
+										<td class="tel"><a href="tel:+74956496336">+7&nbsp;495<span>308-98-97</span></a></td>
+									</tr>
+									<tr>
+										<td class="area">Марьина Роща</td>
+										<td class="tel"><a href="tel:+74956496336">+7&nbsp;495<span>232-00-62</span></a></td>
+									</tr>
+								</table>
+								<a href="#" class="i-link i--map">показать на карте<i></i></a>
+							</div>
+						</div>
+						<div class="accordion panel">
+							<div class="accordion__hdr" data-toggle="collapse" data-parent="#tourcontact-accordion" data-target="#tourcontact2">
+								<div class="hdr_icon"></div>
+								Регионы России
+							</div>
+							<div class="accordion__plate collapse" id="tourcontact2">
+								<table>
+									<tr>
+										<td class="area">Кемерово</td>
+										<td class="tel"><a href="tel:+74956496336">+7&nbsp;912<span>649-63-36</span></a></td>
+									</tr>
+									<tr>
+										<td class="area">Санкт-Петербург</td>
+										<td class="tel"><a href="tel:+74956496336">+7&nbsp;915<span>280-70-85</span></a></td>
+									</tr>
+									<tr>
+										<td class="area">Сыктывкар</td>
+										<td class="tel"><a href="tel:+74956496336">+7&nbsp;8099<span>308-98-97</span></a></td>
+									</tr>
+								</table>
+								<a href="#" class="i-link i--map">показать на карте<i></i></a>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+
+
+				<div class="aside-adv">
+					<img src="img/_tmp/adv1.jpg" width="100%" alt="">
+				</div>
+
+				<div class="aside-adv">
+					<img src="img/_tmp/adv1.jpg" width="100%" alt="">
+				</div>
+
+				<div class="aside-adv">
+					<img src="img/_tmp/adv1.jpg" width="100%" alt="">
 				</div>
 
 
@@ -2049,7 +1485,6 @@
 		<!-- конец колонка правая ----------------------------------->
 	</div>
 </div>
-
 
 
 
@@ -2225,6 +1660,16 @@
 
 
 </footer>
+
+
+
+
+
+<div class="panel-xs-super panel-xs--btm" id="id_panel-xs-btm">
+	<div class="super__icon"><i class="fa fa-calculator"></i></div>
+	<a href="#" class="super__link" data-toggle="modal" data-target="#modal__calctour"><strong>Рассчитать цену тура</strong></a>
+	<div class="super__close" onClick="document.getElementById('id_panel-xs-btm').style.display='none';return false;"><i class="fa fa-close"></i></div>
+</div>
 
 
 

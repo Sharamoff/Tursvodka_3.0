@@ -129,6 +129,11 @@
 
 
 .header-tourpicking {
+	position: relative;
+	max-width: $m-max - 60;
+	min-width: $m-min;
+	width: 100%;
+	margin: 0 auto;
 	padding: 2rem;
 	background: $c-yellow-light url("../img/bk-fm1.jpg") no-repeat fixed top center;
 	border-radius: 5px 5px 0 0;

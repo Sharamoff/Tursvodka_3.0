@@ -133,10 +133,24 @@ section {
 
 .row--flexed {
   display: -webkit-box;
-  display: flex; }
+  display: flex;
+  flex-wrap: wrap; }
   @media only screen and (max-width: 767px) {
     .row--flexed {
       display: block; } }
+
+.row--flexed-margined {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap; }
+  @media only screen and (max-width: 767px) {
+    .row--flexed-margined {
+      display: block; } }
+  .row--flexed-margined > [class*="col-"] {
+    margin-bottom: 30px; }
+    @media only screen and (max-width: 767px) {
+      .row--flexed-margined > [class*="col-"] {
+        margin-bottom: 15px; } }
 
 .row--col-flexed {
   display: -webkit-box;
@@ -956,7 +970,9 @@ HR {
   min-width: 10rem;
   margin-top: 1rem; }
   .b-formbtn:hover {
-    background: #ff8000 !important; }
+    background: #ff8000 !important;
+    color: white !important;
+    text-decoration: none; }
 
 .b-searchbtn {
   display: inline-block;
@@ -5127,6 +5143,22 @@ INPUT[type="file"] {
     display: block;
     height: 100%; }
 
+.block-slider--xs {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap; }
+  @media only screen and (max-width: 767px) {
+    .block-slider--xs {
+      display: block; }
+      .block-slider--xs > [class*="col-"] {
+        margin-bottom: 30px;
+        min-height: 600px;
+        background: #000 !important; }
+        .block-slider--xs > [class*="col-"] > div {
+          margin-bottom: 0; } }
+  .block-slider--xs > [class*="col-"] {
+    margin-bottom: 30px; }
+
 .block-location {
   height: 100%;
   padding: 0;
@@ -6050,6 +6082,11 @@ INPUT[type="file"] {
     width: 75%; }
 
 .header-tourpicking {
+  position: relative;
+  max-width: 1500px;
+  min-width: 290px;
+  width: 100%;
+  margin: 0 auto;
   padding: 2rem;
   background: #ffa300 url("../img/bk-fm1.jpg") no-repeat fixed top center;
   border-radius: 5px 5px 0 0; }

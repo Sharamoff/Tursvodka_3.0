@@ -119,15 +119,35 @@ section {
 }
 
 .row--flexed {
-	display: -webkit-flex;
 	display: flex;
+	flex-wrap: wrap;
 
 	@include respond-to(media-xs) {
 		display: block;
-		//margin-bottom: -15px;
 	}
 
 }
+
+.row--flexed-margined {
+	display: flex;
+	flex-wrap: wrap;
+
+	@include respond-to(media-xs) {
+		display: block;
+	}
+
+	> [class*="col-"] {
+
+		margin-bottom: 30px;
+
+		@include respond-to(media-xs) {
+			margin-bottom: 15px;
+		}
+
+	}
+
+}
+
 
 .row--col-flexed {
 	display: -webkit-flex;

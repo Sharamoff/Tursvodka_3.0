@@ -61,3 +61,36 @@
 	}
 
 }
+
+
+
+.block-slider--xs {
+	display: flex;
+	flex-wrap: wrap;
+
+	@include respond-to(media-xs) {
+		display: block;
+
+		> [class*="col-"] {
+			margin-bottom: 30px;
+			min-height: 600px;
+			background: #000 !important;
+
+			> div {
+
+				margin-bottom: 0;
+			}
+
+		}
+
+	}
+
+	> [class*="col-"] {
+		margin-bottom: 30px;
+	}
+
+	.slick-slide {
+		//max-width: 290px;
+	}
+
+}

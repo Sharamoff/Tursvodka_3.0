@@ -60,6 +60,8 @@
 
 	&:hover {
 		background: $color-link-hover !important;
+		color: $c-white !important;
+		text-decoration: none;
 	}
 
 }
