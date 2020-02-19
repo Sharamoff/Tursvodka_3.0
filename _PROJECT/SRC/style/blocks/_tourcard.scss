@@ -18,7 +18,7 @@
 
 	@include respond-to(media-xs) {
 		padding-bottom: 0;
-		margin-bottom: 3rem;
+		min-height: 54rem;
 	}
 
 	.tourcard__img {

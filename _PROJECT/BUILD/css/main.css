@@ -2900,7 +2900,7 @@ INPUT[type="file"] {
   @media only screen and (max-width: 767px) {
     .block-tourcard {
       padding-bottom: 0;
-      margin-bottom: 3rem; } }
+      min-height: 54rem; } }
   .block-tourcard .tourcard__img img {
     width: 100%;
     height: auto; }
@@ -5147,17 +5147,19 @@ INPUT[type="file"] {
   display: -webkit-box;
   display: flex;
   flex-wrap: wrap; }
-  @media only screen and (max-width: 767px) {
-    .block-slider--xs {
-      display: block; }
-      .block-slider--xs > [class*="col-"] {
-        margin-bottom: 30px;
-        min-height: 600px;
-        background: #000 !important; }
-        .block-slider--xs > [class*="col-"] > div {
-          margin-bottom: 0; } }
   .block-slider--xs > [class*="col-"] {
     margin-bottom: 30px; }
+
+@media only screen and (max-width: 767px) {
+  .block-slider--xs {
+    display: block;
+    margin-left: 0;
+    margin-right: 0; }
+    .block-slider--xs .slick-slide {
+      padding-left: 7px !important;
+      padding-right: 7px  !important; }
+    .block-slider--xs .slick-dots li {
+      width: 10px !important; } }
 
 .block-location {
   height: 100%;
