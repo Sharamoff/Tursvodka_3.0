@@ -6,28 +6,32 @@
   src: url("../fonts/roboto-condensed.eot");
   src: url("../fonts/roboto-condensed.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-condensed.woff") format("woff"), url("../fonts/roboto-condensed.ttf") format("truetype");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+  font-display: swap; }
 
 @font-face {
   font-family: 'Roboto Condensed';
   src: url("../fonts/roboto-boldcondensed.eot");
   src: url("../fonts/roboto-boldcondensed.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-boldcondensed.woff") format("woff"), url("../fonts/roboto-boldcondensed.ttf") format("truetype");
   font-weight: bold;
-  font-style: normal; }
+  font-style: normal;
+  font-display: swap; }
 
 @font-face {
   font-family: 'Roboto Condensed Light';
   src: url("../fonts/robotocondensed-light.eot");
   src: url("../fonts/robotocondensed-light.eot?#iefix") format("embedded-opentype"), url("../fonts/robotocondensed-light.woff") format("woff"), url("../fonts/robotocondensed-light.ttf") format("truetype");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+  font-display: swap; }
 
 @font-face {
   font-family: 'Glyphicons Halflings';
   src: url("../fonts/glyphicons-halflings-regular.eot");
   src: url("../fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/glyphicons-halflings-regular.woff2") format("woff2"), url("../fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+  font-display: swap; }
 
 @media only screen and (max-width: 767px) {
   HTML {
@@ -2900,7 +2904,7 @@ INPUT[type="file"] {
   @media only screen and (max-width: 767px) {
     .block-tourcard {
       padding-bottom: 0;
-      min-height: 54rem; } }
+      min-height: 55rem; } }
   .block-tourcard .tourcard__img img {
     width: 100%;
     height: auto; }
@@ -6328,7 +6332,7 @@ INPUT[type="file"] {
       clear: both; }
     .navbar-custom .navbar-nav {
       padding: 0;
-      margin: 2rem 0 0 0; }
+      margin: 0; }
       .navbar-custom .navbar-nav > li {
         display: block;
         border: none;
@@ -6343,7 +6347,8 @@ INPUT[type="file"] {
         .navbar-custom .navbar-nav .dropdown-menu > li a {
           padding: 0.3rem 0 0.3rem 1rem; }
     .navbar-custom .navbar-collapse {
-      padding: 2rem 0; }
+      padding: 2rem 0;
+      height: 100vh; }
     .navbar-custom .navbar-cabinet {
       display: block;
       margin-bottom: 2rem; }
@@ -6405,6 +6410,10 @@ INPUT[type="file"] {
         display: table; }
       .navbar-custom .navbar-region .navbar-region__fld-region:after {
         clear: both; }
+    .navbar-custom .navbar-menu {
+      margin-top: 2rem;
+      margin-bottom: 4rem;
+      overflow-x: auto; }
     .navbar-custom .navbar-superlink {
       display: inline-block;
       float: right;
@@ -6458,6 +6467,11 @@ INPUT[type="file"] {
   font-family: "Roboto Condensed", "Arial Narrow", Arial, Helvetica, sans-serif;
   border: solid 1px #dddddd;
   border-radius: 0; }
+  .nav-country:before, .nav-country:after {
+    content: " ";
+    display: table; }
+  .nav-country:after {
+    clear: both; }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .nav-country {
       width: 95%;

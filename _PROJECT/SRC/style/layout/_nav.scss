@@ -335,7 +335,7 @@
 
 		.navbar-nav {
 			padding: 0;
-			margin: 2rem 0 0 0;
+			margin: 0;
 
 			& > li {
 				display: block;
@@ -365,6 +365,7 @@
 
 		.navbar-collapse {
 			padding: 2rem 0;
+			height: 100vh;
 		}
 
 		.navbar-cabinet {
@@ -431,6 +432,12 @@
 				@include clearfix;
 			}
 
+		}
+
+		.navbar-menu {
+			margin-top: 2rem;
+			margin-bottom: 4rem;
+			overflow-x: auto;
 		}
 
 		.navbar-superlink {
@@ -515,6 +522,7 @@
 	font-family: $font-family-cond;
 	border: solid 1px $c-gray-lighter;
 	border-radius: 0;
+	@include clearfix;
 
 	@include respond-to(media-sm) {
 		width: 95%;
