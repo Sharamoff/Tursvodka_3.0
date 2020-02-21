@@ -370,7 +370,7 @@ $('.block-slider--adaptive').slick({
 		breakpoint: 769,
 		settings: {	slidesToShow: 2	}
 	}, {
-		breakpoint: 420,
+		breakpoint: 560,
 		settings: {	slidesToShow: 1 }
 	}]
 });
@@ -387,7 +387,7 @@ $('.block-slider--sized').slick({
 		breakpoint: 769,
 		settings: {	slidesToShow: 2	}
 	}, {
-		breakpoint: 420,
+		breakpoint: 560,
 		settings: {	slidesToShow: 1 }
 	}]
 });
@@ -399,7 +399,7 @@ $('.block-slider--sized').slick({
 function SliderXS() {
 	var
 		def_width = $(document).width();
-	if (def_width <= 420) {
+	if (def_width <= 560) {
 		$('.block-slider--xs').slick({
 			dots: true,
 			arrows: false,
