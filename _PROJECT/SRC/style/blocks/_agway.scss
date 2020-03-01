@@ -1,0 +1,93 @@
+///////////////////////////////////////////////
+
+
+
+// шлюзы для агенств
+
+
+.block-agway {
+	height: 100%;
+	border: solid 1px $color-border;
+	padding: 1.5rem 1.5rem 5rem 3rem;
+	position: relative;
+
+	@include respond-to(media-xs) {
+		padding: 1.5rem 1.5rem 4rem 1.5rem;
+	}
+
+	.agway__img {
+		position: absolute;
+		top: 1.5rem;
+		left: 3rem;
+
+		@include respond-to(media-xs) {
+			left: 1.5rem;
+		}
+
+		img {
+			height: 110px;
+			width: auto;
+		}
+
+	}
+
+	.agway__price {
+		position: absolute;
+		top: 1.5rem;
+		right: -5px;
+		width: 140px;
+		height: 45px;
+		line-height: 40px;
+		text-align: center;
+		color: $c-black;
+		font-family: $font-family-cond;
+		font-size: 21px;
+		background: url("../img/agway.svg") no-repeat;
+
+		.fa-rub {
+			font-size: $font-size-base;
+		}
+
+	}
+
+	.agway__hdr {
+		font: normal 2.1rem $font-family-cond;
+		line-height: 1.1;
+		text-transform: uppercase;
+		color: $color-hdr;
+		margin-right: 15rem;
+		margin-bottom: 1.5rem;
+	}
+
+	.agway__txt {
+		font-size: $font-size-basemin;
+		margin-bottom: 2rem;
+	}
+
+	.b-link {
+		position: absolute;
+		bottom: 2rem;
+		left: 3rem;
+
+		@include respond-to(media-xs) {
+			bottom: 1.5rem;
+			left: 1.5rem;
+		}
+
+	}
+
+	&.agway--max {
+		background-color: $c-gray-lightermore;
+
+		.agway__hdr,
+		.agway__txt,
+		.b-link {
+			margin-left: 15rem;
+		}
+
+
+
+	}
+
+}
+

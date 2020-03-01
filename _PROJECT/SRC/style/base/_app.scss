@@ -561,6 +561,12 @@ HR {
 }
 
 
+.note {
+	color: $c-gray-darker;
+	font-size: $font-size-basemin;
+}
+
+
 .scrolled-x {
 	overflow-x: scroll;
 
@@ -569,6 +575,7 @@ HR {
 	}
 
 }
+
 
 
 .totop {
