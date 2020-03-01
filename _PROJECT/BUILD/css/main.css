@@ -5994,12 +5994,15 @@ INPUT[type="file"] {
     position: absolute;
     top: 1.5rem;
     left: 3rem; }
-    @media only screen and (max-width: 767px) {
-      .block-agway .agway__img {
-        left: 1.5rem; } }
     .block-agway .agway__img img {
       height: 110px;
       width: auto; }
+    @media only screen and (max-width: 767px) {
+      .block-agway .agway__img {
+        position: static;
+        margin-bottom: 1.5rem; }
+        .block-agway .agway__img img {
+          height: 50px; } }
   .block-agway .agway__price {
     position: absolute;
     top: 1.5rem;
@@ -6038,6 +6041,11 @@ INPUT[type="file"] {
     .block-agway.agway--max .agway__txt,
     .block-agway.agway--max .b-link {
       margin-left: 15rem; }
+      @media only screen and (max-width: 767px) {
+        .block-agway.agway--max .agway__hdr,
+        .block-agway.agway--max .agway__txt,
+        .block-agway.agway--max .b-link {
+          margin-left: inherit; } }
 
 .header {
   background-color: white; }

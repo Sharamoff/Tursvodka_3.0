@@ -20,13 +20,19 @@
 		top: 1.5rem;
 		left: 3rem;
 
-		@include respond-to(media-xs) {
-			left: 1.5rem;
-		}
-
 		img {
 			height: 110px;
 			width: auto;
+		}
+
+		@include respond-to(media-xs) {
+			position: static;
+			margin-bottom: 1.5rem;
+
+			img {
+				height: 50px;
+			}
+
 		}
 
 	}
@@ -83,9 +89,13 @@
 		.agway__txt,
 		.b-link {
 			margin-left: 15rem;
+
+			@include respond-to(media-xs) {
+				margin-left: inherit;
+
+			}
+
 		}
-
-
 
 	}
 
