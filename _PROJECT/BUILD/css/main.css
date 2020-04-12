@@ -3870,6 +3870,43 @@ INPUT[type="file"] {
       background: #eeeeee;
       color: #999999; }
 
+.block-faqacc {
+  padding-bottom: 0.5rem;
+  margin-bottom: 3rem;
+  border-bottom: solid 1px #cccccc; }
+  .block-faqacc:before, .block-faqacc:after {
+    content: " ";
+    display: table; }
+  .block-faqacc:after {
+    clear: both; }
+  .block-faqacc .accordion__hdr {
+    cursor: pointer;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    position: relative;
+    padding-left: 3rem;
+    padding-right: 3rem; }
+    .block-faqacc .accordion__hdr .hdr_sign {
+      position: absolute;
+      top: -2px;
+      left: 0;
+      width: 3rem; }
+      .block-faqacc .accordion__hdr .hdr_sign img {
+        width: 21px;
+        height: 21px; }
+    .block-faqacc .accordion__hdr .hdr_icon {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 17px;
+      height: 17px;
+      background-image: url("../img/icons/i-accu-b.svg"); }
+      .block-faqacc .accordion__hdr .hdr_icon.i--down {
+        background-image: url("../img/icons/i-accd-b.svg"); }
+  .block-faqacc .accordion__plate {
+    color: #333333;
+    margin-left: 3rem; }
+
 .block-subscript {
   background: #ffa300 url("../img/bk-subscript.png") bottom right no-repeat;
   padding: 1.5rem 2rem;

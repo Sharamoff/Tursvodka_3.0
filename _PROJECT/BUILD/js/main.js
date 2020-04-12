@@ -48,6 +48,10 @@ $('#tourcontact-accordion-incontent').on('shown.bs.collapse', toggleIcon);
 $('#tourcontact-accordion-aside').on('hidden.bs.collapse', toggleIcon);
 $('#tourcontact-accordion-aside').on('shown.bs.collapse', toggleIcon);
 
+//переключение в faq
+$('#id_questions-faqacc').on('hidden.bs.collapse', toggleIcon);
+$('#id_questions-faqacc').on('shown.bs.collapse', toggleIcon);
+
 
 
 // toggled панель

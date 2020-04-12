@@ -276,3 +276,57 @@
 	}
 
 }
+
+
+
+// faq accordion
+
+.block-faqacc {
+	@include clearfix;
+	padding-bottom: 0.5rem;
+	margin-bottom: 3rem;
+	border-bottom: solid 1px $color-dlv;
+
+	.accordion__hdr {
+		cursor: pointer;
+		margin-bottom: 1rem;
+		font-weight: bold;
+		position: relative;
+		padding-left: 3rem;
+		padding-right: 3rem;
+
+		.hdr_sign {
+			position: absolute;
+			top: -2px;
+			left: 0;
+			width: 3rem;
+
+			img {
+				width: 21px;
+				height: 21px;
+			}
+
+		}
+
+		.hdr_icon {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 17px;
+			height: 17px;
+			background-image: url('../img/icons/i-accu-b.svg');
+
+			&.i--down {
+				background-image: url('../img/icons/i-accd-b.svg');
+			}
+
+		}
+
+	}
+
+	.accordion__plate {
+		color: $c-gray-darker;
+		margin-left: 3rem;
+	}
+
+}
