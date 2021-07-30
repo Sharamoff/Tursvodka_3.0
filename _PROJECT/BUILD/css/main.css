@@ -63,11 +63,8 @@ BODY {
   max-width: 1560px;
   min-width: 290px;
   width: 100%;
-  display: -webkit-box;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-          flex-flow: row nowrap;
+  flex-flow: row nowrap;
   margin: 0 auto;
   padding-left: 30px;
   padding-right: 30px; }
@@ -136,7 +133,6 @@ section {
   position: relative; }
 
 .row--flexed {
-  display: -webkit-box;
   display: flex;
   flex-wrap: wrap; }
   @media only screen and (max-width: 767px) {
@@ -144,7 +140,6 @@ section {
       display: block; } }
 
 .row--flexed-margined {
-  display: -webkit-box;
   display: flex;
   flex-wrap: wrap; }
   @media only screen and (max-width: 767px) {
@@ -157,12 +152,10 @@ section {
         margin-bottom: 15px; } }
 
 .row--col-flexed {
-  display: -webkit-box;
   display: flex;
   margin-bottom: 3rem; }
   .row--col-flexed > div {
-    -webkit-box-align: stretch;
-            align-items: stretch; }
+    align-items: stretch; }
     .row--col-flexed > div > div {
       height: 100%; }
   @media only screen and (max-width: 767px) {
@@ -172,18 +165,12 @@ section {
         margin-bottom: 3rem; } }
 
 .flexed {
-  display: -webkit-box;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-          flex-flow: row wrap; }
+  flex-flow: row wrap; }
 
 .flexedfix {
-  display: -webkit-box;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-          flex-flow: row nowrap; }
+  flex-flow: row nowrap; }
 
 A {
   color: #3c94cc; }
@@ -763,6 +750,22 @@ HR {
     @media only screen and (max-width: 767px) {
       .editpanel-block__val {
         padding-top: 0.2rem; } }
+  .editpanel-block__ch input[type="text"],
+  .editpanel-block__ch select {
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem; }
+  .editpanel-block__ch input[type="checkbox"] {
+    margin: 0 0.6rem; }
+    @media only screen and (max-width: 767px) {
+      .editpanel-block__ch input[type="checkbox"] {
+        margin-left: 0;
+        margin-right: 1rem; } }
+  .editpanel-block__ch .control-label > div {
+    display: inline-block; }
+    @media only screen and (max-width: 767px) {
+      .editpanel-block__ch .control-label > div {
+        float: right;
+        margin-top: 0.6rem; } }
   .editpanel-block .addit-panel {
     position: relative;
     padding-right: 8rem;
@@ -1833,11 +1836,8 @@ a:hover .a--more {
 .divtable {
   margin: 3rem 0; }
   .divtable .row {
-    display: -webkit-box;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-            flex-flow: row wrap;
+    flex-flow: row wrap;
     border-top: solid 1px #cccccc;
     border-bottom: solid 1px #cccccc;
     margin-top: -1px;
@@ -2646,7 +2646,6 @@ INPUT[type="file"] {
   width: 100%; }
 
 .slick-slide {
-  -webkit-transition: all ease-in-out .3s;
   transition: all ease-in-out .3s;
   opacity: 1; }
 
@@ -2851,10 +2850,8 @@ INPUT[type="file"] {
     line-height: 1.1;
     color: #3c94cc;
     border-bottom: solid 1px #dddddd;
-    display: -webkit-box;
     display: flex;
-    -webkit-box-align: center;
-            align-items: center; }
+    align-items: center; }
     .cabinet-username-dropdown .username_block .username_block-img {
       display: block;
       width: 4rem;
@@ -3469,17 +3466,14 @@ INPUT[type="file"] {
   display: block;
   padding: 0;
   width: 100%;
-  -webkit-column-count: 3;
-     -moz-column-count: 3;
-          column-count: 3;
-  -webkit-column-gap: 1px;
-     -moz-column-gap: 1px;
-          column-gap: 1px; }
+  -moz-column-count: 3;
+       column-count: 3;
+  -moz-column-gap: 1px;
+       column-gap: 1px; }
   @media only screen and (max-width: 767px) {
     .block-photoalbum {
-      -webkit-column-count: 1;
-         -moz-column-count: 1;
-              column-count: 1; } }
+      -moz-column-count: 1;
+           column-count: 1; } }
   .block-photoalbum img {
     width: 100%;
     height: auto;
@@ -5188,7 +5182,6 @@ INPUT[type="file"] {
     height: 100%; }
 
 .block-slider--xs {
-  display: -webkit-box;
   display: flex;
   flex-wrap: wrap; }
   .block-slider--xs > [class*="col-"] {
@@ -5297,7 +5290,7 @@ INPUT[type="file"] {
 
 .cabсompany-btn {
   display: block;
-  margin: 3rem auto 0 auto;
+  margin: 6rem auto 0 auto;
   text-transform: uppercase; }
 
 .block-cabcompany {
@@ -5952,11 +5945,9 @@ INPUT[type="file"] {
       color: #666666; }
 
 .panel-ratinfo {
-  display: -webkit-box;
   display: flex;
   flex-wrap: nowrap;
-  -webkit-box-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin-right: -3px; }
   @media only screen and (max-width: 767px) {
     .panel-ratinfo {
@@ -5968,10 +5959,8 @@ INPUT[type="file"] {
   position: relative;
   border-radius: 5px;
   text-align: center;
-  -webkit-box-align: stretch;
-          align-items: stretch;
-  -webkit-box-flex: 1;
-          flex-grow: 1;
+  align-items: stretch;
+  flex-grow: 1;
   margin-right: 3px;
   font-family: "Roboto Condensed", "Arial Narrow", Arial, Helvetica, sans-serif;
   font-size: 1.4rem;
@@ -6586,11 +6575,8 @@ INPUT[type="file"] {
   .nav-country > .row {
     margin-left: 0;
     margin-right: 0;
-    display: -webkit-box;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-            flex-flow: row nowrap; }
+    flex-flow: row nowrap; }
   .nav-country .nav-country__tabs {
     background-color: white;
     border-right: solid 1px #dddddd;
@@ -6644,11 +6630,8 @@ INPUT[type="file"] {
   margin: 0;
   padding: 0;
   width: 100%;
-  display: -webkit-box;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-          flex-flow: row nowrap;
+  flex-flow: row nowrap;
   background-color: white;
   position: relative; }
   @media only screen and (max-width: 767px) {
@@ -6860,11 +6843,8 @@ INPUT[type="file"] {
         color: #ffa300; }
 
 .cl-block {
-  display: -webkit-box;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-          flex-flow: row; }
+  flex-flow: row; }
   @media only screen and (max-width: 767px) {
     .cl-block {
       display: block; } }
@@ -7168,11 +7148,8 @@ INPUT[type="file"] {
     max-width: 1500px;
     min-width: 290px;
     width: 100%;
-    display: -webkit-box;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-            flex-flow: row nowrap;
+    flex-flow: row nowrap;
     margin: 2rem auto 0 auto; }
     .footer .footerwrap:before, .footer .footerwrap:after {
       content: " ";

@@ -55,6 +55,7 @@ gulp.task('html:build', function(done) {
 		.pipe(rigger())
 		.pipe(gulp.dest(path.build.html))
 		.pipe(reload({stream: true}));
+	done();
 });
 
 gulp.task('js:build', function(done) {
@@ -65,6 +66,7 @@ gulp.task('js:build', function(done) {
 		//.pipe(sourcemaps.write())
 		.pipe(gulp.dest(path.build.js))
 		.pipe(reload({stream: true}));
+	done();
 });
 
 gulp.task('style:build', function(done) {
@@ -80,23 +82,31 @@ gulp.task('style:build', function(done) {
 		//.pipe(sourcemaps.write())
 		.pipe(gulp.dest(path.build.css))
 		.pipe(reload({stream: true}));
+	done();
 });
 
 gulp.task('image:build', function(done) {
 	return gulp.src(path.src.img)
-		.pipe(cache(imagemin({
-			progressive: true,
-			svgoPlugins: [{removeViewBox: false}],
-			use: [pngquant()],
-			interlaced: true
-		})))
+		.pipe(imagemin([
+			imagemin.gifsicle({interlaced: true}),
+			imagemin.mozjpeg({quality: 80, progressive: true}),
+			//pngquant(),
+			imagemin.svgo({
+				plugins: [
+					{removeViewBox: true},
+					{cleanupIDs: false}
+				]
+			})
+		]))
 		.pipe(gulp.dest(path.build.img))
 		.pipe(reload({stream: true}));
+	done();
 });
 
 gulp.task('fonts:build', function(done) {
 	return gulp.src(path.src.fonts)
 		.pipe(gulp.dest(path.build.fonts));
+	done();
 });
 
 gulp.task('build', gulp.parallel(
